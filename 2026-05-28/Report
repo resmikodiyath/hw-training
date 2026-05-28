@@ -1,9 +1,10 @@
+
+DATA_ISSUES_REPORT
+-----------------------------
 file -bahrainfinder_bah_2026_05_04.json
 ----------------------------------------
-data_issues_report
------------------
-
-
+isssues
+---------
 
 Language inconsistency in the same attribute (URL field)
 -----------------------------------------------------------
@@ -15,9 +16,25 @@ https://www.bahrainfinder.bh/ar/property/أرض-للبيع-في-بوقوة-7899.
 some empty fields also noticed
 
 ------------------------------------------
-file -DataHut_AT_Interspar_FullDump_20260528
+file -DataHut_AT_Interspar_FullDump_20260528.csv
 ----------------------------------------------------
-issues---------
+issues
+--------
 
 
 
+
+
+
+file-DataHut_CH_Coop_FullDump_20260528.csv
+--------------------------------------------
+issues
+- 
+During validation, it was observed that the product attribute “organic/non- organic” is present in the CSV file, but the same information is not displayed on the website for the corresponding product records.
+observed empty fields like store name,store address,store state ,store postcode etc .
+No other issues were identified.
+
+file-DataHut_SI_Mercator_FullDump_20260528.csv
+-----------------------------------------------
+Issue Type: URL Response Timeout / Page Not Accessible
+-The URL could not be accessed as it returned a “too long to respond” . The page did not load within the expected response time.
