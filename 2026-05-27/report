@@ -1,0 +1,48 @@
+report- data issues
+-----------------------------------------
+file- DataHut_AT_Dm_PriceExtractions_20260527
+Description:
+During data validation, the selling price displayed on the website uses a comma as the decimal separator (European format), whereas the extracted CSV data uses a dot as the decimal separator.
+
+Website value: 2,95€
+CSV value: 2.95 €,which is format inconsistency
+region and pack size fields are empty
+percentage discount field empty
+product description field empty
+-------------------------------------------------------------------------
+file- DataHut_AT_Foodora_Penny_PriceExtractions_20260527
+-----------------------------
+issues:
+empty fields:region.pack size,promotion price,promotion valid from,promotion valid upto
+---------------------------------------------------------------
+file-bayut_uae_project_2026_05_04
+--------------------------------
+in this url -https://www.bayut.com/for-sale/property/dubai/al-barari/the-nest/
+-the project name is "The Nest",but in csv it is "the collection"
+---------------------------
+https://www.bayut.com/for-sale/off-plan/property/dubai/jumeirah-village-circle-jvc/jvc-district-15/the-haven-garden
+in the above url,
+the developers name in the csv cant be found in the website
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+                                                                       
+                                                                       QA and its importance
+                                                                       -----------------------------
+                                                                       
+                                                                       
+  Quality Assurance (QA) in data analysis is the process of verifying and maintaining the accuracy, consistency, completeness, validity, and reliability of data throughout the data lifecycle. It involves checking data for errors, duplicates, missing values, incorrect formatting, mismatched records, and inconsistencies before the data is used for reporting, visualization, or decision-making.
+
+Quality assurance plays a vital role in data analysis because poor-quality data can lead to incorrect insights, misleading reports, and wrong business decisions. QA helps ensure that the extracted or collected data matches the original source and follows defined standards and business rules. It also helps identify issues such as incorrect data scraping, inconsistent formats, invalid entries, and data loss during transformation or migration.
+
+Some important activities in data quality assurance include:
+
+Data validation and verification
+Checking completeness and accuracy
+Detecting duplicate or missing records
+Standardizing formats and units
+Monitoring consistency across datasets
+Ensuring proper data storage and transformation
+
+Effective QA improves data integrity, increases confidence in analytical results, enhances operational efficiency, and reduces the risk of errors in business processes. It also supports better decision-making, regulatory compliance, and reliable reporting in organizations.

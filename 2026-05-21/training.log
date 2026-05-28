@@ -1,0 +1,9 @@
+Team meeting conducted
+imported json file to  mongdatabase
+exported it to csv file
+imported csv file to pandas Dataframe
+performed file operations
+converted dataframe to csv
+converted  csv to xml
+
+

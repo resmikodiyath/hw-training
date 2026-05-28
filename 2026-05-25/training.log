@@ -1,0 +1,2 @@
+Team meeting conducted
+Used parzera to scrape product data from the e-commerce website Shopsy. Extracted product details such as title, price, discount percentage ,breadcrumbs and product urls from listing and product pages.Then exported it into a CSV file .

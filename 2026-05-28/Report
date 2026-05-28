@@ -1,0 +1,23 @@
+file -bahrainfinder_bah_2026_05_04.json
+----------------------------------------
+data_issues_report
+-----------------
+
+
+
+Language inconsistency in the same attribute (URL field)
+-----------------------------------------------------------
+
+The dataset contains inconsistent URL language formats, where some property links are in Arabic and others are in English within the same field
+eg:
+https://www.bahrainfinder.bh/en/property/penthouse-for-sale-in-seef-district-8793.html
+https://www.bahrainfinder.bh/ar/property/أرض-للبيع-في-بوقوة-7899.html
+some empty fields also noticed
+
+------------------------------------------
+file -DataHut_AT_Interspar_FullDump_20260528
+----------------------------------------------------
+issues---------
+
+
+

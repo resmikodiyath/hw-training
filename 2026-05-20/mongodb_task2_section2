@@ -1,0 +1,110 @@
+                                                                      SECTION 2: MONGODB COMPASS 
+                                                                      part 1 --------------------------------------------------------------------------------------------------------------------------------------------------------------                                                                    
+Installed mongodb compass
+Connected to a local host collection
+verified structure-Document tab and Schema tab
+no datatype mismatches or missing fields identified
+
+                                                            part 2
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Use the filter bar to:
+
+Find all employees from the "HR" department.
+                                                    
+       {department: "HR"}
+ 
+ ---------------------------------
+ Find employees with salary greater than 50000.
+ 
+      {salary:{$gt:50000}}                                                    
+      -----------------------------------------------------------------------
+  Find employees who joined after 2022-01-01.
+  
+      {joinedDate: {$gt : new Date("2022-01-01")}}
+-------------------------------------------------------------------------------------------------------------------------------------------
+Query to find employees who are:
+
+Active (isActive: true)
+
+Belong to either "HR" or "IT" departments.
+
+Bonus: Use the $or and $and operators.
+
+                           {
+  $and: [
+    { isActive: true },
+    {
+      $or: [
+        { department: "HR" },
+        { department: "IT" }
+      ]
+    }
+  ]
+  -----------------------------------------------------------------------------------------------------------------------------------------------
+                                                 PART 3: CRUD OPERATIONS IN COMPASS
+             CRUD Operations in Compass
+-----------------------------------------------------------------------------------------------
+Update Document option to:
+
+Change the department of one employee.
+                                    
+      { empId: 101 }
+       { $set: { department: "HR" } }          
+       ---------------------------------------------------------------------------------------------------------------------------------------------------------------    
+  Perform Updates
+     
+       
+       
+       
+       {department:"Salea"}
+       {
+  $inc: {salary:10000
+
+  },
+}                            
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                          Part 4: Aggregation Pipeline Builder
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Open the Aggregation tab.
+
+
+Create a pipeline with these stages:
+$group by department
+Calculate avgSalary, maxSalary, minSalary using $avg, $max, $min
+
+             
+{
+  _id: "department",
+
+  avgSalary: { $avg: "$salary" },
+  maxSalary: { $max: "$salary" },
+  minSalary: { $min: "$salary" }
+}
+    -------------------------------------------------------------------------
+    
+   $match employees with salary > 50000
+$sort by salary descending
+
+
+{
+  salary:{$gt:50000}
+}{
+  salary: -1
+}
+
+------------------------------------------------------------------------------------------------------------------------
+
+Aggregation – Project Fields
+Only name, salary, and department
+Add a new computed field: annualSalary = salary * 12
+
+
+{
+  _id: 0,
+  name: 1,
+  salary: 1,
+  department: 1,
+  annualSalary: { $multiply: ["$salary", 12] }
+}
+---------------------------------------------------------------------------------------------------------------------
+                                          

@@ -1,0 +1,167 @@
+                                                TASK 2: MONGODB CREATE AND EXPLORE
+=========================================================================================================================================================================================
+                                             PART 1: INSERT, UPDATE, DELETE, BULK INSERT
+=============================================================================================================================
+ # Create a database called companyDB and a collection named employees.
+
+use companyDB
+switched to db companyDB
+-----------------------------------------------------------------------------------------------------------------
+# Bulk Insert
+
+db.employees.insertOne(
+{
+  "empId": 101,
+  "name": "Ravi",
+  "department": "IT",
+  "salary": 75000,
+  "isActive": true
+
+})
+------------------------------------------------------
+db.employees.insertMany([
+{
+  "empId": 102,
+  "name": "Radha",
+  "department": "Salea",
+  "salary": 85000,
+  "isActive": true
+
+},
+{
+"empId": 103,
+  "name": "madhav",
+  "department": "IT",
+  "salary": 70000,
+  "isActive": true
+}
+,{
+"empId": 104,
+  "name": "Sojan",
+  "department": "Sales",
+  "salary": 55000,
+  "isActive": false
+},
+{
+"empId": 105,
+  "name": "Leela",
+  "department": "HR",
+  "salary": 85000,
+  "isActive": true
+},
+{
+"empId": 106,
+  "name": "Jyothi",
+  "department": "Marketing",
+  "salary": 95000,
+  "isActive": false
+}])
+-------------------------------------------------------------
+# Update the salary of all employees in the IT department by 10%.
+
+db.employees.updateMany(
+  { department: "IT" },
+  { $mul: { salary: 1.10 } }
+  
+  --------------------------------------------------------------------
+  # Delete the record of any employee who is marked as IsActive: false.
+
+  
+  db.employees.deleteMany(
+  {isActive : false})
+)
+
+----------------------------------------------------------------
+                                                  PART 2: EXPORTING, IMPORTING, DUMPING, AND RESTORE
+==================================================================================================================================================
+
+
+# Export the employees collection to a JSON & CSV file using  the mongoexport command.
+
+mongoexport --db companyDB --collection employees --out employees.json
+
+ mongoexport --db companyDB --collection employees --type=csv --fields empId,name,department,salary,isActive --out employees.csv
+ ==========================================================================================================================================================
+# Create a full database dump of companyDB using mongodump.
+
+mongodump --db companyDB --out backup/
+====================================================================================================================================
+# Drop the companyDB database from MongoDB.
+
+db.dropDatabase()
+=========================================================================================================
+# Use mongorestore to restore the database from the dump created in Step 6.
+
+mongorestore --db companyDB backup/companyDB
+===============================================================================================================================
+# Import a sample employee data JSON or CSV into a new collection called importedEmployees.
+
+ mongoimport --db companyDB --collection importedEmployees --file employees.json
+ 
+ 
+ 
+                                               PART 3: INDEXING
+ ======================================================================================================================================================                                              
+ 
+ 
+ # Create a single field index on the department field.
+
+db.employees.createIndex({department :1})
+====================================================================================================================================================
+# Create a compound index on department and salary.
+
+db.employees.createIndex({department:1 , salary :1})
+============================================================================================================================
+# Use .getIndexes() to get all the indexes in a Collection
+
+db.employees.getIndexes()
+================================================================================================================================================================================
+
+                                                   PART 4: SHARDING, CLUSTERING, AND NODES (THEORY)
+===============================================================================================================================================================
+Write a short explanation of the following:
+
+ a)What is sharding in MongoDB?
+
+ -sharding in MongoDB is a method of splitting large datasets across multiple servers to improve performance and scalability. 
+ -It helps handle big data and high traffic by distributing data into smaller parts called shards.
+-Each shard stores a portion of the data, and a shard key is used to decide how data is distributed. A query router called mongos directs requests to the correct shard.
+-In short, sharding enables horizontal scaling and improves database performance for large applications.
+------------------------------------------------------------------------------------------------------------------------------------
+b)
+What is a replica set?
+What are a primary node and a secondary node?
+
+
+A Replica Set in MongoDB is a group of MongoDB servers that maintain the same data for high availability and data redundancy.
+It consists of:
+Primary node → handles all write operations
+Secondary nodes → copy data from the primary node
+If the primary server fails, one secondary automatically becomes the new primary. This process is called automatic failover.
+Replica sets improve:
+1) data availability
+2) fault tolerance
+3) backup and recovery
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+                                                    PART 5: OBJECT ID & TIME STAMP
+
+=========================================================================================================================================================
+What is objectID and timestamp from an object?
+
+An ObjectId is a unique identifier automatically created by MongoDB for each document in the _id field.
+An ObjectId is a 12-byte value containing:
+---Timestamp → creation time of document
+---Machine identifier
+---Process ID
+---Random/increment value
+
+----------------------------------------------------------------------------------------------------------------------
+# Get the objectId and convert into a timestamp and wise versa- it’s importance(time bounded data identification)
+
+ObjectId('6a0d54e8ca9ca323b3d771cc').getTimestamp()
+-----------------------------------------------------------
+
+

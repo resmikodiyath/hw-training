@@ -1,0 +1,22 @@
+                                  REPORT – DATA EXTRACTION ISSUE
+                                  ------------------------------------
+ file-exprealty_2026_04_05.json
+-------------------------------------
+
+The “first name” field contains values joined using “AND” or underscores ( _ ).
+This makes the first name look like a combined string instead of a single name.
+---------------------------------------------------------------------------------
+The website contains a “description” field, but it is empty in some cases.
+Despite this, the data is extracted  from the “About Title”.
+This extracted “About Title” value is stored in the JSON under the “description” key.
+----------------------------------------------------------------------------------
+titles and zip code are missing in the website.
+no country name  USA mentioned in website ,but json file has a a field country and value is USA
+------------------------------------------------------------------------------------------------
+file set 2
+----------------------------------------------------------------------------------
+
+Some records contain very long full names without proper separation into first, middle, and last names.
+The entire name is stored as a single string in the first name field
+title  and zip code fields are completely empty
+

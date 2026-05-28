@@ -1,0 +1,4 @@
+{"_id":{"$oid":"6a0d5203ca9ca323b3d771cb"},"empId":101,"name":"Ravi","department":"IT","salary":82500.0,"isActive":true}
+{"_id":{"$oid":"6a0d54e8ca9ca323b3d771cc"},"empId":102,"name":"Radha","department":"Salea","salary":85000,"isActive":true}
+{"_id":{"$oid":"6a0d54e8ca9ca323b3d771cd"},"empId":103,"name":"madhav","department":"IT","salary":77000.0,"isActive":true}
+{"_id":{"$oid":"6a0d54e8ca9ca323b3d771cf"},"empId":105,"name":"Leela","department":"HR","salary":85000,"isActive":true}

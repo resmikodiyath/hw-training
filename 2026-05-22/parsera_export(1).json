@@ -1,0 +1,59 @@
+[
+  {
+    "url": "https://en.wikipedia.org/wiki/FIFA_World_Cup#Results",
+    "data": [
+      {
+        "rank": "1",
+        "goals_scored": "237",
+        "team": "Brazil"
+      },
+      {
+        "goals_scored": "232",
+        "rank": "2",
+        "team": "Germany"
+      },
+      {
+        "team": "Argentina",
+        "rank": "3",
+        "goals_scored": "152"
+      },
+      {
+        "goals_scored": "136",
+        "rank": "4",
+        "team": "France"
+      },
+      {
+        "team": "Italy",
+        "rank": "5",
+        "goals_scored": "128"
+      },
+      {
+        "team": "Spain",
+        "goals_scored": "108",
+        "rank": "6"
+      },
+      {
+        "goals_scored": "104",
+        "rank": "7",
+        "team": "England"
+      },
+      {
+        "goals_scored": "96",
+        "rank": "8",
+        "team": "Netherlands"
+      },
+      {
+        "goals_scored": "89",
+        "rank": "9",
+        "team": "Uruguay"
+      },
+      {
+        "rank": "10",
+        "goals_scored": "87",
+        "team": "Hungary"
+      }
+    ],
+    "status": "success",
+    "timestamp": "2026-05-22T07:14:53.467Z"
+  }
+]
