@@ -1,0 +1,26 @@
+QA validation report
+=======================
+date:26--06-03
+================
+
+file :machinerytrader_2026_06_03.csv
+========================================
+8678 rows found
+some fields are empty (pcid,enginesize,digitalpanel,phase,freefall,frequency,compartment e.t.c).
+NO  othre issues were identified.
+
+file:DataHut_AT_Billa_PriceExtractions_20260603.CSV
+=====================================================
+ 12380 rows found
+issues:
+
+1. In some rows, the promotion description is present, but the promotion price does not match the selling price. Examples include Rows 797 and 866,which doesnot meet the requirements.
+
+2. In several rows, the selling price is not consistently formatted to two decimal places and is recorded with only one decimal place, that doesnot meet the requirements.
+
+file :DataHut_AT_Dm_PriceExtractions_20260603.csv
+======================================================
+16493 rows found
+dataset is unique
+no duplicates 
+no other issues were identified
