@@ -1,0 +1,41 @@
+QA Validation Report
+===========================
+Date: 2026-06-03
+=================
+file: DataHut_AT_Spar_PriceExtractions_20260603.CSV
+======================================
+issue 1: Promotion Price Not Mapped-
+-Promotion description is present, but the promotion price is not mapped to the Selling Price field as expected.eg: row 3
+issue 2 :
+Only one price is available on the website, but the same value is filled in both Regular Price and Selling Price fields in the CSV. As per the requirement, it should be assigned only to the Selling Price field. eg: row 12
+
+
+QA Validation Findings
+=======================
+date: 2026-06-04
+-----------------
+file:DataHut_SI_Spar_FullDump_20260604.CSV
+---------------------------------------------
+issues:
+1)  Row numbers differ from the requirement :16285
+2)  The requirement states that all fields are mandatory; however, multiple fields are empty in the CSV file beyond those specified as allowed to be blank.
+3)  The competitor name(dm) provided in the requirement is incorrect.(actually spar)
+4)  Price Valid From and Promotion Valid From dates are not available on the website, although they are listed in the requirement. Only the Price Valid Until date is displayed.
+5)  The Competitor Product Key field is empty across the entire dataset.
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+ file:DataHut_SI_Mercator_FullDump_20260604.CSV
+ -------------------------------------------------
+ issues:
+ 1)empty fields in the dataset
+ 2)Unable to access the website due to a "Problem Loading" error.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+file: DataHut_SI_Dm_FullDump_20260604.CSV
+-----------------------------------------
+issues:
+1)  The data count specified in the requirement does not match the actual record count in the CSV file.( 11622 rows found)
+2)  The requirement states that all fields are mandatory; however, fields such as Store Name, Store Address, Store Postcode, Store Suburb, and Brand Type  etc are empty in the dataset.
+3)  The requirement lists Barcode as a field expected to be empty, but values are present in the Barcode column.
+4)  The Promotion Description column is empty across the entire dataset.
+ 
