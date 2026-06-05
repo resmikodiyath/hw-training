@@ -1,0 +1,30 @@
+QA validation REport
+-------------------------
+date :2026-06-05
+----------------
+file:century21_us_2026_06_05.json
+---------------------
+issues:
+1)Row number mismatch with Google Sheet requirement.37873
+2) Email ID, title, and social fields should be empty as per requirement but contain values in JSON file.
+3) Country name should be “United States”, but record 10180 has value “America”.
+------------------------------------------------------------------
+file:bhgre_2026_06_05.json
+-------------------------------
+issues:
+1)Row number count mismatch between Google Sheet and JSON file (count shown as 10064). 
+2)Country field mismatch observed; requirement specifies “United States”, but other values such as “Jamaica” are present in the data.
+--------------------------------------------------------------------------------------------------
+file:coldwellbankerinternational_2026_06_05.json
+-------------------------------------------------------
+issues:
+1)Field order mismatch between requirement and JSON file. 
+Row count mismatch between Google Sheet and JSON file.(4166)
+ URL is inaccessible and returns 403 Forbidden error. 
+ Null value handling mismatch: expected empty string ("") but social field contains empty set instead.
+ ------------------------------------------------------------------------------------------
+ file:sutton_2026_06_05.json
+ --------------------------------------------
+ issues:
+ 1)Data count mismatch between Google Sheet and JSON file.(5045)
+  During random check, the state value “QC” is not displayed on the website.
