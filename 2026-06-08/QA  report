@@ -1,0 +1,41 @@
+QA validation report
+-------------------------
+date: 2026-06-08
+----------------
+file :sephora_2026_06_07.csv
+---------------------------
+isssues:
+1)Although some empty fields are expected as per requirement, additional field "others" is also empty.
+
+2)The price_was and promotion price fields are completely empty across the dataset.
+
+3)The product type and special feature fields are also entirely empty.
+
+-----------------------------------------------------------------------
+file:lazada_2026_06_07.csv
+----------------------------------
+issues:
+1)The CSV file contains extra fields not mentioned in the checklist, including seller_tags,  
+seller_rating , vouchers  ,product_specifications  ,rating  ,reviews  ,sale  ,shipping_details  ,offer_validity   
+
+2)The file name structure is correct, however there is a date mismatch within the CSV structure
+
+3)Some required fields are expected to be empty, but "others" field is  also found empty beyond the requirement.
+
+4)The promotion description field contains dot-separated values, and also includes date information extracted along with the promotion data.
+
+5)The “others” field is completely empty, although it is part of the requirement.
+
+6)Brand validation shows that while most brands match the requirement, some expected brands such as The Ordinary and Laneige are missing from the dataset.
+
+7)The selected variant field is expected to be space-separated, but some values use special characters (e.g., “+”) instead. However, this matches the website structure.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+file:shopee_2026_06_07.csv
+---------------------------------------
+issues:
+1)The expected data count is 959 rows, but the dataset contains only 955 rows, indicating a mismatch in record count.
+
+2)The product URLs are not accessible, as they display a “page unavailable” error.
+3
+
