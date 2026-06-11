@@ -1,0 +1,36 @@
+QA validation report
+------------------------
+Date: 2026-06-11
+---------------------
+file:DataHut_AU_Coles_FullDump_20260610.CSV
+-------------------------------------------------------
+issues:
+-----------------------------------------------------------------
+1. Data count mismatch: The expected unique data count is approximately 30,000, whereas the actual unique count is 27,907.
+
+2. Empty fields mismatch: Product Hierarchy Level 4, Product Hierarchy Level 5, Barcode, and Regular Price contain values in the CSV file.
+
+3. Additional discrepancies: The “Environmental” field is empty but not listed in the requirement. “Promotion Valid Up To,” “Grape Variety,” “Suitable For,” “File Name 1,” and “Features” fields are empty.
+
+4. Location field mismatch: The requirement specifies location fields; however, only “Store Name” is present in the dataset, and no field named “Location” exists.
+
+5. Selling price issue: Selling price should be in float format with two decimal places  but integer values are present in the CSV.
+
+6. Image format mismatch: PNG format is required, but JPG format is used in the website images.
+
+7. Rating field mismatch: Rating values contain only one decimal place, whereas the requirement specifies two decimal places.
+
+8. Data type issue: The “Review” field is in numeric format instead of the required string format.
+
+
+-------------------------------------------------------------------------------------
+file:DataHut_CH_Migros_FullDump_20260611.CSV
+--------------------------------------------------
+issues:
+--------------
+so many fileds remained empty in the dataset:
+
+(['store_name', 'store_addressline1', 'store_addressline2', 'store_suburb', 'store_state', 'store_postcode', 'store_addressid', 'brand_type', 'drained_weight', 'producthierarchy_level6', 'producthierarchy_level7', 'promotion_valid_from', 'promotion_valid_upto', 'package_sizeof_sellingprice', 'per_unit_sizedescription', 'price_valid_from', 'multi_buy_item_count', 'multi_buy_items_price_total', 'variants', 'country_of_origin', 'age_of_the_product', 'age_recommendations', 'flavour', 'nutritions', 'vitamins', 'labelling', 'grade', 'region', 'receipies', 'processed_food', 'frozen', 'chilled', 'cooking_part', 'handmade', 'max_heating_temperature', 'special_information', 'dimensions', 'special_nutrition_purpose', 'feeding_recommendation', 'warranty', 'color', 'model_number', 'material', 'usp', 'dosage_recommendation', 'tasting_note', 'food_preservation', 'size', 'file_name_1', 'file_name_2', 'image_url_2', 'file_name_3', 'image_url_3', 'file_name_4', 'image_url_4', 'file_name_5', 'image_url_5', 'file_name_6', 'image_url_6', 'competitor_product_key', 'fit_guide', 'occasion', 'material_composition', 'style', 'care_instructions', 'heel_type', 'heel_height', 'upc', 'dietary_lifestyle', 'manufacturer_address', 'importer_address', 'vinification_details', 'recycling_information', 'return_address', 'alchol_by_volume', 'beer_deg', 'netcontent', 'netweight', 'random_weight_flag', 'instock', 'promo_limit', 'multibuy_items_pricesingle', 'perfect_match', 'suitable_for', 'standard_drinks', 'environmental', 'grape_variety', 'retail_limit']
+
+data count is 1612
+no other issues were identified
