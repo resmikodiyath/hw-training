@@ -1,0 +1,61 @@
+QA validation report
+---------------------
+Date: 2026-26-12
+-----------------
+file: DataHut_AT_Spar_FullDump_20260611.CSV
+------------------------------------------------
+issues:
+1)   Data Count Mismatch: Actual record count is 39,446, which does not match the expected count.
+2)   The age_of_the_product field, which is required to be empty, contains values. 
+     No other issues were identified.
+     
+     
+file: DataHut_AT_Dm_PriceExtractions_20260612.CSV
+----------------------------------------------------
+issues:
+1)   Data Count Mismatch: Actual record count is 16677, which does not match the expected count.
+2)   Missing Required Data (Variants): The requirement specifies that variants data must be included, however there is no field named “variants”, and the required variants information is also not present in any other column.
+
+
+file:DataHut_AT_Billa_PriceExtractions_20260612.CSV
+------------------------------------------------------
+isssues:
+1)  Data count is  12462.
+2)  Promotion pricing mismatch: selling price does not match promotion price; selling price also inconsistent with regular price where promotion exists. for eg: row no: 83,92 139,178 etc. 
+ 3) In row no:292 regular price is empty,but promotion description and selling prices were present.
+ 4)  When promotion description is not present, promotion price is expected to be derived from selling price, but it is found empty, indicating a rule mismatch.
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ QA validation REport
+-------------------------
+date :2026-06-12
+----------------
+file:century21_us_2026_06_05.json
+---------------------
+issues:
+1)Row number mismatch with Google Sheet requirement.37873
+2) Email ID, title, and social fields should be empty as per requirement but contain values in JSON file.
+3) Country name should be “United States”, but record 10180 has value “America”.
+------------------------------------------------------------------
+file:bhgre_2026_06_05.json
+-------------------------------
+issues:
+1)Row number count mismatch between Google Sheet and JSON file (count shown as 10064). 
+2)Country field mismatch observed; requirement specifies “United States”, but other values such as “Jamaica” are present in the data.
+--------------------------------------------------------------------------------------------------
+file:coldwellbankerinternational_2026_06_05.json
+-------------------------------------------------------
+issues:
+1)Field order mismatch between requirement and JSON file. 
+Row count mismatch between Google Sheet and JSON file.(4166)
+ URL is inaccessible and returns 403 Forbidden error. 
+ ------------------------------------------------------------------------------------------
+ file:sutton_2026_06_05.json
+ --------------------------------------------
+ issues:
+ 1)Data count mismatch between Google Sheet and JSON file.(5045)
+  During random check, the state value “QC” is not displayed on the website.
