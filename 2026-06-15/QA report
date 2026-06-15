@@ -1,0 +1,29 @@
+QA report
+------------
+date: 2026-06-15
+-----------------------------
+DataHut_AT_Spar_PriceExtractions_20260615.CSV
+----------------------------------------------
+Data count:39485
+no other issues
+
+====================================================================================
+
+
+QA report
+--------
+autoteiledirekt_2026_06_15.csv
+--------------------------------
+spelling mismatch: "catelogue price "."Availability" field is named as "stock"
+order is correct,but "stock" in place of "Availability"
+-----------------------------------------------
+autodoc_2026_06_15.csv
+---------------------
+Data count: 23242
+no other issues found
+-----------------------------------
+autoonderdelen24_2026_06_15.csv
+------------------------
+ row 19130-ref_no_space value 98670 not in webssite
+ no orher issues found
+ 
