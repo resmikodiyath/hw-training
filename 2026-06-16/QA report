@@ -1,0 +1,34 @@
+QA report
+----------
+DataHut_SI_Dm_PriceExtractions_20260616.csv
+---------------------------------------------
+Data count:  11522
+some mismatches in grammage quantity and unit betwwen website and csv
+line-10723- 30g in website, 1 kos in csv
+line-10757-  18 vr in site,1 kos in csv
+line 10772-  18 vr in site,1 kos in csv
+line 10773 - 25 vr in site,1 kos in csv
+line 10900- 38 pranj in site,1 kos in csv etc
+---------------------------------------------------------------
+DataHut_AT_Dm_PriceExtractions_20260616.CSV
+--------------------------------------------
+Data count:16682
+no other issues found
+-----------------------------------------------
+DataHut_AT_Spar_PriceExtractions_20260616.CSV
+---------------------------------------------------
+Data count 39706
+"price  is available on website, but  selling and regular prices are empty in csv.                                                                 
+ line 39703- price in site -  9.99 , empty in csv
+line 39704 - price -14.99,empty in csv
+line 39705 -price 8.99, empty in csv"
+------------------------------------------------------------------
+DataHut_AT_Billa_PriceExtractions_20260616.CSV
+---------------------------------------------------
+1)   for products with promotion description 'Bei 3 Flaschen je', the selling price and regular price are same,while the promotion price is different, 
+  line s-11644.10159,10187,10197,10205  etc are examples,( acc to requirement, when promotion description is present, selling price will be the promotion price.)
+2)    for products with promo_desc AKTION:
+lines 10770,6494-website shows only single price which is assigned to both promo_price and sell_price but regular price field is empty in csv,not  taken from iterated data acc to the requirement.
+lines- 11171,11225,11183,sp=pp=rp(3 prices are the same), regular price not taken from iterated data.
+-----------------------------------------------------
+
