@@ -1,0 +1,13 @@
+QA validation
+--------------------
+DataHut_CH_Coop_FullDump_20260618.CSV
+------------------------------------------
+Data count:34154
+datatype mismatch: selling and regular prices should be "string" according torequirement,but they are "double" in type.
+
+------------
+DataHut_CH_Denner_FullDump_20260618.CSV
+----------------------------------------
+Data count: 1498
+doubt regarding the requirements: 1x is valid ,but 2x and 3x are invalid,consider first x if more than 1x?
+
