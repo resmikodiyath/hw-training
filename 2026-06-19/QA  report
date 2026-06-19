@@ -1,0 +1,57 @@
+****Report: QA Validation Using MongoDB Compass****
+-------------------------------------------
+**advantages**
+----------------
+*Schema Analysis (Schema Tab)*
+------------------------------
+Check collection structure and field availability.
+Identify:Missing fields,Null values,Empty values,Data type mismatches,Unexpected values
+for eg: file :DataHut_CH_Coop_FullDump_20260618.CSV
+here,
+1) Requirement: selling_price and regular_price should be String.
+Schema shows the field is stored as DoubleThis helps identify data type mismatch instantly.
+2)Helps verify fields that should contain only true or false.
+Example:
+in_stock field can be checked quickly to confirm whether values are properly stored as Boolean.
+3)Shows all unique values available for a field.
+Example:
+Brand field can display all available brands.
+Helps QA verify whether unwanted or incorrect brands exist.
+
+*Filter Options*
+---------------------
+Check:
+Missing fields ($exists)
+Null/empty values
+Incorrect values
+Specific conditions
+Format validation using regex
+----------------------------------------------------------
+
+**sublime Text Is Better for the Following Operations Compared to MongoDB Compass**
+-------------------------------------------------------
+
+1. **Regex-Based Validation**:
+    Better for pattern matching such as email formats, URLs, product IDs, and special characters.
+2. Quick Text Search
+3.Allows complete viewing of JSON, CSV, or text files in their original format.
+4. Bulk Find and Replace
+5. Helps detect unwanted spaces, inconsistent capitalization, and text mismatches.
+6.File Comparison
+
+
+--------------------------------------------------------------------------
+
+QA report
+----------
+date :2026-06-019
+-------------------
+file:DataHut_AT_Spar_PriceExtractions_20260619.CSV
+-----------------------------
+Data count:36763
+no other issues found
+
+file: DataHut_AT_Dm_PriceExtractions_20260619.CSV
+----------------
+Data count: 16762
+no other issues found
