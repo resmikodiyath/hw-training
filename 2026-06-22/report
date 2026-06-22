@@ -1,0 +1,73 @@
+QA Process Using Great Expectations
+------------------------------------
+
+Great Expectations performs QA by following these steps:
+--------------------------------------------
+
+Connect and load the dataset
+Import data from CSV, Excel, databases, or other sources.
+Create QA rules (Expectations)
+Define validation rules for the data, such as:
+Mandatory fields should not be empty
+Columns should have correct data types
+Values should follow required formats
+Duplicate records should not exist
+Business rules should be satisfied
+Run validation checks
+Great Expectations compares the actual data against the defined expectations.
+Generate QA report
+Produces a report showing:
+Passed checks
+Failed checks
+Unexpected values
+Data quality summary
+Review and fix issues
+Analyze failed records and correct data quality problems.
+
+
+-------------------------------------------------------------
+openRefine
+-----------
+Data QA checks that can be performed:
+
+* Verify that all mandatory fields are available and do not contain null or empty values.
+* Check the total record count and identify missing or unexpected records.
+* Identify duplicate records based on unique identifiers or key fields.
+* Validate whether columns contain the correct data types such as integer, float, string, or date.
+* Check data formats such as URLs, email IDs, phone numbers, and specific code patterns.
+* Validate numerical values against expected ranges and limits.
+* Apply business rules and conditions, such as ensuring selling price is not greater than regular price.
+* Verify that unique fields contain no duplicate values.
+* Check consistency of data across columns and records.
+* Validate whether values belong to an allowed list of values.
+* Check the minimum and maximum length of text fields.
+* Identify incorrect or abnormal values (outliers).
+* Compare related columns to ensure logical relationships between them.
+* Verify that required columns are present in the dataset.
+* Check file structure, delimiter, and data loading issues.
+* Generate QA reports showing passed checks, failed checks, and error records.
+--------------------------------------------------------------------------------------------------------------
+
+
+QA report
+-----------
+date:2026-06-22
+--------------
+file:DataHut_SI_Mercator_FullDump_20260528.CSV
+isssues:
+data count mismatch: 17011
+can't access the website
+---------------------------------------
+file:bahrainfinder_bah_2026_06_04.json
+----------------------------------------
+issues: 
+
+change in the field order identified( details field comes after amenities)
+furnished field has no value named"fully furnished". it has the following values
+[Unfurnished', 'Semi Furnished', 'Furnished', '', 'مفروشة بالكامل','مفروشة جزئيًا', 'غير مفروش']
+
+file:nawy_egp_2026_06_04.json
+--------------------
+no issues found
+
+
