@@ -1,0 +1,32 @@
+QA report
+--------------
+file:dubizzle_bah_2026_06_04.json
+---------------------------------
+no issues found
+
+file:bayut_bah_2026_06_04.json
+------------------------------
+no issues found
+
+file:opensooq_bah_2026_06_04.json
+----------------------------------
+data count:817
+iteration number:20260604
+sub_category_1 also empty which is not mentioned in the requirement
+furnished field has empty values("") other than that mentioned in the requirement
+
+
+file: dari_ae_2026_06_04.json
+-----------------------------
+order mismatch:company_employees field comes last in the order in json file.
+The main profession field contains only the value ""Brokers"" across the dataset.
+The nested company_employees.profession field contains multiple values such as ""Broker Employee"" and ""Evaluator".
+no other issues identified
+--------------------------------------
+
+file:dubizzle_uae_2026_06_04.json
+--------------------------------------
+iteration_number:2026-06-04
+price_per field doesn't contain value" سنويا"
+listed_by field empty
+
