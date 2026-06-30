@@ -1,0 +1,85 @@
+
+QA validation report
+---------------------------
+
+robertsbrothers_2026_07_05.json
+---------------------------------
+field order ismatch
+Data count mismatch:178
+
+
+iowarealty_2026_07_05.json
+----------------------------
+field order mismatch
+Data count mismatch:423
+
+"lengthy first name, not split into first and last names
+https://www.iowarealty.com/bio/SteveB
+
+
+for the below url, instagram link also available on website, but is empty in json file
+
+https://www.iowarealty.com/bio/madelynnmcfadden
+
+" " ,empty string also present in state field
+
+woodsbros_2026_07_05. json
+--------------------------------
+field order different
+data ciunt mismatch: 175
+"the below url in json is not the profile url for ""Monica  Ledbetter"":
+
+https://www.woodsbros.com/roster/agents/1
+
+--------
+https://www.woodsbros.com/roster/agents/4
+
+same is the case with above url for ,""Jeremy Hiatt""
+------------
+profile url mismatch:
+
+https://ascendne.woodsbros.com/
+
+also agent _phone_numder in json file not found on website for the above url
+
+----------
+"email field is empty
+languages field is not empty"
+
+
+harrynorman_2026_07_05.json
+------------------------------
+field order different
+
+data count:562
+"for this url office_phone_number available on website but it is empty in json file,
+https://www.harrynorman.com/bio/BobFriend
+
+
+same problem for this url
+https://www.harrynorman.com/bio/KimBrinson"
+
+" " ,empty sring also present  in state field
+
+ewm_2026_07_05.json
+-----------------------
+order is different
+Data count:577
+"youtube url available on website, not in json file
+https://www.ewm.com/agents/1776696/Adam+Walde
+
+
+first name is split into middle and last names:
+https://www.ewm.com/agents/1776841/Alessandra+Lante+della+Rover"","
+
+
+rector_heyden_2026_07_05.json
+-----------------------------------
+order different
+data count:143
+"profile name mismatch :
+https://www.riddellsmithgroup.com"
+email field is empty
+ 
+
+"
