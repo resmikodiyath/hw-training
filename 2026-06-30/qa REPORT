@@ -1,0 +1,38 @@
+QA report
+------------
+issues:
+
+sedd_uae_2026_07.json
+-------------------------
+url inaccessible
+The same URL appears across the entire dataset, but it is inaccessible.
+broker_licenses is not a list of dict, but a dict object.
+
+-----------------------------------------
+wasalt_ksa_2026_07.json 
+----------------------------
+no issues found
+
+haraj_ksa_2026_07.json
+--------------------
+number of photos is different for the following urls:
+
+https://haraj.com.sa/11162543537/للبيع_أرض_تجارية_شمال_مدينة_بريدةة_بحي_الحزم
+
+https://haraj.com.sa/11182351471/للايجار_دور_ارضي_حي_طويق
+etc
+
+broker_name for this url not found on website,
+https://haraj.com.sa/11161599813/للبيع_أرض_سكنية_شمال_مدينة_بريدة_مخطط_جبارة"
+------------------------
+
+aqar_ksa_2026_07.json
+-----------------------
+" " ,empty string also present in currency
+no other issues found
+----------------------------------
+
+servicesbahrain_bha_2026_07.json
+------------------------------------
+legel_types has two distinct values,(corporate CR,individual CR)
+no other issues found
