@@ -1,0 +1,117 @@
+QA report
+-------------
+issues
+--------
+bhgre_2026_07_05.json
+---------------------
+
+
+1.Field order mismatch
+2.Data count mismatch:10083
+3.The JSON file includes an image URL for a profile that does not have an image on the website
+profile url:
+https://www.bhgre.com/agent/detail/in/greenwood/agents/ayo-akinlade/aid-P00200000GvOHBxcSa5P3o1VmTULIVah8jPGX1zc
+
+4.country has two values:  'Jamaica', 'United States' 
+
+----------------------
+compass_2026_07_05.json
+--------------------------
+no issues found
+-------------------------
+
+
+century21_us_2026_07_05.json
+--------------------------
+1.Field order mismatch
+2.Data count mismatch:38117
+3.Doubt regarding :the source from which the email address was fetched is unclear
+
+
+4.The email address in the JSON file does not match the email displayed on the website
+https://www.century21.com/al/prattville/agents/randy-glenn/aid-P00200000G9t3AJjk81MQH6dTPt4hvcYdAtmGUCM
+
+
+5.The profile URL leads to an error page stating, ""Sorry, we couldn't find this agent.
+https://www.century21.com/agent/detail/ga/cumming/agents/matthew-lewis/aid-P0020000000003FHDirT5m0Y28RrCK7rNatZ7zVW"
+email,social and title fields are not empty 
+---------------------------------------------
+
+
+home_realestate_2026_07_05.json
+----------------------------------------
+1.Field order mismatch
+2.Joint profile name, but only name of one of them is fetched.Also image url is different from that in the website
+profile url:
+https://shawndelandmarion.homerealestate.com
+
+3.image url  in json connects to a different picture which is not in the profile:
+https://andiejessi.homerealestate.com
+image url:https://content.mediastg.net/Dynamic/RealEstate/company/375/account/344941/344941_02142024153551.jpg
+
+4.Profile URL redirects to the listing page instead of the profile page.
+https://www.homerealestate.com/roster/agents/13
+5.languages field is not empty
+6.city has only one value "Lincoln"
+---------------------------------------------
+
+
+semonin_realtors_2026_07_05.json
+-----------------------------------
+1.Field order mismatch
+2.Data count mismatch:340
+3.email field is empty
+------------------------------------------------------
+
+
+reecenichols_2026_07_05.json
+------------------------------------
+1.field order mismatch
+2.profile urls directs to profile listing page instead of profile page
+https://www.reecenichols.com/roster/agents/2
+https://www.reecenichols.com/roster/agents/8
+etc
+
+2.splitting of name not done:
+
+https://www.reecenichols.com/bio/barbv
+
+https://www.reecenichols.com/bio/johnv
+
+3.email field is empty
+office_phone_number is not empty
+----------------------------------------------------------------------------------------------------------------------------------
+
+houlihanlawrence_2026_07_05.json
+--------------------------------
+1.field order mismatch
+2.for this url the image URL is inaccessible and returns a "Page Not Found" error
+https://www.houlihanlawrence.com/bio/KimGalton
+image url:
+https://content.mediastg.net/Dynamic/RealEstate/company/662/account/652251/652251_06182026160429.jpeg
+
+3.Full name is not split into the First Name, Middle Name, and Last Name fields.
+https://www.houlihanlawrence.com/bio/CamilleMordaunt
+
+4.no empty value for the field state
+-------------------------------------------------------------------------------------------------
+
+emlakjet_tur_2026_07.json
+----------------------------------
+unable to access the url
+no other issues found
+-------------------------------------------------
+hepsiemlak_tur_2026_07.json
+------------------------------
+no issues found
+-----------------------------------------
+
+bayut_bah_2026_07.json
+----------------------
+for the following urls , website shows this property is no longer available
+https://www.bayut.bh/en/property/details-102914549.html
+https://www.bayut.bh/en/property/details-101286774.html
+
+no other issues found
+
+
