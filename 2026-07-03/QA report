@@ -1,0 +1,47 @@
+evrealestate_2026_07_05.json
+----------------------------
+-Data count mismatch
+-no other issues found
+-----------------
+
+royallepage_2026_07_05.json
+------------------------
+-Data count mismatch
+-name is assigned to first name only.
+https://www.royallepage.ca/en/agent/quebec/montreal-st-laurent/thi-hong-dung-trinh/92627/
+
+https://www.royallepage.ca/en/agent/quebec/boisbriand/andres-felipe-pachon-suta/77818/
+---------------------------------
+
+realtysouth_2026_07_05.json
+----------------------------------
+-Data count mismatch
+no other issues found
+-------------------------
+alliebeth_2026_07_05.json
+------------------------------
+-Data count mismatch
+no other issues found
+---------------------------
+longandfoster_2026_07_05.json
+---------------------------------
+-Data count mismatch
+title not empty,languages field is an empty list.
+----------------------------------------------------
+
+
+coldwellbankerinternational_2026_07_05.json
+--------------------------------------
+-Data count mismatch
+-Profile URL returns 403 Forbidden
+ https://www.coldwellbankerinternational.com/agent/BRPv564
+-----------------------------------------
+kentwood_2026_07_05.json
+--------------------------
+-Data count mismatch
+
+- for the below url:
+ facebook and linkedin urls available in website ,but empty in json file
+ https://www.kentwood.com/bio/HarrisTeam
+ -city also have "Colorado Springs" and "Dillon" as values
+--------------------------
