@@ -1,0 +1,60 @@
+QA Report
+--------------
+DataHut_SI_Dm_PriceExtractions_20260703.CSV
+----------------------------------------------
+Data count mismatch:10759
+grammage quantity and grammage units are taken as 1 st for the below pdp_url,which is different from the website
+https://www.dm.at/p/d/1292653/soft-und-sicher-taschentuecher-box-4-lagig-sortiert
+https://www.spar.at/produktwelt/spar-natur-pur-bio-ristretto-10-kapseln-p2020006043205
+------------------------------------------------------------
+DataHut_SI_Mercator_PriceExtractions_20260703.CSV
+--------------------------------------------------------
+data count mismatch:16919
+pdp_url cannot be accessed
+-----------------------------------------
+DataHut_SI_Spar_PriceExtractions_20260703.CSV
+-----------------------------------------------
+data count mismatch:17108
+percentage_discount field also empty
+percentage_discount column is completely empty
+---------------------------------------------------
+DataHut_AT_Dm_PriceExtractions_20260703.CSV
+-------------------------
+data count mismatch:16735
+no other issues found
+---------------------------------------
+DataHut_AT_Spar_PriceExtractions_20260703.CSV
+-----------------------------------------
+data count mismatch:40142
+
+
+----------------------
+1) DataHut_AT_Billa_PriceExtractions_20260706.CSV
+--------------------------------------------------
+   * promotion price is available only for  products with promotion description in the csv file
+     for products with promotion_description ""AKTON"", and only single price  dispalyed on website,regular price field is empty,
+     for unique id:,  00-904698,  00-904695.
+
+
+    
+2) DataHut_SI_Dm_PriceExtractions_20260706.CSV
+----------------------------------------------
+    * Data count mismatch:10621
+    * unit pranj  in website is taken as kos in csv
+      https://www.dm.si/p/d/3088679/dr-beckmann-detergent-za-pranje-perila-quick-power-wash-color-protect
+
+    
+    
+3) DataHut_SI_Mercator_PriceExtractions_20260706.CSV
+----------------------------------------------------
+    * Data count mismatch:16891
+    * pdp_url inaccessible.
+    
+    
+4) DataHut_SI_Spar_PriceExtractions_20260706.CSV
+------------------------------------------------
+    * Data count mismatch:16976
+    * percentage_discount field also empty
+    " doubt whether issue or not?:
+     no site_shown_uom  with product name in website,so 1 kg is taken as its value in csv
+     https://online.spar.si/p/mladi-krompir-poreklo-slovenija-tehtano-452637
