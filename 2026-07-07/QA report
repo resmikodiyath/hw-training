@@ -1,0 +1,45 @@
+bahrainfinder_bah_2026_07_01.json:
+-------------------------------------
+* furnished field has no value fully furnished:values include  
+  Unfurnished', 'Semi Furnished', 'Furnished', '', 'مفروشة بالكامل','مفروشة جزئيًا', 'غير مفروش'"
+-------------------------------------
+
+aqarmap_egp_2026_07_01.json 
+---------------------------
+* data count mismatch:348746
+* seller_role, listing_typ,depth are also empty other than requirement
+* website url inaccessible
+---------------------------------------
+dubizzle_bah_2026_07_01.json 
+--------------------------------
+* no issues found
+--------------------------
+nawy_egp_2026_07_01.json
+----------------------------
+*  data count mismatch:18039
+* no other issues found
+------------------------------------
+
+dari_ae_2026_07_01.json:
+------------------------
+* data count mismatch: 1083
+
+* for this url,only 6 company_employees are available on website, json file has 7 company_employees
+https://www.dari.ae/en/app/directory/profession?id=27729
+
+----------------------------------
+dubizzle_qat_2026_07_01.json
+----------------------------------
+no issues found
+-------------------------------------
+
+qatarliving_qat_2026_07_01.json
+-----------------------------------
+* below url shows propoerty no longer availabl
+ https://qlp.qatarliving.com/en/properties/rent/residential/apartment/for_rent_3_maid_special_offer_gewan_island/253685
+
+
+
+
+  
+  
