@@ -1,0 +1,9 @@
+DataHut_AT_Spar_PriceExtractions_20260708.CSV: 
+-----------------------------------------------------
+----------issues----------
+* Data count mismatch :40253
+* single price available on website,but price fields are empty in the csv file
+unique+id: 2020001280742
+unique+id:2020004449160
+https://www.spar.at/produktwelt/spar-qualitaetsmarke-gemuese-suppe-p2020001280742
+https://www.spar.at/produktwelt/spar-qualitaetsmarke-dekor-aus-esspapier-blueten-blaetter-8-bueten-8-blaetter-p2020004449160
