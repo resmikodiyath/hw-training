@@ -1,0 +1,33 @@
+QA -------------issues------------------------
+
+DataHut_IT_Eurospin_PriceExtractions_20260708.CSV
+--------------------------------------------------
+
+*  unique_id: 39422 duplicate values
+   pdp_url: 39424 duplicate values
+   barcode: 40748 duplicate values,
+   but dataset is unique
+
+
+*  for the product url with unique_id:1067256
+   selling and regular prices are empty.
+   https://online.eurospin.com/product/insetticida-ragniragnatele-400ml
+
+*  site _shown_uom empty for the below product url with unique_id 1026821
+   https://online.eurospin.com/product/lamponi-125g1
+----------------------------------------------------------------------------
+
+DataHut_IT_Esselunga_PriceExtractions_20260708.CSV
+------------------------------------------------------
+* unique_id: 219921 duplicate values
+  pdp_url: 219921 duplicate values,but dataset is unique
+
+* grammage_unit and grammage_quantity empty fot the below url with 
+  unique_id: 676342
+  https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/676342/dixan-power-caps-color-2x44-pezzi
+
+* prices of products are not visible in thw website
+
+
+
+
