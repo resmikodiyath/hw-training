@@ -1,0 +1,86 @@
+QA Issues_report
+-----------------------
+
+
+1) DataHut_AT_Billa_FullDump_20260709.CSV
+-----------------------------------------
+	- Data count mismatch:12419
+	- non empty fields :
+          age_of_the_product
+          packaging
+          -empty fields other than requirement:
+          file_name_1
+          file_name_2
+          file_name_3
+          file_name_4
+          file_name_5
+          file_name_6       
+          retail_limit
+2) DataHut_AT_Dm_FullDump_20260709.CSV
+------------------------------------------------
+	- Data count mismatch:16642
+	- non empty fields:
+          barcode
+          retail_limit
+
+        -empty fields  other than requirement
+         file_name_1
+         file_name_2
+         file_name_3
+         file_name_4
+         file_name_5
+         file_name_6
+         producthierarchy_level5"
+	
+3) DataHut_AT_Spar_FullDump_20260709.CSV
+----------------------------------------
+	- Data count mismatch:40303
+	- non empty field :
+          age_of_the_product
+	
+
+4) DataHut_SI_Mercator_FullDump_20260709.CSV
+--------------------------------------------
+	-Data count mismatch:16871
+	-mercatoronline.si connection timed out; server took too long to respond
+	
+5) DataHut_SI_Spar_FullDump_20260709.CSV
+----------------------------------------
+	- Data count mismatch:16920
+        - following fields are also empty
+	  age_recommendations
+          color
+          competitor_product_key
+          country_of_origin
+          dimensions
+          features
+          file_name_1
+          file_name_2
+          file_name_3
+          file_name_4
+          file_name_5
+          file_name_6
+          flavour
+          label_information
+          labelling
+          material
+          packaging
+          preparationinstructions
+          rating
+          retail_limit
+          review
+          special_information
+          tasting_note
+          variants
+
+       -following  fields are expected to be empty as per requirement, but all these field has got values.
+         alchol_by_volume
+         barcode
+         netweight
+         price_was
+        promotion_description
+        promotion_pric
+        promotion_valid_upto
+
+
+
