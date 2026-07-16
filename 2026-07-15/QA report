@@ -1,0 +1,79 @@
+
+QA -------------issues-----------
+===================================
+  DataHut_SI_Mercator_PriceExtractions_20260715.CSV
+  -------------------------------------------------
+  * Data count mismatch: 16870
+  * product_name is taken as site_shown_uom
+  * url inaccessible
+  * promotion_ description present, but promotion_price missing
+  Promotion description-price mismatch count: 2407
+  ------------------------------------------------------------
+
+  DataHut_SI_Dm_PriceExtractions_20260715.CSV
+  ---------------------------------------------
+  *  Data count mismatch: 10496
+  * for units like pranj and vr in website, 1 kos is taken as grammage unit
+    https://www.dm.si/p/d/1909362/persil-tekoci-detergent-za-pranje-perila-active-gel
+    https://www.dm.si/p/d/2251807/herba-medica-sadno-zeliscni-caj-za-otroke-cajcek-tolovajcek-zmajcek
+
+-------------------------------------------------------------------------------------------------------
+
+   DataHut_AT_Spar_PriceExtractions_20260715.CSV
+   ---------------------------------------------------
+   * Data count mismatch: 40400
+   * website has only one price with no promotion_price and description, but  same price is assigned to regular price
+     eg:  https://www.spar.at/produktwelt/spar-office-register-a4-karton-6-teilig-p2020002432881
+
+
+
+_________QA ---------Issues____________
+===================================
+
+1) autoonderdelen24_2026_07_15.csv
+_____________________________
+ 
+ * no issues found
+
+2) autoteiledirekt_2026_07_15.csv
+______________________________________
+
+ * stock instead of availability
+
+ * spelling:Catalogue price
+	
+3 winparts_2026_07_15.csv
+____________________________________
+
+ * Data count mismatch: 20950
+ * stock values=In Stock', 'Out of Stock
+ * website blocked
+ 
+4) mister_auto_2026_07_15.csv
+_________________________________
+
+ * Data count mismatch: 20518
+ * net price 0 for some records
+ * stock values=In Stock', 'Out of Stock
+ * "invalid ref_no_space  which is not a combination of number and capital letters
+
+
+rowno:         ref_no_space
+
+9860       -  2gm941006a
+ 9865     -   2gm941006a
+9878      -  9y0698533ab
+9879   -     9y0698533ab
+9880    -    04e903015tx
+9882     -   9y0698533ab
+9926      -  06n903133a
+9927      - 06n903133a
+9933      - 04l965567
+9935      - 04l965567
+"
+ 
+5) autodoc_2026_07_15.csv
+______________________________
+	
+* Data count mismatch: 23853
+ no other issues found

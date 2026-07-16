@@ -1,0 +1,81 @@
+QA ---------issues---------report---
+==================================
+1)DataHut_SI_Spar_FullDump_20260716.CSV
+________________________________________________
+
+* data count mismatch: 16777
+* more empty fields
+----------------------
+  
+age_recommendations
+color
+competitor_product_key
+country_of_origin
+dimensions
+features
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+flavour
+label_information
+labelling
+material
+packaging
+preparationinstructions
+rating
+retail_limit
+review
+special_information
+tasting_note
+variants
+-----------------------
+non empty fields
+------------
+
+alchol_by_volume
+barcode
+netweight
+price_was
+promotion_description
+promotion_price
+promotion_valid_upto
+
+* competitor_product_key is empty
+______________________________________________________________________
+
+2) DataHut_SI_Dm_FullDump_20260716.CSV
+_________________________________________
+* Data count mismatch: 10637
+* extra empty fields:
+
+  price_was
+  promotion_price
+  
+* dm product number instead of dm product ID
+______________________________________________
+
+3)DataHut_SI_Mercator_FullDump_20260716.CSV
+___________________________________________
+* data count mismatch: 16870
+* website inaccessible
+
+
+* promotion_desc available,but promotion_price empty
+ Promotion description-price mismatch count: 2407
+ _______________________________________________________________
+ 
+ 4)DataHut_AT_Spar_FullDump_20260716 (1).CSV
+ _________________________________________________
+ * data count mismatch" 40535
+ * age_of_the_product  is not empty
+ * product name is taken when site_shown_uom is not in website
+ *
+
+
+
+
+
+

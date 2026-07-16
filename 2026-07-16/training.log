@@ -1,0 +1,16 @@
+- QA task files shared
+- QA task:
+DataHut_SI_Spar_FullDump_20260716.CSV
+DataHut_SI_Dm_FullDump_20260716.CSV
+DataHut_SI_Mercator_FullDump_20260716.CSV
+DataHut_AT_Spar_FullDump_20260716 (1).CSV
+
+- meeting  by FRT head
+
+ - discussed data analysis tasks 
+ - shared server usage and operations google doc
+
+- generated ssh key
+- logged to the server
+- created a folder and cloned the rgit repository
+
