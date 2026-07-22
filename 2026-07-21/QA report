@@ -1,0 +1,24 @@
+QA -------issues----------report
+===================================
+1)opensooq_bah_2026_07_03.json
+_______________________________
+
+*  data count mismatch : 773
+*  empty string "" also present in currency
+*  phone_numbers ends with xxx,which is same as the phone_number link in the website
+   eg:https://bh.opensooq.com/en/search/282925416
+  "phone_number": "341750XX"
+------------------------------------------
+2)dari_ae_2026_07_03.json
+_________________________________
+
+* data count mismatch: 1078
+* no others issues found
+---------------------------------------------
+
+3) bayut_bah_2026_07_03.json
+___________________________________
+
+* data count mismatch: 2819
+ no other issues found
+ 

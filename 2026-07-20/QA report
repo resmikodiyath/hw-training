@@ -1,0 +1,66 @@
+QA -issues-------------------------
+=====================================
+
+1)DataHut_AT_Spar_PriceExtractions_20260720.CSV
+___________________________________________________
+
+* data count mismatch - 40592
+* no other issues found
+---------------------------------------------
+2)DataHut_SI_Spar_PriceExtractions_20260720.CSV
+______________________________________________________
+
+* data count mismatch-  16532
+* percentage_discount column also empty
+-----------------------------------------------
+
+3_ DataHut_SI_Mercator_PriceExtractions_20260720.CSV
+____________________________________________________
+
+* data count mismatch - 16826
+* website inaccessible
+-------------------------------------------------------------
+
+4)DataHut_SI_Dm_PriceExtractions_20260720.CSV
+__________________________________________________
+
+* data count mismatch" 10637
+* no other issues found
+------------------------------------------------------
+
+5) DataHut_AT_Billa_PriceExtractions_20260720.CSV
+____________________________________________________________
+
+* data count - 12386
+* site_shown_uom empty for 9 records
+rowno:421, 
+pdp_url:https://shop.billa.at/produkte/ja-natuerlich-hendlruecken-00240470
+rowno:2844,
+pdp_url:https://shop.billa.at/produkte/ja-natuerlich-hendlfilet-00424344
+ rowno:4708,
+pdp_url:https://shop.billa.at/produkte/ja-natuerlich-hendl-suppenfleisch-00567341
+ rowno:6313
+pdp_url:https://shop.billa.at/produkte/ja-natuerlich-huehnerschnitzel-00714378
+rowno: 6317, 
+pdp_url: https://shop.billa.at/produkte/ja-natuerlich-huhninnenfilet-00714753
+rowno"11930, 
+pdp_url: https://shop.billa.at/produkte/ja-natuerlich-hendlunterkeulen-0095782
+rowno:11962, 
+pdp_url: https://shop.billa.at/produkte/ja-natuerlich-hendl-oberkeulen-0095781
+rowno:11994, 
+pdp_url: https://shop.billa.at/produkte/ja-natuerlich-hendl-oberkeulen-0095781
+rowno: 11998
+pdp_url: https://shop.billa.at/produkte/ja-natuerlich-hendl-oberkeulen-0095781
+
+
+* 1029 records doesnot match,the condition
+- If site_shown_uom contains "Teebeutel Packung" , "Teebeutel" , "Beutel", "Btl" ,"Teebeutel Karton" , "Teebeutel Paket" or "Packung Beutel", then:
+     - grammage unit should be "btl"
+
+eg:rowno:12:  https://shop.billa.at/produkte/toppits-gefrierbeutel-1l-00101511
+
+here
+grammage_unit is "stuck",instead of "btl"
+
+
+

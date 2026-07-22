@@ -1,0 +1,99 @@
+__________Issues_____________
+=============================
+
+1) DataHut_AT_Billa_FullDump_20260716.CSV
+_________________________________________
+
+* Data count mismatch: 12439
+* non_empty_fields
+--------------------
+  age_of_the_product
+  packaging
+* more empty fields
+--------------
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+retail_limit
+*  product_description is single continuous description
+* "missing site_shown_uom count:9
+rowno:unique_id are as follows for the empty records:
+
+{2884: '00-424344', 6181: '00-714378', 6187: '00-714753', 11731: '00-95497', 11743: '00-95499', 11752: '00-95781', 11753: '00-95782', 11907: '00-240470', 12070: '00-567341'}"
+	
+
+2) DataHut_AT_Dm_FullDump_20260716.CSV
+_______________________________________
+	
+* "non empty fields
+  barcode, retail_limit
+* more empty fields
+producthierarchy_level5, file_name_1, file_name_2, file_name_3, file_name_4, file_name_5, file_name_6.
+* "following row nos donot follow the condition
+
+14753, 14754, 14756, 14759, 14761, 14762, 14765, 14784, 14786, 14790]
+
+
+'https://www.dm.at/p/d/1843706/nur-die-seidenfein-strumpfhose-teint-15-den-gr-44-48', 'https://www.dm.at/p/d/1611237/nur-die-seidenfein-strumpfhose-amber-15-den-gr-40-44', 'https://www.dm.at/p/d/1611242/nur-die-seidenfein-strumpfhose-schwarz-15-den-gr-44-48', 'https://www.dm.at/p/d/1611241/nur-die-seidenfein-strumpfhose-amber-15-den-gr-44-48', 'https://www.dm.at/p/d/1611243/nur-die-seidenfein-strumpfhose-schwarz-15-den-gr-44-48', 'https://www.dm.at/p/d/1843699/nur-die-seidenfein-strumpfhose-teint-15-den-gr-38-40', 'https://www.dm.at/p/d/1611233/nur-die-seidenfein-strumpfhose-amber-15-den-gr-38-40', 'https://www.dm.at/p/d/1843705/nur-die-seidenfein-strumpfhose-teint-15-den-gr-40-44', 'https://www.dm.at/p/d/1611239/nur-die-seidenfein-strumpfhose-schwarz-15-den-gr-40-44', 'https://www.dm.at/p/d/1611234/nur-die-seidenfein-strumpfhose-bronze-15-den-gr-38-40'"
+
+
+3) DataHut_CH_Coop_FullDump_20260616.CSV
+_________________________________________
+
+* structure same,but extaction_date  is 20260616,instead of 20260716 in the file name
+ DataHut_CH_Coop_FullDump_20260616.CSV* 
+* data count "35348
+* Missing site_shown_uom count: 7092
+* grammage_unit is p for 
+ row no:13
+ https://www.coop.ch/de/lebensmittel/fruechte-gemuese/fruechte/exotische-fruechte/weitere-exotische-fruechte/fairtrade-passionsfrucht-ca/p/4343881
+
+ * selling_price-  14965  recods with one decimal point
+ 
+eg:
+rowno       value
+ 2       -    2.6
+ 6      -     2.0
+etc
+* regular_ price - 15155  with one decimal point
+row no          value
+ 7           -   2.0
+35342      -     27.5
+
+
+etc
+* empty selling price count:18
+ empty regular price count:89
+	
+	
+4) DataHut_CH_Lidl_FullDump_20260717.CSV
+________________________________________
+
+"lidi=row no 12
+pdp_url:
+https://sortiment.lidl.ch/de/catalog/product/view/id/16787/s/branches-classic-5112010/category/54"
+
+* wrong format
+eg:
+https://www.lidl.ch/p/de-CH/sensiplast-binden-und-bandagensortiment/p10055799
+* "for 65 recods selling and regular prices have only one decimal points
+
+row no
+eg:  971      -     16.0,
+      973      -     24.0"
+"
+
+	
+5) DataHut_CH_Migros_FullDump_20260716.csv
+__________________________________________
+
+* """mgiros""
+rowno:17
+pdp_url: 
+https://www.migros.ch/de/product/271708513200"
+* Missing site_shown_uom count: 4242
+* file_name completely empty
+* 
