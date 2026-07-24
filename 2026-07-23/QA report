@@ -1,0 +1,124 @@
+QA ====issues-----------------
+============================================
+DataHut_IT_Esselunga_PriceExtractions_20260722.CSV
+____________________________________________________
+* data count mismatch: 240180
+* price on the website can't be seen
+
+* promotion description present but promotion_price  empty for
+8346 records
+
+* pdp_url: 219420 duplicate values
+* unique_id: 219420 duplicate values
+
+
+* row no: 6803,227905, viloates price rules
+  selling and promotion_price> regular_price
+  pdp_url:
+   https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/721042/formaggio-grana-padano-dop-oltre-16-mesi
+
+  https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/721042/formaggio-grana-padano-dop-oltre-16-mesi
+
+------------------------------------------------------------------------------------------------------------
+2) DataHut_IT_Eurospin_PriceExtractions_20260722.CSV
+_______________________________________________________
+* Data count mismatch: 43351
+* unique_id: 38568 duplicate values
+* barcode: 39877 duplicate values
+
+
+
+
+
+
+
+
+QA ----------issues--------
+======================================
+1) DataHut_CH_Denner_FullDump_20260723.CSV
+_______________________________________________
+
+* data count mismatch: 1440
+* regular_price and selling_price empty for131 records
+* for 21 records promotion_description is present but promotion_price is empty
+-----------------------------------------------------------------------------
+
+2) DataHut_CH_Coop_FullDump_20260723.CSV
+____________________________________________
+
+* data ccount is 35228
+* Missing site_shown_uom count: 7089
+  eg:https://www.coop.ch/de/lebensmittel/fruechte-gemuese/salatgemuese/gurken/gurke/p/7563817
+
+* regular price empty/0  for 224 rows
+eg:https://www.coop.ch/de/kiosk/spirituosen/alle-spirituosen/rum-cachaca/rum/captain-morgan-spiced-gold/p/4009752
+
+* selling_price empty/0  for 155 rows
+ eg: https://www.coop.ch/de/kiosk/geschenkkarten/geschenkkarte-universal-congrats-wert-variabel-aufladbar/p/9901076
+--------------------------------------------------------------------------------
+
+3) DataHut_AT_Dm_FullDump_20260723.CS
+______________________________________________________
+
+* " non empty fields
+--------------------
+  barcode
+  retail_limit
+  
+  empty fields
+-------------------------
+  producthierarchy_level5
+  file_name_1
+  file_name_2
+  file_name_3
+  file_name_4
+  file_name_5
+  file_name_6
+ 
+ * "Rows containing unescaped '|': 10
+  row nos
+[14853, 14855, 14856, 14857, 14860, 14861, 14864, 14865, 14867, 14868]
+------------------------------------------------------------------------------
+
+4) DataHut_AT_Billa_FullDump_20260723.CSV
+______________________________________________
+* non empty fields
+--------------------------
+
+ age_of_the_product
+ promotion_type
+ promotion_valid_from
+ promotion_valid_upto
+ price_valid_from
+ packaging
+
+ empty fields
+----------------------
+
+ file_name_1
+ file_name_2
+ file_name_3
+ file_name_4
+ file_name_5
+ file_name_6
+ retail_limit
+ 
+ * product_description is single continuous description
+ *  Missing site_shown_uom count: 9 l Row Numbers: [435, 2907, 4733, 6281, 6287, 11906, 11915, 11922, 11931]
+
+https://shop.billa.at/produkte/ja-natuerlich-hendlruecken-00240470
+https://shop.billa.at/produkte/ja-natuerlich-hendlfilet-00424344
+https://shop.billa.at/produkte/ja-natuerlich-hendl-suppenfleisch-00567341
+https://shop.billa.at/produkte/ja-natuerlich-huhninnenfilet-00714753
+https://shop.billa.at/produkte/ja-natuerlich-huehnerschnitzel-00714378
+https://shop.billa.at/produkte/ja-natuerlich-huehnerfluegerl-0095499
+https://shop.billa.at/produkte/ja-natuerlich-huehnerkeulen-0095497
+https://shop.billa.at/produkte/ja-natuerlich-hendl-oberkeulen-0095781
+https://shop.billa.at/produkte/ja-natuerlich-hendlunterkeulen-0095782
+
+* 949 rows violates the given conditions of grammage_unit and site_shown_uom
+eg: row 31
+https://shop.billa.at/produkte/toppits-gefrierbeutel-1l-00101511
+here grammage unit is "stuck",where site_shown_uom is Beutel Packung
+as per requirement it should be "btl"
+"

@@ -1,0 +1,105 @@
+QA ------------issues--------report
+==========================================
+1) DataHut_SI_Mercator_PriceExtractions_20260722.CSV
+___________________________________________________
+- Data count mismatch:16857
+- website inaccessible
+----------------------------------------------
+2) DataHut_SI_Spar_PriceExtractions_20260722.CSV
+___________________________________________________
+
+- data count mismatch: 16687
+- percentage_ discount field also empty
+- violating price rules:
+   regular_price <promotion_price
+   row no:11217
+   https://online.spar.si/p/prvi-tobogan-za-otroke-paradiso-673133
+   (striked value in website is also 20,00)
+
+- price_per_unit empty for two records
+ rowno:11099,11100(website also shows 0.00)
+ pdp_urls:
+ https://online.spar.si/p/vatirane-palcke-papirnate-100-bombaz-brez-klora-beauty-kiss-1601-591906
+ https://online.spar.si/p/vatirane-palcke-papirnate-100-bombaz-brez-klora-beauty-kiss-3001-591908
+ ------------------------------------------------------------------------------------------------------
+
+ 3) DataHut_SI_Dm_PriceExtractions_20260722.CSV
+ _______________________________________________________
+
+ - Data count mismatch -  10538
+ - no other issues found
+ -------------------------------------------------------------------
+
+ 4) DataHut_AT_Billa_PriceExtractions_20260722.CSV
+ ______________________________________________________
+ - Data count is 12856
+ - site_shown_uom missing for 9 records.row nos:
+[369, 2848, 4642, 6170, 6177, 11738, 11755, 11756, 11757]
+
+
+ - regular price empty for 22 records,row nos:
+
+ [1270, 1861, 2214, 2979, 3485, 3486, 4374, 5686, 6251, 6507, 6509, 6617, 6618, 6629, 7399, 8040, 9959, 10409, 10443, 11390, 11391, 12092]
+
+- 1031 records violates the required conditions of site_showm_uom
+ eg: row no:15
+ pdp_url:
+ https://shop.billa.at/produkte/toppits-gefrierbeutel-6-liter-00101513
+
+ here Beutel Packung is present, but grammage_uint is not "bit", but "stuck"
+ 
+ 
+ QA =============issues====
+========================
+
+1) DataHut_SI_Spar_FullDump_20260723.CSV
+______________________________________________
+* DataHut_SI_Spar_FullDump_20260723.CSV
+  day in yyyymmdd is 23,instead of 20260722
+* data count mismatch: 16687
+
+* more empty columns
+-----------------------------
+
+country_of_origin
+age_recommendations
+flavour
+labelling
+packaging
+label_information
+dimensions
+special_information
+tasting_note
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+competitor_product_key
+perfect_match
+servings_per_pack
+suitable_for
+standard_drinks
+environmental
+grape_variety
+retail_limit
+
+
+
+not empty
+------------
+
+
+barcode
+netweight
+promotion_valid_upto
+promotion_description
+price_was
+promotion_price
+alchol_by_volume
+
+
+* extraction_ date is 2026-07-23
+- "price_per_unit empty for 2 records
+ row no:11099,11100
