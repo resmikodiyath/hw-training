@@ -1,0 +1,52 @@
+QA -----issues-------------report
+=================================
+
+1) DataHut_AT_Spar_PriceExtractions_20260727.CSV
+__________________________________________________
+
+* Data count mismatch: 40644
+* 20 records with selling_price=regular_price = empty, price is not available on site also
+-----------------------------------------------------------------------------------------------------
+
+2)DataHut_SI_Dm_PriceExtractions_20260727.CSV
+__________________________________________________
+* Data count mismatch: 10673
+* no other issues found
+--------------------------------------------------
+3)DataHut_SI_Mercator_PriceExtractions_20260727.CSV:
+____________________________________________________
+* Data count mismatch: 16866
+* website inaccessible
+* promotion description present but  promotion_price empty  and vice_versa for 
+2447 records
+--------------------------------------------------------------------------------
+4)DataHut_AT_Billa_PriceExtractions_20260727.CSV
+________________________________________________
+* Data count: 12351
+* for 191 rows
+regular_Price=selling_price = promotion_price
+eg:rowno: 9,61,82, 177,237  etc
+eg: pdp_urls:
+https://shop.billa.at/produkte/iglo-pazifischer-polardorsch-paniert-0010042
+https://shop.billa.at/produkte/rauch-happy-day-apfelsaft-0010351
+https://shop.billa.at/produkte/rauch-happy-day-multivitaminsaft-0010827
+etc
+----------------
+* site_shown_uom missing for 9 records
+https://shop.billa.at/produkte/ja-natuerlich-hendlruecken-00240470
+https://shop.billa.at/produkte/ja-natuerlich-hendlfilet-00424344
+https://shop.billa.at/produkte/ja-natuerlich-hendl-suppenfleisch-00567341
+https://shop.billa.at/produkte/ja-natuerlich-huhninnenfilet-00714753
+https://shop.billa.at/produkte/ja-natuerlich-huehnerschnitzel-00714378
+https://shop.billa.at/produkte/ja-natuerlich-huehnerkeulen-0095497
+https://shop.billa.at/produkte/ja-natuerlich-huehnerfluegerl-0095499
+https://shop.billa.at/produkte/ja-natuerlich-hendl-oberkeulen-0095781
+https://shop.billa.at/produkte/ja-natuerlich-hendlunterkeulen-0095782
+-----------------
+* site_shown_uom conditions are not met in many cases
+eg:https://shop.billa.at/produkte/kinder-schokobons-00116129
+
+here site_shown_uom has "Beutel",but grammage quantity is "stuck" instead of "btl"
+
+
+

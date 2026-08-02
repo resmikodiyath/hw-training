@@ -1,0 +1,108 @@
+
+QA-issues---
+++++++++++++++
+1)dari_ae_2025_07_04.json
+__________________________________
+
+* white space  found ,Brokers
+https://www.dari.ae/en/app/directory/profession?id=34134"
+* invalid license_start_date
+
+value:  '5660549'
+ url : https://www.dari.ae/en/app/directory/profession?i
+
+*Year in the file
+ name is2025, instead of 2026 *data count mismatch: 1080
+* invalid email: phone no in place of email
+[' '971506600279']
+https://www.dari.ae/en/app/directory/profession?id=30097
+
+----------------------------------------------------------------
+2)bahrainfinder_2026_07_04.json
+__________________________________
+
+* "bah" missing in the file name
+* data count : 4886
+* contains AED  in currency
+* only sale in category
+* no value fully furnished in furnished field
+* price_per field not empty, has value "monthly"
+* invalid url
+['://bahrainfinder.bh/en/property/apartment-for-sale-in-saraya-2-5731.html']
+
+-----------------------------------------------------
+3)dubizzle_qat_2026_07_04.json
+____________________________________
+
+* field name error:
+""D"" in place of ""d""
+one ""z"" missing in  dubizzle
+
+""qatar"" in place of ""qat""
+ Dubizle_qatar_2026_07_04.json"
+ * country_suffix   "qatar" instead of "qat"
+
+* "[ '2026_07_03', '2026_07_04' ]
+two iteration values"
+* "[ '2026-07-20', '2026-07-27' ]
+scraped _ts has two values
+
+bedroom and bathroom has value TWO
+['https://www.dubizzle.qa/en/ad/family-2bhk-apartment-in-mansoura-ID120353096.html']"
+--------------------------------------------------------
+
+4)bayut_bah-2025_07_04.json
+_____________________________
+
+* county_suffix mismatch: _bah-
+* data count: 2820
+* "year in the file name is 2025
+
+_bah-  in place of _bah_
+2026_06_04 is the iteration number in place of 2026_07_04"
+
+* """SALE""  in place of ""sale""
+https://www.bayut.bh/en/property/details-105600986.html
+
+* """ "" , empty string in package_type values
+
+https://www.bayut.bh/en/property/details-500132301.html
+
+* currency has values [ 'BHD', 'bhd' ]
+* furnished has values "has values
+[ 'fully furnished', 'furnished', 'unfurnished' ]
+"
+*
+
+
+
+QA ----issues-
+___________________
+1)dubizzle_egp_2025_07_04.json
+_________________________________
+* "incorrect year in the file name 2025 instead of 2026
+dubizzle_egp_2025_07_04.json"
+*  scraped_ts contains 3 values: 
+[ '2026-07-25', '2026-07-26', '2026-07-27' ]
+* iteration_number " '2026_07_03' instead of 2026_07_04"
+* price_per "non empty
+[ '', 'daily' ]"
+* invalid url:
+//www.dubizzle.com.eg/en/ad/%D8%B4%D9%82%D8%A9-%D8%AF%D9%88%D8%A8%D9%84%D9%8A%D9%83%D8%B3-%D8%A8%D8%A7%D9%84%D8%B4%D8%B1%D9%88%D9%82-%D9%A1-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9-ID208412726.html
+----------------------------------------------
+2) qatarliving_qat_2026-07-04.json
+_________________________________________
+
+* iteration date in the file name has (-) in place of (_)
+file name is 
+qatarliving_qat_2026-07-04.json
+
+* data count is 21414
+* scraped_ts:format difference
+[ '2026_07_27' ]
+_ in place of -
+
+* iteration_number: "here - in place of _
+
+[ '2026-07-04' ]
+* 

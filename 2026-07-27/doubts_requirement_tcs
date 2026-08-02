@@ -1,0 +1,9 @@
+doubts-tcs
+____________
+1) can three prices be equal?
+2_spar_full_dump,15th requirement, -if only single price ,then assign it to selling_price.
+but in csv file both regular and selling prices are assigned the same value,(if single price)
+dm daily- When the grammage_unit is 'pranj', 'vr' or 'list' in the website it is recorded as 'kos' in the file, is this an issue?
+spar daily- doubt whether issue or not?:
+no site_shown_uom  with product name in website,so 1 kg is taken as its value in csv
+* whether duplicate unique_id s , barcode  to be mentioned as issue, if dataset is unique?

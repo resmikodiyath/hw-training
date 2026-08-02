@@ -1,0 +1,106 @@
+Qa__________issues___report
+===========================================
+1) baity_bh_2026_08.json
+______________________________________________________
+* file name error:
+balty_bh_ instead of balty_bah
+baity_bh_2026_08.json
+month is 08
+
+*  country suffix is _bh_ instead of _ bah_
+
+* row 536: id is empty string "" ""
+reference_number has value:15989
+https://baity.bh/properties/apartment-in-manama-15989
+
+* iteration_number is 2026_08
+* currency has an empty string
+['BD', ''],row no:31
+* for 501 records broker_display name are in upper_case
+
+* row NO :5, broker_display_name empty string,broker has value""BEST LOCATION""
+
+* row no:3578:price has decimal value,445909.464
+
+-----------------------------------------------------------------------*
+_2) bayut_sa_2026_08.json
+_________________________________
+
+* file name error:
+  _sa_ in place of _ksa_.
+bayut_sa_2026_08.json
+month is 08
+
+
+* country suffix is _sa_ instead of _ksa_
+
+* dataset  contains  1 duplicate record
+row nos:44664, 59318
+url:https://www.bayut.sa/en/property/details-88003872.html
+
+* scraped_ts year is 2025,(2025-07-30)
+[{'row_no': 49626, 'url': 'https://www.bayut.sa/en/property/details-87912301.html'}]
+"
+* iteration_number is 2026_08
+
+* completion_status has values "[ '', 'Completed', 'Off-Plan', 'Ready' ]
+ - "completed" for row no "39184"
+https://www.bayut.sa/en/property/details-87987462.html
+
+* non empty field: advertiser_designation has value "Agent"
+"['' 'Agent']
+Agent ,row no:7,https://www.bayut.sa/en/property/details-88022005.html
+
+* furnished has values "['Unfurnished', 'Furnished', '', 'semi-furnished'],
+ - has value semi-furnished though site shows,unfurnished
+ - rowno: 59320, url: https://www.bayut.sa/en/property/details-87795331.html
+
+ * "url: 1 duplicate values
+[[44664, 'https://www.bayut.sa/en/property/details-88003872.html'], [59318, 'https://www.bayut.sa/en/property/details-88003872.html']]
+
+* empty phone no
+[row no:[58523, 'https://www.bayut.sa/en/property/details-87726621.html']]
+
+* duplicate id for rows:44664,59318-value:88003872
+
+* details field empty for 5 records
+row nos:
+[39515, 39521, 39523, 39524, 39563]
+
+* pricevalues are separated with comma
+
+----------------------------------------------------------------------------
+
+3)ajmanded_uae_2026_08.json
+__________________________________
+
+* file name error:
+month error:2026_08
+ajmanded_uae_2026_08.json
+
+* missing licence_expiry_date
+row no: 112, url: https://eservices.ajmanded.ae/en/TradeLicense/License/ac2635f3-cf27-4793-82c7-595f0334c793
+
+*white space in name column | row 112, ' AL QUDRAT REALESTATE - L.L.C'
+
+* building_number_whitespace_issue: 1113
+ - multiple whitespace   :   28
+  eg:row no :6,url: https://eservices.ajmanded.ae/en/TradeLicense/License/7a8126a7-24b5-4586-8a97-0da2192c49a5
+* :"list with empty dictionary- ""broker_licenses"": [{}]
+   row no and url:
+   [[156, 'https://eservices.ajmanded.ae/en/TradeLicense/License/c157d8a0-3bfb-4779-a68c-39c9c60f16b6']]
+* the following keywords are present in the dataset:
+['Real estate', 'Realestate', 'Realstate', 'Realty', 'Properties', 'Property', 'Property management', 'Business Center', 'Hotel Apartments']
+
+not  included in data:
+['Real estates', 'Realtors', 'Holiday Homes']
+
+* unique_id is  not unique
+  -row no 4 and 7 are duplicates
+  -row: 4, https://eservices.ajmanded.ae/en/TradeLicense/License/078706b2-e4ea-414b-ae2f-a05fd7944efe
+ - row: 7,
+ -  unique_id : '078706b2-e4ea-414b-ae2f-a05fd7944efe'
+
+ * "mobile number is not empty-'9098409509'
+ -  rowno and url:
+  - 157, https://eservices.ajmanded.ae/en/TradeLicense/License/c12d312d-9c51-45f7-b47f-135045af1517

@@ -1,0 +1,49 @@
+
+QA ---------issues-----
+-------------------
+1) DataHut_CH_Migros_FullDump_20260730.CSV
+___________________________________________________
+* data count mismaatch: 38396
+* Missing site_shown_uom count: 3919
+* file name fields are completely empty
+* 1223 missing breadcrumbs(missing in website also)
+* product name missing for 3 records.(missing in the website also)
+  rowno: 28193, https://www.migros.ch/de/product/658710100018
+  row no:32178  , https://www.migros.ch/de/product/658710100030
+  row no:37827 ,  https://www.migros.ch/de/product/658710100022
+
+* white space found in the field, size
+ row no:23972,value:  37.5 x 15.5  x 28 cm
+ https://www.migros.ch/de/product/720516100012
+ ----------------------------------------------------
+ 2)DataHut_SI_Mercator_FullDump_20260730.CSV
+ ________________________________________________
+ * data count mismatch: 16948
+ * no other issues found
+
+
+QA------issues-report
+=========================
+servicesbahrain_bah_2025_08.json
+_____________________________________
+* file_name error:
+year and month is 2025_08
+servicesbahrain_bah_2025_08.json"
+* data set is not unique:
+ contains 1 duplicate record
+ row no : 3 and 723
+* data count mismatch : 727
+* iteration_number is 2026_08
+* license_number is not unique:
+   duplicate values found
+  row no 3,723 and 8, 36 have duplicate license_number
+  3,723,:  "license_number": "B202606/1440"
+  8,36:  "license_number": "PM201810/0016"
+  * license_status has an empty string: [ '', 'Active' ]
+  * legal_type values are: [ 'Corporate CR', 'Individual CR' ]
+* for 43 records: telephone_number has only country code (+973)
+ row no:10,19,22,52 etc
+ * for 6 records telephone no is : +973NA
+ row no: [250, 264, 268, 272, 274, 276]
+* row no: 4 ,mobile_no:"phone"
+* white space: name | Row: 713 | Value: ' AQ AUDITING'

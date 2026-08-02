@@ -1,0 +1,87 @@
+_QA_____________Issues________________
+
+
+1) opensooq_bh_2026_07_04.json
+______________________________
+
+   * spelling mismatch:
+    "refarence_number"
+   * mismatch in country suffix: _bh_ instead of _bah_
+   * data count mismatch: 807
+   * file name structure mismatch: "2026-_07_03 instead of 2026_07_04" (opensooq_bh_2026_07_04.json)
+   * " " ,empty string also present in currency
+   * "invalid dates or future dates in the file for 117 records,day and month are interchanged
+   https://bh.opensooq.com/en/search/282893542
+    here date on the website is 10-07-2026 in json file: 2026-10-07
+    * row 477,
+   invalid url:
+    https://
+   
+
+2) dubizzle_bah_2026_07_03 (3).json
+____________________________________
+
+    * iteration number is 2026-_07_03 instead of 2026_07_04 in the file name
+    * data count mismatch: 3157
+    * bathroom has a non numeric value: Seven
+
+https://www.dubizzle.com.bh/en/ad/%D9%84%D9%84%D8%A8%D9%8A%D8%B9-%D9%85%D9%86%D8%B2%D9%84-%D9%81%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D9%87-%D8%B9%D9%8A%D8%B3%D9%89-%D8%B4%D8%A7%D8%B1%D8%B9-%D8%AF%D9%85%D8%B4%D9%82-ID105401263.html
+
+
+    * long white space found in the url
+row no>37
+https://www.dubizzle.com.bh/en/ad/large-showroom-restaurant-two-floors-ID105715866.html
+
+   * id is an empty string for the url
+https://www.dubizzle.com.bh/en/ad/august-1-room-available-for-sharing-ID105687338.html
+
+    
+3) bayut_uae_projects_2026_07_05.json
+_____________________________________
+
+    * _projects_ in place of _project_
+     bayut_uae_projects_2026_07_05.json
+    * data count mismatch: 2912
+    * two values in the iteration_number
+[ '2026_07_04', '2026_07_05' ]
+
+4) bayot_egp_2026_08_04.json
+____________________________
+
+* completion_status
+ ownership
+two more fields are there other than requirement
+* error in file name
+'bayot'  instead of bayut
+month is 08 instead of 07
+bayot_egp_2026_08_04.json
+* data count mismatch: 23166
+* two values for scraped_ts 
+
+
+QA ---ISSUES-----
+1) DataHut_IT_Eurospin_PriceExtractions_20260729.CSV
+_______________________________________________________
+
+* data count mismatch: 42540
+* no other issues found
+------------------------------------
+
+2) DataHut_IT_Eselunga_PriceExtractions_20260729.CSV
+_______________________________________________________
+
+* data count mismatch: 240450
+* 21 rows has invalid pdp_url
+eg: https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/157442/elephant-baked-squeezed-pretzels-sea-salt-	80-g
+
+https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/653548/amico-veg-snack	al-gusto-riso-100-vegetale-mini-48-g
+
+(white space )
+"
+[ '2026-07-27', '2026-07-28' ]
+* broker_display_name,broker are non empty fields
+* price_per has values: [ '', 'Daily', 'Monthly', 'Weekly', 'Yearly' ]
+* furnished has values: [ '', 'Furnished', 'Not furnished', 'Unfurnished' ]
+* currency has values :[ 'EGP', 'egp' ]
+
+
