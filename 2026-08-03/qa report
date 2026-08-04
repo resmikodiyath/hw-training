@@ -1,0 +1,183 @@
+
+
+QA ------issues-------
+================================
+1)realtysouth_2026_08_05.json
+________________________________
+* date is 05
+realtysouth_2026_08_05.json
+
+* row no: 29
+below listing page doesnot show " Cory Palmer" profile
+https://www.realtysouth.com/roster/agents/18
+
+* image_url empty for 15 records( website too)
+* agent_phone_number separated by a pipe
+ Row 368: ['205-305-1158 | 205-541-4937']
+
+----------------------------------------------------------------------------
+2)globalremax_2026_08_05.json
+_______________________________
+
+* data count mismatch: 90160
+* 
+for 91 records agent _phone_numbers are invalid
+eg:Row 45276: ['() -'] 
+Row 45359: ['() -']
+Row 46597: ['+20']
+Row 87773: ['+876 461']
+Row 88009: ['33333']
+
+* 120 invalid website urls found
+eg
+Row 8355: http//:remax.com.br/alcance
+Row 15934: https//leonardovidigal.remax.com.br
+etc
+* for 399 records zipcode is "None"
+eg:Row 46539: None
+Row 46540: None
+some zipcodes are text
+eg:
+Row 50308: עכו
+Row 50323: הוד השרון
+
+* leading or trailing white spaces  found in the column description
+row nos
+[8475, 8955, 8977, 10597, 15504, 42302, 90016]
+Row 8475: ' ̈"Ninguém é tão sábio que não tenha algo pra aprender e nem tão tolo que não tenha algo para ensinar" (Blaise Pas.cal)'
+Row 8955: ' ̈ ̈Acho sua chave. Travo seu preço. Assino com você. Não vendo imóvel. Dest
+
+Row 8977: ' ́ ́Lealdade uma via de mão dupla. Se eu estou pedindo isso a você, então vo
+
+Row 42302: ' ̈Convierte tus sueños en dirección. Yo te acompaño en cada paso del camino. ̈  ̈Soy Agente inmobiliario en Re/Max, comprometida con brindar un servicio cercano
+Row 90016: ' ̈Não se deixem enganar: de Deus não se zomba. O que o homem semear, isso também colherá ̈ - Gálatas 6: 7-8 Para facilitar, vou resumir tudo para vocês!!!Eu tra
+
+* can't access url
+ 404 error:page not found:
+ eg:https://www.remax.com/en/agents/brazil/sao-leopoldo-centro/ronaldo-alex-nunes-de-souza/610461001
+
+* Long unsplit first_name count: 2089
+eg: Row 12: Federico guillermo andrade santa cruz
+Row 98: Daniel esteban argañaraz quevedo
+Row 317: Cristian andres barria cardenas
+Row 890: Jimena yanel almonacid gutierrez
+Row 909: Yeime maria sol alvarado figueroa
+Row 975: Alixa de la santísima trinidad amundaray de idrogo
+Row 1003: Melina magalí bilinskis villalba
+Row 1074: Patricia alejandra blanco trewhella
+Row 1304: Sarilu alejandrina cahuao rojas
+Row 1342: Santiago nicolas calvo ruiz de azua
+Row 1498: Maria celeste carrascosa ejarque
+---------------------------------------------------------------------------------------------------------
+3) century21_us_2026_08_05.json
+__________________________________
+* space between words in Column: first_name
+Row 21669: 'Lisa Tyler  TN, VA & SC'
+Row 24980: 'Bill Sweeden  Premier Referrals'
+
+*25 invalid websites
+ found
+Row 221: https://www.nicole-surber.c21selectgroup,com
+Row 2483: https://www.neena-singh@c21selectgroup.com
+Row 6867: https://http.//www.century21realty.com
+Row 11879: https://http:www.kasperbauerhomes.com
+Row 14210: https://adam.vibber@century21.com
+Row 14555: http://https//www.century21.com/CENTURY-21-Riverpointe-2887c/Stephanie-Czapiewski-211502a
+Row 14556: http://https//www.century21.com/CENTURY-21-Riverpointe-2887c/Niki-Grigg-211514a
+Row 14559: http://https//c21riverpointe.com
+Row 14563: http://https//www.century21.com/CENTURY-21-Riverpointe-2887c/Rob-Pizzimenti-211489a
+Row 14564: https://https//www.eannredfield.com
+Row 14575: http://https//www.century21.com/CENTURY-21-Riverpointe-2887c/Kathy-Zubor-476991a
+Row 14820: https://judyrose
+Row 16298: https://www.c21dunaganassociates
+Row 16617: https://mariannecrisafulli-alliance.sites.c21
+Row 18464: https://linkedin
+Row 27127: http://www.tara.gilmore@c21selectgroup.com
+Row 27597: https://century21dawnsgoldrealty
+Row 29747: https://c21thepinnacle
+Row 30239: https://jayson.sumerix@century21.com
+Row 31294: https://Julia.rodrigues1@century21.com
+Row 31657: https://EMAIL
+Row 32405: http://www.john@johnzywan.com
+Row 35675: http://https//www.c21riverpointe.com
+Row 38074: https://c21premierrealtors
+
+
+* email,social and title columns are not empty
+-----------------------------------------------------------------------------------------------------
+4)bhgre_2026_08_05.json
+________________________________
+* 3 invalid websites found:
+Row 765: http://dorotachojnacki/cocciarealty.sites.bhgrealestate.com
+Row 1617: https://www.http://bhgwilkins.com
+Row 2307: http://www.micanagle@garygreene.com
+
+
+* country has value: jamaica
+"['United States', 'Jamaica']
+
+Row 160: Jamaica
+Row 7087: Jamaica
+Row 7089: Jamaica
+
+-----------------------------------------------------------------------------
+
+5)semonin_realtors_2026_08_05.json
+_________________________________________
+* email field is empty
+
+*image_url empty for 12 records(missing in website also)
+
+* data count mismatch:340
+--------------------------------------------------------------------
+6)"
+lengthy unsplit first name
+Row 9: Alessandra Lante della Rovere
+Row 87: Catarina Z. Teles Da Silva
+Row 182: Flor Irina Garcia Soto
+Row 219: Ivy Carneiro da Cunha
+Row 259: Jose Andres Bastidas Torres
+Row 311: Lina Maria De Ona
+Row 347: Maria De La Tejera
+Row 348: Maria De La Rosa
+Row 349: Maria Amancia Vial Ducaud
+Row 353: Maria Elisa (Lis) Flores
+Row 393: Monica Elisa Ferragut Gutierrez Solana
+"
+* no other issues found
+-----------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
