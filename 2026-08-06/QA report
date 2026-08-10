@@ -1,0 +1,179 @@
+QA----ISSUES---------
+==============================
+1)DataHut_AT_Billa_FullDump_20260806.CSV
+____________________________________________
+* Data count mis,match: 12288
+* more empty fields
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+retail_limit
+
+non empty
+
+age_of_the_product
+
+* Description not in newline format count: 9408
+
+* Rows with pipe character: 8
+[{'column': 'product_description',
+  'excel_row': 2742,
+  'pdp_url': 'https://shop.billa.at/produkte/schlumberger-klassik-selection-baby-3er-00417856'},
+ {'column': 'special_information',
+  'excel_row': 3998,
+  'pdp_url': 'https://shop.billa.at/produkte/weisser-riese-trio-caps-orchidee-00482549'},
+ {'column': 'manufacturer_address',
+  'excel_row': 4512,
+  'pdp_url': 'https://shop.billa.at/produkte/mueller-gruener-veltliner-furth-reserve-weingut-00522804'},
+ {'column': 'manufacturer_address',
+  'excel_row': 5384,
+  'pdp_url': 'https://shop.billa.at/produkte/hoellinger-bio-mango-00618656'},
+ {'column': 'manufacturer_address',
+  'excel_row': 6169,
+  'pdp_url': 'https://shop.billa.at/produkte/hoellinger-bio-johannisbeernektar-00704043'},
+ {'column': 'manufacturer_address',
+  'excel_row': 6590,
+  'pdp_url': 'https://shop.billa.at/produkte/mueller-gruener-veltliner-terrassen-weingut-00719908'},
+ {'column': 'manufacturer_address',
+  'excel_row': 8894,
+  'pdp_url': 'https://shop.billa.at/produkte/hoellinger-steirischer-apfelspritzer-00769957'},
+ {'column': 'manufacturer_address',
+  'excel_row': 10382,
+  'pdp_url': 'https://shop.billa.at/produkte/hoellinger-steirischer-apfelsaft-naturtrueb-00862403'}]
+
+
+* Empty site_shown_uom count: 9
+[{'excel_row': 417,
+  'pdp_url': 'https://shop.billa.at/produkte/ja-natuerlich-hendlruecken-00240470'},
+ {'excel_row': 2923,
+  'pdp_url': 'https://shop.billa.at/produkte/ja-natuerlich-hendlfilet-00424344'},
+ {'excel_row': 4799,
+  'pdp_url': 'https://shop.billa.at/produkte/ja-natuerlich-hendl-suppenfleisch-00567341'},
+ {'excel_row': 6364,
+  'pdp_url': 'https://shop.billa.at/produkte/ja-natuerlich-huehnerschnitzel-00714378'},
+ {'excel_row': 6370,
+  'pdp_url': 'https://shop.billa.at/produkte/ja-natuerlich-huhninnenfilet-00714753'},
+ {'excel_row': 12069,
+  'pdp_url': 'https://shop.billa.at/produkte/ja-natuerlich-huehnerkeulen-0095497'},
+ {'excel_row': 12074,
+  'pdp_url': 'https://shop.billa.at/produkte/ja-natuerlich-huehnerfluegerl-0095499'},
+ {'excel_row': 12107,
+  'pdp_url': 'https://shop.billa.at/produkte/ja-natuerlich-hendl-oberkeulen-0095781'},
+ {'excel_row': 12109,
+  'pdp_url': 'https://shop.billa.at/produkte/ja-natuerlich-hendlunterkeulen-0095782'}]
+
+----------------------------------------------------------------------
+2) DataHut_CH_Coop_FullDump_20260806.CSV
+_______________________________________________
+
+* Data count mis,match:  35372
+* Empty site_shown_uom count: 7030
+
+* Breadcrumb containing pipe count: 68,(Pipe character is present in the website breadcrumb.)
+eg:
+
+[{'breadcrumb': 'Startseite > Kiosk > Spirituosen > Alle Spirituosen > '
+                'Apéritifs > Apéritif Spezialitäten > Alpstein '
+                'Bitter\\|Alpstein Bitter\\|',
+  'excel_row': 8512,
+  'pdp_url': 'https://www.coop.ch/de/kiosk/spirituosen/alle-spirituosen/aperitifs/aperitif-spezialitaeten/alpstein-bitteralpstein-bitter/p/4855899'},
+ {'breadcrumb': 'Startseite > Flamino Zündhölzer Lang \\| 20 cm \\| 50 Stück',
+  'excel_row': 10603,
+  'pdp_url': 'https://www.coop.ch/de/haushalt-tier/haushalt-kueche/kerzen-anzuendhilfen/anzuendhilfen-kerzenhalter/anzuendhilfen/flamino-zuendhoelzer-lang--20-cm--50-stueck/p/4952464'},
+ {'breadcrumb': 'Startseite > Haushalt & Tier > Haushalt & Küche > '
+                'Insektenstop > Finito Ameisen-Köderdose \\| 2 Stück',
+  'excel_row': 10786,
+  'pdp_url': 'https://www.coop.ch/de/haushalt-tier/haushalt-kueche/insektenstop/finito-ameisen-koederdose--2-stueck/p/6980118'},
+ {'breadcrumb': 'Startseite > Haushalt & Tier > Haushalt & Küche > '
+                'Insektenstop > Finito Fliegenfänger \\| 4 Stück',
+  'excel_row': 10798,
+  'pdp_url': 'https://www.coop.ch/de/haushalt-tier/haushalt-kueche/insektenstop/finito-fliegenfaenger--4-stueck/p/3365392'},
+
+* Rows with pipe character: 345
+eg:
+
+ {'column': 'instructionforuse',
+  'row': 7767,
+  'value': 'Backen 220°C \\| 14-16 Min Konvektionsgaren 200°C \\| 14-16 Min '
+           'Nach dem Auftauen nicht wieder einfrieren und sofort konsumieren.'},
+ {'column': 'product_name',
+  'row': 8512,
+  'value': 'Alpstein Bitter\\|Alpstein Bitter\\|'},
+ {'column': 'producthierarchy_level7',
+  'row': 8512,
+  'value': 'Alpstein Bitter\\|Alpstein Bitter\\|'},
+ {'column': 'breadcrumb',
+  'row': 8512,
+  'value': 'Startseite > Kiosk > Spirituosen > Alle Spirituosen > Apéritifs > '
+           'Apéritif Spezialitäten > Alpstein Bitter\\|Alpstein Bitter\\|'},
+
+
+
+* Empty regular_price count: 85
+eg:
+  'pdp_url': 
+'https://www.coop.ch/de/kiosk/spirituosen/alle-spirituosen/rum-cachaca/rum/rum-havana-club-especial/p/7353014
+
+---------------------------------------------------------------------------------
+
+3)DataHut_AT_Dm_FullDump_20260806.CSV
+__________________________________________
+
+* data count mismatch: 16628
+* "non empty
+barcode
+
+
+empty
+
+producthierarchy_level5
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+"
+* Rows with pipe character: 929
+eg:
+{'column': 'ingredients',
+  'row': 278,
+  'value': '100g Flüssigkeit enthalten 0,52g Benzalkoniumchlorid. Enthält < 5% '
+           'nichtionische Tenside \\| Desinfektionsmittel \\| Duftstoffe \\| '
+           'Hexyl Cinnamal'},
+ {'column': 'ingredients',
+  'row': 448,
+  'value': 'AQUA \\| ALOE BARBADENSIS LEAF JUICE \\| GLYCERIN \\| DECYL '
+           'GLUCOSIDE \\| SODIUM BENZOATE \\| LEVULINIC ACID \\| LACTIC ACID '
+           '\\| SODIUM LEVULINATE.'},
+ {'column': 'ingredients',
+  'row': 499,
+  'value': 'AQUA \\| KAOLIN \\| GLYCERIN \\| CETYL ALCOHOL \\| GLYCERYL '
+           'STEARATE SE \\| ETHYLHEXYL STEARATE \\| HELIANTHUS ANNUUS HYBRID '
+           'OIL \\| HYDROGENATED CASTOR OIL \\| PUMICE \\| BENTONITE \\| '
+           'SODIUM CETEARYL SULFATE \\| ALCOHOL DENAT. \\| PHENOXYETHANOL \\| '
+           'PARFUM \\| SALICYLIC ACID \\| XANTHAN GUM \\| ETHYLHEXYLGLYCERIN '
+           '\\| ZINC PCA \\| TOCOPHEROL \\| LINALOOL.'},
+ {'column': 'ingredients',
+  'row': 867,
+  'value': 'AQUA \\| C12-15 ALKYL BENZOATE \\| GLYCERIN \\| ETHYLHEXYL '
+           'STEARATE \\| CAPRYLIC/CAPRIC TRIGLYCERIDE \\| CETYL ALCOHOL \\| '
+           'MYRISTYL MYRISTATE \\|'},
+
+* unique_id and product_unique_key mismatch
+
+Row: 103 | Unique ID: 4066447870831 | Product Unique Key: 4066447642308P
+Row: 461 | Unique ID: 4070765030303 | Product Unique Key: 4066447946574P
+Row: 876 | Unique ID: 4066447986372 | Product Unique Key: 4066447101898P
+Row: 1702 | Unique ID: 4070765075892 | Product Unique Key: 4066447087215P
+Row: 2419 | Unique ID: 4070765020472 | Product Unique Key: 4067796166132P
+Row: 2525 | Unique ID: 4001499975028 | Product Unique Key: 4001499964510P
+Row: 2583 | Unique ID: 4001499975035 | Product Unique Key: 4001499964534P
+Row: 9290 | Unique ID: 7332152217344 | Product Unique Key: 7332152215586P
+Row: 9832 | Unique ID: 5054563297518 | Product Unique Key: 5054563209207P
+--------------------------
+
+

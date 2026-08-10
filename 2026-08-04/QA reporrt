@@ -1,0 +1,76 @@
+QA-----issues--------
+======================
+1) rector_hayden_2026_08_05.json
+_______________________________________
+
+* datacount mismatch: 142
+* "email" is empty field
+-----------------------------------------
+2)nawy_egp_2026_08_01.json
+_________________________
+
+* datacount mismatch: 18717
+* no other issues found
+-------------------------------------------
+3) dari_ae_2026_08_01.json:
+--------------------------------
+* datacount mismatch:1083
+* no other issues found
+----------------------------------------
+4) aqarmap_egp_2026_08_01.json
+________________________________
+* broker, broker_display_name -Values do not match
+- row no:210731,
+-  'EHAB EL SSŐSS', 'Ehab EL ßőß'
+- url:https://aqarmap.com.eg/en/listing/6845153-for-sale-cairo-15th-of-may-mjwr-11/
+
+* seller_role,listing_type,depth are also empty fields
+
+* phone_numbers are ending with xxxx for all the records
+eg:row 1:
+https://aqarmap.com.eg/en/listing/7088392-for-sale-cairo-new-cairo-compounds-el-masrawiyeh/
+
+
+* description contains ++++++++++++++++++++++++++++++++++"
+row-321508
+url:
+https://aqarmap.com.eg/en/listing/7052807-for-sale-cairo-ain-shams-ain-shams-el-sharkia-shr-brhym-bd-lrzq/
+
+
+
+* Empty details count: 1
+row no : 44217, 
+https://aqarmap.com.eg/en/listing/6794852-for-sale-cairo-new-cairo-ain-el-sokhna-rd/
+------------------------------------
+
+
+
+qa_issues---------
+==========================
+1)longandfoster_2026_08_05.json
+_______________________________________
+
+* invalid websites:4
+Row 1897: https://www.https://pascalekaram.net/
+Row 2229: https://www.https://selvinmelendezsaravia.com
+Row 3339: https://www.https://capitalcrestgroup.com/
+Row 4724: https://www.https://marylandrealestateleader.com/agent/samantha-schwartz
+
+
+extra spaces between words found
+
+Column: address
+Row 4597: '9104 Church Street  #201
+
+* languages field is empty
+-----------------------------------------------------
+2) houlihanlawrence_2026_08_05.json
+__________________________________________
+
+* state  has no empty string,
+has values
+['NY', 'CT']
+* no other issues found
+
+
+

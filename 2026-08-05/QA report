@@ -1,0 +1,24 @@
+QA----issues------
+==================
+1) DataHut_SI_Mercator_PriceExtractions_20260805.CSV
+_______________________________________________________
+
+* data count mismatch: 16963
+* no other issues found
+-------------------------------------------------
+2) DataHut_AT_Spar_PriceExtractions_20260805.CSV
+_________________________________________________
+
+* data count mismatch: 40818
+
+* single price  available on website but selling and regular prices are empty in the csv file,
+row': 40802
+https://www.spar.at/produktwelt/partyxpeople-lila-hexenkostuem-mit-hut-gr-128-p2020003446498
+
+'row': 40808,
+https://www.spar.at/produktwelt/partyxpeople-lila-hexenkostuem-mit-hut-gr-140-p2020003446504
+
+'row': 40814,
+https://www.spar.at/produktwelt/spar-natur-pur-bio-orangen-midknight-p6681845
+
+

@@ -1,0 +1,104 @@
+QA----issues------------
+===============================
+
+1)DataHut_SI_Dm_FullDump_20260806.CSV
+__________________________________________
+
+* "day is 06
+DataHut_SI_Dm_FullDump_20260806.CSV",date of extraction id 2026-8-05
+
+* data count mismatch: 10442
+* "price_was 
+promotion_price
+field  also empty"
+* competitor_product_key- is taken from dm product number instead of dm product ID under product description on site 
+----------------------------------------------------------------------
+
+2) DataHut_IT_Esselunga_PriceExtractions_20260805.CSV:
+__________________________________________________________
+
+* data count mismatch: 239735
+* "invalid pdp_urls
+[{'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/157442/elephant-baked-squeezed-pretzels-sea-salt-\t'
+             '80-g',
+  'row': 2912},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/653548/amico-veg-snack\t'
+             'al-gusto-riso-100-vegetale-mini-48-g',
+  'row': 4712},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/157442/elephant-baked-squeezed-pretzels-sea-salt-\t'
+             '80-g',
+  'row': 22694},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/653548/amico-veg-snack\t'
+             'al-gusto-riso-100-vegetale-mini-48-g',
+  'row': 23609},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/653548/amico-veg-snack\t'
+             'al-gusto-riso-100-vegetale-mini-48-g',
+  'row': 38910},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/157442/elephant-baked-squeezed-pretzels-sea-salt-\t'
+             '80-g',
+  'row': 41950},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/653548/amico-veg-snack\t'
+             'al-gusto-riso-100-vegetale-mini-48-g',
+  'row': 58502},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/157442/elephant-baked-squeezed-pretzels-sea-salt-\t'
+             '80-g',
+  'row': 60587},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/653548/amico-veg-snack\t'
+             'al-gusto-riso-100-vegetale-mini-48-g',
+  'row': 76893},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/157442/elephant-baked-squeezed-pretzels-sea-salt-\t'
+             '80-g',
+  'row': 79740},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/653548/amico-veg-snack\t'
+             'al-gusto-riso-100-vegetale-mini-48-g',
+  'row': 95938},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/157442/elephant-baked-squeezed-pretzels-sea-salt-\t'
+             '80-g',
+  'row': 98422},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/157442/elephant-baked-squeezed-pretzels-sea-salt-\t'
+             '80-g',
+  'row': 116322},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/653548/amico-veg-snack\t'
+             'al-gusto-riso-100-vegetale-mini-48-g',
+  'row': 119917},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/157442/elephant-baked-squeezed-pretzels-sea-salt-\t'
+             '80-g',
+  'row': 167055},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/157442/elephant-baked-squeezed-pretzels-sea-salt-\t'
+             '80-g',
+  'row': 184355},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/653548/amico-veg-snack\t'
+             'al-gusto-riso-100-vegetale-mini-48-g',
+  'row': 185215},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/653548/amico-veg-snack\t'
+             'al-gusto-riso-100-vegetale-mini-48-g',
+  'row': 204506},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/157442/elephant-baked-squeezed-pretzels-sea-salt-\t'
+             '80-g',
+  'row': 207464},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/653548/amico-veg-snack\t'
+             'al-gusto-riso-100-vegetale-mini-48-g',
+  'row': 220410},
+ {'pdp_url': 'https://spesaonline.esselunga.it/commerce/nav/drive/store/prodotto/157442/elephant-baked-squeezed-pretzels-sea-salt-\t'
+             '80-g',
+  'row': 223405}]
+------------------------------------------------------------------------------------------------
+
+3) bayut_transactions_rented_2026_08_weekly01.json
+______________________________________________________
+
+* url field not available to check with the site
+- no other issues found in dataset
+
+
+
+
+
+
+
+
+
+
+
+
+
