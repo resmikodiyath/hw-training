@@ -102,6 +102,32 @@ row:25779, row:12387
 https://www.qatarliving.com/en/properties/sale/residential/apartment/1br_with_balcony_sea_view_the_seef_lusail/258630
 https://www.qatarliving.com/en/properties/rent/residential/apartment/luxury_2br_fully_furnished_with_balcony_in_lusail/228132
 
+--------------------------------------
+dubizzle_bah_2026_09_01.json
+__________________________________
+
+
+phone number along with the name
+Column: broker_display_name
+Row 2840: 'Dr. M. A. Enani  please communicate through this line (+96655722224)'
+Column: broker
+Row 2840: 'DR. M. A. ENANI  PLEASE COMMUNICATE THROUGH THIS LINE (+96655722224)'
+*white space
+columns:broker_display_name,broker, title,description
+eg:
+Column: broker_display_name
+Row 386: 'Offices for  Rent'
+Row 387: 'Offices for  Rent'
+Row 2103: 'Afandi  Khawla Real Estate'
+Row 2104: 'Afandi  Khawla Real Estate'
+Row 2688: 'HA B B  BAHRAIN'
+Row 2774: 'الفهد  بوفهد'
+Row 2840: 'Dr. M. A. Enani  please communicate through this line (+96655722224)'
+Column: title
+Row 5: 'COMMERCIAL  ADDRESS OFFICES FOR RENT'
+Row 25: 'Labour  Accommodation for Rent in Hamad Town,26 rooms available'
+Row 46: 'Villa for Rent in Floating city 680 BD  fully furnished'
+
 
 
 
