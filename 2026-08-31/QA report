@@ -1,0 +1,113 @@
+qa ---issues-----report
++++++++++++++++++++++++++++++
+aqar_ksa_2026_09.json     
+_________________________
+
+data count: 162005
+*extra spaces found in the columns, title and description
+eg:
+
+line_no': 12, 'column': 'title', 'value': 'فيلا للإيجار في شارع  البخاري, حي العارض, مدينة الرياض, منطقة الرياض'
+------------------------------------------------------
+bahrainfinder_bah_2026_09_01.json:
+___________________________________
+* '
+no value fFully Furnished,
+has values:
+
+Furnished', '', 'Unfurnished', 'Semi Furnishe,
+
+ 'مفروشة بالكامل',
+       'مفروشة جزئيًا', 'غير مفروش
+
+*prices are comma separated(same as website)
+
+
+* details column contains
+ m² as unit,but it also has arabic meter square too م²
+eg: row: 87
+https://bahrainfinder.bh/ar/property/%D8%B4%D9%82%D8%A9-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-%D9%81%D9%8A-%D8%B6%D8%A7%D8%AD%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D9%8A%D9%81-12066.html
+---------------------------------------------------------
+
+dubizzle_qat_2026_09_01.json
+_______________________________
+* 
+** extra spaces found in 995 records
+Columns having rows with extra spaces:
+['broker_display_name', 'broker', 'title', 'description']
+eg:
+column': 'description',
+  'row': 2,
+  'url': 
+https://www.dubizzle.qa/en/ad/6500-factory-for-rent-ID120376548.html
+
+
+* price and currency are empty for 6 records( missing in website also )
+Row 95: https://www.dubizzle.qa/en/ad/bed-space-for-executive-bachelor-muslim-only-ID120339905.html
+Row 98: https://www.dubizzle.qa/en/ad/need-single-furnished-room-in-matar-qadeem-ID120368889.html
+Row 99: https://www.dubizzle.qa/en/ad/family-executive-bachelor-out-house-ID120374009.html
+Row 100: https://www.dubizzle.qa/en/ad/family-room-ID120373060.html
+Row 101: https://www.dubizzle.qa/en/ad/bedspace-for-executive-bachelor-ID120308807.html
+Row 102: https://www.dubizzle.qa/en/ad/bed-speace-3-single-bed-available-from-may-ID120306903.html
+-----------------------------------------------------------
+nawy_egp_2026_09_01.json:
+___________________________
+* data count: 13974
+* ---------------------------------
+
+aqarmap_egp_2026_09_01.json:
+_________________________________
+
+* seller_role ,depth also empty
+
+*** IInvalid bathrooms: 2
+{'row': 84280, 'bathrooms': '2.5'}
+{'row': 118072, 'bathrooms': '2.5'}
+
+
+** Leading-zero issues: 10
+{'row': 14958, 'field': 'bathrooms', 'value': '02'}
+{'row': 15116, 'field': 'bathrooms', 'value': '03'}
+{'row': 113071, 'field': 'bathrooms', 'value': '01'}
+{'row': 114299, 'field': 'bedrooms', 'value': '01'}
+{'row': 114544, 'field': 'bedrooms', 'value': '01'}
+{'row': 114649, 'field': 'bedrooms', 'value': '01'}
+{'row': 156373, 'field': 'bedrooms', 'value': '03'}
+{'row': 244897, 'field': 'bedrooms', 'value': '03'}
+{'row': 302823, 'field': 'bedrooms', 'value': '03'}
+{'row': 305763, 'field': 'bedrooms', 'value': '03'}
+
+
+----------------------------------------------------
+dubizzle_egp_2026_09_01.json
+_________________________________
+* ** lengthy white space found in description
+row:190531
+https://www.dubizzle.com.eg/en/ad/apartment-for-rent-in-stone-residence-new-cairo-ID503540539.html
+
+https://www.dubizzle.com.eg/en/ad/administrative-office-65-sqm-for-rent-directly-on-ring-road-heart-work-mountain-view-i-city-ID503617674.html
+
+(row 53495)
+
+
+no of photos in the file and website are different:
+row:1
+https://www.dubizzle.com.eg/en/ad/twinhouse-with-attractive-price-for-rent-in-uptown-cairo-fully-finished-ID503961617.html
+---------------------------------------
+qatarliving_qat_2026_09_01.json
+___________________________________
+* data count: 26151
+* extra spaces found in the column description:
+row:25779, row:12387
+https://www.qatarliving.com/en/properties/sale/residential/apartment/1br_with_balcony_sea_view_the_seef_lusail/258630
+https://www.qatarliving.com/en/properties/rent/residential/apartment/luxury_2br_fully_furnished_with_balcony_in_lusail/228132
+
+
+
+
+
+
+
+
+
+

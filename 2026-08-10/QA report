@@ -1,0 +1,138 @@
+QA -issues-----report
+============================
+DataHut_CH_Lidl_PriceExtractions_20260707.CSV
+__________________________________________________
+
+* extraction_date mismatch:
+month is 07 and day 07
+DataHut_CH_Lidl_PriceExtractions_20260707.CSV
+
+* data count mismatch: 3536
+
+* Rows where price_valid_from != promotion_valid_from: 1
+  'row': 539
+'pdp_url': 'https://sortiment.lidl.ch/de/catalog/product/view/id/20520/s/finish-geschirrspueltabs-power-all-in-1-1801199/category/54/',
+  'price_valid_from': '5.8.2026',
+  'promotion_valid_from': '6.8.2026',
+
+* breadcrumb empty count: 1
+Row 158 | PDP URL: https://sortiment.lidl.ch/de/catalog/product/view/id/21621/s/frisch-gepresste-shots-1024908/category/54/
+
+
+* Invalid promotion_price count: 1
+row': 846,
+  'pdp_url': 'https://sortiment.lidl.ch/de/catalog/product/view/id/19167/s/italienischer-extra-hartkaese-mix-6003698/category/54/',
+  'promotion_price': 1.05,
+  'regular_price': 1.49,
+  'selling_price': 1.49
+
+
+* ** Extra spaces count: 2
+column': 'product_name',
+  'pdp_url': 'https://sortiment.lidl.ch/de/catalog/product/view/id/20869/s/mini-pizza-pancetta-provola-und-zwiebel-1015165/category/54/',
+  'row': 432,
+  'value': 'Mini Pizza Pancetta, Provola und  Zwiebel',
+ column': 'breadcrumb',
+  'pdp_url': 'https://sortiment.lidl.ch/de/catalog/product/view/id/20869/s/mini-pizza-pancetta-provola-und-zwiebel-1015165/category/54/',
+  'row': 432,
+  'value': 'Sortiment > Sortiment > Mini Pizza Pancetta, Provola und  Zwiebel'
+
+
+
+** Invalid pdp_url count: 1
+'pdp_url': 'product/view/id/21372/s/garnier-skin-activ-tuchmaske-1805040/category/54/',
+  'row': 252
+
+
+
+** empty product name count:1
+Row 30 | PDP URL: https://sortiment.lidl.ch/de/catalog/product/view/id/14499/s/prosecco-valdobbiadene-docg-0149516/category/54/
+-----------------------------------------------------------------------------------------------------
+
+2) DataHut_SI_Spar_PriceExtractions_20260807.CSV
+____________________________________________________
+
+* data count mismatch: 16800
+* percentage_discount' also empty
+
+* Missing site_shown_uom count: 1
+14372|https://online.spar.si/p/higienski-vlozki-normal-always-ultra-201-166600
+
+
+* one duplicate value in unique_id
+row: 210 | 331353 | https://online.spar.si/p/ribez-rdeci-250g-pakiran-331353
+row: 211 | 331353 | https://online.spar.si/p/bio-mleti-mak-spar-naturpur-200g-545334
+
+ * 2 values for competitor_name
+ ['spar', 'SPAR']
+row 40 | SPAR | https://online.spar.si/p/motovilec-veg-100g-527090
+
+* empty breadcrumb count:1 
+Row 8190 | PDP URL: https://online.spar.si/p/kuhani-ocisceni-repki-kozic-nuchar-150g-639636
+
+
+* ** product name missing count:1
+Row 16800 | PDP URL: https://online.spar.si/p/instant-juha-z-rezanci-teriyaki-fini-mini-225g-31-677734
+
+
+** invalid pdp+urls count: 10( sama as website)
+
+
+row 1384|https://online.spar.si/p/sir z-olivami-in-paradiznikom landana-200g-642803
+4428|https://online.spar.si/p/belo-vino-malvazija-stoka 075l-599850
+4528|https://online.spar.si/p/belo-vino-chardonnay-vipolze-benedetic 075l-607528
+4656|https://online.spar.si/p/rdece-vino-carsus-stoka 075l-599851
+4681|https://online.spar.si/p/rdece-vino-refosk-ekolosko-korenikamoskon 075l-604807
+4829|https://online.spar.si/p/penece-vino-prosecco-soligo 02l-611196
+12887|https://online.spar.si/p/losjon-po-britju-nivea-men-fresh-kicksteklenicka-100 ml-600847
+13384|https://online.spar.si/p/krema-za-zascito-obraza zf50-nivea-sun-40ml-648710
+15634|https://online.spar.si/p/polnilo-za-elektricni-osvezilec-cherry-blossomraspberry-air-wick 19ml-669668
+16049|https://online.spar.si/p/vrc-za-filtriranje-vode-24-l-sivomodra- termovka gratis-brita-style-11-664937
+
+3) dubizzle_qat_2026_08_02.json
+_____________________________________
+
+* ** currency empty count: 5 
+96   |https://www.dubizzle.qa/en/ad/family-room-ID120373060.html
+97   |https://www.dubizzle.qa/en/ad/female-bedsapce-650-ID120366005.html
+98  |https://www.dubizzle.qa/en/ad/furnished-shared-room-available-in-al-nasr-ID120372315.html
+99   |https://www.dubizzle.qa/en/ad/bedspace-for-executive-bachelor-ID120308807.html
+100  | https://www.dubizzle.qa/en/ad/bed-speace-3-single-bed-available-from-may-ID120306903.html
+
+
+
+
+** empty price count:5
+96||https://www.dubizzle.qa/en/ad/family-room-ID120373060.html
+97||https://www.dubizzle.qa/en/ad/female-bedsapce-650-ID120366005.html
+98||https://www.dubizzle.qa/en/ad/furnished-shared-room-available-in-al-nasr-ID120372315.html
+99||https://www.dubizzle.qa/en/ad/bedspace-for-executive-bachelor-ID120308807.html
+100||https://www.dubizzle.qa/en/ad/bed-speace-3-single-bed-available-from-may-ID120306903.html
+
+
+
+
+** empty broker and broker_display_name: 6
+913|||https://www.dubizzle.qa/en/ad/monthly-rental-1bhk-kahramaa-wifi-and-cleaning-free-ID120369869.html
+1532|||https://www.dubizzle.qa/en/ad/warehouse-with-staff-accommodation-for-rent-birkat-al-wamer-ID120316479.html
+1534|||https://www.dubizzle.qa/en/ad/for-rent-labour-accommodation-90-rooms-doha-industrial-area-ID120314140.html
+1535|||https://www.dubizzle.qa/en/ad/5000-sqmt-warehouse-with-sprinkler-system-accommodation24-rooms-ID120353899.html
+2174|||https://www.dubizzle.qa/en/ad/elegant-room-with-private-toilet-ID120369868.html
+2175|||https://www.dubizzle.qa/en/ad/rent-a-room-ID120369867.html
+
+------------------------------------------------------------------------
+4) rema1000_2026_08_10.csv
+______________________________________
+
+* Description not in newline format count: 63
+eg:
+row 5|https://shop.rema1000.dk/varer/43891
+7|https://shop.rema1000.dk/varer/40844
+8|https://shop.rema1000.dk/varer/42150
+9|https://shop.rema1000.dk/varer/40768
+10|https://shop.rema1000.dk/varer/40770
+
+
+** Completely empty fields:
+['store_name', 'store_addressline1', 'store_addressline2', 'store_suburb', 'store_state', 'store_postcode', 'store_addressid', 'brand_type', 'drained_weight', 'producthierarchy_level3', 'producthierarchy_level4', 'producthierarchy_level5', 'producthierarchy_level6', 'producthierarchy_level7', 'price_was', 'promotion_price', 'promotion_valid_from', 'promotion_valid_upto', 'promotion_type', 'percentage_discount', 'promotion_description', 'package_sizeof_sellingprice', 'per_unit_sizedescription', 'price_valid_from', 'multi_buy_item_count', 'multi_buy_items_price_total', 'variants', 'storage_instructions', 'preparationinstructions', 'instructionforuse', 'country_of_origin', 'allergens', 'age_of_the_product', 'age_recommendations', 'flavour', 'nutritions', 'vitamins', 'labelling', 'grade', 'region', 'packaging', 'receipies', 'processed_food', 'barcode', 'chilled', 'cooking_part', 'handmade', 'max_heating_temperature', 'special_information', 'label_information', 'dimensions', 'special_nutrition_purpose', 'feeding_recommendation', 'warranty', 'color', 'model_number', 'material', 'usp', 'dosage_recommendation', 'tasting_note', 'food_preservation', 'size', 'rating', 'review', 'file_name_1', 'file_name_2', 'image_url_2', 'file_name_3', 'image_url_3', 'competitor_product_key', 'fit_guide', 'occasion', 'material_composition', 'style', 'care_instructions', 'heel_type', 'heel_height', 'upc', 'dietary_lifestyle', 'manufacturer_address', 'importer_address', 'distributor_address', 'vinification_details', 'recycling_information', 'return_address', 'alchol_by_volume', 'beer_deg', 'netcontent', 'netweight', 'random_weight_flag', 'instock', 'promo_limit', 'multibuy_items_pricesingle', 'perfect_match', 'servings_per_pack', 'warning', 'suitable_for', 'standard_drinks', 'environmental', 'grape_variety', 'retail_limit', 'percentage_discount_clean']
+

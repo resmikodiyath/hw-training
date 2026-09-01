@@ -1,0 +1,84 @@
+DataHut_SI_Spar_FullDump_20260813.CSV
+_______________________________________
+
+* data count: 16638
+* more empty fields
+----------------------
+variants
+preparationinstructions
+country_of_origin
+age_recommendations
+flavour
+labelling
+packaging
+special_information
+label_information
+dimensions
+color
+material
+tasting_note
+rating
+review
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+competitor_product_key
+features
+retail_limit
+
+
+non empty fields
+---------------------
+barcode
+promotion_valid_upto
+promotion_description
+price_was
+promotion_price
+alchol_by_volume
+netweight
+
+
+* Columns having rows with extra spaces:
+['producthierarchy_level3', 'producthierarchy_level4', 'breadcrumb', 'warning']
+Extra spaces count: 1197
+eg:
+{'column': 'warning',
+  'pdp_url': 'https://online.spar.si/p/mleta-prazena-kava-moka-100-arabica-hausbrandt-250g-665396',
+  'row': 3031,
+  'value': 'KAVA JE PAKIRANA V PLOČEVINKI Z ZAŠČITNO  ATMOSFERO, ZATO BODITE '
+           'PAZLJIVI PRI ODPIRANJU NOTRANJEGA POKROVA. ODPIRAJTE GA POČASI IN '
+           'PAZLJIVO, DA SE NE POŠKODUJETE.'},
+ {'column': 'warning',
+  'pdp_url': 'https://online.spar.si/p/kava-skinny-latte-starbucks-220ml-539884',
+  'row': 3172,
+  'value': 'Visoka vsebnost kofeina. Ni priporočljivo za  otroke ali nosečnice '
+           'ali doječe matere (37 mg/100 ml).'},
+-------------------------------------------------------------------------------------------------
+Description not in newline format count: 6074
+eg:
+row: 33|https://online.spar.si/p/sopska-solata-spar-to-go-317805
+40|https://online.spar.si/p/pakirana-spinaca-despar-500g-675447
+43|https://online.spar.si/p/solata-kristalka-ziva-kos-587629
+65|https://online.spar.si/p/mesanica-suhih-gob-z-jurcki-despar-80g-486528
+66|https://online.spar.si/p/bio-posuseni-jurcki-spar-vital-25g-663147
+131|https://online.spar.si/p/jabolka-idared-48725
+133|https://online.spar.si/p/jabolka-gala-tehtano-296981
+134|https://online.spar.si/p/jabolko-jonagold-tehtano-154238
+--------------------------------------------------------
+ price_per_unit  multiple dots Count: 15977
+eg:
+Row 2: price_per_unit='KG. za 1.99 €', unique_id=483846
+Row 3: price_per_unit='KG. za 3.58 €', unique_id=482756
+Row 4: price_per_unit='KG. za 4.97 €', unique_id=656842
+Row 5: price_per_unit='KG. za 3.18 €', unique_id=652735
+Row 6: price_per_unit='KG. za 2.49 €', unique_id=160593
+Row 7: price_per_unit='KG. za 0.9 €', unique_id=450660
+Row 8: price_per_unit='KG. za 3.99 €', unique_id=18305
+Row 9: price_per_unit='KG. za 3.98 €', unique_id=668040
+----------------------------------------------------------
+
+
+

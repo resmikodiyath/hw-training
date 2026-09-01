@@ -1,0 +1,70 @@
+DataHut_AT_Billa_FullDump_20260813.CSV
+___________________________________________
+
+* data count mismatch: 12273
+* more empty fields
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+retail_limit
+
+non empty 
+
+age_of_the_product
+packaging
+
+* 
+*** Description not in newline format count: 9396
+eg:
+row:5|https://shop.billa.at/produkte/iglo-pazifischer-polardorsch-paniert-0010042
+6|https://shop.billa.at/produkte/wiesbauer-polnische-spezial-00101122
+7|https://shop.billa.at/produkte/bahlsen-ohne-gleichen-vollmilch-0010143
+9|https://shop.billa.at/produkte/frosch-wc-essigreiniger-00100696
+11|https://shop.billa.at/produkte/bahlsen-ohne-gleichen-edelherb-0010139
+
+* site shoe uom empty for 9 records
+
+* ** Columns having pipe character:
+['product_description', 'special_information', 'manufacturer_address'
+
+{'column': 'product_description',
+  'pdp_url': 'https://shop.billa.at/produkte/schlumberger-klassik-selection-baby-3er-00417856',
+  'row': 2739},
+ {'column': 'special_information',
+  'pdp_url': 'https://shop.billa.at/produkte/weisser-riese-trio-caps-orchidee-00482549',
+  'row': 4023},
+ {'column': 'manufacturer_address',
+  'pdp_url': 'https://shop.billa.at/produkte/mueller-gruener-veltliner-furth-reserve-weingut-00522804',
+  'row': 4526},
+ {'column': 'manufacturer_address',
+  'pdp_url': 'https://shop.billa.at/produkte/hoellinger-bio-mango-00618656',
+  'row': 5370},
+ {'column': 'manufacturer_address',
+  'pdp_url': 'https://shop.billa.at/produkte/hoellinger-bio-johannisbeernektar-00704043',
+  'row': 6165},
+ {'column': 'manufacturer_address',
+  'pdp_url': 'https://shop.billa.at/produkte/mueller-gruener-veltliner-terrassen-weingut-00719908',
+  'row': 6614},
+ {'column': 'manufacturer_address',
+  'pdp_url': 'https://shop.billa.at/produkte/hoellinger-steirischer-apfelspritzer-00769957',
+  'row': 8883},
+ {'column': 'manufacturer_address',
+  'pdp_url': 'https://shop.billa.at/produkte/hoellinger-steirischer-apfelsaft-naturtrueb-00862403',
+  'row': 10344}]
+ 
+ 
+ * 
+
+
+*** price_per_unit - Multiple dots: 329 records
+eg:
+Row 3,unique_id=00-100767,price_per_unit  1 kg Abtr.G 22.92ад
+
+
+
+
+
+

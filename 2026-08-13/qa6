@@ -1,0 +1,51 @@
+DataHut_CH_Lidl_FullDump_20260813.CSV
+___________________________________________
+
+* data count: 3611
+
+* 
+country_of_origin
+also empty
+
+* promotion_valid_from 
+dd.m.yyyy
+eg:
+
+'pdp_url': 'https://sortiment.lidl.ch/de/catalog/product/view/id/14079/s/montepulciano-d-abruzzo-doc-0151217/category/54/',
+  'row': 18,
+  'value': '13.8.2026'
+
+*regular_price( not in 2f)
+Invalid rows: 56
+Row: 195 | Value: 2.6
+Row: 429 | Value: 3.3
+Row: 651 | Value: 8.5
+
+selling_price
+Invalid rows: 59
+Row: 195 | Value: 2.6
+Row: 429 | Value: 3.3
+Row: 1004 | Value: 16.0
+
+*if regular price in data - promotion price is selling price 	
+	Invalid promotion price rows: 3309
+Row: 2 | regular_price: 2.79 | selling_price: 2.79 | promotion_price: nan
+Row: 3 | regular_price: 2.79 | selling_price: 2.79 | promotion_price: nan
+Row: 4 | regular_price: 1.75 | selling_price: 1.75 | promotion_price: nan
+
+*price_was same as regular price	
+empty price_was rows count:3309
+Row: 2 | regular_price: 2.79 | price_was: empty
+Row: 3 | regular_price: 2.79 | price_was: empty
+Row: 4 | regular_price: 1.75 | price_was: empty
+
+*product_description has | values for 2 records
+3356 ,Kleine Helfer, 3-tlg. (1x Sekundenkleber flüss...
+3362  ,Spritzwasser geschützt (IP44) 22 W | 2’400 lm ...
+
+-----------------------------
+Description not in newline format count: 242
+eg:
+row: 38|https://sortiment.lidl.ch/de/catalog/product/view/id/16188/s/terra-natura-baguette-rustique-5111837/category/54/
+176|https://sortiment.lidl.ch/de/catalog/product/view/id/21547/s/xxl-croissant-1015437/category/54/
+

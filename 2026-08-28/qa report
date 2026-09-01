@@ -1,0 +1,252 @@
+QA -issues---report-
+==========================
+
+DataHut_SI_Dm_PriceExtractions_20260828.CSV
+________________________________________
+
+* data count: 10657
+* ( not in 2f format)
+regular_price
+Invalid rows: 2667
+Row: 10 | Value: 2.3
+Row: 11 | Value: 3.6
+Row: 12 | Value: 2.3
+
+selling_price
+Invalid rows: 2667
+Row: 10 | Value: 2.3
+Row: 11 | Value: 3.6
+Row: 12 | Value: 2.3
+
+* Comma-separated site_shown_uom: 231
+eg:
+23|0,75 l
+25|0,75 l
+37|0,5 l
+40|0,5 l
+99|0,12 kg
+131|0,75 l
+ Extra spaces count: 533
+Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+eg:
+Column: product_name
+252|Maskara  I love extreme volume, 12 ml
+https://www.dm.si/p/d/1321849/essence-maskara-i-love-extreme-volume
+3017|YOUNG & PURE Gel za sušenje  mozoljev, 15 ml
+----------------------------------------------------------
+
+DataHut_SI_Mercator_PriceExtractions_20260828.CSV
+___________________________________________________________
+
+* dsata count: 10923
+* ( not in 2f)
+regular_price
+Invalid rows: 75
+Row: 353 | Value: 0.4
+Row: 374 | Value: 0.5
+Row: 602 | Value: 16.9
+
+selling_price
+Invalid rows: 324
+Row: 353 | Value: 0.4
+Row: 374 | Value: 0.5
+Row: 602 | Value: 16.9
+
+promotion_price
+Invalid rows: 256
+Row: 1292 | Value: 2.3
+Row: 3595 | Value: 1.5
+Row: 3620 | Value: 1.2
+-----------------------------------------------
+DataHut_SI_Spar_PriceExtractions_20260828.CSV:
+_______________________________________________
+
+* data count: 16233
+* 'percentage_discount also empty
+
+* Empty price_per_unit rows:
+Row: 10850
+Row: 10851
+
+** 
+(not in 2f)
+regular_price
+Invalid rows: 747
+Row: 354 | Value: 2.2
+Row: 391 | Value: 2.5
+Row: 474 | Value: 9.9
+
+selling_price
+Invalid rows: 645
+Row: 354 | Value: 2.2
+Row: 391 | Value: 2.5
+Row: 474 | Value: 9.9
+
+promotion_price
+Invalid rows: 237
+Row: 5285 | Value: 1.4
+Row: 9047 | Value: 1.4
+Row: 9504 | Value: 0.9
+*selling and promotion price >
+ regular price for 6 records
+row': 15230,
+https://online.spar.si/p/steklen-pokrov-jamie-oliver-home-cook-tefal-28cm-11-674062
+
+row': 15231
+
+https://online.spar.si/p/stekleni-pokrov-jamie-oliver-home-cook-tefal-24cm-11-674058
+
+row': 15264,
+
+https://online.spar.si/p/ponev-wok-jamie-oliver-home-cook-tefal-28cm-11-674053
+
+row': 15265
+
+https://online.spar.si/p/ponev-jamie-oliver-home-cook-tefal-20cm-11-674048
+
+row': 15266,
+
+https://online.spar.si/p/ponev-jamie-oliver-home-cook-tefal-24cm-11-674049
+
+row': 15267
+
+https://online.spar.si/p/ponev-jamie-oliver-home-cook-tefal-28cm-11-674051
+----------------------------------------------------------------
+wasalt_ksa_2026_09.json
+________________________________
+*file name
+month is 09
+wasalt_ksa_2
+* 026_09.json
+iteration number  also 2026_09
+* data count: 44324
+* scraped_ts,2026-08-24
+
+* extraction_date is 2026_09
+*price and currency empty for 1 record( empty in the website too
+Row 3216: https://wasalt.com/en/property/sale/apartment-135-sqm-with-2-bedrooms-5743817
+--------------------------------------
+sedd_uae_2026_09.json:
+__________________________
+* data count: 1056
+* name field has extra spaces: count:57
+eg:
+  'row': 727,
+  'url': https://eservices.sedd.ae/eservicesweb/license-transactions/search_license/main-inq-lic.xhtml?lang=en&filterTrdNameEn=
+*'broker_licenses- not a list of dict, but a dict object
+
+------------------------------------------------
+haraj_ksa_2026_09.json:
+_______________________________
+* month is 09 instead of 08
+haraj_ksa_2026_09.json
+
+*Columns with extra-long spaces:
+['broker_display_name', 'broker', 'title', 'description', 'user_id']
+eg:
+Row 28162 | Column: description 
+column': 'title',
+  'row': 6,
+  'url': https://haraj.com.sa/11186968665/دور_كامل_فاخر_بطراز_إنجليزي_للإيجار_الرمال___الرياض
+---------------------------------------------------
+baity_bah_2026_09.json:
+________________________________
+* month is 09 instead of 08
+baity_bah_2026_09.json
+
+*data count: 9657
+*furnished values are in lower cases in website where as they are in uppercase in thr file
+same is the case with property_type
+eg:
+https://baity.bh/properties/apartment-in-al-hoora-40620"
+row:12
+--------------------------------------------------------------
+servicesbahrain_bah_2026_09.json
+_____________________________________
+
+* month is 09
+servicesbahrain_bah_2026_09.json
+
+
+* data count: 713
+* Rows with extra-long spaces: 1
+Row 243 | Column: name | Value: 'MOHAMED ALI A.QAHER MOHAMED TAHER   ALASFOOR'
+https://services.bahrain.bh/wps/portal/RERA_en#toggle-id-1
+
+
+**  f or 240 records,telephone_number is "0"
+eg:
+row:414,"license_number": "PM202508/1168",
+
+** for 40 records, telephone_number is (+973)
+eg:row: 78,license_number": "B201804/0008",
+** telephone number also has values  0000000', '212000','124578',+973N,+973NA',000 etc
+*legal_type- ['Individual CR', 'Corporate CR']
+
+--------------------------------------------------------------
+hepsiemlak_tur_2026_09.json
+___________________________________
+*month is 09,hepsiemlak_tur_2026_09.json
+
+* data count: 310183
+* For Sale also present in category
+*
+** for 251830 records broker and broker_display_name are in uppercase
+eg:row 293
+https://www.hepsiemlak.com/en/proje/aydin-soke/fabay-kusadasi-evleri-projesi-6714
+
+
+extra long spaces found in the description column
+eg: Row 1111 | Column: description 
+
+** description is in upper case
+Row 721 
+https://www.hepsiemlak.com/en/proje/istanbul-cekmekoy/zin-d-semt-projesi-6150
+
+-------------------------------------------------------
+sutton_2026_09_05.json
+___________________________
+
+*sutton_2026_09_05.json
+month is 09 instead of 08
+
+* data count: 5030
+* white spaces found i n the column office_name
+Row: 134 | Column: office_name | Value: 'Sutton - Benchmark Realty Inc. 
+
+
+** Rows with extra-long spaces: 1
+Row 2791 | Column: last_name | Value: 'Kan    簡太'
+'-----------------------------------------------------------
+ewm_2026_09_05.json
+_____________________________
+* ewm_2026_09_05.json
+month is 09 instead of 08
+
+*['FL', 'Florida']
+'Florida'
+Row 421 | https://www.ewm.com/agents/1776735/Ramon+Franco
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

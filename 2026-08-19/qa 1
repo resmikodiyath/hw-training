@@ -1,0 +1,144 @@
+QA report
+_____________
+
+DataHut_AT_Dm_PriceExtractions_20260818.CSV
+______________________________________________
+* data count: 16852
+* site shown uom: **Comma-separated site_shown_uom: 2412
+eg"
+row: 30|0,6 kg
+34|0,25 l
+54|0,25 l
+66|0,5 l
+72|0,4 l
+73|0,08 kg
+75|0,75 l
+
+**empty for 3 records
+row 2750
+ https://www.dm.at/p/d/3123593/nivea-gesichtswasser-pflegend-arganoel-hyaluronsaeure
+row 2921
+ https://www.dm.at/p/d/1703270/balea-augencreme-vital-straffend
+row 3105
+ https://www.dm.at/p/d/1914190/nivea-nachtcreme-revitalisierend-anti-falten-55
+ 
+* Empty breadcrumb rows:1
+Row 37: unique_id=4066447707212, pdp_url=https://www.dm.at/p/d/1575911/babylove-wickelunterlagen-monatspack
+
+**Invalid breadcrumb: 1
+983|Startseite > Pflege & Parfum > > Gesichtsreinigung > Waschgel
+* 
+
+**price_per_unit - Invalid comma price:
+Row 1228: price_per_unit = '3,45 € je 1 St', unique_id = 4067796137217
+Count: 1
+
+**Row: 1026 | pdp_url: https://www.dm.at/p/d/1353535/jessa-slipeinlagen-extra-lang-mit-frischeduft | Regular: 1.25 | Selling: 2.95 | Issue: regular_price is lower than selling_price
+
+* selling_price( not 2f)
+Invalid rows: 1884
+Row: 2 | Value: 29.9
+Row: 7 | Value: 28.9
+Row: 12 | Value: 24.9
+
+* regular_price( not 2f)
+Invalid rows: 1882
+Row: 2 | Value: 29.9
+Row: 7 | Value: 28.9
+Row: 12 | Value: 24.9
+
+
+* Row 654: price_valid_from='17.07.2024', promotion_valid_from=empty
+Row 896: price_valid_from=empty, promotion_valid_from='14.01.2026'
+
+
+** Extra spaces count: 48
+column: product_name
+row':1567|Nagelpuder Studio Nails  01 Gelato Glaze, 0,5 g
+row: 1669|Tabletten Vitamin  B12 350, 30 St
+row': 1669
+------------------------------------------------------------------------------
+DataHut_AT_Spar_Price_Extractions_20260818.CSV
+____________________________________________________
+
+* file name mismatch:
+_Price_Extractions_
+DataHut_AT_Spar_Price_Extractions_20260818.CSV
+
+* data count: 41194
+* Comma-separated site_shown_uom: 7657
+
+* prices different from website
+102|regular_price=120980.0|selling_price=120980.0|website shows 2,99
+https://www.spar.at/produktwelt/spar-office-fineliner-10-farben-p2020006069779
+
+
+regular_price
+Invalid rows: 3973
+Row: 76 | Value: 1.7
+Row: 102 | Value: 120980.0
+Row: 178 | Value: 3.8
+
+selling_price
+Invalid rows: 3973
+Row: 76 | Value: 1.7
+Row: 102 | Value: 120980.0
+Row: 178 | Value: 3.8
+
+
+** rregular price and selling price s empty for 19 records
+* competitor name Spar, s in uppercase
+* 
+invalid url:
+row: 32193
+www.spar.at/produktwelt/kerry-cheestrings-gouda-mit-gouda-p2020002089801
+
+* Invalid breadcrumb count (ends with >): 1
+  'row': 3699
+breadcrumb': 'SPAR Website > Produktwelt > Haushalt > Küche > Tischkultur > '
+                'Porzellan & Keramik >',
+  'pdp_url': https://www.spar.at/produktwelt/simpex-basic-simpex-basic-schale-si-20cm-p2020005366343
+* invalid unique_id
+row: 408
+unique_id': 767O626
+pdp_url': https://www.spar.at/produktwelt/spar-office-klarsichthuellen-a4-100-stueck-p7670626
+
+*  1Invalid grammage_unit: 1
+
+row: 324|stuck
+for all other records
+stück
+https://www.spar.at/produktwelt/spar-qualitaetsmarke-servietten-3-lagig-40x40-cm-rot-50-stueck-p2020002515669
+
+** extra spaces: 2 records
+Column: breadcrumb
+23845|SPAR Website > Produktwelt > Lebensmittel > Milchprodukte & Alternativen > Milch & Milchgetränke > Frisch  & Haltbarmilch
+34642|SPAR Website > Produktwelt > Lebensmittel > Milchprodukte & Alternativen > Milch & Milchgetränke > Frisch  & Haltbarmilch
+
+
+** product_name: 10 invalid '|' values found
+site_shown_uom: 9 invalid '|' values found
+Column: product_name
+9484|Isana AHA | PHA Cleanser 125 ml
+17119|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+17785|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück
+17913|BGS Mehrzweckschrauben T20 | 4,0 x 40 mm | 150 Stück
+18552|BGS Mehrzweckschrauben T25 | 5,0 x 80 mm | 50 Stück
+Column: site_shown_uom
+17119|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+17785|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück
+17913|BGS Mehrzweckschrauben T20 | 4,0 x 40 mm | 150 Stück
+18552|BGS Mehrzweckschrauben T25 | 5,0 x 80 mm | 50 Stück
+18641|BGS Mehrzweckschrauben T20 | 4,0 x 50 mm | 120 Stück
+21077|BGS Mehrzweckschrauben | 4,0 x 60 mm | 110 Stück
+---------------------------------------------------------------
+
+
+
+
+
+* 
+
+
+
+

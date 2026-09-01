@@ -1,0 +1,320 @@
+QA issues----report
++===================================
+ DataHut_SI_Dm_FullDump_20260827.CSV:
+ ________________________________________
+ * data count: 10648
+ * more empty fields
+price_was
+promotion_price
+
+* 
+Comma-separated site_shown_uom: 232
+
+* ** regular_price( not 2f) 
+Invalid rows: 2660
+Row: 11 | Value: 2.3
+Row: 12 | Value: 13.5
+Row: 13 | Value: 3.6
+
+selling_price ( not 2f)
+Invalid rows: 2660
+Row: 11 | Value: 2.3
+Row: 12 | Value: 13.5
+Row: 13 | Value: 3.6
+
+* competitor_product_key
+ taken from product_number
+ * **instructionforuse: 6 invalid '|' values found
+ingredients: 100 invalid '|' values found
+
+** description not in newline format count: 10622
+
+** invalid \t or \n characters found: count: 8
+preparationinstructions (5), labelling  (2)  , warning    (1)    
+rows [1747, 1957, 4057, 4334, 4643, 5313, 9294, 9337]
+eg:             
+Column: labelling
+Row: 1747 | Value: 'Ekološki logotip EU; BIOLAND – oznaka za ekološka živila\t; Nemška EKO oznaka'
+---------------------------------------------------------------
+DataHut_SI_Mercator_FullDump_20260827.CSV
+_______________________________________________
+ * data count: 16919
+ 
+* Comma-separated site_shown_uom: 16770
+* regular_price( not 2f)
+Invalid rows: 75
+Row: 358 | Value: 0.4
+Row: 376 | Value: 0.5
+Row: 614 | Value: 16.9
+
+selling_price
+Invalid rows: 327
+Row: 358 | Value: 0.4
+Row: 376 | Value: 0.5
+Row: 614 | Value: 16.9
+
+promotion_price
+Invalid rows: 259
+Row: 3594 | Value: 1.5
+Row: 3612 | Value: 1.2
+Row: 3731 | Value: 0.5
+
+* 11345|NAN|brand|https://mercatoronline.si/izdelek/19395647/zacetno-mleko-za-dojencke-nan-comfortis-1-800-g
+11350|NAN|brand|https://mercatoronline.si/izdelek/19395636/zacetno-mleko-za-dojencke-nan-optipro-1-800-g
+11360|NAN|brand|https://mercatoronline.si/izdelek/19395669/nadaljevalno-mleko-za-dojencke-nan-optipro-2-800-g
+11369|NAN|brand|https://mercatoronline.si/izdelek/19395658/mleko-v-prahu-optipro-3-nan-800-g
+* extra spaces in column brand 
+count: 18
+eg:
+
+Column: brand
+268|KREPKO  EKO
+777|BEL  BABYBEL
+908|KREPKO  EKO
+10399|FELIX  PURINA
+10420|FELIX  PURINA
+
+
+** Description not in newline format count: 1522
+------------------------------------------------------------------------------DataHut_SI_Spar_FullDump_20260827.CSV
+______________________________________________
+* data count: 15852
+* more empty fields
+------------------------
+age_recommendations
+color
+competitor_product_key
+country_of_origin
+dimensions
+features
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+flavour
+label_information
+labelling
+material
+packaging
+preparationinstructions
+rating
+retail_limit
+review
+special_information
+tasting_note
+variants
+
+
+
+non empty
+-------------------
+alchol_by_volume
+barcode
+netweight
+price_was
+promotion_description
+promotion_price
+promotion_valid_upto
+* instock has True values only
+
+* Empty price_per_unit rows:
+Row: 10656
+https://online.spar.si/p/vatirane-palcke-papirnate-100-bombaz-brez-klora-beauty-kiss-1601-591906
+
+Row: 10657
+https://online.spar.si/p/vatirane-palcke-papirnate-100-bombaz-brez-klora-beauty-kiss-3001-591908 
+
+* ** Description not in newline format count: 5772
+
+--  Extra spaces count: 1182
+Columns having rows with extra spaces:
+['producthierarchy_level3', 'producthierarchy_level4', 'breadcrumb', 'warning']
+eg:
+'column': 'warning',
+  'pdp_url': https://online.spar.si/p/mlecni-napitek-s-kavo-caffe-latte-starbucks-220ml-48837',
+  'row': 3016
+
+** promotion dates available on website but missing in the file
+3192|https://online.spar.si/p/negazirana-mineralna-voda-zala-1l-164352
+5167|https://online.spar.si/p/polnozrnata-strucka-z-otrobi-70g-672809
+------------------------------------------------
+DataHut_AT_Spar_FullDump_20260827.CSV
+______________________________________________
+* data vcount: 42496
+* age_of_the_product is non empty
+
+* Comma-separated site_shown_uom: 8704
+
+* Empty regular_price and selling_price count: 2  ( price empty in the site)
+pdp_url': https://www.spar.at/produktwelt/rex-sturzglas-370-ml-3er-set-p2020004157584
+  'regular_price': '',
+  'row': 42494,
+  'selling_price': '',
+ {pdp_url': https://www.spar.at/produktwelt/rex-sturzglas-290-ml-3er-set-p2020004157553,
+  'regular_price': '',
+  'row': 42495,
+  'selling_price': ''
+  * Columns having rows with extra spaces:
+['producthierarchy_level6', 'breadcrumb']
+Extra spaces count: 16
+
+eg:
+column': 'breadcrumb',
+  'pdp_url': https://www.spar.at/produktwelt/s-budget-toiletten-papier-10-rollen-p2020006211093,
+  'row': 551
+551|SPAR Website > Produktwelt > Drogerie & Beauty > Hygiene & Hygienepapier > Toilettenpapier  > Toilettenpapier Trocken
+
+Column: producthierarchy_level6
+25398|Frisch  & Haltbarmilch
+
+
+** product_name: 10 invalid '|' values found
+nutritional_information: 14933 invalid '|' values found
+site_shown_uom: 9 invalid '|' values found
+
+** Description not in newline format count: 26113
+---------------------------------------------------------------------------------
+DataHut_CH_Coop_FullDump_20260827.CSV
+__________________________________________________
+* data count: 35540
+* site shown empty for 7001 records
+* Invalid breadcrumb count: 3
+    row: 22060  
+ Startseite > > Wein & Tonic    
+https://www.coop.ch/de//wein-tonic/p/7400136
+ 
+row:22151
+ Startseite > > Wein & Tonic   
+https://www.coop.ch/de//wein-tonic/p/7400134
+
+row: 25994
+Startseite > > Petite Arvine Noblereine Jg 75CL, 2023
+https://www.coop.ch/de//petite-arvine-noblereine-jg-75cl-2023/p/1016746004
+
+Breadcrumb containing pipe count: 67
+
+eg: 
+'breadcrumb': 'Startseite > Haushalt & Tier > Haushalt & Küche > Grill '
+                'Zubehör > Oecoplan Holzkohle \\| 10 kg',
+  'row': 15233
+
+* not 2f
+promotion_price
+Invalid rows: 2192
+Row: 12 | Value: 2.5
+Row: 109 | Value: 22.8
+Row: 128 | Value: 3.9
+
+* 
+
+not 2f
+selling_price
+Invalid rows: 15049
+Row: 5 | Value: 2.3
+Row: 6 | Value: 2.7
+Row: 7 | Value: 0.9
+------------------------------------------------------------------
+DataHut_AT_Dm_FullDump_20260827.CSV
+__________________________________________________
+
+* more empty column
+----------------------
+producthierarchy_level5
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+promotion_description
+grape_variety
+
+ non empty
+-----------
+* Comma-separated site_shown_uom: 2452
+
+* Total rows with \n / \t / \r : 16807
+column: product_description 
+eg:
+Row: 2 | Value: 'Limited Edition\nSet beinhaltet: 1x Haarband, 2x Armstulpen\nErleichtert die tägliche Beautyroutine\nAus flauschigem Material\nHält die Haare praktisch aus dem Gesicht\n\nDas ebelin Kosmetikbänder Set Seaside Balance ist der ideale Begleiter für die tägliche Pflegeroutine im Badezimmer.
+https://www.dm.at/p/d/3115910/ebelin-kosmetikbaenderset-seaside-balance
+8* 
+image_url_1 available on site, but missing in file
+row: 15423
+https://www.dm.at/p/d/1647586/hipp-babysanft-baby-waschschaum-sensitiv 
+
+*Columns having rows with extra spaces:
+['product_name', 'variants', 'product_description', 'storage_instructions', 'preparationinstructions', 'country_of_origin', 'labelling', 'label_information', 'material', 'warning']
+eg:
+Column: product_name
+1414|Nagelpuder Studio Nails  01 Gelato Glaze, 0,5 g
+1569|Tönungsshampoo  7.4 Kupfergold, 14 ml
+
+* regular_price( nit 2f)
+Invalid rows: 1881
+Row: 7 | Value: 29.9
+Row: 13 | Value: 5.0
+Row: 15 | Value: 17.7
+* selling_price( not 2f)
+Invalid rows: 1884
+Row: 7 | Value: 29.9
+Row: 13 | Value: 5.0
+Row: 15 | Value: 17.7
+-----------------------------------------------------------------
+DataHut_AT_Billa_FullDump_20260827.CSV
+______________________________________________
+* data count: 12388
+
+ *Empty fields NOT in t
+ * he requirement
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+retail_limit
+
+
+ non empty
+age_of_the_product
+packaging
+
+*Description not in newline format count: 9368
+
+* regular_price
+Invalid rows: 311
+Row: 36 | Value: 47.9
+Row: 105 | Value: 3.8
+Row: 144 | Value: 3.8
+
+
+selling_price
+Invalid rows: 328
+Row: 36 | Value: 47.9
+Row: 105 | Value: 3.8
+Row: 144 | Value: 3.8
+
+
+
+
+
+/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,113 @@
+DataHut_SI_Mercator_FullDump_20260813.CSV
+_________________________________________________
+
+ * data count: 16936
+ * Extra spaces count: 18( column: brand)
+[{'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/18712103/bio-kefir-3-2-m-m-krepko-250-g',
+  'row': 239,
+  'value': 'KREPKO  EKO'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/18134252/bio-kefir-krepki-suhec-1-5-m-m-krepko-250-g',
+  'row': 241,
+  'value': 'KREPKO  EKO'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/15943683/bio-kefir-krepki-suhec-z-breskvijo-1-5-m-m-krepko-250-g',
+  'row': 244,
+  'value': 'KREPKO  EKO'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/15877747/bio-kefir-krepki-suhec-z-jagodo-1-5-m-m-krepko-250-g',
+  'row': 246,
+  'value': 'KREPKO  EKO'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/18712147/bio-kefir-malina-in-rdeca-pesa-1-5-m-m-krepko-250-g',
+  'row': 249,
+  'value': 'KREPKO  EKO'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/14727483/bio-maslo-krepko-200-g',
+  'row': 344,
+  'value': 'KREPKO  EKO'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/19452193/sir-mini-babybel-60-g',
+  'row': 803,
+  'value': 'BEL  BABYBEL'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/17392404/bio-sir-za-zar-krepko-pakirano-cena-za-kg',
+  'row': 934,
+  'value': 'KREPKO  EKO'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/14738215/bio-kisla-smetana-krepko-200-g',
+  'row': 1073,
+  'value': 'KREPKO  EKO'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/17069084/prigrizek-za-macke-original-mix-felix-60-g',
+  'row': 10395,
+  'value': 'FELIX  PURINA'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/19308424/mokra-hrana-za-macke-losos-felix-85-g',
+  'row': 10420,
+  'value': 'FELIX  PURINA'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/17069072/prigrizek-za-macke-ocean-mix-felix-60-g',
+  'row': 10425,
+  'value': 'FELIX  PURINA'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/19308435/mokra-hrana-za-macke-zajec-losos-85-g',
+  'row': 10499,
+  'value': 'FELIX  PURINA'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/19308413/mokra-hrana-za-macke-govedina-felix-85-g',
+  'row': 10502,
+  'value': 'FELIX  PURINA'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/19308457/mokra-hrana-za-macke-piscanec-in-korenje-felix-sensations-85-g',
+  'row': 10510,
+  'value': 'FELIX  PURINA'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/19308545/mokra-hrana-za-macke-govedina-in-paradiznik-felix-sensations-85-g',
+  'row': 10518,
+  'value': 'FELIX  PURINA'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/19308446/mokra-hrana-za-macke-felix-junior-85-g',
+  'row': 10523,
+  'value': 'FELIX  PURINA'},
+ {'column': 'brand',
+  'pdp_url': 'https://mercatoronline.si/izdelek/17069096/prigrizek-za-macke-grill-mix-felix-60-g',
+  'row': 10531,
+  'value': 'FELIX  PURINA'}]
+-----------------------------------------------
+Columns having pipe character:
+['ingredients']
+Rows with pipe character: 7
+[{'column': 'ingredients',
+  'pdp_url': 'https://mercatoronline.si/izdelek/11183596/otroski-sampon-in-kopel-nivea-baby-200-ml',
+  'row': 11562},
+ {'column': 'ingredients',
+  'pdp_url': 'https://mercatoronline.si/izdelek/538931/otrosko-toaletno-milo-nivea-baby-100-g',
+  'row': 11591},
+ {'column': 'ingredients',
+  'pdp_url': 'https://mercatoronline.si/izdelek/155403/tekoce-milo-creme-soft-pump-nivea-250-ml',
+  'row': 12279},
+ {'column': 'ingredients',
+  'pdp_url': 'https://mercatoronline.si/izdelek/1422231/gel-za-prhanje-lemongrass-amp-oil-nivea-250-ml',
+  'row': 12311},
+ {'column': 'ingredients',
+  'pdp_url': 'https://mercatoronline.si/izdelek/168023/gel-za-prhanje-creme-soft-nivea-250-ml',
+  'row': 12321},
+ {'column': 'ingredients',
+  'pdp_url': 'https://mercatoronline.si/izdelek/1366831/gel-za-prhanje-cashmere-moments-nivea-250-ml',
+  'row': 12904},
+ {'column': 'ingredients',
+  'pdp_url': 'https://mercatoronline.si/izdelek/5103763/barva-za-lase-872-intenzivno-rdeca-brillance',
+  'row': 13457}]
+----------------------------------------------------------------------------------------------
+Description not in newline format count: 1525
+eg:
+row: 2|https://mercatoronline.si/izdelek/17026888/jajca-m-iz-hlevske-reje-mercator-10-1
+4|https://mercatoronline.si/izdelek/13633580/jajca-m-izpod-kamniskih-planin-jata-12-1
+8|https://mercatoronline.si/izdelek/18077317/bio-jajca-m-bio-zone-10-1
+10|https://mercatoronline.si/izdelek/18320073/debela-jajca-m-iz-hlevske-reje-mercator-10-1
+
+
+
+

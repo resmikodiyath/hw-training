@@ -1,0 +1,179 @@
+bayut_properties_rent_commercial_2026_08_19.json
+______________________________________________________________
+
+* Empty coverPhoto URL count: 4
+
+Rows with empty coverPhoto URL:
+{'row': 16991, 'id': 11500351,)
+{'row': 28556, 'id': 12709510,) '
+{'row': 28558, 'id': 11834476,) '
+{'row': 28559, 'id': 11834698), 
+--------------------------------------------
+bayut_properties_buy_commercial_2026_08_19.json
+__________________________________________________
+
+* no issues found
+----------------------------------------------
+
+DataHut_AT_Billa_FullDump_20260820.CSV
+__________________________________________
+* data count: 12256
+* Empty fields NOT in the requirement
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+retail_limit
+
+
+ non empty
+age_of_the_product
+packaging
+
+* Description not in newline format count: 9357
+
+* 
+image available om website,but emptyimage_url_1
+row: 10854  
+
+https://shop.billa.at/produkte/billa-rogenbroetchen-00877458
+
+* regular_price( not 2f)
+Invalid rows: 304
+Row: 28 | Value: 47.9
+Row: 103 | Value: 3.8
+Row: 126 | Value: 1.8
+selling_price( not 2f)
+Invalid rows: 320
+Row: 28 | Value: 47.9
+Row: 103 | Value: 3.8
+Row: 126 | Value: 1.8
+
+promotion_price( not 2f)
+Invalid rows: 28
+Row: 1406 | Value: 4.0
+Row: 2912 | Value: 3.8
+Row: 3163 | Value: 1.5
+----------------------------------------------
+DataHut_AT_Dm_FullDump_20260820.CSV
+________________________________________
+
+ * data count" 16765
+ * 
+
+Requirement fields that are NOT in the empty-field list
+barcode
+retail_limit
+
+
+Empty fields NOT in the requirement
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+'producthierarchy_level5'
+
+* Comma-separated site_shown_uom: 2406
+
+* Rows containing \t, \n or \r: related column name
+['product_description']
+eg:row  2 | product_description | 'Gehörschutz für Babys und Kleinkinder\nFarbe: Salbei\nKann das empfindliche Gehör vor Lärm schützen\nIdeal für unterwegs und bei ...
+* Extra spaces count: 1691
+Columns having rows with extra spaces:
+['product_name', 'variants', 'product_description', 'storage_instructions', 'preparationinstructions', 'country_of_origin', 'labelling', 'label_information', 'material', 'warning']
+
+
+promotion_price( not 2f)
+Invalid rows: 6
+Row: 9055 | Value: 25.9
+Row: 9073 | Value: 8.9
+Row: 10529 | Value: 1.
+
+regular_price( not 2f)
+Invalid rows: 1876
+Row: 2 | Value: 29.9
+Row: 9 | Value: 17.7
+Row: 10 | Value: 5.0
+selling_price(not 2f)
+Invalid rows: 1878
+Row: 2 | Value: 29.9
+Row: 9 | Value: 17.7
+Row: 10 | Value: 5.0
+------------------------------------------------------
+DataHut_AT_Spar_FullDump_20260820.CSV
+_____________________________________________
+
+* data count: 41198
+* non empty
+'age_of_the_product' 
+
+* Comma-separated site_shown_uom: 7651
+* 
+
+
+single price available on website, but empty in the file
+
+'row': 41199,
+https://www.spar.at/produktwelt/kracher-grande-cuvee-trockenbeerenauslese-no-5-2019-p2020004413970
+row': 41197
+https://www.spar.at/produktwelt/umathum-blaufraenkisch-kirschgarten-2018-p2020005043008
+row': 41194
+https://www.spar.at/produktwelt/domaene-wachau-gruener-veltliner-wachau-dac-smaragd-ried-achleiten-2022-p2020004758798
+row': 41193,
+https://www.spar.at/produktwelt/casa-al-pruno-amarone-della-valpolicella-docg-2020-p2020004691040
+
+regular_price
+Invalid rows: 3983
+Row: 283 | Value: 1.7
+Row: 357 | Value: 3.8
+Row: 374 | Value: 1.7
+
+selling_price
+Invalid rows: 3983
+Row: 283 | Value: 1.7
+Row: 357 | Value: 3.8
+Row: 374 | Value: 1.7
+
+promotion_price
+Invalid rows: 21
+Row: 3624 | Value: 29.9
+Row: 3926 | Value: 44.9
+Row: 9890 | Value: 39.9
+* Extra spaces count: 16
+Columns having rows with extra spaces:
+['producthierarchy_level6', 'breadcrumb']
+eg:
+
+Column: producthierarchy_level6
+23924|Frisch  & Haltbarmilch
+
+** product_name: 10 invalid '|' values found
+nutritional_information: 14935 invalid '|' values found
+site_shown_uom: 9 invalid '|' values found
+eg:
+Column: product_name
+7971|Isana AHA | PHA Cleanser 125 ml
+15649|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+16715|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück
+Column: site_shown_uom
+15649|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+16715|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück
+
+** Description not in newline format count: 25649
+
+
+
+
+
+
+
+
+
+ 
+
+
+

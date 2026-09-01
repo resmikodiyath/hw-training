@@ -1,0 +1,87 @@
+QA ------issues-------------
+=====================================
+
+bayut_properties_rent_residential_2026_08_19.json
+_____________________________________________
+
+* https://www.bayut.com/property/details-14774497.html
+cover photo available in website, but missing in file
+-------------------------------------------
+
+bayut_properties_rent_residential_metadata_2026_08_19.csv:
+________________________________________________________________
+* no issuews found
+------------------------
+
+bayut_uae_project_2026_08_04.json
+__________________________________
+
+* WHITESPACE ISSUES
+==========================
+Row: 614 | Column: unit_type 
+Row: 1415 | Column: unit_type | Value: 'Type D, Type F, Type C, Type B, Type B , D, Type A, Type E, C, Type A '
+Row: 1444 | Column: unit_type | Value: 'Type D, Type F, Type C, Type B, Type B , D, Type A, Type E, C, Type A '
+
+-------------------------------------------
+
+qatarliving_qat_2026_08_04.json
+_____________________________________
+
+* data count: 25739
+* extra spaces found in description field: for 3152 records
+
+
+reference_number: 114 invalid '|' values found
+title: 10465 invalid '|' values found
+description: 2774 invalid '|' values found
+eg:
+Column: reference_number
+2022|D-7BRVILLA|NUAIJA
+2283|STUDIO|LUSAIL
+--------------------------------------------------
+dubizzle_qat_2026_08_04.json:
+___________________________________
+
+* Rows with empty currency or price:( can;t access website as it shows you have been blocked)
+Row 93: 
+https://www.dubizzle.qa/en/ad/bed-space-for-executive-bachelor-muslim-only-ID120339905.html
+Row 96: 
+https://www.dubizzle.qa/en/ad/need-single-furnished-room-in-matar-qadeem-ID120368889.html
+Row 97: 
+https://www.dubizzle.qa/en/ad/family-executive-bachelor-out-house-ID120374009.html
+Row 98: 
+https://www.dubizzle.qa/en/ad/family-room-ID120373060.html
+Row 99:
+https://www.dubizzle.qa/en/ad/furnished-shared-room-available-in-al-nasr-ID120372315.html
+Row 100
+https://www.dubizzle.qa/en/ad/bed-speace-3-single-bed-available-from-may-ID120306903.html
+row 101
+https://www.dubizzle.qa/en/ad/bedspace-for-executive-bachelor-ID120308807.html
+
+** phone number missing for 97 records
+** number_of_photos missing for two records
+row747
+row2117
+
+-------------------------------------------------------
+dubizzle_bah_2026_08_04.json:
+__________________________________
+
+* price and currency empty for row:51
+https://www.dubizzle.com.bh/en/ad/bed-space-available-ID105700706.html
+
+( website inaccessible)
+----------------------------------------------------------------
+
+dari_ae_2026_08_04.json:
+________________________
+
+* 
+extra space
+Column: company_employees
+Row 279: '[{'id': 35404, 'name': 'Mazen Rushdi   Abualhaija', 'profession': 'Broker Employee'}]'
+
+
+
+
+

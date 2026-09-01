@@ -1,0 +1,60 @@
+dubizzle_bah_2026_08_02.json: 
+________________________________
+
+* data count mismatch: 2936
+* row :49 currency and price are empty
+https://www.dubizzle.com.bh/en/ad/bed-space-available-ID105700706.html
+
+------------------------------------------------------------
+DataHut_at_dm_Pricextractions_20260810.CSV
+_________________________________________
+* file name mismatch:
+_at_dm_Priceextractions_, are in lower case( e in extractions)
+DataHut_at_dm_Pricextractions_20260810.CSV
+
+* data count mismatch: 16820
+*  extraction date-2026_08_11
+_ in place of -
+* 
+** invalid breadcrumb:
+row:16233
+url:https://www.dm.at/p/d/1902237/go-green-geschenkband-kompostierbar-bordeaux
+breadcrumb': 'Startseite > > > >',
+
+
+Extra spaces count: 48
+eg:
+
+
+column': 'product_name',
+  'pdp_url': 'https://www.dm.at/p/d/3137062/essence-nagelpuder-studio-nails-01-gelato-glaze',
+  'row': 979,
+  'value': 'Nagelpuder Studio Nails  01 Gelato Glaze, 0,5 g',
+ 'column': 'product_name',
+  'pdp_url': 'https://www.dm.at/p/d/3104287/mivolis-tabletten-vitamin-b12-350',
+  'row': 1902,
+  'value': 'Tabletten Vitamin  B12 350, 30 St'
+ 
+* currency is "eur"( lowercase)
+--------------------------------------------
+bayut_egp_2026_08_11.json
+______________________________
+
+* more fields
+--------------------
+completion_status
+ownership
+
+* 
+iteration_number is  _2026_08_11,instead of 2026_08_02
+bayut_egp_2026_08_11.json
+
+* data count mismatch:230183
+* broker and broker display_name are not empty
+*price_per has values [ '', 'Bi-Yearly', 'Daily', 'Monthly', 'Weekly', 'Yearly' ]
+
+* furnished has values [ '', 'Bi-Yearly', 'Daily', 'Monthly', 'Weekly', 'Yearly' ]
+
+ 
+
+

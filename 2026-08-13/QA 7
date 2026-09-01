@@ -1,0 +1,36 @@
+DataHut_DH_Denner_FullDump_20260813.CSV
+________________________________________
+* file name error
+
+_DH_  in place of _CH_
+DataHut_DH_Denner_FullDump_20260813.CSV
+suffix error
+
+*extraction date format error:
+2026.08.13
+. in place of -
+
+*data count : 1635
+
+Invalid regular_price values (comma used instead of dot):
+    
+row:624   ,regular_price  - 1,95,seliing_price -1,95
+https://www.denner.ch/de/weinshop/villa-pieri-primitivo-di-puglia-igt-pet~p1028280
+
+* empty fields
+----------------------
+image_url_1
+image_url_2
+image_url_3
+promotion_valid_from
+price_valid_from
+
+* Invalid in-stock rows without price: 157
+eg:
+
+Row: 740 | instock: True | regular_price: nan | selling_price: nan | pdp_url: https://www.denner.ch/de/aktionen-und-sortiment/schloss-bockfliess-gruener-veltliner-platzhirsch-dac-reserve~p057146?variant=040094fd-e88e-448a-b4e3-3dffe8dd2596
+
+
+*Denner brand - Invalid rows: 1
+Row: 7 | product_name: 'Denner Vollmilch' | brand: 'Manufacturer Brand' | pdp_url: https://www.denner.ch/de/aktionen/denner-vollmilch~p1002592?variant=5d4795e8-9a18-44da-83cb-391a9718701c
+

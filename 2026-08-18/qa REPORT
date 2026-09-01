@@ -1,0 +1,315 @@
+DataHut_AT_Billa_PriceExtractions_20260817.CSV:
+_______________________________________________
+* data count: 12298
+* site shown uom empty for 9 records
+row no: 362, 2882, 4686, 4988, 6718, 6721, 6757, 6759, 11688
+
+* **selling_price(not 2f)
+Invalid rows: 321
+Row: 66 | Value: 47.9
+Row: 132 | Value: 3.8
+Row: 264 | Value: 3.8
+* Row: 200 | pdp_url: https://shop.billa.at/produkte/nimm2-vitaminbonbons-0017772 | Regular: 2.15 | Selling: 1.89 | Promotion: 3.49 | Issue: regular_price is lower than promotion_price
+
+
+** regular_price(not 2f)
+Invalid rows: 305
+Row: 66 | Value: 47.9
+Row: 132 | Value: 3.8
+Row: 264 | Value: 3.8
+
+* duplicatr unique_id
+row: 859,860
+unique_id': '00-289492'
+pdp_url': https://shop.billa.at/produkte/kitkat-chunky-classic-schokoriegel-single-00289492
+
+
+** grammage_unit': 'stük' , spelling different from "stück"
+eg:
+'grammage_unit': 'stük',
+  'pdp_url': https://shop.billa.at/produkte/brillance-intensivcolorcreme-nr-896-schwarzrot-00134716,
+  'row': 113
+** regular price empty for 25 records(eg: row 290,306)
+
+------------------------------------------------------------
+
+DataHut_AT_Dn_PriceExtraction_20260816.CSV
+_______________________________________________
+* 
+file name error:
+_Dn_ in place of _Dm_
+_PriceExtraction_ in place of _PriceExtractions_
+
+DataHut_AT_Dn_PriceExtraction_20260816.CSV
+
+* data count: 16629
+
+* Comma-separated site_shown_uom: 2410 records
+row_number      unique_id     site_shown_uom
+       9  4066447790344         0,25 l
+         18  4062300398894         0,6 kg
+
+* "DM " in pace of dm
+ across the entire dataset
+
+* Invalid breadcrumb: 1
+row: 29|Startseite > > > > Gesundheit > Liebesspiel & Verhütung > Sextoys
+
+* selling_price( nit 2f)
+Invalid rows: 1881
+Row: 2 | Value: 29.9
+Row: 7 | Value: 5.0
+Row: 10 | Value: 17.7
+
+* * regular_price(not 2f)
+Invalid rows: 1879
+Row: 2 | Value: 29.9
+Row: 7 | Value: 5.0
+Row: 10 | Value: 17.7
+
+* product name empty for 2 records:
+
+Row 14844 | PDP URL: https://www.dm.at/p/d/1459132/nestle-beba-anfangsmilch-pre-von-geburt-an
+Row 14845 | PDP URL: https://www.dm.at/p/d/1459140/nestle-beba-kindermilch-junior-2-ab-2-jahre
+
+
+
+Columns having rows with extra spaces:
+['product_name']
+Extra spaces count: 48
+eg:
+  'pdp_url': 'https://www.dm.at/p/d/3137062/essence-nagelpuder-studio-nails-01-gelato-glaze',
+  'row': 1300
+** grammage_unit is stük, instead of stück  across the entire dataset
+-------------------------------------------------------------------------
+DataHut_AT_Spar_Pricextractions_20260817.CSV
+___________________________________________________
+* 
+file name error:
+_Pricextractions_,where e is in lowercase
+DataHut_AT_Spar_Pricextractions_20260817.CSV
+* data count: 41236
+
+
+* Comma-separated site_shown_uom: 7657
+egrow 4 | unique_id  2020001635245   
+empty:1
+3293|nan|https://www.spar.at/produktwelt/simpex-basic-p2020005670242
+
+
+*extraction date 2026-08-18 in place of 2026-08-17
+
+* Selling price not in 2-decimal format: 3998
+109|1.7
+273|3.8
+295|1.7
+422|1.7
+441|1.7
+* Invalid pdp_url count: 1
+pdp_url': hroduktwelt/simpex-spruehflasche-braun-p2020006112130,
+  'row': 2850
+  * Invalid breadcrumb: 1
+row: 2803|SPAR Website > Produktwelt > Lebensmittel > Süßes & Salziges > > > Süßes > Schokolade & Pralinen
+
+* row: 2753|regular_price=1.34|selling_price=1.19|promotion_description=Aktion!
+*  aktion issue: row: 2753|regular_price=1.34|selling_price=1.19|promotion_description=Aktion!
+
+* promotion decription empty for 1 record
+row :3315
+PDP URL: https://www.spar.at/produktwelt/simpex-basic-celebration-geburtstagskerzen-blau-lang-12-stueck-p2020004287793
+
+* Duplicate rows: 1
+*row: 2926, row: 2942|  unique_id 2020005277724|  https://www.spar.at/produktwelt/spar-natur-pur-bio-topfenaufstrich-liptauer-art-scharf-p2020005277724
+
+
+* Rows with leading/trailing white spaces: 1
+row:3315
+
+Columns having rows with extra spaces:
+['promotion_description', 'breadcrumb']
+
+Column: promotion_description
+3315| 
+
+Column: breadcrumb
+23857|SPAR Website > Produktwelt > Lebensmittel > Milchprodukte & Alternativen > Milch & Milchgetränke > Frisch  & Haltbarmilch
+33016|SPAR Website > Produktwelt > Lebensmittel > Milchprodukte & Alternativen > Milch & Milchgetränke > Frisch  & Haltbarmilch
+
+* product_name: 10 invalid '|' values found
+site_shown_uom: 9 invalid '|' values found
+
+eg:
+Column: product_name
+
+18543|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+19506|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück
+19689|BGS Mehrzweckschrauben T20 | 4,0 x 40 mm | 150 Stück
+Column: site_shown_uom
+18543|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+19506|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück
+19689|BGS Mehrzweckschrauben T20 | 4,0 x 40 mm | 150 Stück
+20522|BGS Mehrzweckschrauben T25 | 5,0 x 80 mm | 50 Stück
+---------------------------------------------------------
+DataHut_SI_Spar_PriceExtractions_20260818.CSV
+__________________________________________________
+* data count : 16529
+* percentage_discount also empty
+
+* price_per_unit empty for 2 records
+10998
+10999
+regular_price(not 2f)
+Invalid rows: 832
+Row: 402 | Value: 2.2
+Row: 423 | Value: 2.5
+Row: 511 | Value: 9.9
+
+selling_price( not 2f)
+Invalid rows: 675
+Row: 402 | Value: 2.2
+Row: 423 | Value: 2.5
+Row: 511 | Value: 9.9
+---------------------------------------------------
+DataHut_SI_Dm_PriceExtractions_20260818.CSV
+__________________________________________________
+* data count: 10291
+* regular_price(not 2f)
+Invalid rows: 2545
+Row: 22 | Value: 3.2
+Row: 24 | Value: 3.4
+Row: 26 | Value: 3.4
+
+selling_price(2f)
+Invalid rows: 2545
+Row: 22 | Value: 3.2
+Row: 24 | Value: 3.4
+Row: 26 | Value: 3.4
+
+
+* Comma-separated site_shown_uom: 210
+
+  row  24|0,75 l
+row29|0,75 l
+31|0,75 l
+48|0,5 l
+51|0,5 l
+70|0,12 kg
+117|0,75 l
+189|0,5 l
+* Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+Extra spaces count: 504
+Column: product_name
+245|Maskara  I love extreme volume, 12 ml
+2616|YOUNG & PURE Gel za sušenje  mozoljev, 15 ml
+2683|Očala za branje, črno-siva, dioptrija  +1,00, 1 kos
+2816|Utrditveni puder Soft Blur, 002  Absolute Translucent, 8 g
+Column: breadcrumb
+6|Domov > Dojenček in otrok > Otroška hrana in napitki  > Mleko za dojenčke
+8|Domov > Dojenček in otrok > Otroška hrana in napitki  > Mleko za dojenčke
+
+--------------------------------------------------------
+DataHut_SI_Mercator_PriceExtractions_20260818.CSV
+_____________________________________________________
+* data count: 16918
+* site shown uom is comma separated
+* regular_price(not 2f)
+Invalid rows: 70
+Row: 362 | Value: 0.4 
+Row: 387 | Value: 0.5
+Row: 570 | Value: 16.9
+
+selling_price(not 2f)
+Invalid rows: 328
+Row: 362 | Value: 0.4
+Row: 387 | Value: 0.5
+Row: 570 | Value: 16.9
+
+* Promotion description is present, but percentage discount is empty.
+Count: 1018
+row 28: Za imetnike Pika kartice 21% ceneje|percentage_discount :nan
+31|Za imetnike Pika kartice 20% ceneje|nan
+37|Ob nakupu 2 izdelkov ali več je vsak 20% ceneje|nan
+53|Za imetnike Pika kartice 20% ceneje|nan
+64|Za imetnike Pika kartice 20% ceneje|nan
+66|Ob nakupu 2 izdelkov ali več je vsak 20% ceneje|nan
+73|Za imetni
+ke Pika kartice 21% ceneje|nan
+
+------------------------------------------------------------
+
+DataHut_AT_LIDL_PriceExtractions_20260819.CSV
+____________________________________________________
+
+* 
+
+file name error:
+_AT_LIDL_ instead of  _CH_Lidl_
+extraction date is 2026-08-18,but file name has 20260819
+DataHut_AT_LIDL_PriceExtractions_20260819.CSV
+
+* data count : 3697
+
+
+* Comma-separated site_shown_uom: 455
+
+* duplicate rows :
+1700,1701
+
+unique_id: 180707
+https://sortiment.lidl.ch/de/catalog/product/view/id/15497/s/kosmetiktuecher-3-lagig-0180707/category/54/
+* ['lidl', 'lidL']
+row:  11|lidL
+https://sortiment.lidl.ch/de/catalog/product/view/id/16301/s/mozzarella-gerieben-0129674/category/54/
+
+* currency: EUR
+* Row 17: price_valid_from='13.8.2026', promotion_valid_from='13.8.2025'
+
+*1670  : promotion_description:  -20%  ,percentage_discount  :NaN
+
+* Invalid breadcrumb count (ends with >): 1
+[{'breadcrumb': 'Sortiment > Sortiment > Bürlischild > >',
+  'pdp_url': 'https://sortiment.lidl.ch/de/catalog/product/view/id/21540/s/buerlischild-5114330/category/54/',
+  'row': 3601}]
+
+*regular_price( not 2f)
+Invalid rows: 60
+Row: 183 | Value: 2.6
+Row: 405 | Value: 3.3
+Row: 694 | Value: 8.5
+
+selling_price( not2f)
+Invalid rows: 62
+Row: 183 | Value: 2.6
+Row: 405 | Value: 3.3
+Row: 961 | Value: 10.0
+* Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+Extra spaces count: 2
+Column: product_name
+3595|Mini Pizza Pancetta, Provola und  Zwiebel
+
+Column: breadcrumb
+3595|Sortiment > Sortiment > Mini Pizza Pancetta, Provola und  Zwiebel
+-----------------------------------------------------------------
+
+* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,262 @@
+DataHut_AU_Coles_FullDump_20260819.CSV
+__________________________________________
+* data count unique: 27643
+* nan values found : 48 records
+Row 450039: Column=brand, Value='Nan'
+ Row 450040: Column=brand, Value='Nan'
+ Row 450041: Column=brand, Value='Nan'
+ Row 450042: Column=brand, Value='Nan'
+ Row 450043: Column=brand, Value='Nan'
+* rating and review are float in type
+* regular_price( not 2f)
+Invalid rows: 695575
+Row: 2 | Value: 4.5
+Row: 3 | Value: 4.5
+Row: 4 | Value: 4.5
+
+selling_price( not2f)
+Invalid rows: 678692
+Row: 2 | Value: 4.5
+Row: 3 | Value: 4.5
+Row: 4 | Value: 4.5
+
+promotion_price( not2f)
+Invalid rows: 194592
+Row: 321 | Value: 3.5
+Row: 322 | Value: 3.5
+Row: 323 | Value: 3.5
+
+* data count: 761163
+* more empty columns
+file_name_1
+ features
+suitable_for
+ environmental
+
+ non empty
+regular_price
+barcode
+producthierarchy_level4
+producthierarchy_level5
+*  contains empty  also
+Empty labelling rows count: 370494
+----------------------------------------------------------
+DataHut_SI_Mercator_FullDump_20260820.CSV
+_______________________________________________
+* data count 16921*
+* Comma-separated site_shown_uom: 16764
+
+* regular_price( not 2f)
+Invalid rows: 73
+Row: 360 | Value: 0.4
+Row: 376 | Value: 0.5
+Row: 600 | Value: 16.9
+
+selling_price( not 2f)
+Invalid rows: 332
+Row: 3
+60 | Value: 0.4
+Row: 376 | Value: 0.5
+Row: 600 | Value: 16.9
+
+promotion_price( not 2f)
+Invalid rows: 268
+Row: 3586 | Value: 1.5
+Row: 3594 | Value: 1.2
+Row: 366
+0 | Value: 0.5
+
+* Row 11350: Column=brand, Value='NAN'
+Row 11352: Column=brand, Value='NAN'
+Row 11353: Column=brand, Value='NAN'
+Row 11354: Column=brand, Value='NAN'
+
+* Invalid rows: 15323
+Row: 2 | regular_price: 3.79 | price_was: empty
+Row: 3 | regular_price: 2.59 | price_was: empty
+Row: 4 | regular_price: 2.59 | price_was: empty
+* Columns having rows with extra spaces:
+['brand']
+Extra spaces count: 18
+
+Column: brand
+251|KREPKO  EKO
+254|KREPKO  EKO
+255|KREPKO  EKO
+257|KREPKO  EKO
+262|KREPKO  EKO
+375|KREPKO  EKO
+772|BEL  BABYBEL
+893|KREPKO  EKO
+1099|KREPKO  EKO
+10456|FELIX  PURINA
+10497|FELIX  PURINA
+10503|FELIX  PURINA
+10527|FELIX  PURINA
+10529|FELIX  PURINA
+10532|FELIX  PURINA
+10535|FELIX  PURINA
+10544|FELIX  PURINA
+10546|FELIX  PURINA
+
+
+**Description not in newline format count: 1520
+eg:
+pdp_url': 'https://mercatoronline.si/izdelek/18342686/jajca-l-iz-hlevske-reje-mercator-10-1',
+  'product_description': 'Izdelek slovenskega porekla je osnovno živilo, '
+                         'primerno za vsakodnevno uporabo v gospodinjstvu, '
+                         'pripravo obrokov in peko.',
+  'row': 3
+
+------------------------------------------------------
+DataHut_CH_Lidl_FullDump_20260820.CSV:
+_________________________________________
+*
+* data count 3544
+* country_of_origin
+ also empty
+
+* Invalid promotion date rows: 1
+Row: 3523 | promotion_valid_from: '20.11.2026' | promotion_valid_upto: '20.8.2026'
+https://sortiment.lidl.ch/de/catalog/product/view/id/20631/s/pesto-xxl-0162835/category/54/
+* regular_price( not 2f)
+Invalid rows: 78
+Row: 175 | Value: 2.6
+Row: 378 | Value: 3.3
+Row: 553 | Value: 8.5
+
+selling_price( not 2f)
+Invalid rows: 75
+Row: 175 | Value: 2.6
+Row: 378 | Value: 3.3
+Row: 864 | Value: 16.0
+
+promotion_price( not 2f)
+Invalid rows: 27
+Row: 1731 | Value: 2.6
+Row: 2831 | Value: 19.9
+Row: 2833 | Value: 49.9
+
+* Invalid rows: 3307
+Row: 2 | regular_price: 1.75 | price_was: empty
+Row: 3 | regular_price: 2.79 | price_was: empty
+Row: 4 | regular_price: 2.79 | price_was:empty
+
+* * product_description: 1 invalid '|' values found
+row: 3253
+Lenkrollen, 8er-Set: 360° drehbar | Tragkraft: 10 kg pro Rolle Möbelrollen, 8er-Set: 360° drehbar (4 mit Bremse) | Tragkraft: 20 kg pro Rolle Transportrollen, 4er-Set: 2x Bock-, 2x Lenkrollen (360°) | Tragkraft: 50 kg pro Rolle   Pro Set
+
+
+
+*Columns having rows with extra spaces:
+Extra spaces count: 138
+['product_name', 'producthierarchy_level3', 'breadcrumb', 'product_description']
+eg: Column: product_name
+3473|Mini Pizza Pancetta, Provola und  Zwiebel
+
+Column: producthierarchy_level3
+3473|Mini Pizza Pancetta, Provola und  Zwiebel
+
+Column: breadcrumb
+3473|Sortiment > Sortiment > Mini Pizza Pancetta, Provola und  Zwiebel
+
+
+** Description not in newline format count: 258
+
+--------------------------------------------------------
+
+DataHut_CH_Denner_FullDump_20260820.CSV
+_____________________________________________
+* data count 1634
+
+* Description not in newline format count: 689
+
+* regular_price( not 2f)
+Invalid rows: 521
+Row: 3 | Value: 7.5
+Row: 4 | Value: 8.5
+Row: 7 | Value: 12.7
+
+selling_price
+Invalid rows: 467
+Row: 2 | Value: 8.2
+Row: 3 | Value: 7.5
+Row: 4 | Value: 8.5
+
+promotion_price
+Invalid rows: 65
+Row: 2 | Value: 8.2
+Row: 29 | Value: 7.5
+Row: 34 | Value: 51.9
+
+* regular_price( not 2f)
+Invalid rows: 521
+Row: 3 | Value: 7.5
+Row: 4 | Value: 8.5
+Row: 7 | Value: 12.7
+
+selling_price
+Invalid rows: 467
+Row: 2 | Value: 8.2
+Row: 3 | Value: 7.5
+Row: 4 | Value: 8.5
+
+promotion_price
+Invalid rows: 65
+Row: 2 | Value: 8.2
+Row: 29 | Value: 7.5
+Row: 34 | Value: 51.9
+
+* non empty
+-------
+promotion_valid_from
+price_valid_from
+----------------------------------------------------------
+DataHut_CH_Coop_FullDump_20260820.CSV
+__________________________________________
+* data count: 35548
+* Invalid breadcrumb count: 2
+
+22255 | Startseite > > Wein & Tonic  https://www.coop.ch/de//wein-tonic/p/7400136
+22331 | Startseite > > Wein & Tonic  https://www.coop.ch/de//wein-tonic/p/7400134
+
+
+** Breadcrumb containing pipe count: 66
+{'breadcrumb': 'Startseite > Kiosk > Spirituosen > Alle Spirituosen > '
+                'Apéritifs > Apéritif Spezialitäten > Alpstein '
+                'Bitter\\|Alpstein Bitter\\|',
+row': 8687,
+  'pdp_url':
+https://www.coop.ch/de/kiosk/spirituosen/alle-spirituosen/aperitifs/aperitif-spezialitaeten/alpstein-bitteralpstein-bitter/p/4855899
+
+
+*
+selling_price( not 2f)
+Invalid rows: 15067
+Row: 2 | Value: 2.2
+Row: 3 | Value: 2.4
+Row: 4 | Value: 3.2
+
+
+
+* regular_price( not 2f)
+Invalid rows: 15240
+Row: 2 | Value: 2.2
+Row: 3 | Value: 2.4
+Row: 4 | Value: 3.2
+
+* promotion_price( not 2f)
+Invalid rows: 503
+Row: 25 | Value: 3.9
+Row: 46 | Value: 2.6
+Row: 217 | Value: 2.4
+*
+Invalid in-stock rows without price: 19 records
+Row: 1849 | instock: True | regular_price: nan | selling_price: nan | pdp_url: https://www.coop.ch/de/lebensmittel/fleisch-fisch/abgepacktes-frischfleisch/schwein/bell-schweins-brustspitz-texas-mariniert-ca/p/7231808
+Row: 15380 | instock: True | regular_price: nan | selling_price: nan | pdp_url: https://www.coop.ch/de/kiosk/geschenkkarten/geschenkkarte-aufladen/p/9900798
+Row: 15381 | instock: True | regular_price: nan | selling_price: nan | pdp_url: https://www.coop.ch/de/kiosk/geschenkkarten/geschenkkarte-universal-congrats-wert-variabel-aufladbar/p/9901076
+
+
+* Description not in newline format count: 26517
+
+-

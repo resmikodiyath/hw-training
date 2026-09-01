@@ -1,0 +1,95 @@
+QA---issues--------report----
+==============================
+1) DataHut_SI_Dm_FullDump_20260813.CSV
+__________________________________________
+
+* data count mismatch: 10312
+* price_was
+promotion_price also empty
+*competitor_product_key is taken from dm product number
+
+*
+Records containing unwanted \n or \t characters:
+['preparationinstructions', 'labelling', 'warning']
+Count: 8
+row: 1807 | https://www.dm.si/p/d/1491605/dmbio-bio-kasa-s-polnozrnatimi-zitni-kosmici-orescki-in-semeni-indijskega-trpotca  ,(Column=labelling, Value='Ekološki logotip EU; BIOLAND – oznaka za ekološka živila\t; Nemška EKO oznaka; V-Label vegan')
+3591 | https://www.dm.si/p/d/1461294/babylove-bio-zitna-kasica-iz-treh-vrst-polnozrnatih-mok
+4063 | https://www.dm.si/p/d/3082378/babylove-bio-ovsena-kasa-s-kozjim-mlekom-jabolki-in-jagodami-po-dopolnjenem-6-mesecu-starosti
+4374 | https://www.dm.si/p/d/3063319/syoss-platinasti-posvetljevalec-las-13-5
+5079 | https://www.dm.si/p/d/3108089/dmbio-bio-mesanica-za-pripravo-kruha-brez-glutena-z-41-semen
+8930 | https://www.dm.si/p/d/3127159/pajs-brez-obresti-keto-potica-mesanica-za-pripravo-testa
+8992 | https://www.dm.si/p/d/2226766/herba-medica-bio-planinski-caj-25-1-2-g
+9093 | https://www.dm.si/p/d/1586730/dmbio-bio-otroski-masleni-pirini-piskoti-z-datlji-od-3-leta
+
+--------------------------------------------------------
+
+Columns having rows with extra spaces:
+['breadcrumb', 'storage_instructions', 'preparationinstructions', 'country_of_origin', 'warning']
+Extra spaces count: 700
+eg:
+
+[column': 'breadcrumb',
+  'pdp_url': 'https://www.dm.si/p/d/3159283/hipp-ekolosko-junior-mleko-pure-3-12m',
+  'row': 2,
+  'value': 'Domov > Dojenček in otrok > Otroška hrana in napitki  > Mleko za '
+           'dojenčke',
+ 'column': 'breadcrumb',
+  'pdp_url': 'https://www.dm.si/p/d/3159228/hipp-ekolosko-nadaljevalno-mleko-za-dojencke-pure-2-6m',
+  'row': 7,
+  'value': 'Domov > Dojenček in otrok > Otroška hrana in napitki  > Mleko za '
+           'dojenčke',
+
+--------------------------------------------------------------------------------------------
+** Rows with pipe character: 104
+Columns having pipe character:
+['instructionforuse', 'ingredients']
+eg:
+column': 'ingredients',
+  'row': 110,
+  'value': 'Caprylic / Capric Triglyceride | Cetearyl Alcohol | Stearyl '
+           'Alcohol | Helianthus Annuus Seed Wax | Helianthus Annuus Seed Oil '
+           '| Cocos Nucifera Oil | Prunus Amygdalus Dulcis Oil | Parfum | '
+           'Mangifera Indica Seed Butter | Tocopherol | Dimethyl Phenethyl '
+           'Acetate | Rose KetonesNavedene sestavine v spletni trgovini se '
+           'lahko razlikujejo od tistih navedenih na embalaži.'
+-----------------------------------
+price valid from  and promotion_valid_from has date formats: 29.04.2025,
+13.03.2025
+------------------------------------------------------------------
+Description not in newline format count: 10286
+
+eg: row:2
+https://www.dm.si/p/d/3156023/sudocrem-zascitna-krema-my-little-sudocrem
+
+--------------------------------------------------------------------
+
+2) DataHut_IT_Eurospin_PriceExtractions_2026812.CSV
+__________________________________________________________
+
+*date in the file name acc togiven  format should be 20260812. but it is 2026812 in the csv
+
+DataHut_IT_Eurospin_PriceExtractions_2026812.CSV
+
+* 39577
+store_addressline1 -  10 
+store_postcode  - 11 
+
+
+* selling and regular prices are comma separated
+
+
+*  competitor name  spelling mismatch:
+Eurospin
+
+*extraction date is 2026-08-11
+
+* Row 25170: price_valid_from='2026-08-10', promotion_valid_from=empty
+
+* Empty regular_price and selling_price count: 1( website shows 4,99 € )
+row': 25123
+
+pdp_url': 
+https://online.eurospin.com/product/prosecco-asolo-docg-spumante-750ml
+
+
+* 

@@ -1,0 +1,38 @@
+bayut_uae_project_2026_08_02.
+______________________________
+* data count mismatch: 2964
+* no other issues found
+------------------------------------------
+
+2) bayut_bh_2026_08_02.json
+__________________________________
+
+* extra field:
+main url 
+
+* country suffix is   _bh_  
+* data count: 2679
+* _bh_ instaed of _bah_
+
+bayut_bh_2026_08_02.json
+
+*  more empty fields: main_url
+sub_category_1
+ also empty
+
+
+*  category has empty string "  "
+row 1147||https://www.bayut.bh/en/property/details-102123712.html
+row 2675||https://www.bayut.bh/en/property/details-105161975.html
+
+* id , listing_id missing for the below rows
+row 3||105530635|https://www.bayut.bh/en/property/details-105530635.html
+row 1536||102031627|https://www.bayut.bh/en/property/details-102031627.html
+
+* invalid url:
+row: 2665, '//www.bayut.bh/en/property/details-105171959.html', 'Invalid URL'
+
+
+
+
+

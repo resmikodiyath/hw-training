@@ -1,0 +1,152 @@
+DataHut_SI_Mercator_PriceExtractions_20260819.CSV
+_____________________________________________________
+
+* data count: 16921
+* site shown is comma separated
+*
+regular_price( not 2f)
+Invalid rows: 73
+Row: 361 | Value: 0.4
+Row: 377 | Value: 0.5
+Row: 598 | Value: 16.9
+
+selling_price( not 2f)
+Invalid rows: 331
+Row: 361 | Value: 0.4
+Row: 377 | Value: 0.5
+Row: 598 | Value: 16.9
+
+promotion_price( not 2f)
+Invalid rows: 267
+Row: 3546 | Value: 1.5
+Row: 3560 | Value: 1.2
+Row: 3625 | Value: 0.5
+-----------------------------------------
+DataHut_SI_Dm_PriceExtractions_20260819.CSV
+____________________________________________
+
+* data count: 10223
+* *regular_price( not 2f)
+Invalid rows: 2528
+Row: 16 | Value: 4.9
+Row: 20 | Value: 1.9
+Row: 57 | Value: 2.2
+
+selling_price( not 2f)
+Invalid rows: 2528
+Row: 16 | Value: 4.9
+Row: 20 | Value: 1.9
+Row: 57 | Value: 2.2
+
+* Comma-separated site_shown_uom: 206
+
+47|0,75 l
+60|0,12 kg
+107|0,75 l
+116|0,75 l
+127|0,5 l
+131|0,5 l
+201|0,5 kg
+236|0,6 l
+245|0,5 l
+247|0,5 l
+* Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+
+
+Column: product_name
+182|Maskara  I love extreme volume, 12 ml
+2497|Očala za branje, črno-siva, dioptrija  +1,00, 1 kos
+2815|Utrditveni puder Soft Blur, 002  Absolute Translucent, 8 g
+2909|YOUNG & PURE Gel za sušenje  mozoljev, 15 ml
+2957|Črtalo za oči v gelu  STAY & PLAY, 01 Black, 5 g
+Column: breadcrumb
+7|Domov > Dojenček in otrok > Otroška hrana in napitki  > Mleko za dojenčke
+9|Domov > Dojenček in otrok > Otroška hrana in napitki  > Mleko za dojenčke
+19|Domov > Dojenček in otrok > Otroška hrana in napitki  > Mleko za dojenčke
+34|Domov > Dojenček in otrok > Pripomočki za previjanje  > Previjalne podloge
+--------------------------------------------------------------
+DataHut_SI_Spar_PriceExtractions_20260819.CSV
+_________________________________________________
+
+* data count: 16560
+* percentage_discount
+also empty
+* price_per_unit empty for 2 records
+Row: 11065
+Row: 11066
+* promotion dates available on site, but empty in file
+*row: 5347
+https://online.spar.si/p/bela-zemlja-spar-60g-678329 
+
+
+regular_price( not2f)
+Invalid rows: 834
+Row: 397 | Value: 2.2
+Row: 423 | Value: 2.5
+Row: 526 | Value: 16.9
+
+selling_price( not2f)
+Invalid rows: 667
+Row: 314 | Value: 1.0
+Row: 397 | Value: 2.2
+Row: 423 | Value: 2.5
+
+promotion_price( not 2f)
+Invalid rows: 198
+Row: 314 | Value: 1.0
+Row: 1889 | Value: 3.3
+Row: 3090 | Value: 2.3
+
+-----------------------------------------------------------------------
+DataHut_CH_Lidl_PriceExtractions_20260819.CSV
+___________________________________________________
+
+* data count: 2692
+* Comma-separated site_shown_uom: 452
+
+16|pro 1,5kg
+17|pro 100g, ca. 180-220g
+18|pro 0,75l
+21|pro 0,5l
+23|pro 100g, ca. 170-530g
+26|pro 56 Stück, 64 Stück, 80 Stück
+27|pro 0,5l
+* regular_price(m not 2f)
+Invalid rows: 60
+Row: 191 | Value: 2.6
+Row: 419 | Value: 3.3
+Row: 629 | Value: 8.5
+
+selling_price( not2f)
+Invalid rows: 62
+Row: 191 | Value: 2.6
+Row: 419 | Value: 3.3
+Row: 971 | Value: 16.0
+
+promotion_price( not 2f)
+Invalid rows: 20
+Row: 1270 | Value: 3.0
+Row: 1337 | Value: 2.2
+Row: 1837 | Value: 7.8
+
+* Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+count:2
+Column: product_name
+3645|Mini Pizza Pancetta, Provola und  Zwiebel
+
+Column: breadcrumb
+3645|Sortiment > Sortiment > Mini Pizza Pancetta, Provola und  Zwiebel
+
+
+
+
+
+
+
+
+
+
+
+

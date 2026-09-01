@@ -1,0 +1,36 @@
+DataHut_AT_Dm_FullDump_20260813.CSV
+__________________________________________
+
+* non empty
+-
+barcode
+retail_limit
+
+
+more empty fields
+------------
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+producthierarchy_level5
+
+*product_ description  contains \n  for 16812 records
+eg: 
+Row: 2 | Value: 'Nahrungsergänzungsmittel für Frauen\nFür die Haut und die Schleimhäute\nZur Unterstützung der Immunfunktion\nMit Kräutern, Vitaminen und Mineralstoffen\n\nDas Nahrungsergänzungsmittel Hydration+ für Sie von AMORELIE Health ist ein Begleiter für Frauen, die ihre innere Balance unterstützen möchten. Verschiedene Lebensphasen oder auch Stress können den Körper vor Herausforderungen stellen. Die Rezeptur des Hydration+ Nahrungsergänzungsmittels mit einer Kombination aus Kräutern, Vitaminen und Mineralstoffen ist darauf ausgerichtet, den Körper von innen heraus zu begleiten. Vitamin B2 kann einen Beitrag zur Erhaltung normaler Haut und Schleimhäute leisten. Das enthaltene Vitamin D kann zu einer normalen Funktion des Immunsystems beitragen.\ndm-Artikelnummer: 3132880 GTIN 8719934035560'
+
+*Columns having rows with extra spaces:
+['product_name', 'variants', 'product_description', 'storage_instructions', 'preparationinstructions', 'country_of_origin', 'labelling', 'label_information', 'material', 'warning']
+eg:
+{'column': 'warning',
+  'pdp_url': 'https://www.dm.at/p/d/3132880/amorelie-health-intimhydration-fuer-sie',
+  'row': 2},
+ {'column': 'warning',
+  'pdp_url': 'https://www.dm.at/p/d/3132889/amorelie-health-testobalance-fuer-ihn',
+  'row': 5},
+ {'column': 'warning',
+  'pdp_url': 'https://www.dm.at/p/d/3132901/amorelie-health-libido-fuer-sie',
+  'row': 8},
+

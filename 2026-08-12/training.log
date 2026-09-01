@@ -1,0 +1,11 @@
+daily meet -QA task files shared
+QA task:
+
+DataHut_SI_Mercator_PriceExtractions_20260812.CSV
+DataHut_SI_Spar_PriceExtractions_20260812.CSV
+DataHut_CH_Lidl_PriceExtractions_20260812.json
+qa task:
+
+DataHUT_AT_Spar_PriceExtractions_20260811.CSV
+ DataHut_IT_Esselunga_PriceExtractions_20260812.CSV
+

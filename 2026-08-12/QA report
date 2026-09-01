@@ -1,0 +1,257 @@
+DataHut_SI_Mercator_PriceExtractions_20260812.CSV
+___________________________________________________
+
+* data count mismatch: 16936
+* no other issues found
+-------------------------------------------------------------
+
+DataHut_SI_Spar_PriceExtractions_20260812.CSV
+_________________________________________________
+* data count mismatch:16521
+* percentage_discount
+  also empty
+*Empty price_per_unit 
+Row: 11035
+Row: 11036
+*extraction date is 2026-07-12
+*Row 28: unique_id=498211, currency=nan, pdp_url=https://online.spar.si/p/bio-rukola-spar-naturpur-100g-498211
+
+-----------------------------------------------
+DataHut_CH_Lidl_PriceExtractions_20260812.json
+_____________________________________________________
+
+* region,pack_size missing in json file
+
+* file format is json not csv
+*structue same ,but json not csv
+
+DataHut_CH_Lidl_PriceExtractions_20260812.json
+
+* data count: 3731
+
+* no empty fields
+
+* for7462 records ,selling and regular prices are not string
+* Extra spaces count: 2
+column': 'product_name',
+  'pdp_url': 'https://sortiment.lidl.ch/de/catalog/product/view/id/20869/s/mini-pizza-pancetta-provola-und-zwiebel-1015165/category/54/',
+  'row': 3644,
+  'value': 'Mini Pizza Pancetta, Provola und  Zwiebel'
+ column': 'breadcrumb',
+  'pdp_url': 'https://sortiment.lidl.ch/de/catalog/product/view/id/20869/s/mini-pizza-pancetta-provola-und-zwiebel-1015165/category/54/',
+  'row': 3644,
+  'value': 'Sortiment > Sortiment > Mini Pizza Pancetta, Provola und  Zwiebel'
+---------------------------------------------------------------------
+
+DataHUT_AT_Spar_PriceExtractions_20260811.CSV
+____________________________________________________
+
+* extracrtion date is 2026-08-12, but file name has 20260811
+DataHUT_AT_Spar_PriceExtractions_20260811.CSV
+
+
+* data count :40991
+
+* selling and regular prices empty( website shows a single price)
+row: 40971,
+https://www.spar.at/produktwelt/olmeca-altos-plata-tequila-p2020005759855
+row:40983
+https://www.spar.at/produktwelt/sierra-lime-likoer-mit-tequila-p2020006191548
+row: 40991
+https://www.spar.at/produktwelt/drumshanbo-gunpowder-irish-gin-with-italian-fig-laurel-p2020006119290
+
+* Row 27270:
+ unique_id=2020005648449,
+ breadcrumb=empty,
+ pdp_url:
+https://www.spar.at/produktwelt/knorr-kaiser-teller-gulaschsuppe-p2020005648449
+
+
+* ** Invalid grammage count: 1
+  'grammage_quantity': '100 ml',
+  'grammage_unit': 'ml',
+  'pdp_url': https://www.spar.at/produktwelt/styx-p3858677,
+  'row': 13160
+
+** Extra spaces count: 4
+'column': 'promotion_description',
+ pdp_url': https://www.spar.at/produktwelt/tchibo-cafissimo-caffe-crema-vorratsbox-96-kapseln-p2020000593911
+  'row': 3234,
+  'value': 'Mit Gutschein je  Aktion!',
+ 'column': 'promotion_description',
+  'pdp_url': https://www.spar.at/produktwelt/tchibo-cafissimo-espresso-vorratsbox-96-kapseln-p2020001894437
+  'row': 20825,
+  'value': 'Mit Gutschein je  Aktion!',
+ 'column': 'breadcrumb',
+  'pdp_url': https://www.spar.at/produktwelt/vorarlberg-milch-laendle-halbfettmilch-laenger-frisch-1-5-fett-p2020006312547',
+  'row': 25773,
+  'value': 'SPAR Website > Produktwelt > Lebensmittel > Milchprodukte & '
+           'Alternativen > Milch & Milchgetränke > Frisch  & Haltbarmilch',
+ 'column': 'breadcrumb',
+  'pdp_url': https://www.spar.at/produktwelt/berglandmilch-schaerdinger-cremig-15-p2020006140843
+  'row': 35146,
+  'value': 'SPAR Website > Produktwelt > Lebensmittel > Milchprodukte & '
+           'Alternativen > Milch & Milchgetränke > Frisch  & Haltbarmilch'
+
+
+** Rows with pipe character: 19
+[{'column': 'product_name',
+  'row': 6860,
+  'value': 'Isana AHA | PHA Cleanser 125 ml'},
+ {'column': 'product_name',
+  'row': 17233,
+  'value': 'BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück'},
+ {'column': 'site_shown_uom',
+  'row': 17233,
+  'value': 'BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück'},
+ {'column': 'product_name',
+  'row': 18250,
+  'value': 'BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück'},
+ {'column': 'site_shown_uom',
+  'row': 18250,
+  'value': 'BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück'},
+ {'column': 'product_name',
+  'row': 18535,
+  'value': 'BGS Mehrzweckschrauben T20 | 4,0 x 40 mm | 150 Stück'},
+ {'column': 'site_shown_uom',
+  'row': 18535,
+  'value': 'BGS Mehrzweckschrauben T20 | 4,0 x 40 mm | 150 Stück'},
+ {'column': 'product_name',
+  'row': 19303,
+  'value': 'BGS Mehrzweckschrauben T25 | 5,0 x 80 mm | 50 Stück'},
+ {'column': 'site_shown_uom',
+  'row': 19303,
+  'value': 'BGS Mehrzweckschrauben T25 | 5,0 x 80 mm | 50 Stück'},
+ {'column': 'product_name',
+  'row': 19422,
+  'value': 'BGS Mehrzweckschrauben T20 | 4,0 x 50 mm | 120 Stück'},
+ {'column': 'site_shown_uom',
+  'row': 19422,
+  'value': 'BGS Mehrzweckschrauben T20 | 4,0 x 50 mm | 120 Stück'},
+ {'column': 'product_name',
+  'row': 21886,
+  'value': 'BGS Mehrzweckschrauben | 4,0 x 60 mm | 110 Stück'},
+ {'column': 'site_shown_uom',
+  'row': 21886,
+  'value': 'BGS Mehrzweckschrauben | 4,0 x 60 mm | 110 Stück'},
+ {'column': 'product_name',
+  'row': 22094,
+  'value': 'BGS Mehrzweckschrauben | 5,0 x 80 mm | 50 Stück'},
+ {'column': 'site_shown_uom',
+  'row': 22094,
+  'value': 'BGS Mehrzweckschrauben | 5,0 x 80 mm | 50 Stück'},
+ {'column': 'product_name',
+  'row': 29558,
+  'value': 'BGS Mehrzweckschrauben T20 | 4,0 x 60 mm | 110 Stück'},
+ {'column': 'site_shown_uom',
+  'row': 29558,
+  'value': 'BGS Mehrzweckschrauben T20 | 4,0 x 60 mm | 110 Stück'},
+ {'column': 'product_name',
+  'row': 30415,
+  'value': 'BGS Mehrzweckschrauben | 3,5 x 30 mm | 200 Stück'},
+ {'column': 'site_shown_uom',
+  'row': 30415,
+  'value': 'BGS Mehrzweckschrauben | 3,5 x 30 mm | 200 Stück'}]
+  ------------------------------------------------------------------------
+  DataHut_IT_Esselunga_PriceExtractions_20260812.CSV
+___________________________________________________
+
+* data count mismatch: 238296
+
+* 
+spelling error:
+essalunga
+
+* 2026-08-11
+file name has 20260812
+DataHut_IT_Esselunga_PriceExtractions_20260812.CSV
+
+
+* Empty breadcrumb rows:1
+Row 189: unique_id=676134,  pdp_url: https://spesaonline.essalunga.it/commerce/nav/drive/store/prodotto/676134/omino-bianco-detersivo-lavatrice-liquido-marsiglia-44-lavaggi-1760-ml
+
+*
+** Invalid grammage count: 1,
+  'grammage_quantity': '250',
+  'grammage_unit': 'gr',
+  'pdp_url': https://spesaonline.essalunga.it/commerce/nav/drive/store/prodotto/114220/essalunga-filini-pasta-di-semola-di-grano-duro-n90-250-g,
+  'row': 377
+-----------------------------------------------------------------
+** Extra spaces count: 58
+eg:   
+ {'column': 'site_shown_uom',
+  'pdp_url': 'https://spesaonline.essalunga.it/commerce/nav/drive/store/prodotto/311519/sterzing-vipiteno-sapori-di-vipiteno-yogurt-al-limone-2-x-125-g',
+  'row': 5023,
+  'value': '250g (2x125g  ¿)'},
+ {'column': 'site_shown_uom',
+  'pdp_url': 'https://spesaonline.essalunga.it/commerce/nav/drive/store/prodotto/651110/felix-le-ghiottonerie-selezioni-deliziose-in-gelatina-pollo-manzo-coniglio-agnello-24-x-85-g',
+  'row': 7470,
+  'value': '24 x 85g ¿  = 2,04kg'},
+--------------------------------------------------------------------------------------------------------------
+
+** Rows with pipe character: 877
+eg:
+column': 'site_shown_uom',
+  'row': 141,
+  'value': '100g (5x20g ¿) | 5 Bustine per complessivi 100g'
+column': 'site_shown_uom', 'row': 677, 'value': 'Capsule | x30 156g ¿'
+-------------------------------------------------------------------------------------------------
+
+** for  21052 rows price_valid_from are empty,, promotion_valid_from  have values
+----------------------------------------------------------------------------------------------------------------------
+** Iinvalid  brand count: 10
+'brand': 'Soré\t\t',
+  'excel_row': 8986,
+  'issues': ['leading/trailing space', 'control character'],
+  'pdp_url': 'https://spesaonline.essalunga.it/commerce/nav/drive/store/prodotto/552165/sore-valtenesi-riviera-del-garda-classico-doc-75-cl'},
+ {'brand': 'Soré\t\t',
+  'excel_row': 28383,
+  'issues': ['leading/trailing space', 'control character'],
+  'pdp_url': 'https://spesaonline.essalunga.it/commerce/nav/drive/store/prodotto/552165/sore-valtenesi-riviera-del-garda-classico-doc-75-cl'},
+ {'brand': 'Soré\t\t',
+  'excel_row': 47061,
+  'issues': ['leading/trailing space', 'control character'],
+  'pdp_url': 'https://spesaonline.essalunga.it/commerce/nav/drive/store/prodotto/552165/sore-valtenesi-riviera-del-garda-classico-doc-75-cl'},
+ {'brand': 'Soré\t\t',
+  'excel_row': 65647,
+  'issues': ['leading/trailing space', 'control character'],
+  'pdp_url': 'https://spesaonline.essalunga.it/commerce/nav/drive/store/prodotto/552165/sore-valtenesi-riviera-del-garda-classico-doc-75-cl'},
+ {'brand': 'Soré\t\t',
+  'excel_row': 84403,
+  'issues': ['leading/trailing space', 'control character'],
+  'pdp_url': 'https://spesaonline.essalunga.it/commerce/nav/drive/store/prodotto/552165/sore-valtenesi-riviera-del-garda-classico-doc-75-cl'},
+ {'brand': 'Soré\t\t',
+  'excel_row': 102890,
+  'issues': ['leading/trailing space', 'control character'],
+  'pdp_url': 'https://spesaonline.essalunga.it/commerce/nav/drive/store/prodotto/552165/sore-valtenesi-riviera-del-garda-classico-doc-75-cl'},
+ {'brand': 'Soré\t\t',
+  'excel_row': 121189,
+  'issues': ['leading/trailing space', 'control character'],
+  'pdp_url': 'https://spesaonline.essalunga.it/commerce/nav/drive/store/prodotto/552165/sore-valtenesi-riviera-del-garda-classico-doc-75-cl'},
+ {'brand': 'Soré\t\t',
+  'excel_row': 189212,
+  'issues': ['leading/trailing space', 'control character'],
+  'pdp_url': 'https://spesaonline.essalunga.it/commerce/nav/drive/store/prodotto/552165/sore-valtenesi-riviera-del-garda-classico-doc-75-cl'},
+ {'brand': 'Soré\t\t',
+  'excel_row': 208537,
+  'issues': ['leading/trailing space', 'control character'],
+  'pdp_url': 'https://spesaonline.essalunga.it/commerce/nav/drive/store/prodotto/552165/sore-valtenesi-riviera-del-garda-classico-doc-75-cl'},
+ {'brand': 'Soré\t\t',
+  'excel_row': 230679,
+  'issues': ['leading/trailing space', 'control character'],
+  'pdp_url': 'https://spesaonline.essalunga.it/commerce/nav/drive/store/prodotto/552165/sore-valtenesi-riviera-del-garda-classico-doc-75-cl'}]
+-------------------------------------------------------------------------------------------------------------------------------
+
+**for 70946 records, date format of promotion_valid_from is dd/mm/yyyy
+eg:
+
+row': 9,
+  'value': '29/07/2026
+pdp_url': https://spesaonline.essalunga.it/commerce/nav/drive/store/prodotto/676327/dixan-liquido-classico-3x2266-lavaggi-3-x-990-ml
+
+
+
+
+
+
+
