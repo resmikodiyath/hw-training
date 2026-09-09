@@ -1,0 +1,40 @@
+
+app_invest_dubai_ded_2026_09_01.xlsx
+---------------------------------------
+
+**data count: 134295
+*
+listing_business_name_english - Empty rows: 13
+Row: 112372 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-AC5643?bk=1
+Row: 112395 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-AG8318?bk=1
+Row: 113646 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-EF3541?bk=1
+Row: 113655 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-AA4621?bk=1
+Row: 113697 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-AC8441?bk=1
+Row: 114334 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-AB6825?bk=1
+Row: 114771 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-EF5942?bk=1
+Row: 116929 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-AL6967?bk=1
+Row: 117261 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-AL4383?bk=1
+Row: 117839 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-AL7892?bk=1
+Row: 117854 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-AM1238?bk=1
+Row: 131310 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-AM1389?bk=1
+Row: 131312 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-AL4681?bk=1
+
+listing_business_name_arabic - Empty rows: 1
+Row: 105048 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-DP8065?bk=1
+[some of the urls are inaccessible, shows error:This DUL license is not available]
+
+** invalid pipe
+Column: address
+571|مكتب رقم 9|720 - ملك مدينه دبى الصناعيه - سيح شعيب 2, Office 720, Saih Shuaib
+4458|مكتب رقم 801 ملك الانصاري العقارية |ملك خاص | - البرشاء الأولى - بردبي, Office 801, Al Barshaa 1
+14453|محل رقم |G08 ملك مشاريع شمال دبي لاند ش ذ م م - وادي الصفا 7, Shop 08, Wadi Al Safa 7
+20754||محل S4ملك -بلدية دبي -جبل علي الصناعيه الأولى, Shop 4, Jebel Ali Industrial
+28228||مكتب رقم2402c-19 ملك سالم احمد سالم القيسى-الخليج التجاري, Office 19, Burj Khalifa
+32725|مكتب رقم |J19 - ملك كابيتال يونايتد - (ش.ذ.م.م )- ديرة- المطينة, Office 19, Dubai Investments Park 1
+
+
+
+** address empty for 67526 rows,eg:
+Row: 1213 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-BJ5307?bk=1
+Row: 1485 | Value:  | URL: https://app.invest.dubai.ae/dul/dul-DC9824?bk=1
+
