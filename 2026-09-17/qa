@@ -1,0 +1,120 @@
+DataHut_AU_Woolworths_FullDump_20260917.CSV
+________________________________________________
+data count: 84902
+
+unique_id: 54156 duplicate values
+dataset is unique
+
+Completely empty fields:
+['Street2', 'Area', 'is_bananas', 'MultiItemPrice', 'IsSpecial', 'HeaderTag', 'CentreTag__MultibuyData__Quantity', 'CentreTag__MultibuyData__Price', 'CentreTag__MultibuyData__CupTag', 'FooterTag__MultibuyData__Quantity', 'FooterTag__MultibuyData__Price', 'FooterTag__MultibuyData__CupTag', 'ImageTag__MultibuyData__Quantity', 'ImageTag__MultibuyData__Price', 'ImageTag__MultibuyData__CupTag', 'Market.Seller_BusinessName', 'Market.TGA_UntraceablePrivatePrice', 'piesb2bcategorynamesjson', 'piesb2bdepartmentnamesjson', 'piesb2bsubcategorynamesjson', 'PiesProductB2bDepartmentsjson', 'specialsgroupid', 'tgauntraceableprivateprice', 'wool_dietaryclaim']
+
+** null,none values
+Row 376: Column=Variety, Value='NULL'
+Row 438: Column=Variety, Value='NULL'
+Row 502: Column=Variety, Value='NULL'
+Row 596: Column=Variety, Value='NULL'
+Row 738: Column=Variety, Value='NULL'
+Row 768: Column=Variety, Value='NULL'
+Row 786: Column=Variety, Value='NULL'
+Row 814: Column=Variety, Value='NULL'
+Row 823: Column=Variety, Value='NULL'
+Row 946: Column=Variety, Value='NULL'
+Row 994: Column=Variety, Value='NULL'
+Row 1001: Column=Variety, Value='NULL'
+Row 1035: Column=Variety, Value='NULL'
+Row 1203: Column=Variety, Value='NULL'
+Row 1248: Column=Variety, Value='NULL'
+Row 1267: Column=Variety, Value='NULL'
+Row 1273: Column=RichDescription, Value='None'
+Row 1335: Column=RichDescription, Value='None'
+Row 1381: Column=Variety, Value='NULL'
+Row 1536: Column=Variety, Value='NULL'
+Row 2272: Column=Variety, Value='NULL'
+Row 2281: Column=Variety, Value='NULL'
+Row 2511: Column=Variety, Value='NULL'
+Row 2783: Column=Variety, Value='NULL'
+Row 2787: Column=Variety, Value='NULL'
+Row 4505: Column=Variety, Value='NULL'
+Row 4698: Column=Variety, Value='NULL'
+Row 4821: Column=Variety, Value='NULL'
+Row 5412: Column=Variety, Value='NULL'
+Row 5895: Column=Variety, Value='NULL'
+Row 6030: Column=Variety, Value='NULL'
+Row 7121: Column=Variety, Value='NULL'
+Row 11725: Column=ingredients, Value='NULL'
+Row 12618: Column=storageinstructions, Value='null'
+Row 25321: Column=Variety, Value='NULL'
+Row 25788: Column=Variety, Value='NULL'
+Row 26557: Column=Variety, Value='NULL'
+Row 26604: Column=Variety, Value='NULL'
+Row 27445: Column=Variety, Value='NULL'
+Row 27509: Column=Variety, Value='NULL'
+Row 27814: Column=Variety, Value='NULL'
+Row 28169: Column=Variety, Value='NULL'
+Row 28179: Column=Variety, Value='NULL'
+Row 28227: Column=Variety, Value='NULL'
+Row 28233: Column=Variety, Value='NULL'
+Row 28326: Column=Variety, Value='NULL'
+Row 28460: Column=Variety, Value='NULL'
+Row 28918: Column=Variety, Value='NULL'
+Row 28953: Column=Variety, Value='NULL'
+Row 28990: Column=Variety, Value='NULL'
+Row 29537: Column=Variety, Value='NULL'
+Row 29702: Column=Variety, Value='NULL'
+Row 30453: Column=Variety, Value='NULL'
+Row 31478: Column=Variety, Value='NULL'
+Row 31534: Column=Variety, Value='NULL'
+Row 31826: Column=Variety, Value='NULL'
+Row 31897: Column=Variety, Value='NULL'
+Row 31972: Column=Variety, Value='NULL'
+Row 32266: Column=Variety, Value='NULL'
+Row 37174: Column=ingredients, Value='NULL'
+Row 38499: Column=storageinstructions, Value='null'
+Row 52118: Column=Variety, Value='NULL'
+Row 52997: Column=Variety, Value='NULL'
+Row 54667: Column=Variety, Value='NULL'
+Row 54719: Column=Variety, Value='NULL'
+Row 55133: Column=Variety, Value='NULL'
+Row 55228: Column=Variety, Value='NULL'
+Row 55283: Column=Variety, Value='NULL'
+Row 55640: Column=Variety, Value='NULL'
+Row 55657: Column=Variety, Value='NULL'
+Row 55785: Column=Variety, Value='NULL'
+Row 56515: Column=Variety, Value='NULL'
+Row 56550: Column=Variety, Value='NULL'
+Row 56886: Column=Variety, Value='NULL'
+Row 56909: Column=Variety, Value='NULL'
+Row 56922: Column=Variety, Value='NULL'
+Row 56930: Column=RichDescription, Value='None'
+Row 56985: Column=RichDescription, Value='None'
+Row 57042: Column=Variety, Value='NULL'
+Row 57155: Column=Variety, Value='NULL'
+Row 57622: Column=Variety, Value='NULL'
+Row 59087: Column=Variety, Value='NULL'
+Row 59277: Column=Variety, Value='NULL'
+Row 59607: Column=Variety, Value='NULL'
+Row 59688: Column=Variety, Value='NULL'
+Row 59748: Column=Variety, Value='NULL'
+Row 60050: Column=Variety, Value='NULL'
+Row 61559: Column=Variety, Value='NULL'
+Row 64985: Column=ingredients, Value='NULL'
+Row 67160: Column=storageinstructions, Value='null'
+--------------------------------------------------------------------
+DataHut_AU_liquorland_Sample_20260917.csv
+________________________________________________
+
+data count: 15280
+
+Completely empty fields:
+['Street2', 'Area', 'categoryId', 'SubCategory', 'SubSubCategory', 'Source', 'is_bananas', 'RichDescription', 'SavingsAmount', 'CupMeasure', 'CupPrice', 'CupString', 'IsEdrSpecial', 'MultiItemPrice', 'AgeRestricted', 'IsSpecial', 'UnitWeightInGrams', 'GtinFormat', 'HeaderTag', 'IsNew', 'CentreTag__MultibuyData__Quantity', 'CentreTag__MultibuyData__Price', 'CentreTag__MultibuyData__CupTag', 'FooterTag__TagContent', 'FooterTag__MultibuyData__Quantity', 'FooterTag__MultibuyData__Price', 'FooterTag__MultibuyData__CupTag', 'ImageTag__FallbackText', 'ImageTag__MultibuyData__Quantity', 'ImageTag__MultibuyData__Price', 'ImageTag__MultibuyData__CupTag', 'InstoreCupPrice', 'InstoreCupString', 'InstoreIsAvailable', 'InstoreIsOnSpecial', 'InstorePrice', 'InstoreSavingsAmount', 'InstoreWasPrice', 'addedvitaminsandminerals', 'allergencontains', 'allergenmaybepresent', 'allergystatement', 'antibacterial', 'antioxidant', 'antiseptic', 'bpafree', 'containsgluten', 'containsnuts', 'freezable', 'healthstarrating', 'ingredients', 'lifestyleanddietarystatement', 'lifestyleclaim', 'Market.Seller_BusinessName', 'Market.TGA_UntraceablePrivatePrice', 'microwaveable', 'nutritionalinformation', 'ovencook', 'parabenfree', 'piesb2bcategorynamesjson', 'piesb2bdepartmentnamesjson', 'piesb2bsubcategorynamesjson', 'piescategorynamesjson', 'piesdepartmentnamesjson', 'PiesProductB2bDepartmentsjson', 'PiesProductDepartmentsjson', 'piessubcategorynamesjson', 'sapcategoryname', 'sapcategoryno', 'sapdepartmentname', 'sapdepartmentno', 'sapsegmentname', 'sapsegmentno', 'sapsubcategoryname', 'sapsubcategoryno', 'specialsgroupid', 'storageinstructions', 'suitablefor', 'sulfatefree', 'tgauntraceableprivateprice', 'vegetarian', 'wool_dietaryclaim']
+
+unique_id: 10184 duplicate values
+dataset is completely unique
+
+
+**Empty Barcode: 3
+ row|unique_id|Barcode
+2047|7351965_ea|empty
+7139|7351965_ea|empty
+12235|7351965_ea|empty
+---------------------------------------------------------------------------
