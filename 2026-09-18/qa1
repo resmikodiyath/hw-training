@@ -1,0 +1,170 @@
+qa-issues---report
+========================
+DataHut_SI_Mercator_PriceExtractions_20260918.CSV:
+_____________________________________________________
+
+data count: 16947
+
+"** not in 2 decimal points
+regular_price
+Invalid rows: 67
+Row: 367 | Value: 0.4
+Row: 387 | Value: 0.5
+Row: 600 | Value: 16.9
+
+selling_price
+Invalid rows: 318
+Row: 367 | Value: 0.4
+Row: 387 | Value: 0.5
+Row: 600 | Value: 16.9
+
+**promotion valid upto dates available on website, but empty in the file
+eg:
+
+row: 748
+https://mercatoronline.si/izdelek/1336239/dimljen-sir-jost-ljubljanske-mlekarne-pakirano-140-g
+row: 1319
+https://mercatoronline.si/izdelek/19247886/narezek-kuhan-prsut-mercator-pakirano-200-g
+row: 1528
+https://mercatoronline.si/izdelek/17955658/narezek-istrska-budjola-pisinium-pakirana-80-g"
+
+----------------------------------------------------------------------------
+DataHut_SI_Spar_PriceExtractions_20260918.CSV
+________________________________________________
+
+data count: 16074
+
+percentage_dscount field also empty
+
+"*Invalid price rows: 1
+  'row': 14830,
+errors': ['selling_price ,promotion_price> regular_price'],
+https://online.spar.si/p/posteljnina-rubin-renforce-140x200-60x80-cm-657590
+  'regular_price': 11.0,
+  'selling_price': 12.45
+
+*not in 2 decimal points
+regular_price
+Invalid rows: 788
+Row: 223 | Value: 5.1
+Row: 370 | Value: 2.2
+Row: 403 | Value: 2.5
+
+selling_price
+Invalid rows: 756
+Row: 223 | Value: 5.1
+Row: 370 | Value: 2.2
+Row: 403 | Value: 2.5
+
+
+"*g to kg conversion error: 3
+Row: 696 | URL: https://online.spar.si/p/nadomestek-kave-z-okusom-po-kakavu-calmrooty-62g-681408 | File: 0.062 g
+Row: 6645 | URL: https://online.spar.si/p/instant-ocvrti-riz-vegetarijanski-mama-80g-683913 | File: 0.08 g
+Row: 8504 | URL: https://online.spar.si/p/testenine-fusilli-feelingok-220g-679091 | File: 0.22 g"
+----------------------------------------------------------------------------
+DataHut_SI_Dm_PriceExtractions_20260918.CSV
+________________________________________________
+
+data count: 10389
+
+"* not in 2 decimal points
+regular_price
+Invalid rows: 2560
+Row: 4 | Value: 5.8
+Row: 6 | Value: 3.6
+Row: 8 | Value: 7.2
+
+selling_price
+Invalid rows: 2560
+Row: 4 | Value: 5.8
+Row: 6 | Value: 3.6
+Row: 8 | Value: 7.2
+
+"Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+Column: product_name
+234|Maskara  I love extreme volume, 12 ml
+https://www.dm.si/p/d/1321849/essence-maskara-i-love-extreme-volume
+2587|YOUNG & PURE Gel za sušenje  mozoljev, 15 ml
+
+
+Column: breadcrumb
+2|Domov > Moška nega  > Lasje > Barve za lase
+https://www.dm.si/p/d/3164723/snails-zelena-kreda-za-lase
+16|Domov > Dojenček in otrok > Oprema za dojenčka in otroka  > Varovala"
+
+---------------------------------------------------------------------------------
+DataHut_AT_Dm_PriceExtractions_20260918.CSV
+______________________________________________
+
+data count: 16823
+
+
+"* not in 2 decimal points
+selling_price
+Invalid rows: 1932
+Row: 3 | Value: 5.0
+Row: 5 | Value: 36.9
+Row: 7 | Value: 5.0"
+"* not in 2 decimal points
+regular_price
+Invalid rows: 1922
+Row: 3 | Value: 5.0
+Row: 5 | Value: 36.9
+Row: 7 | Value: 5.0
+
+"Columns having rows with extra spaces:
+['product_name']
+Column: product_name
+1309|Tabletten Vitamin  B12 350, 30 St
+1520|Tönungsshampoo  7.4 Kupfergold, 14 ml
+1630|Nagelpuder Studio Nails  01 Gelato Glaze, 0,5 g
+2083|Augenbrauenfarbe Dunkelbraun  4-1, 1 St"
+
+------------------------------------------------------------
+DataHut_AT_Spar_PriceExtractions_20260918.CSV
+______________________________________________
+
+data count: 42900
+
+"Invalid grammage count: 1
+  'row': 18301
+errors': ['invalid grammage_quantity'],
+  'grammage_quantity': '2.',
+  'grammage_unit': 'stück',
+https://www.spar.at/produktwelt/fritz-fries-vampir-set-2-teilig-p2020006166256
+
+ 
+regular and selling prices empty for 2 records 
+
+row': 42806,row': 42894,
+where   'row': 42806, has value on website, but missing in the file
+https://www.spar.at/produktwelt/storck-nimm2-lachgummi-minis-p2020005893542
+  'regular_price': '',
+  'selling_price': ''
+
+****not in 2 decimal points
+regular_price
+Invalid rows: 3573
+Row: 90 | Value: 1.7
+Row: 237 | Value: 3.8
+Row: 252 | Value: 1.7
+
+selling_price
+Invalid rows: 3573
+Row: 90 | Value: 1.7
+Row: 237 | Value: 3.8
+Row: 252 | Value: 1.7
+
+"Columns having rows with extra spaces:
+['promotion_description', 'breadcrumb']
+
+Column: promotion_description
+13010|Mit Gutschein ab 2 Stk. je  Aktion!
+
+Column: breadcrumb
+22942|SPAR Website > Produktwelt > Lebensmittel > Milchprodukte & Alternativen > Milch & Milchgetränke > Frisch  & Haltbarmilch
+
+https://www.spar.at/produktwelt/vorarlberg-milch-laendle-halbfettmilch-laenger-frisch-1-5-fett-p2020006312547"
+--------------------------------------------------------------
+

@@ -1,0 +1,54 @@
+hm_2026_09_18.csv
+__________________________
+1) data count: 584
+Total Columns: 23
+
+2) Completely empty fields:
+['occasion_or_style_tags']
+
+3) unique_id: 4 duplicate values
+
+4) row|unique_id|pdp_url
+38|1235996001|https://www2.hm.com/en_gb/productpage.1235996001.html
+75|1343720003|https://www2.hm.com/en_gb/productpage.1343720003.html
+85|1227836001|https://www2.hm.com/en_gb/productpage.1227836001.html
+405|1227836001|https://www2.hm.com/en_gb/productpage.1227836001.html
+406|1235996001|https://www2.hm.com/en_gb/productpage.1235996001.html
+421|1343720003|https://www2.hm.com/en_gb/productpage.1343720003.html
+491|1312898001|https://www2.hm.com/en_gb/productpage.1312898001.html
+578|1312898001|https://www2.hm.com/en_gb/productpage.1312898001.html
+
+pdp_url: 4 duplicate values
+Duplicate rows: 0
+Dataset is completely unique
+
+5) extraction_date - 2026-09-17
+
+
+6) pipe character in breadcrumb:
+
+Column: breadcrumb
+row: 224|HM.COM > WOMEN > BASICS > TOPS > WOMEN'S BASIC LONG SLEEVE TOPS | CROPPED & T-SHIRT > HOODIE
+https://www2.hm.com/en_gb/productpage.1307896003.html
+row: 231|HM.COM > WOMEN > BASICS > TOPS > WOMEN'S BASIC LONG SLEEVE TOPS | CROPPED & T-SHIRT > HOODIE
+https://www2.hm.com/en_gb/productpage.1307896001.html
+row: 234|HM.COM > WOMEN > BASICS > TOPS > WOMEN'S BASIC LONG SLEEVE TOPS | CROPPED & T-SHIRT > HOODIE
+https://www2.hm.com/en_gb/productpage.1307896012.html
+row: 238|HM.COM > WOMEN > BASICS > TOPS > WOMEN'S BASIC LONG SLEEVE TOPS | CROPPED & T-SHIRT > HOODIE
+https://www2.hm.com/en_gb/productpage.1307896021.html
+
+7) prices not in 2 decimal points:
+
+regular_price
+Invalid rows: 72
+Row: 2 | Value: 97.0
+Row: 3 | Value: 97.0
+Row: 4 | Value: 97.0
+
+selling_price
+Invalid rows: 186
+Row: 2 | Value: 97.0
+Row: 3 | Value: 97.0
+Row: 4 | Value: 97.0
+
+
