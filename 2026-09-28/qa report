@@ -1,0 +1,1260 @@
+QA--ISSUES--REPORT-
+======================
+DataHut_SI_Spar_PriceExtractions_20260928.CSV
+_________________________________________________
+
+Data count: 15873
+
+percentage_discount' also empty
+
+
+"promotion valid uptodate available on website, but missing in the file:
+Error Type: Promotion description is present but promotion date is empty
+Invalid Count: 1
+Row: 5251 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://online.spar.si/p/bela-zemlja-spar-60g-678329
+
+
+Invalid grammage(g to kg conversion error) : 3
+Row: 683 | URL: https://online.spar.si/p/nadomestek-kave-z-okusom-po-kakavu-calmrooty-62g-681408 | File: 0.062 g
+Row: 6528 | URL: https://online.spar.si/p/instant-ocvrti-riz-vegetarijanski-mama-80g-683913 | File: 0.08 g
+Row: 8536 | URL: https://online.spar.si/p/testenine-fusilli-feelingok-220g-679091 | File: 0.22 g"
+-----------------------------------------------------------------------------
+DataHut_SI_Dm_PriceExtractions_20260928.CSV
+_______________________________________________
+
+data count: 10561
+
+"extra spaces:
+
+Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+eg:
+Column: product_name
+212|Maskara  I love extreme volume, 12 ml
+2579|YOUNG & PURE Gel za sušenje  mozoljev, 15 ml
+2915|Očala za branje, črno-siva, dioptrija  +1,00, 1 kos
+
+
+Column: breadcrumb
+18|Domov > Dojenček in otrok > Otroška hrana in napitki  > Otroški napitki
+22|Domov > Dojenček in otrok > Pripomočki za previjanje  > Previjalne podloge
+39|Domov > Moška nega  > Lasje > Barve za lase
+
+----------------------------------------------------------------------------"
+DataHut_SI_Mercator_PriceExtractions_20260928.CSV
+_______________________________________________________
+
+data count: 16944
+
+"promotion dates vailablon site, but missing in the file:
+eg:
+313| https://mercatoronline.si/izdelek/20077996/skyr-mu-450-g
+317| https://mercatoronline.si/izdelek/19799869/proteinski-jogurt-borovnica-in-sivka-ego-330-g"
+
+-----------------------------------------------------------------------
+DataHut_AT_Dm_PriceExtractions_20260928.CSV
+__________________________________________________________
+
+data count: 16944
+
+
+"Columns having rows with extra spaces:
+['product_name']
+eg:
+
+Column: product_name
+16|Lippenstift  Gloss Stick Caramelted 01 Sweet Lips, Caramel Kiss, 3 g
+1046|Tabletten Vitamin  B12 350, 30 St
+1798|Tönungsshampoo  7.4 Kupfergold, 14 ml
+2128|Augenbrauenfarbe Dunkelbraun  4-1, 1 St
+3022|Make-Up Schwamm Miracle Complexion mit  Case, 1 St"
+---------------------------------------------------------------------------
+DataHut_CH_Lidl_FullDump_20260928.CSV
+_______________________________________
+
+data count: 3825
+
+"Invalid promotion date rows: 1
+Row: 2330 | promotion_valid_from: '29.12.2026' | promotion_valid_upto: '28.9.2026'
+https://sortiment.lidl.ch/de/catalog/product/view/id/13425/s/fondue-chinoise-kalb-0007130/category/54/"
+
+"Promotion dates: Invalid
+Error Type: Promotion description is present but promotion date is empty
+eg:
+Row: 41 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://sortiment.lidl.ch/de/catalog/product/view/id/22191/s/thai-kitchen-kokosnussmilch-light-5114457/category/54/
+"
+"Columns having rows with extra spaces:
+['product_name', 'producthierarchy_level3', 'breadcrumb', 'product_description']
+
+eg:
+Column: product_name
+3745|Pancetta, Provola und  Zwiebel
+
+Column: producthierarchy_level3
+3745|Pancetta, Provola und  Zwiebel
+
+Column: breadcrumb
+3745|Sortiment > Sortiment > Pancetta, Provola und  Zwiebel
+
+Column: product_description
+3032|Besonders warmer Tragekomfort durch hohen Wollanteil Pro Paar  Finde jetzt deine Grösse"
+----------------------------------------------------------------------------------------------------------------
+
+dubizzle_egp_2026_09_05.json
+___________________________
+
+data count: 253662
+
+
+"['' 'Featured' 'Elite']
+"
+
+"white space issues:
+['broker_display_name', 'broker', 'description', 'location']
+
+1036|broker_display_name|ايهاب  جوزيف
+1621|broker_display_name|Eslam  Yousry
+1850|broker_display_name|AHMED  Muhammed
+
+38022|broker|IBRAHIM  EMAD
+39544|broker|ISLAM  TAWFIK"
+
+--------------------------------------------------------------
+
+bayut_uae_project_2026_09_05.json
+____________________________________
+
+data count: 2965
+
+"column unit_types has white space issues
+eg:
+Row: 1416 | Column: unit_type | Value: 'Type B, Type D, Type C, Type E, Type A , Type A, C, Type F, D, Type B '
+Row: 1417 | Column: unit_type | Value: 'Type B, Type D, Type C, Type E, Type A , Type A, C, Type F, D, Type B '
+
+"
+----------------------------------------------------------------
+
+aqarmap_egp_2026_09_05.json
+________________________________
+
+data count: 281219
+
+
+listing_type,seller_role,depth fields are also empty
+"**column with white spaces:
+['broker_display_name', 'broker', 'title', 'description', 'location']
+
+534|broker|MOHAMED  MOHAMED
+3351|title|Commercial  For rent in El Yasmeen 6
+2493|broker_display_name|Mohamed  Mohamed
+
+
+**phone nos ends with xxxx :
+eg:
+Row: 1 | Value: +20100990xxxx | URL: https://aqarmap.com.eg/en/listing/7276299-for-sale-cairo-new-cairo-bait-el-watan-first-neighborhood/
+Row: 2 | Value: +20122738xxxx | URL: https://aqarmap.com.eg/en/listing/7290740-for-sale-sharqia-10th-of-ramadan-industrial-area-3rd-industrial-zone-a4/
+**
+Invalid null/nan values:
+Row 1831: Column=broker_display_name, Value='null'
+Row 1831: Column=broker, Value='NULL'
+Row 76552: Column=broker_display_name, Value='null'
+Row 76552: Column=broker, Value='NULL'
+Row 118765: Column=broker_display_name, Value='null'
+Row 118765: Column=broker, Value='NULL'
+Row 165520: Column=broker_display_name, Value='Nan'
+Row 165520: Column=broker, Value='NAN'
+Row 165531: Column=broker_display_name, Value='Nan'
+Row 165531: Column=broker, Value='NAN'
+Row 198090: Column=broker_display_name, Value='Nan'
+Row 198090: Column=broker, Value='NAN'
+Row 213461: Column=broker_display_name, Value='Nan'
+Row 213461: Column=broker, Value='NAN'
+Row 218645: Column=broker_display_name, Value='Null'
+Row 218645: Column=broker, Value='NULL'
+Row 220126: Column=broker_display_name, Value='Nan'
+Row 220126: Column=broker, Value='NAN'
+Row 220245: Column=broker_display_name, Value='Nan'
+Row 220245: Column=broker, Value='NAN'
+Row 220258: Column=broker_display_name, Value='Nan'
+Row 220258: Column=broker, Value='NAN'
+Row 223016: Column=broker_display_name, Value='Nan'
+Row 223016: Column=broker, Value='NAN'
+Row 230168: Column=broker_display_name, Value='Nan'
+Row 230168: Column=broker, Value='NAN'
+Row 244288: Column=broker_display_name, Value='Nan'
+Row 244288: Column=broker, Value='NAN'
+Row 244293: Column=broker_display_name, Value='Nan'
+Row 244293: Column=broker, Value='NAN'
+Row 244457: Column=broker_display_name, Value='Nan'
+Row 244457: Column=broker, Value='NAN'
+Row 244471: Column=broker_display_name, Value='Nan'
+Row 244471: Column=broker, Value='NAN'
+Row 245552: Column=broker_display_name, Value='Nan'
+Row 245552: Column=broker, Value='NAN'
+Row 245617: Column=broker_display_name, Value='Nan'
+Row 245617: Column=broker, Value='NAN'
+Row 255759: Column=broker_display_name, Value='Nan'
+Row 255759: Column=broker, Value='NAN'
+Row 261403: Column=broker_display_name, Value='Nan'
+Row 261403: Column=broker, Value='NAN'
+Row 261457: Column=broker_display_name, Value='Nan'
+Row 261457: Column=broker, Value='NAN'
+Row 261518: Column=broker_display_name, Value='Nan'
+Row 261518: Column=broker, Value='NAN'
+Row 264910: Column=broker_display_name, Value='Nan'
+Row 264910: Column=broker, Value='NAN'
+Row 266156: Column=broker_display_name, Value='Nan'
+Row 266156: Column=broker, Value='NAN'
+Row 266165: Column=broker_display_name, Value='Nan'
+Row 266165: Column=broker, Value='NAN'
+Row 268351: Column=broker_display_name, Value='Nan'
+Row 268351: Column=broker, Value='NAN'
+Row 272463: Column=broker_display_name, Value='Nan'
+Row 272463: Column=broker, Value='NAN'
+Row 272527: Column=broker_display_name, Value='Nan'
+Row 272527: Column=broker, Value='NAN'
+Total invalid values: 58
+
+
+**Invalid bathrooms: 6
+Row: 47080 | Value: 02 | URL: https://aqarmap.com.eg/en/listing/7082129-for-rent-alexandria-al-mamoura/
+Row: 47132 | Value: 03 | URL: https://aqarmap.com.eg/en/listing/7001498-for-rent-alexandria-borg-el-arab-compounds-in-borg-el-arab/
+Row: 52486 | Value: 2.5 | URL: https://aqarmap.com.eg/en/listing/7155474-for-sale-cairo-dokki-mydn-lmsh-almosekar-ali-ismail-st/
+Row: 67894 | Value: 01 | URL: https://aqarmap.com.eg/en/listing/6939476-for-rent-cairo-new-cairo-90th-street-northern-90th-street/
+Row: 76792 | Value: 0.2 | URL: https://aqarmap.com.eg/en/listing/7252376-for-sale-suez-el-arebaaen-el-sadat/
+Row: 80179 | Value: ١ | URL: https://aqarmap.com.eg/en/listing/6989431-for-sale-cairo-faisal-el-talbeya/
+
+---------------------------------------------------------------
+"
+bayut_bah_2026_09_05.json
+_______________________________
+
+data count: 2772
+
+no other issues found
+---------------------------------------
+
+qatarliving_qat_2026_09_05.json
+____________________________________
+
+data count: 27015
+
+
+"Columns having rows with extra spaces:
+['description']
+row': 15,
+  'url': 'https://qlp.qatarliving.com/en/properties/rent/residential/villa_apartment/fully_furnished_studio_available_at_thumama_behind_ansar_gallery/293594
+row': 26,
+  'url': 'https://qlp.qatarliving.com/en/properties/rent/residential/apartment/lusail_1bhk_no_commission_bills_included_worry_free_/175865'
+etc'
+"
+
+---------------------------------------------------------------------------
+hepsiemlak_tur_2026_10.json
+__________________________________
+
+Future month .10 instead of 09,hepsiemlak_tur_2026_10.json
+
+data count: 315766
+
+iteration_number - 2026_10 instead of 2026_09
+
+
+"['broker_display_name', 'broker', 'title', 'description', 'location', 'agent_name']
+3065|broker_display_name|Efe Group  İnşaat
+3917|broker_display_name|T & T  A.O
+7698|broker_display_name|ÖZVERİ  GAYRİMENKUL
+
+
+57|title|YENİBOSNA DOĞU SANAYİ SİTESİNDE GÜZEL KONUMDA SATILIK  İŞYERİ
+73|title|Kayseri Yıldırım Beyazıt  Mahallesi’nde satılık Dükkan
+93|title|OSMANCIK CADDESİ ARAS İŞ HANI EŞYALI  SATILIK 2+0 OFİS 2,650,000 TL
+etc"
+
+-------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
