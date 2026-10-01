@@ -1,0 +1,215 @@
+QA-ISSUES-REPORT
+=====================
+
+DataHut_SI_Dm_PriceExtractions_20260930.CSV
+_______________________________________________
+
+data count: 10395
+
+
+"Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+Column: product_name
+296|Maskara  I love extreme volume, 12 ml
+2481|YOUNG & PURE Gel za sušenje  mozoljev, 15 ml
+2718|Očala za branje, črno-siva, dioptrija  +1,00, 1 kos
+3205|Črtalo za oči v gelu  STAY & PLAY, 01 Black, 5 g
+
+Column: breadcrumb
+21|Domov > Moška nega  > Lasje > Barve za lase
+29|Domov > Dojenček in otrok > Otroška hrana in napitki  > Otroški napitki
+61|Domov > Dojenček in otrok > Pripomočki za previjanje  > Koši za plenice in ostalo
+70|Domov > Dojenček in otrok > Otroška hrana in napitki  > Otroški napitki"
+-----------------------------------------------------------------------
+
+DataHut_SI_Spar_PriceExtractions_20260930.CSV
+__________________________________________________
+
+data count: 15883
+
+percentage_discount' also empty
+
+
+"**Invalid grammage(g to kg cconversion error): 3
+Row: 625 | URL: https://online.spar.si/p/nadomestek-kave-z-okusom-po-kakavu-calmrooty-62g-681408 | File: 0.062 g
+Row: 6555 | URL: https://online.spar.si/p/instant-ocvrti-riz-vegetarijanski-mama-80g-683913 | File: 0.08 g
+Row: 8575 | URL: https://online.spar.si/p/testenine-fusilli-feelingok-220g-679091 | File: 0.22 g"
+
+----------------------------------------------------------------------
+
+DataHut_SI_Mercator_PriceExtractions_20260930.CSV
+___________________________________________________________
+data count: 16981
+
+"*promotion valid upto dates available on website, but missing in the file
+eg:
+Row: 95 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://mercatoronline.si/izdelek/17164308/tekoci-jogurt-1-3-m-m-ego-1-kg
+284|  https://mercatoronline.si/izdelek/19462529/proteinski-jogurt-cesnja-in-hibiskus-ego-330-g"
+
+--------------------------------------------------------
+
+DataHut_AT_Spar_PriceExtractions_20260930.CSV
+________________________________________________
+data count: 43199
+
+"single price available on website, but selling and regular prices are empty in the file
+https://www.spar.at/produktwelt/simpex-color-steckdose-4-fach-mit-schalter-weiss-p2020002366551"
+
+
+"Extra spaces count: 1
+column': 'breadcrumb',
+ 'row': 26144
+https://www.spar.at/produktwelt/vorarlberg-milch-laendle-halbfettmilch-laenger-frisch-1-5-fett-p2020006312547
+ 
+
+**invalid pipe:
+column:
+product_name
+site_shown_uom
+eg:
+Column: product_name
+9119|Isana AHA | PHA Cleanser 
+125 ml
+18793|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+19767|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück
+Column: site_shown_uom
+18793|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+19767|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück
+"--------------------------------------------------------------------------------
+
+DataHut_AT_Dm_PriceExtractions_20260930.CSV:
+____________________________________________
+
+data count: 16929
+
+
+"Columns having rows with extra spaces:
+['product_name']
+eg:
+Column: product_name
+52|Lippenstift  Gloss Stick Caramelted 01 Sweet Lips, Caramel Kiss, 3 g
+986|Tabletten Vitamin  B12 350, 30 St
+1677|Tönungsshampoo  7.4 Kupfergold, 14 ml
+2113|Augenbrauenfarbe Dunkelbraun  4-1, 1 St
+2262|Nagelpuder Studio Nails  01 Gelato Glaze, 0,5 g"
+
+--------------------------------------------------------------
+
+bhgre_2026_10_05.json
+_______________________
+
+"**invalid website
+Row 6844: http://www.micanagle@garygreene.com
+Row 9979: http://dorotachojnacki/cocciarealty.sites.bhgrealestate.com"
+
+"Jamaica for three rows
+4413 | Jamaica | https://www.bhgre.com/jam/city-unavailable/agents/better-homes-and-gardens-real-estate-jamaica/aid-P00200000FDdscdXBZtMRb3oSgOQD9P9S6pLBP1I
+8591 | Jamaica | https://www.bhgre.comNone
+8592 | Jamaica | https://www.bhgre.com/jam/city-unavailable/agents/edwin-wint/aid-P00200000FDdqSekqCfO4OyzqGu2mbNGsFTEcVYL
+
+Total invalid rows: 3
+
+"-----------------------------------------------------------------------------------------
+century21_us_2026_10_05.json
+________________________________
+
+data count: 37972
+
+"extra spaces between words:
+eg:
+Row 30201: '209 South 2nd Street,  #200'
+Row 30435: '8195  S. Saginaw Street'
+Row 35980: '2104 N Jackson St  A'
+Row 36781: '29121  Overland Dr.'
+Row 36929: '725  Cape Coral Parkway West'"
+
+"not empty
+count:
+email: 37972
+"
+"not empty
+count:
+title: 32163"
+"not empty
+count:
+social: 37972"
+
+--------------------------------------------------------------
+compass_2026_10_05.json
+____________________________
+
+data count: 35452
+
+
+*Email mixed with non-email text
+Row 24009: brandon.walls@compass.com | DRE# 01806256
+
+
+**white space:
+[title,social,first_name]
+eg:
+
+Column: first_name
+Row 4710: 'The Tuite  Real Estate Group'
+Row 10397: 'Ilana  and Leigh Team'
+Row 22695: 'Anita Oxford  CRS, CHLMS'
+Row 25134: 'Summit  Home Sales Group'
+
+
+Column: title
+Row 19803: 'Realtor®  | SRES® | DRE# 02094196'
+Row 22152: 'REALTOR® |  DRE# 02114766'
+Column: social
+Row 2087: '{'facebook_url': 'https://www.facebook.com/mdteamcompass/', 'twitter_url': 'https://twitter.com/mlanzrealestate?lang=en  target=', 'linkedin_url': 'https://www.linkedin.com/in/maria-lanzisero-85313348/', 'other_urls': ['https://www.instagram.com/mdteamcompass/']}'
+"
+---------------------------------------------------------------
+bayut_ksa_2026_10.json
+_____________________
+dat count: 86545
+
+"white space
+['description', 'location', 'agent_name']
+eg:
+86033|location|Alkhubara  Wal Sahabeen
+86212|location|District No  5, Al Laith
+56|agent_name|Faris  AlHazmi
+80|agent_name|Mohammed  AlHarbi
+162|agent_name|Mohammed  Al Duhayan"
+----------------------------------------------------------
+
+sedd_uae_2026_10.json
+__________________________
+data count: 1058
+
+"white space
+Rows with extra-long spaces: 1
+Row 881 | Column: name | Value: 'SAMAH REALESTATE   L.L.C.S.P'"
+
+'broker_licenses
+ - not list of dict,instead dict only
+ ------------------------------------------------------------------------
+ 
+bayut_properties_rent_residential_2026_09_30.json
+_______________________________________________________
+
+data count: 127315
+
+"** cover photo available on website, but empty in the file?
+https://www.bayut.com/property/details-16635665.html
+
+
+**image_url** is available under the **`photos`**  and "" cover_photo"" field in the file, but the **`image_url`** field is absent from the API response.
+eg:
+https://www.bayut.com/property/details-8503493.html
+
+** createdAt, approvedAt, updatedAt, touchedAt, and reactivatedAt have a format mismatch between the File and API. The File contains Decimal(...) representations, while the API returns numeric values
+
+** null in the API is taken as None in the file
+"----------------------------------------------------------------
+
+emlakjet_tur_2026_10.json
+_____________________________
+no issues found
+
+
+____________________________
