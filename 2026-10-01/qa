@@ -1,0 +1,247 @@
+QA-----ISSUES-REPORT
+======================
+DataHut_AT_Spar_FullDump_20261001.CSV
+_________________________________________
+
+*data count: 43163
+
+*age_of_the_product not empty
+
+*
+"Columns having rows with extra spaces:
+['producthierarchy_level6', 'breadcrumb']
+
+Column: producthierarchy_level6
+23112|Frisch  & Haltbarmilch
+
+Column: breadcrumb
+480|SPAR Website > Produktwelt > Drogerie & Beauty > Hygiene & Hygienepapier > Toilettenpapier  > Toilettenpapier Trocken
+966|SPAR Website > Produktwelt > Drogerie & Beauty > Hygiene & Hygienepapier > Toilettenpapier  > Toilettenpapier Trocken
+
+**Columns with unescaped pipe character:
+nutritional_information
+product_name
+site_shown_uom
+
+eg:
+
+Column: product_name
+8252|Isana AHA | PHA Cleanser 125 ml
+17992|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+19015|BGS Mehrzweckschrauben T20 | 4,0 x 40 mm | 150 Stück
+
+
+Column: site_shown_uom
+17992|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+19015|BGS Mehrzweckschrauben T20 | 4,0 x 40 mm | 150 Stück
+19796|BGS Mehrzweckschrauben T25 | 5,0 x 80 mm | 50 Stück"
+-----------------------------------------------------------------------------------------------DataHut_AT_Dm_FullDump_20261001.CSV:
+______________________________________
+
+data ount: 16866
+
+"more empty fields
+---
+producthierarchy_level5
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+
+non empty
+-----
+barcode
+retail_limit"
+
+
+"Columns having rows with extra spaces:
+['product_name', 'variants', 'product_description', 'storage_instructions', 'preparationinstructions', 'country_of_origin', 'labelling', 'label_information', 'material', 'warning']
+eg:
+
+Column: product_name
+20|Lippenstift  Gloss Stick Caramelted 01 Sweet Lips, Caramel Kiss, 3 g
+1044|Tabletten Vitamin  B12 350, 30 St
+Column: variants
+1755|{'colour': ['Tnungsshampoo Hellbraun 5.73', 'Tnungsshampoo 8.03 Bourbon', 'Tnungsshampoo 10.11 Silbergrau', 'Tnungsshampoo Karamellblond 8.7', 'Tnungsshampoo Platinblond 8.1', 'Tnungsshampoo  7.4 Kupfergold']}
+etc.."
+
+----------------------------------------------------------------------------
+DataHut_CH_Denner_FullDump_20261001.CSV
+____________________________________________
+
+data count: 1689
+
+* regular_price empty count: 159
+
+"Invalid in-stock rows without price: 159
+Row: 686 | instock: True | regular_price: '' | selling_price: '' | pdp_url: https://www.denner.ch/de/aktionen/crackers-mit-ip-suisse-mehl~p1002609?variant=7756af32-5e80-47f2-8d36-c8e7a4d664db
+Row: 691 | instock: True | regular_price: '' | selling_price: '' | pdp_url: https://www.denner.ch/de/aktionen/ip-suisse-crackers~p1002606?variant=4e5dd348-c318-4f69-8b6a-ac3089c8c026
+Row: 1197 | instock: True | regular_price: '' | selling_price: '' | pdp_url: https://www.denner.ch/de/aktionen-und-sortiment/cabernet-d-anjou-dumnacus-aoc~p662725?variant=98ae9ccd-7e83-433d-ae4c-f045c08f0cd1"
+
+--------------------------------------------------------------------------------
+DataHut_SI_Mercator_FullDump_20261001.CSV
+_____________________________________________
+
+data count: 16963
+
+
+"Columns having rows with extra spaces:
+['brand']
+
+Column: brand
+240|KREPKO  EKO
+https://mercatoronline.si/izdelek/18712103/bio-kefir-3-2-m-m-krepko-250-g
+786|BEL  BABYBEL
+10426|FELIX  PURINA
+
+
+** promotion dates available on website, but empty in the file for some records
+eg:
+Row: 93 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://mercatoronline.si/izdelek/17164308/tekoci-jogurt-1-3-m-m-ego-1-kg
+"
+---------------------------------------------------------------------------------
+DataHut_CH_Coop_FullDump_20261001.CSV
+__________________________________________
+data count: 35479
+
+
+"producthierarchy_level2 empty for 9 records, so 
+breadcrumb has separator > >( same as website)
+
+row|value|url
+17953|Startseite > > Château du Tertre Margaux AC 5ème Cru Classé|https://www.coop.ch/de//chateau-du-tertre-margaux-ac-5eme-cru-classe/p/3174651024
+19403|Startseite > > Haut-Médoc AC Château Clément Pichon|https://www.coop.ch/de//haut-medoc-ac-chateau-clement-pichon/p/3499535009
+19476|Startseite > > Château Haut-Bages Libéral Pauillac AOC 5ème Cru Classé|https://www.coop.ch/de//chateau-haut-bages-liberal-pauillac-aoc-5eme-cru-classe/p/3173814014
+19483|Startseite > > Château Poujeaux Moulis-en-Médoc AOC|https://www.coop.ch/de//chateau-poujeaux-moulis-en-medoc-aoc/p/3173430026
+19499|Startseite > > Château La Gurgue Margaux AOC|https://www.coop.ch/de//chateau-la-gurgue-margaux-aoc/p/3173419026
+29151|Startseite > > Aargau AOC Birmenstorfer Riesling-Sylvaner|https://www.coop.ch/de/weine/alle-weine/weissweine/aargau-aoc-birmenstorfer-riesling-sylvaner/p/1014011008
+31449|Startseite > > Gigondas AOP Les Hauts de Montmirail Brusset|https://www.coop.ch/de/weine/alle-weine/rotweine/gigondas-aop-les-hauts-de-montmirail-brusset/p/5851366006
+32382|Startseite > > Châteauneuf Sinards Beaucastel 2022 75CL 6x 75cl|https://www.coop.ch/de/weine/spezialitaeten/online-specials/chateauneuf-sinards-beaucastel-2022-75cl/p/5852094007
+32416|Startseite > > Toscana IGT Siepi Marchesi Mazzei|https://www.coop.ch/de/weine/alle-weine/rotweine/toscana-igt-siepi-marchesi-mazzei/p/7095354001
+"
+
+
+"Invalid in-stock rows without price: 19
+
+Row: 1912 | instock: True | regular_price: '' | selling_price: '' | pdp_url: https://www.coop.ch/de/lebensmittel/fleisch-fisch/abgepacktes-frischfleisch/schwein/prix-garantie-schweinssteak-nierstueck-4-5-stueck-ca/p/3466031
+Row: 15393 | instock: True | regular_price: '' | selling_price: '' | pdp_url: https://www.coop.ch/de/kiosk/geschenkkarten/geschenkkarte-aufladen/p/9900798
+Row: 15394 | instock: True | regular_price: '' | selling_price: '' | pdp_url: https://www.coop.ch/de/kiosk/geschenkkarten/geschenkkarte-universal-merci-wert-variabel-aufladbar/p/9901075"
+-----------------------------------------------------------------------------------------
+DataHut_CH_Migros_FullDump_20261001.CSV
+_____________________________________________
+
+data count: 39045
+
+empty-fie_name
+empty for 217 records-breadcrumb
+
+
+"Invalid grammage count: 1[trailing decimal point]
+[{'errors': ['invalid grammage_quantity'],
+  'grammage_quantity': '16.',
+  'grammage_unit': 'stück',
+  'pdp_url': 'https://www.migros.ch/de/product/526201000000',
+  'row': 19170}]"
+
+
+"product_name empty for 3 records( empty in the website )
+Row 28391 | PDP URL: https://www.migros.ch/de/product/658710100018
+Row 34233 | PDP URL: https://www.migros.ch/de/product/658710100030
+Row 37079 | PDP URL: https://www.migros.ch/de/product/658710100022
+
+
+**Columns having rows with extra spaces:
+['size', 'site_shown_uom']
+eg:
+
+Column: size
+22289|37.5 x 15.5  x 28 cm
+23506|0.6 x 36mm,  0.65 x 39mm,  0.8 x 42mm
+23527|Durchmesser 10,  13,  14mm
+23528|15mm,  16mm
+23532|0.9 x 45mm,  1.2 x 52.5mm,  2 x 58mm,  1.8 x 76mm,  1.6 x 58mm,  R24 x D1.35mm
+23737|N°70,  N°80,  N°90
+23739|0.53 x 33.6mm,  0.6 x 36mm,  0.6 x 35.7mm,  0.73 x 38.7mm,  0.85 x 41.5mm,  0.85 x 41.6mm,  0.85 x 42mm,  0.95 x 45mm
+
+Column: site_shown_uom
+9422|4  x 250ml
+
+**Columns with unescaped pipe character:
+distributor_address
+ingredients
+instructionforuse
+preparationinstructions
+product_description
+eg
+
+Column: distributor_address
+1237|Planted Foods AG Planted Foods AG | Kemptpark 32/34 | 8310 Kemptthal
+1253|Planted Foods AG Kemptpark 32/34 | 8310 Kemptthal:
+"------------------------------------------------------------------------------
+
+DataHut_AT_Spar_FullDump_20261001.CSV
+____________________________________________-
+
+data count: 43182
+
+Columns having rows with extra spaces:
+['producthierarchy_level6', 'breadcrumb']
+
+
+Column: producthierarchy_level6
+24558|Frisch  & Haltbarmilch
+
+Column: breadcrumb
+493|SPAR Website > Produktwelt > Drogerie & Beauty > Hygiene & Hygienepapier > Toilettenpapier  > Toilettenpapier Trocken
+
+**Columns with unescaped pipe character:
+nutritional_information
+product_name
+site_shown_uom
+eg:
+Column: product_name
+7793|Isana AHA | PHA Cleanser 125 ml
+18200|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+-------------------------------------------------------------------
+royallepage_2026_10_05.json:
+__________________________
+data count: 18726
+
+"whitespace:
+
+Column: first_name
+Row 5185: 'Shervin  Khajeh Hassani Mohammadian'
+Row 7741: 'Jean Paul  Massamba Kapita'
+Row 8234: 'QUAZI MD ZIAUR  RASHID'
+Row 8332: 'George West  FRI CMR'
+Row 12021: 'Cindy  Oldfield Personal Real Estate Corporation'
+Row 14462: 'Gurpreet Singh  Mann PREC*'
+Row 15065: 'Andres Felipe  Pachon Suta'
+Row 15622: 'Denise Doucet  D2'
+
+Column: office_name
+Row 4196: 'Royal LePage Landry's for  Real Estate Kenora'
+Row 4199: 'Royal LePage Landry's for  Real Estate Kenora'
+
+Column: social
+Row 6751: '{'facebook_url': 'https://www.facebook.com/realtorgarrysingh', 'other_urls': ['https://www.instagram.com/garrychahal.ca/profilecard/?igsh=dWJqd3RhanprZXoy', 'https://www.instagram.com/ Guljinder Singh 3:48?PM (0 minutes ago) to me  https://www.instagram.com/garry_singh_real_estate?igsh=dWJqd3RhanprZXoy&amp;utm_sour', 'https://www.tiktok.com/@guljinder.garry?_t=8k2rUK4jSLd&amp;_r=1']}'"
+
+-------------------------------------------------------------------------------
+
+aqar_ksa_2026_10.json
+________________________
+
+data count: 155800
+
+* currency values-  ['ريال', ''],count: '': 236,'ريال': 155564
+
+
+
+"white space:
+['title', 'description']
+eg:
+83281
+https://sa.aqar.fm/شقق-للبيع/الرياض/شرق-الرياض/حي-المعيزلة/شارع-الشيخ-خليفه-بن-حمد-آل-ثاني-حي-المعيزيلة-مدينة-الرياض-منطقة-الرياض-6745662"
+--
