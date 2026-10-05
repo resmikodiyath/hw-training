@@ -1,0 +1,170 @@
+QA-issues-report
+===================
+DataHut_SI_Dm_PriceExtractions_20261002.CSV
+____________________________________________
+
+data count: 10593
+
+"white space:
+
+Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+
+Column: product_name
+220|Maskara  I love extreme volume, 12 ml
+2403|YOUNG & PURE Gel za sušenje  mozoljev, 15 ml
+Column: breadcrumb
+6|Domov > Dojenček in otrok > Otroška hrana in napitki  > Otroški napitki
+14|Domov > Dojenček in otrok > Pripomočki za previjanje  > Previjalne podloge
+83|Domov > Moška nega  > Lasje > Barve za lase"
+-----------------------------------------------------------------------------------
+DataHut_SI_Mercator_PriceExtractions_20261002.CSV
+______________________________________________________
+data count: 16840
+
+"*promotion valid upto dates available on website, but missing in the file
+eg:
+
+133 | https://mercatoronline.si/izdelek/17164308/tekoci-jogurt-1-3-m-m-ego-1-kg
+1554|https://mercatoronline.si/izdelek/1321943/salama-trimcek-ave-pakirano-400-g"
+-------------------------------------------------------------------------------------------
+DataHut_SI_Spar_PriceExtractions_20261002.CSV:
+____________________________________________________
+data count: 16142
+
+percentage_discount' also empty
+
+
+** Invalid grammage( g to kg conversion error): 3
+Row: 708 | URL: https://online.spar.si/p/nadomestek-kave-z-okusom-po-kakavu-calmrooty-62g-681408 | File: 0.062 g
+Row: 6644 | URL: https://online.spar.si/p/instant-ocvrti-riz-vegetarijanski-mama-80g-683913 | File: 0.08 g
+Row: 8700 | URL: https://online.spar.si/p/testenine-fusilli-feelingok-220g-679091 | File: 0.22 g
+
+*promotion valid upto dates available on website,but missing in the file
+
+Count: 3
+3845|https://online.spar.si/p/ledeni-caj-z-okusom-gozdnih-sadezev-fructal-1l-663815
+3847|https://online.spar.si/p/ledeni-caj-z-okusom-breskve-fructal-15l-663814
+10494|https://online.spar.si/p/flips-z-arasidi-smoki-stark-50g-339150"
+*-------------------------------------------------------------------------------------
+DataHut_AT_Spar_PriceExtractions_20261002.CSV:
+___________________________________________________
+
+data count: 43183
+
+"Extra spaces count: 1
+column': 'breadcrumb',
+  'pdp_url': 'https://www.spar.at/produktwelt/vorarlberg-milch-laendle-halbfettmilch-laenger-frisch-1-5-fett-p2020006312547',
+  'row': 24659
+SPAR Website > Produktwelt > Lebensmittel > Milchprodukte & Alternativen > Milch & Milchgetränke > Frisch  & Haltbarmilch
+
+**Columns with unescaped pipe character:
+product_name
+site_shown_uom
+eg:
+Column: product_name
+8768|Isana AHA | PHA Cleanser 125 ml
+18447|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+
+Column: site_shown_uom
+18447|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+19732|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück
+"------------------------------------------------------------
+DataHut_AT_Dm_PriceExtractions_20261002.CSV
+___________________________________________________
+data count: 16932
+
+"white space in product_name
+eg:
+
+Column: product_name
+11|Lippenstift  Gloss Stick Caramelted 01 Sweet Lips, Caramel Kiss, 3 g
+737|Mascara Lash Princess False Lash Effect  Care Bears Waterproof 01 No Rain, No Rainbow, 12 ml
+1126|Tabletten Vitamin  B12 350, 30 St
+1537|Tönungsshampoo  7.4 Kupfergold, 14 ml"
+------------------------------------------------------------------------------------
+DataHut_CH_Lidl_PriceExtractions_20261002.CSV
+__________________________________________________
+
+data count: 3585
+
+"Invalid promotion date rows: 1
+Row: 1089 | promotion_valid_from: '20.11.2026' | promotion_valid_upto: '2.10.2026' | pdp_url: https://sortiment.lidl.ch/de/catalog/product/view/id/17960/s/emmi-toni-jogurt-5111645/category/54/"
+
+" Promotion description is present but promotion date is empty for some records:
+
+eg:
+Row: 43 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://sortiment.lidl.ch/de/catalog/product/view/id/22224/s/emmi-gala-natur-0002539/category/54/
+Row: 51 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://sortiment.lidl.ch/de/catalog/product/view/id/22215/s/pflegetuecher-0039559/category/54/
+"
+"Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+
+
+Column: product_name
+3544|Pancetta, Provola und  Zwiebel
+
+Column: breadcrumb
+3544|Sortiment > Sortiment > Pancetta, Provola und  Zwiebel"
+-----------------------------------------------------------------------------------------------
+remax_us_2026_10_05.json
+___________________________
+
+data cunt: 44040
+
+"*Invalid agent_phone_numbers count: 11
+Row 2195: ['+560', '(812) 560-9101']
+https://www.remax.com/usa/en/real-estate-agents/keegan-mccamment-greensburg-in/100066913
+
+Row 5491: ['+372']
+Row 6355: ['+491']
+Row 7386: ['+267-969']
+Row 16267: ['(774) 259-8937', '+774-259']
+Row 23255: ['+((30) 1) -916-']
+Row 32459: ['+((30) 2) -388-']
+Row 35734: ['+315', '(603) 488-6298']
+Row 36529: ['(818) 970-5846', '+((81) 8) -388-']
+Row 36840: ['+260']
+Row 41472: ['+831', '(207) 553-7500']
+
+
+**leading or trailing white spaces found
+Column: zipcode
+Row 11880: ' '
+trailing space issue:
+Row 17895
+""zipcode"": ""28754 ""
+
+
+**extra spaces between words in the field first_name,office_name ,address,social,title
+eg:
+Column: first_name
+Row 12: 'Suzette & Doug  Schuller'
+Row 103: 'Robert  Bellemare, P.A., CRS, CDPE',
+Row 291: 'Carrie & Steve  Turner',
+
+Column: title
+Row 462: 'Associate  Real Estate Broker'
+Row 1766: 'Realtor,  Sales Associate and Property Manager'
+etc
+"
+----------------------------------------------------------
+machinerytrader_2026_10_02.csv
+____________________________________
+a total of 654 columns  are there in the dataset
+
+data count: 8512
+
+
+"Columns having rows with extra spaces:
+['company_name', 'contact_person', 'EngineMake', 'StockNumber', 'ProductConfiguration']
+eg:
+
+Column: EngineMake
+3218|JOHN DEERE 
+
+Column: StockNumber
+1060|VHWT00050  C
+
+Column: ProductConfiguration
+2666|Personnel Carrier "
