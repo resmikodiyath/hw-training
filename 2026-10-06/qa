@@ -1,0 +1,77 @@
+QA---issues----report
+======================
+
+DataHut_SI_Mercator_PriceExtractions_20261006.CSV
+_____________________________________________________
+data count: 16802
+
+"*promotion valid upto dates available on website, but missing in the file
+eg:
+
+1643| https://mercatoronline.si/izdelek/20002636/klobasa-sudzuk-gavrilovic-pakirano-400-g
+
+2159|https://mercatoronline.si/izdelek/20044466/majoneza-v-vrecki-thomy-170-g"
+-------------------------------------------------------------------------------
+DataHut_AU_Liquorland_FullDump_20261006.CSV:
+__________________________________________________
+
+** price_across_any_six,price_member_only_price values are 0 for many records
+
+*product available at different stores, but missing in the file
+product_url:  https://www.liquorland.com.au/beer-and-cider/carlton-dry-3-5-can-440ml_1000671?uom=CTN24
+*available at stores 
+Hoppers Crossing, 3029 VIC,
+Canberra, 2601 ACT
+Wodonga(coles), 3690 VIC
+
+url: https://www.liquorland.com.au/wine/catalina-sounds-pinot-noir-750ml_1002205
+available at 4 stores, but missing in the file for 2 stores
+--------------------------------------------------------------
+DataHut_AU_DanMurphys_FullDump_20261006.CSV
+________________________________________________
+
+ file name mismatch:
+d and m in danmurphys is in uppercase
+DataHut_AU_DanMurphys_FullDump_20261006.CSV
+
+_---------------------------------------------
+dubizzle_bah_2026_10_01.json
+_____________________________________
+
+Columns having rows with extra spaces:
+['broker_display_name', 'broker', 'title', 'description']
+eg:
+Row 50 | Column: description | Value: 'Building : Tubli Total Flat : 13Total Bedroom  : 29Total Bathroom : 368 Flat,   2 Bedroom & 3 Bathroom                       Hall & Kitchen2 Flat,   3 Bedroom & 3 Bathroom                      Hall & Kitchen2 Flat,   2 Bedroom & 2 Bathroom                      Hall & Kitchen1 Flat,   2 Bedroom & 1 Bathroom                           & Kitchen 1 unit,   1 Bedroom & 1 BathroomMONTHLY RENT: BHD. 2,500 /- Negotiable, Without EWA'
+Row 62 | Column: title | Value: 't.   beds sapace.  32'
+----------------------------------------------------------
+bayut_egp_2026_10_01.json
+_________________________
+"more fields
+------------------
+completion_status
+ownership"
+
+data count: 242185
+
+
+*white space
+"['broker_display_name', 'broker']
+
+215924|broker_display_name|Mohaned El  Amir
+222127|broker_display_name|Ahmed  Elhany
+
+
+40582|broker|MOHANED EL  AMIR
+41152|broker|AHMED  ELHANY"
+
+price_per-
+"empty
+'Daily'
+'Monthly'
+'Weekly'
+'Yearly'
+Total unique price_per: 5"
+
+------------------------------------------------
+
+

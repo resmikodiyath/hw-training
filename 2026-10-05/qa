@@ -1,0 +1,146 @@
+QA-ISSUES-REPORT
+=================
+DataHut_AT_Dm_PriceExtractions_20261005.CSV
+_______________________________________________
+
+data count: 16576
+
+"Columns having rows with extra spaces:
+['product_name']
+eg:
+
+Column: product_name
+27|Lippenstift  Gloss Stick Caramelted 01 Sweet Lips, Caramel Kiss, 3 g
+350|Mascara Lash Princess False Lash Effect  Care Bears Waterproof 01 No Rain, No Rainbow, 12 ml"
+
+----------------------------------------------------------------------
+DataHut_AT_Spar_PriceExtractions_20261005.CSV
+_________________________________________________
+data count: 43228
+
+"** extra space
+Column: breadcrumb
+24532  |  SPAR Website > Produktwelt > Lebensmittel > Milchprodukte & Alternativen > Milch & Milchgetränke > Frisch  & Haltbarmilch
+https://www.spar.at/produktwelt/vorarlberg-milch-laendle-halbfettmilch-laenger-frisch-1-5-fett-p2020006312547
+
+
+** Columns with unescaped pipe character:
+product_name
+site_shown_uom
+eg:
+Column: product_name
+9913|Isana AHA | PHA Cleanser 125 ml
+20765|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+21806|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück
+
+Column: site_shown_uom
+20765|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+21806|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück
+"-----------------------------------------------------------------------------------------------
+DataHut_AT_Billa_PriceExtractions_20261005.CSV
+________________________________________________
+data count: 12198
+ 
+site shown empty for 10 records
+
+
+"*AKtion Tag present, no mehrweg, single price, but regular price not empty
+three prices are equal here
+Row: 9524 | Value: 2.88 | URL: https://shop.billa.at/produkte/omis-schmankerl-faschiertes-laibchen-mit-pueree-00780242"
+-------------------------------------------------------------------------------------------------
+DataHut_SI_Mercator_PriceExtractions_20261005.CSV
+______________________________________________________
+
+data count: 16811
+
+
+"*promotion valid upto dates available on website, but missing in the file
+eg:
+1897|https://mercatoronline.si/izdelek/20151389/pecivo-resetka-s-pistacijo-in-malino-pecjak-80-g
+
+2569|https://mercatoronline.si/izdelek/18781245/sladoled-v-loncku-half-baked-ben-amp-jerry-apos-s-465-ml"
+-------------------------------------------------------------------------------------
+ DataHut_SI_Dm_PriceExtractions_20261005.CSV
+ __________________________________________________________
+ 
+data count:  10599
+
+
+"Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+
+
+Column: product_name
+276|Maskara  I love extreme volume, 12 ml
+2675|YOUNG & PURE Gel za sušenje  mozoljev, 15 ml
+
+Column: breadcrumb
+32|Domov > Dojenček in otrok > Otroška hrana in napitki  > Otroški napitki
+41|Domov > Dojenček in otrok > Pripomočki za previjanje  > Previjalne podloge
+58|Domov > Moška nega  > Lasje > Barve za lase"
+ ---------------------------------------------------------------
+ dari_ae_2026_10_01.json
+ ____________________________
+data count:  1684
+
+"Columns having rows with extra spaces:
+['company_employees']
+
+281 | [{'id': 35404, 'name': 'Mazen Rushdi   Abualhaija', 'profession': 'Broker Employee'}]
+1036 | [{'id': 30225, 'name': 'AGER ASAN', 'profession': 'Broker Employee'}, {'id': 30586, 'name': 'rudina  mohd ', 'profession': 'Broker Employee'}]"
+------------------------------------------------------------------------------
+bahrainfinder_bah_2026_10_01.json:
+_______________________________________
+
+
+data count: 4617
+
+
+"no value Fully Furnished
+value are 
+['', 'Unfurnished', 'Semi Furnished', 'Furnished', 'مفروشة بالكامل',
+       'غير مفروش', 'مفروشة جزئيًا'"
+
+
+---------------------------------------------------------------------------------------------------------------
+nawy_egp_2026_10_01.json
+____________________________
+dara count: 19762
+
+
+"* finishing status available on website, but missing in the fiile:
+4963|| https://www.nawy.com/compound/195-mountain-view-icity-new-cairo/property/86029-apartment-for-sale-in-mountain-view-icity-new-cairo-with-3-bedrooms-in-new-cairo-by-mountain-view
+10537||https://www.nawy.com/compound/1159-lyv-caesar-ras-el-hekma/property/70580-chalet-for-sale-in-lyv-caesar-ras-el-hekma-with-3-bedrooms-in-ras-el-hekma-by-gates-development
+
+[for the above record, value is fully furnished]
+
+ 
+price availablee on websitebut missing in the file
+Empty price rows: 1
+Row 10539: https://www.nawy.com/compound/236-katameya-coast/property/136111-penthouse-for-sale-in-katameya-coast-with-2-bedrooms-in-ras-el-hekma-by-katameya-group"
+
+--------------------------------------------------------------------------
+
+aqarmap_egp_2026_10_01.json
+__________________________________
+data count: 278270
+
+listing_type,seller_role,depth fields are also empty
+
+"['broker_display_name', 'broker', 'title', 'description', 'location']- white space
+
+3309|broker_display_name|Hamada  M Aldeeb
+80042|broker_display_name|Marem Ahmed  ·
+80280|broker_display_name|Hamada  M Aldeeb
+231061|broker|MHAMED  ELMAEIT"
+
+*Invalid bathrooms: 6
+Row: 1463 | Value: 02 | URL: https://aqarmap.com.eg/en/listing/7082129-for-rent-alexandria-al-mamoura/
+Row: 1599 | Value: 03 | URL: https://aqarmap.com.eg/en/listing/7001498-for-rent-alexandria-borg-el-arab-compounds-in-borg-el-arab/
+Row: 29734 | Value: 0.2 | URL: https://aqarmap.com.eg/en/listing/7252376-for-sale-suez-el-arebaaen-el-sadat/
+Row: 36579 | Value: ١ | URL: https://aqarmap.com.eg/en/listing/6989431-for-sale-cairo-faisal-el-talbeya/
+Row: 81220 | Value: 2.5 | URL: https://aqarmap.com.eg/en/listing/7155474-for-sale-cairo-dokki-mydn-lmsh-almosekar-ali-ismail-st/
+Row: 94826 | Value: 01 | URL: https://aqarmap.com.eg/en/listing/6939476-for-rent-cairo-new-cairo-90th-street-northern-90th-street/
+
+-----------------------------------------------------------------
+
