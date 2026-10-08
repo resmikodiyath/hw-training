@@ -1,0 +1,122 @@
+QA-ISSUES--REPORT
+==================
+DataHut_AU_Liquorland_FullDump_20261007.CSV
+______________________________________________
+Data count: 22303
+* no issues found
+
+----------------------------
+DataHut_AU_Danmurphys_FullDump_20261007.CSV
+_______________________________________________________
+data count: 6539
+
+"brand and name missing: 1 record
+Row 4711 | Value: empty | unique_id: 965404 | productid: DM_965404 | URL: capital-brewing-co-blackberry-hard-lemonade-cans-330ml
+
+
+** empty price1:1 record
+Row 5757 | Value: empty | unique_id: 709635 | productid: DM_709635 | URL: grove-estate-the-cellar-block-shiraz
+
+** product image url empty:1record
+Row 4711 | Value: empty | unique_id: 965404 | productid: DM_965404 | URL: capital-brewing-co-blackberry-hard-lemonade-cans-330ml
+---------------------------------------------------------------------------------------
+
+DataHut_AU_Coles_FullDump_20261007.CSV
+__________________________________________
+
+data count: 794207
+
+**Dataset is NOT unique. Duplicate rows found.
+Duplicate rows: 26267
+
+non empty fields:
+----------
+regular_price
+barcode
+producthierarchy_level4
+producthierarchy_level5
+
+empty
+---------
+file_name_1
+features
+suitable_for
+environmental
+
+------------------------------------------
+DataHut_IT_Esselunga_PriceExtractions_20261007.CSV
+_________________________________________________________
+
+data count: 233687
+
+white space in the column brand
+Column|Row No|Value
+brand|8642|Soré                
+brand|27495|Soré                
+brand|48567|Soré                
+brand|66725|Soré                
+brand|85294|Soré                
+brand|100644|Soré                
+brand|118818|Soré                
+brand|188329|Soré                
+brand|204233|Soré                
+brand|222754|Soré                
+
+--------------------------------------------------------------
+
+DataHut_IT_Eurospin_PriceExtractions_20261007.CSV:
+_________________________________________________________
+data count: 110252
+ no issues found
+ ----------------------------------
+ bayut_properties_buy_commercial_2026_10_07.json:
+ _______________________________________________
+ 
+ data count: 3610
+
+
+"cover photo missing in the file, but available on website
+https://www.bayut.com/property/details-16092222.html
+
+
+mage_urll  is available under the **`photos`**  and "" cover_photo"" field in the file, but the **`image_url`** field is absent from the API response.
+eg:
+https://www.bayut.com/property/details-16222577.html
+
+*data mismatch between the API response and the file.
+indyScore_l1: API=221 | File=254
+indyScore_l2: API=183 | File=210
+indyScore_l3: API=183 | File=210
+
+https://www.bayut.com/property/details-16222577.html
+----------------------------------------------------------------------
+bayut_properties_rent_commercial_2026_10_07.json
+____________________________________________________
+
+data count: 27480
+
+"
+**mage_urll  is available under the **`photos`**  and "" cover_photo"" field in the file, but the **`image_url`** field is absent from the API response.
+eg:
+https://www.bayut.com/property/details-16745163.html
+
+
+
+** cover photo available  on website, but missing in the file
+https://www.bayut.com/property/details-16745163.html
+
+
+** Data mismatch betwwen API and file
+indyScore_l1: API=675 | File=704
+indyScore_l2: API=555 | File=579
+indyScore_l3: API=555 | File=579
+
+
+state: API=inactive | File=active
+
+slug:file=well-maintained-3br-marina-view-furnished-16714916 | API=details_16714916
+https://www.bayut.com/property/details-16745163.html"
+
+"--------------------------------------------------------------------
+
+
