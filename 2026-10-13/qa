@@ -1,0 +1,66 @@
+QA-ISSUES---REPORT
+==================
+DataHut_SI_Mercator_PriceExtractions_20261013.CSV:
+____________________________________________________
+
+Data count: 16776
+
+*promotion valid upto dates available on website, but missing in the file
+eg:
+
+1522| https://mercatoronline.si/izdelek/19872705/klobasa-radost-ave-pakirano-500-g
+1531| https://mercatoronline.si/izdelek/1321943/salama-trimcek-ave-pakirano-400-g"
+------------------------------------------------
+dubizzle_uae_2026_10_02.json:
+___________________________________
+
+data count: 566410
+
+No value سنويا
+
+"Whitespace issues: A total of 6 fields contain whitespace issues.
+- Row 2139 | URL: https://sharjah.dubizzle.com/property-for-rent/residential/apartmentflat/2026/7/24/sunlight-filled-2-bhk-separate-hall-bal-12-177561/  | Column: agent_name
+- Row 8 | URL: https://sharjah.dubizzle.com/property-for-rent/rooms-for-rent-flatmates/apartmentflat/2026/5/22/beautifully-furnished-master-bedroom-with--12-343/  | Column: description
+- Row 38 | URL: https://sharjah.dubizzle.com/property-for-rent/rooms-for-rent-flatmates/apartmentflat/2026/9/21/room-for-rent-al-nahda-12-748/  | Column: title
+- Row 16660 | URL: https://sharjah.dubizzle.com/property-for-rent/residential/apartmentflat/2025/8/3/beautiful-1bhk-for-bachelors-central-ac-12-297613/  | Column: reference_number
+- Row 68606 | URL: https://dubai.dubizzle.com/property-for-rent/residential/townhouse/2026/9/18/vacant-community-view-2-cheques-2-125494/  | Column: broker
+- Row 68606 | URL: https://dubai.dubizzle.com/property-for-rent/residential/townhouse/2026/9/18/vacant-community-view-2-cheques-2-125494/  | Column: broker_display_name"
+
+---------------------------------------------------
+
+dari_ae_2026_10_02.json:
+___________________________-
+data count: 1074
+
+"*white space
+Column: company_employees
+278|[{'id': 35404, 'name': 'Mazen Rushdi   Abualhaija', 'profession': 'Broker Employee'}]
+1028|[{'id': 30225, 'name': 'AGER ASAN', 'profession': 'Broker Employee'}, {'id': 30586, 'name': 'rudina  mohd ', 'profession': 'Broker Employee'}]"
+
+----------------------------------
+DataHut_AT_Dm_FullDump_20261015.CSV
+___________________________________________
+data count: 16939
+
+more empty fields
+---
+producthierarchy_level5
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+
+non empty
+-----
+barcode
+
+Columns having rows with extra spaces:
+['product_name', 'variants', 'product_description', 'storage_instructions', 'preparationinstructions', 'country_of_origin', 'labelling', 'label_information', 'material', 'warning']
+
+Column: product_name
+297|Lippenstift  Gloss Stick Caramelted 01 Sweet Lips, Caramel Kiss, 3 g
+
+---------------------------------------------------------
+

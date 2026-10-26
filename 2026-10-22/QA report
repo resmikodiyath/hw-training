@@ -1,0 +1,139 @@
+QA-REPORT
+============
+DataHut_CH_Migros_FullDump_20261022.CSV
+_________________________________________
+
+data count: 41331
+
+"Columns having rows with extra spaces:
+['size', 'site_shown_uom']
+
+
+Column: size
+24023|37.5 x 15.5  x 28 cm
+25306|0.6 x 36mm,  0.65 x 39mm,  0.8 x 42mm
+25329|0.9 x 45mm,  1.2 x 52.5mm,  2 x 58mm,  1.8 x 76mm,  1.6 x 58mm,  R24 x D1.35mm
+25336|Durchmesser 10,  13,  14mm
+25341|15mm,  16mm
+25638|0.53 x 33.6mm,  0.6 x 36mm,  0.6 x 35.7mm,  0.73 x 38.7mm,  0.85 x 41.5mm,  0.85 x 41.6mm,  0.85 x 42mm,  0.95 x 45mm
+25643|N°70,  N°80,  N°90
+
+Column: site_shown_uom
+10086|4  x 250ml
+
+Columns with unescaped pipe character:
+distributor_address
+ingredients
+instructionforuse
+preparationinstructions
+product_description
+
+eg:
+Column: instructionforuse
+18676|Roll-on unter den Achseln auftragen. Nicht auf gereizter Haut anwenden.||title:Anwenden Roll-on vollständig trocknen lassen.||title:Einwirken
++---------------------------------------------------------
+DataHut_CH_Coop_FullDump_20261022.CSV
+__________________________________________
+
+data count: 35676
+------------------------------
+
+DataHut_CH_Lidl_FullDump_20261022.CSV:
+________________________________________
+
+data count: 3629
+
+"more empty field
+-----------
+country_of_origin
+
+
+non empty
+-----------
+producthierarchy_level5"
+
+"Promotion description is present but promotion date is empty
+eg:
+Row: 38 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://sortiment.lidl.ch/de/catalog/product/view/id/22400/s/gillette-all-in-one-styler-1801685/category/54/
+Row: 41 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://sortiment.lidl.ch/de/catalog/product/view/id/22399/s/ferreo-rocher-20er-1009654/category/54/"
+"Columns having rows with extra spaces:
+['product_name', 'producthierarchy_level3', 'breadcrumb', 'product_description']
+Column: product_name
+3604|Pancetta, Provola und  Zwiebel
+
+Column: producthierarchy_level3
+3604|Pancetta, Provola und  Zwiebel
+
+Column: breadcrumb
+3604|Sortiment > Sortiment > Pancetta, Provola und  Zwiebel
+
+Column: product_description
+3056|Diverse Sorten Pro 10 x 20 Stück Einzelpreis = 8.69  Rauchen ist tödlich – hören Sie jetzt auf."
+
+-------------------------------------------------------------------------------
+
+bayut_transactions_sold_commercial_2026_10_21.json:
+______________________________________________________
+data count: 178
+
+"Completely empty fields:
+['beds', 'rent_contract_duration_months', 'contract_monthly_amount']
+Total completely empty fields: 3"
+
+"Iteration dates in file: 2026-02-19 to 2026-10-20
+From date: 2026-02-19
+Example: {'row': 59, 'transaction_hash_id': '6863d93f48dc4718', 'date': '2026-02-19 00:00:00'}
+
+Date between them: 2026-10-15
+Example: {'row': 2, 'transaction_hash_id': '40c45239e90d4af9', 'date': '2026-10-15 00:00:00'}
+
+To date: 2026-10-20
+Example: {'row': 3, 'transaction_hash_id': '14a19698f3d1acea', 'date': '2026-10-20 00:00:00'}"
+----------------------------------------------------
+data.json
+_____________
+
+
+data count: 3009
+
+"the file extension is .jpg instead of the required .png.
+eg:
+Project 2727 | Row 2 | primary_media.file_name: Invalid S3 image path format — expected .png extension, but found .jpg."
+
+
+"invalid  rows found:
+project_number
+ ""examples"": [
+        ""2968"",
+        ""3338"",
+        ""1612""]"
+
+---------------------------------------------------
+DataHut_AT_Spar_FullDump_20261022.CSV:
+_______________________________________
+
+data count: 43280
+
+
+age_of_the_product not empty
+
+
+"Columns having rows with extra spaces:
+['producthierarchy_level6', 'breadcrumb']
+eg:
+Column: producthierarchy_level6
+19938|Frisch  & Haltbarmilch
+
+Column: breadcrumb
+227|SPAR Website > Produktwelt > Drogerie & Beauty > Hygiene & Hygienepapier > Toilettenpapier  > Toilettenpapier Trocken
+476|SPAR Website > Produktwelt > Lebensmittel > Wurst, Fleisch, Eier & Fisch > Eier  > Jausen- & Farbeier
+
+Columns with unescaped pipe character:
+nutritional_information
+product_name
+site_shown_uom
+
+-----------------------------------
+
+
+

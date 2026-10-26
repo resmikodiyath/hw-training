@@ -1,0 +1,155 @@
+QA--REPORT--ISSUES
+===================
+
+DataHut_SI_Spar_FullDump_20261022.CSV
+__________________________________________
+
+DATA COUNT: 16125
+
+"non empty
+------
+alchol_by_volume
+barcode
+netweight
+price_was
+promotion_description
+promotion_price
+promotion_valid_upto
+
+more empty fields
+----------------
+age_recommendations
+color
+competitor_product_key
+country_of_origin
+dimensions
+features
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+flavour
+label_information
+labelling
+material
+packaging
+preparationinstructions
+rating
+retail_limit
+review
+special_information
+tasting_note
+variants
+"
+
+INSTOCK- True only
+
+"Invalid grammage( g to kg conversion error): 3
+Row: 703 | URL: https://online.spar.si/p/nadomestek-kave-z-okusom-po-kakavu-calmrooty-62g-681408 | File: 0.062 g
+Row: 6623 | URL: https://online.spar.si/p/instant-ocvrti-riz-vegetarijanski-mama-80g-683913 | File: 0.08 g
+Row: 8689 | URL: https://online.spar.si/p/testenine-fusilli-feelingok-220g-679091 | File: 0.22 g"
+
+"** promotion dates avaiable on website but missing in the file for 2 records
+Count: 2
+5290|https://online.spar.si/p/bela-zemlja-spar-60g-678329
+5295|https://online.spar.si/p/polnozrnata-strucka-z-otrobi-70g-672809"
+
+Columns having rows with extra spaces:
+['producthierarchy_level3', 'producthierarchy_level4', 'breadcrumb', 'warning']
+
+eg:
+column: warning
+8219|Hraniti pri temperaturi od 0  °C do +8  °C.
+----------------------------------------
+DataHut_SI_Dm_FullDump_20261022.CSV
+_______________________________________
+
+data count: 10381
+
+"""price_was', 'promotion_price'
+also empty"""
+
+
+"Columns having rows with extra spaces:
+['breadcrumb', 'storage_instructions', 'preparationinstructions', 'country_of_origin', 'labelling']
+eg:
+Column: labelling
+1312|Vsebuje Bitrex®;  Modri angel; EU Ecolabel
+
+
+Columns with unescaped pipe character:
+ingredients
+instructionforuse
+
+
+eg:
+
+Column: ingredients
+12|Caprylic / Capric Triglyceride | Cetearyl Alcohol | Stearyl Alcohol | Helianthus Annuus Seed Wax | Helianthus Annuus Seed Oil | Cocos Nucifera Oil | Prunus Amygdalus Dulcis Oil | Parfum | Mangifera Indica Seed Butter | Tocopherol | Dimethyl Phenethyl Acetate | Rose KetonesNavedene sestavine v spletni trgovini se lahko razlikujejo od tistih navedenih na embalaži."
+
+----------------------------------------------------------------
+DataHut_SI_Spar_PriceExtractions_20261023.CSV:
+_________________________________________________
+
+data count: 16274
+
+
+empty fields: "['percentage_discount', 'region', 'pack_size']
+"
+"Invalid price rows: 1
+[{'errors': ['selling_price > regular_price'],
+  'pdp_url': https://online.spar.si/p/set-posode-delicious-tefal-61-668401
+  'regular_price': 25.0,
+  'row': 15338,
+  'selling_price': 47.92}]
+
+on website selling_price is 20.00,but in file it is 47.92"
+
+
+"promotion dates availalble on site but missing in the file:
+Count: 2
+5332|https://online.spar.si/p/bela-zemlja-spar-60g-678329
+5333|https://online.spar.si/p/polnozrnata-strucka-z-otrobi-70g-672809
+
+
+**Invalid grammage( g to kg conversion error): 3
+Row: 716 | URL: https://online.spar.si/p/nadomestek-kave-z-okusom-po-kakavu-calmrooty-62g-681408 | File: 0.062 g
+Row: 6666 | URL: https://online.spar.si/p/instant-ocvrti-riz-vegetarijanski-mama-80g-683913 | File: 0.08 g
+Row: 8755 | URL: https://online.spar.si/p/testenine-fusilli-feelingok-220g-679091 | File: 0.22 g"
+--------------------------------------------------------------------
+
+DataHut_AT_Billa_PriceExtractions_20261023.CSV
+________________________________________________
+data count: 12187
+
+"Three prices equal: 5
+*AKtion Tag present, no mehrweg, single price, but regular price not empty
+three prices are equal here
+Row: 212 | Value: 1.89 | URL: https://shop.billa.at/produkte/knorr-klare-suppe-pflanzlich-0017013
+Row: 2701 | Value: 1.89 | URL: https://shop.billa.at/produkte/knorr-gemuesesuppe-wuerfel-00414401
+Row: 4663 | Value: 1.89 | URL: https://shop.billa.at/produkte/knorr-goldaugen-rindfleischsuppe-0056234
+Row: 5511 | Value: 2.99 | URL: https://shop.billa.at/produkte/ja-natuerlich-bio-beerenmuesli-00645731
+Row: 11388 | Value: 1.99 | URL: https://shop.billa.at/produkte/ja-natuerlich-maroni-gegart-0089479"
+
+--------------------------------------------------------------
+DataHut_AT_Dm_PriceExtractions_20261023.CSV
+_________________________________________________
+
+data count: 17276
+
+
+"**Invalid promotion date rows: 1
+Row: 11263 | promotion_valid_from: '29.12.9999' | promotion_valid_upto: '' | pdp_url: https://www.dm.at/p/d/3117220/bali-bronze-trockenoel-golden-glow
+
+Columns having rows with extra spaces:
+['product_name']
+
+Column: product_name
+280|Kräutertee, Deine innere Ruhe mit Kamille, Minze, Lavendel & Ashwagandha  (20 x 1,8g), 36 g
+1706|Tönungsshampoo  7.4 Kupfergold, 14 ml"
+
+-------------------------------------------
+
+

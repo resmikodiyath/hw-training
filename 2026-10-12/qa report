@@ -1,0 +1,240 @@
+QA---issues---report
+======================
+DataHut_SI_Spar_PriceExtractions_20261012.CSV
+________________________________________________
+data count: 15858
+
+percentage_discount' also empty
+
+"*promotion valid upto dates available on website,but missing in the file
+
+Count: 3
+905| https://online.spar.si/p/jajca-proste-reje-m-brez-gso-humek-61-561861
+5297| https://online.spar.si/p/kajzerica-s-budget-60g-681401
+6155|https://online.spar.si/p/soncnico-olje-zvijezda-12l-682166
+
+Invalid grammage(g to kg conversion error): 3
+Row: 703 | URL: https://online.spar.si/p/nadomestek-kave-z-okusom-po-kakavu-calmrooty-62g-681408 | File: 0.062 g
+Row: 6480 | URL: https://online.spar.si/p/instant-ocvrti-riz-vegetarijanski-mama-80g-683913 | File: 0.08 g
+Row: 8473 | URL: https://online.spar.si/p/testenine-fusilli-feelingok-220g-679091 | File: 0.22 g"
+
+-------------------------------------------------------------------------------------
+
+DataHut_SI_Mercator_PriceExtractions_20261012.CSV
+_____________________________________________________
+
+data count: 16764
+"
+""*promotion valid upto dates available on website, but missing in the file
+eg:
+
+486 | https://mercatoronline.si/izdelek/15703903/vanilijev-puding-s-cokolado-paula-dr-oetker-4-x-125-g
+
+911 | https://mercatoronline.si/izdelek/20079145/rdeci-sir-pesto-landana-200-g"
+------------------------------------------------------------
+
+DataHut_SI_Dm_PriceExtractions_20261012.CSV
+_______________________________________________
+data count: 10625
+
+
+"Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+
+Column: product_name
+301|Maskara  I love extreme volume, 12 ml
+2549|YOUNG & PURE Gel za sušenje  mozoljev, 15 ml
+
+Column: breadcrumb
+20|Domov > Dojenček in otrok > Otroška hrana in napitki  > Otroški napitki
+38|Domov > Dojenček in otrok > Pripomočki za previjanje  > Previjalne podloge"
+-----------------------------------------------------------------------------
+
+DataHut_AT_Dm_PriceExtractions_20261012.CSV:
+____________________________________________
+
+data count: 16941
+
+
+"Columns having rows with extra spaces:
+['product_name']
+
+Column: product_name
+296|Lippenstift  Gloss Stick Caramelted 01 Sweet Lips, Caramel Kiss, 3 g
+1339|Tabletten Vitamin  B12 350, 30 St
+1450|Tönungsshampoo  7.4 Kupfergold, 14 ml
+1678|Mascara Lash Princess False Lash Effect  Care Bears Waterproof 01 No Rain, No Rainbow, 12 ml
+2090|Augenbrauenfarbe Dunkelbraun  4-1, 1 St"
+--------------------------------------------------------
+DataHut_AT_Spar_PriceExtractions_20261012.CSV
+________________________________________________
+
+data count: 43422
+
+
+"Columns having rows with extra spaces:
+['breadcrumb']
+
+Column: breadcrumb
+24183|SPAR Website > Produktwelt > Lebensmittel > Milchprodukte & Alternativen > Milch & Milchgetränke > Frisch  & Haltbarmilch
+
+https://www.spar.at/produktwelt/vorarlberg-milch-laendle-halbfettmilch-laenger-frisch-1-5-fett-p2020006312547
+
+***Columns with unescaped pipe character:
+product_name
+site_shown_uom
+
+Column: product_name
+8469|Isana AHA | PHA Cleanser 125 ml
+19134|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+
+
+Column: site_shown_uom
+19134|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+19975|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück"
+
+-------------------------------------------------------------------
+
+DataHut_AT_Billa_PriceExtractions_20261012.CSV
+______________________________________________
+data count: 12189
+
+
+"*AKtion Tag present, no mehrweg, single price, but regular price not empty
+three prices are equal here
+
+Row: 3143 | Value: 4.99 | URL: https://shop.billa.at/produkte/aeterna-oellicht-00435589
+Row: 4849 | Value: 1.79 | URL: https://shop.billa.at/produkte/ja-natuerlich-bio-rote-ruebe-vorgegart-00575149
+Row: 11405 | Value: 1.99 | URL: https://shop.billa.at/produkte/ja-natuerlich-maroni-gegart-0089479
+"
+--------------------------------------------------------------
+
+DataHut_CH_Lidl_FullDump_20261012.CSV:
+_________________________________________
+
+data count: 3967
+
+country_of_origin also empty
+
+
+"Invalid promotion date rows: 2
+Row: 1219 | promotion_valid_from: '24.10.2026' | promotion_valid_upto: '12.10.2026' | pdp_url: https://sortiment.lidl.ch/de/catalog/product/view/id/17700/s/super-alkaline-mignonzellen-aa-0167082/category/54/
+Row: 1286 | promotion_valid_from: '20.10.2026' | promotion_valid_upto: '12.10.2026' | pdp_url: https://sortiment.lidl.ch/de/catalog/product/view/id/17678/s/raclette-scheiben-0006233/category/54/"
+
+"Promotion description is present but promotion date is empty
+eg:
+
+Row: 39 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://sortiment.lidl.ch/de/catalog/product/view/id/22329/s/bluetenhonig-xxl-5723367/category/54/
+Row: 40 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://sortiment.lidl.ch/de/catalog/product/view/id/22327/s/erdnusskerne-xxl-0146517/category/54/"
+"Columns having rows with extra spaces:
+['product_name', 'producthierarchy_level3', 'breadcrumb', 'product_description']
+eg:
+Column: product_name
+3829|Pancetta, Provola und  Zwiebel
+
+Column: producthierarchy_level3
+3829|Pancetta, Provola und  Zwiebel
+
+Column: breadcrumb
+3829|Sortiment > Sortiment > Pancetta, Provola und  Zwiebel
+
+Column: product_description
+3159|La Crème, Caractère Pro 200 g 100 g = 0.90  Mit Lidl Plus noch mehr sparen
+3170|Aus Polyester Pro Stück  Finde jetzt deine Grösse"
+
+
+---------------------------------------------------------------
+bahrainfinder_bah_2026_10_02.json
+_________________________________________
+
+furnished "no value Fully Furnished
+
+values:
+'Furnished', '', 'Semi Furnished', 'Unfurnished', 'غير مفروش',
+       'مفروشة بالكامل', 'مفروشة جزئيًا'"
+
+
+-------------------------------------------------------------------
+
+
+dubizzle_bah_2026_10_02.json:
+____________________________________
+
+data count: 3053
+
+"Columns with extra-long spaces:
+['title', 'description']
+eg:
+Row 14 | Column: description | Value: 'Near Al Sayah Highway, Close to Amwaj, Diyar Al Muharraq & Airport   •  2 Rooms with Attached Bathrooms  •  1 Hall / Living Area  •  Closed Kitchen  •  Car Parking -Elevator Available  •  24/7 Security & CCTV  •  Easy Access to Cold Stores, Salons, Restaurants'"
+
+----------------------------------------------------------------
+nawy_egp_2026_10_02.json
+____________________________
+
+data count: 19638
+
+
+"price empty in file, but available on website:
+Row 1302: https://www.nawy.com/compound/1272-begonia-residence/property/103096-apartment-for-sale-in-begonia-residence-with-1-bedroom-in-south-investors-by-menassat-developments
+Row 1336: https://www.nawy.com/compound/2376-club-hill-solare/property/130325-chalet-typical-chalet-3-bedrooms-for-sale-in-club-hill-solare-by-misr-italia-properties
+Row 4635: https://www.nawy.com/compound/238-zoya-ghazala-bay/property/2706-zoya-chalet
+Row 6230: https://www.nawy.com/compound/336-vye-sodic/property/110406-townhouse-for-sale-in-vye-sodic-with-7-bedrooms-in-new-zayed-by-sodic
+
+etc."
+
+--------------------------------------------------------------
+
+qatarliving_qat_2026_10_02.json
+____________________________________
+
+data count: 25293
+
+"extra spaces in the column description
+eg:
+Row 809 | Column: description | Value: 'Neat & clean family studio available in the highly desirable area Location- NUAIJA   NO COMISSION  Bedroom Bathroom kitchen Fitting and fixtures split acs free maintenance independent area parking available regular cleaning services all common area easy access to. super market schools restaurant coffee shop for more details & viewing please CONTACTS 66325185 | 77454353 | 71710085  ..............................................................................................................................................................................................................................................................................................................................................................................................................................................................'"
+
+********
+
+
+machinerytrader_2026_10_12.csv
+_________________________________
+
+no of columns:656
+
+
+data count: 8536
+
+
+" Columns having rows with extra spaces:
+['company_name', 'contact_person', 'StockNumber', 'ProductConfiguration', 'EngineMake']
+
+
+Column: company_name
+312|Tyler Equipment  - Berlin
+
+Column: contact_person
+312|Tyler Sales -  CT
+Column: ProductConfiguration
+2674|Personnel Carrier 
+
+Column: EngineMake
+3436|JOHN DEERE 
+
+**Columns with unescaped pipe character:
+description
+
+eg:
+
+Column: description
+335|-580SV TC CP 4WD T4B | -4WD STD TRANS | -PN 14-17.5 GALAXY | -PN 21L-24 EZ Rider Galaxy | -Heavy Front Counterweight | -PILOT CONTROLS | -Reversible Pads | -6x1 Bkt w/Forks & Cutting Edge | -3SPL Ldr Aux Hyd Cir | -CAB | -SUPER DE LUXE SEAT | -1WAY/2WAY AUX HYDS | -BHoe Ext Dipper 14 FT | -Glide Ride | -Tool box | -STD Working Lights | -Dual Batteries | -OPER. MANUAL CASE E | -MECH. TRANSPORT LOCK | -Rear Mech Coupler | -Beacon | 24"" rear bucket"
+
+--------------------------------------------------------
+
+
+
+
+
+
+
+
+

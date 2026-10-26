@@ -1,0 +1,55 @@
+bayut_abudhabi_properties_rent_residential_2026_10_21.json
+issues
+------------
+data count: 7385
+
+* project_number null across the entire dataset( same as API)
+
+* data mismatch between API and file:
+field|file_value|api_value
+indyScore_l1|778|760
+indyScore_l2|635|620
+indyScore_l3|635|620
+https://www.bayut.com/property/details-16911968.html
+--------------------------------------
+bayut_dubai_properties_rent_residential_2026_10_21.json
+data count: 129153
+-------------------------------
+bayut_dubai_properties_buy_residential_2026_10_21.json:
+issues
+-----------
+data count:116435
+"*null  in API  is taken as None in file
+https://www.bayut.com/property/details-16362608.html"
+-----------------------------
+bayut_dubai_properties_rent_commercial_2026_10_21.json:
+count:28509
+------------------------
+bayut_transactions_sold_residential_2026_10_21.json:
+
+issues
+------------
+data count: 2858
+
+"Completely empty fields:
+['rent_contract_duration_months', contract_mont'hly_amount']
+Total completely empty fields: 2"
+
+"iterated dates outside iteration week[14/102026-21/10/2026]:
+egs:
+1774|date_transaction_nk|outside iteration dates: 2026-02-16 00:00:00
+2776|date_transaction_nk|outside iteration dates: 2025-10-30 00:00:00 | 73d8a209cfdf878d
+2778|date_transaction_nk|outside iteration dates: 2025-12-12 00:00:00 | 7b303fc518de0cda
+2403|date_transaction_nk|outside iteration dates: 2026-10-12 00:00:00
+--------------------------------
+bayut_transactions_rented_residential_2026_10_21.json: 
+issues
+----------
+Iteration dates in file: 2025-02-10 to 2026-10-20
+eg:
+transaction_hash_id': '53e7db14c43b3371', 'date': '2025-02-10
+
+transaction_hash_id' :6670711b72e02a97 ; date: 2026-10-12
+-----------------------------------------
+bayut_dubai_properties_buy_residential_metadata_2026_10_21.csv:
+data count: 130709

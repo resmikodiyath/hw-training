@@ -1,0 +1,207 @@
+QA-ISSUES----REPORT
+========================
+DataHut_AT_Dm_PriceExtractions_20261009.CSV
+_______________________________________________
+
+Data count: 16994
+
+"Columns having rows with extra spaces:
+['product_name']
+
+Column: product_name
+13|Lippenstift  Gloss Stick Caramelted 01 Sweet Lips, Caramel Kiss, 3 g
+68|Mascara Lash Princess False Lash Effect  Care Bears Waterproof 01 No Rain, No Rainbow, 12 ml
+1104|Tabletten Vitamin  B12 350, 30 St
+1688|Tönungsshampoo  7.4 Kupfergold, 14 ml"
+----------------------------------------------------------
+DataHut_AT_Spar_PriceExtractions_20261009.CSV
+____________________________________________
+
+data count: 43358
+
+
+"extra space:1
+Column: breadcrumb
+25619|SPAR Website > Produktwelt > Lebensmittel > Milchprodukte & Alternativen > Milch & Milchgetränke > Frisch  & Haltbarmilch
+
+https://www.spar.at/produktwelt/vorarlberg-milch-laendle-halbfettmilch-laenger-frisch-1-5-fett-p2020006312547
+
+
+** Columns with unescaped pipe character:
+product_name
+site_shown_uom
+
+
+Column: product_name
+9528|Isana AHA | PHA Cleanser 125 ml
+19036|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+
+Column: site_shown_uom
+19036|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+20581|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück"
+
+------------------------------------------------------------------------------------
+
+DataHut_SI_Mercator_PriceExtractions_20261009.CSV
+____________________________________________________
+
+data count: 16775
+
+"""*promotion valid upto dates available on website, but missing in the file
+eg:
+
+463| https://mercatoronline.si/izdelek/1161859/sadna-skuta-s-podlozenim-sadjem-mu-vec-okusov-ljubljanske-mlekarne-110-g
+465|https://mercatoronline.si/izdelek/15703903/vanilijev-puding-s-cokolado-paula-dr-oetker-4-x-125-g
+
+----------------------------------------------------------------------------------------------------------
+DataHut_SI_Dm_PriceExtractions_20261009.CSV
+________________________________________________
+
+data count: 10714
+
+
+"Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+
+Column: product_name
+289|Maskara  I love extreme volume, 12 ml
+2695|YOUNG & PURE Gel za sušenje  mozoljev, 15 ml
+
+
+Column: breadcrumb
+32|Domov > Moška nega  > Lasje > Barve za lase
+35|Domov > Dojenček in otrok > Otroška hrana in napitki  > Otroški napitki"
+"-------------------------------------------------------------------------
+
+DataHut_SI_Spar_PriceExtractions_20261009.CSV
+___________________________________________________
+
+data count: 16206
+
+percentage_discount' also empty
+
+
+"*promotion valid upto dates available on website,but missing in the file
+Count: 3
+926|https://online.spar.si/p/jajca-proste-reje-m-brez-gso-humek-61-561861
+5479|https://online.spar.si/p/kajzerica-s-budget-60g-681401
+6334|https://online.spar.si/p/soncnico-olje-zvijezda-12l-682166
+
+**Invalid grammage( g to kg conversion error): 3
+Row: 702 | URL: https://online.spar.si/p/nadomestek-kave-z-okusom-po-kakavu-calmrooty-62g-681408 | File: 0.062 g
+Row: 6671 | URL: https://online.spar.si/p/instant-ocvrti-riz-vegetarijanski-mama-80g-683913 | File: 0.08 g
+Row: 8535 | URL: https://online.spar.si/p/testenine-fusilli-feelingok-220g-679091 | File: 0.22 g"
+
+-------------------------------------------------------------------------
+DataHut_CH_Lidl_PriceExtractions_20261009.CSV
+_________________________________________________
+
+data count: 3705
+
+
+"Invalid promotion date rows: 1
+Row: 607 | promotion_valid_from: '1.12.2026' | promotion_valid_upto: '9.10.2026' | pdp_url: https://sortiment.lidl.ch/de/catalog/product/view/id/20699/s/die-butter-multipack-5112783/category/54/"
+
+
+"empty promotion dates, with description
+eg:
+
+Row: 42 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://sortiment.lidl.ch/de/catalog/product/view/id/22318/s/zimtschnecken-kit-0151231/category/54/
+Row: 53 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://sortiment.lidl.ch/de/catalog/product/view/id/22307/s/pinot-noir-5114687/category/54/
+"
+"Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+
+Column: product_name
+3753|Pancetta, Provola und  Zwiebel
+
+Column: breadcrumb
+3753|Sortiment > Sortiment > Pancetta, Provola und  Zwiebel"
+
+--------------------------------------------------------------------\
+machinerytrader_2026_10_09.csv
+_________________________________
+
+* dataset contains 655 columns 
+
+* AugerReady - 1 more field
+
+
+ data count: 8517
+
+
+"*invalid pipe in column description:
+eg:
+Column: description
+112|Boom Sections 3 Outriggers Independently Controlled | Hydraulic Steering Rear Wheel Fuel Diesel | Dual Fuel Engine Kubota | Kubota Rated Capacity Limiter Yes Telematics Yes
+113|Boom Sections 4 Outriggers Exclusive 3-Position | Hydraulic Steering Front-wheel, 4-wheel, rear-wheel, Crab steer Fuel EPA Tier 4F / EU Stage V Engine Cummins Turbo Rated Capacity Limiter Yes Telematics Yes
+
+
+**Columns having rows with extra spaces:
+['company_name', 'contact_person', 'StockNumber', 'EngineMake', 'ProductConfiguration']
+
+Column: company_name
+140|Tyler Equipment  - Berlin
+142|Tyler Equipment  - Berlin
+147|Tyler Equipment  - Berlin
+157|Tyler Equipment  - Berlin
+
+Column: contact_person
+140|Tyler Sales -  CT
+142|Tyler Sales -  CT
+147|Tyler Sales -  CT
+157|Tyler Sales -  CT
+
+Column: StockNumber
+824|VHWT00050  C
+
+Column: EngineMake
+2753|JOHN DEERE 
+
+Column: ProductConfiguration
+3624|Personnel Carrier "
+---------------------------------------------------------------------
+servicesbahrain_bah_2026_10.json
+__________________________________
+data count: 1456
+
+"Dataset contains duplicate records
+Duplicate rows: 728"
+
+"Columns having rows with extra spaces:
+['name']
+Rows with extra-long spaces: 2
+Row 158 | Column: name | Value: 'MOHAMED ALI A.QAHER MOHAMED TAHER   ALASFOOR'
+Row 886 | Column: name | Value: 'MOHAMED ALI A.QAHER MOHAMED TAHER   ALASFOOR'
+
+**incomplete telephone numbers:
+eg:
+
+Row 13: telephone_number=(+973) | URL=https://services.bahrain.bh/wps/portal/RERA_en#toggle-id-1
+Row 18: telephone_number=(+973) | URL=https://services.bahrain.bh/wps/portal/RERA_en#toggle-id-1
+Row 831: telephone_number=177777 | URL=https://services.bahrain.bh/wps/portal/RERA_en#toggle-id-1
+value=0
+Row 233: telephone_number=0 | URL=https://services.bahrain.bh/wps/portal/RERA_en#toggle-id-1
+Row 234: telephone_number=0 | URL=https://services.bahrain.bh/wps/portal/RERA_en#toggle-id-1
+Row 235: telephone_number=0 | URL=https://services.bahrain.bh/wps/portal/RERA_en#toggle-id-1"
+
+
+license_numd=ber not unique-has 728 duplicate values
+
+
+legal_type- Corporate CR', 'Individual CR'
+
+---------------------------------------------------------------------------------
+costplusdrugs_2026_10_07.csv:
+_____________________________________
+
+no issues found
+------------------------------
+
+
+
+
+
+
+
+

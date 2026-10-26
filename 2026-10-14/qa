@@ -1,0 +1,119 @@
+QA---issues---report
++++++++++++++++++++++++
+DataHut_SI_Dm_PriceExtractions_20261014.CSV
+____________________________________________
+
+data count: 10586
+
+"Columns having rows with extra spaces:
+['product_name', 'breadcrum
+b']
+
+eg:
+
+Column: product_name
+241|Maskara  I love extreme volume, 12 ml
+
+Column: breadcrumb
+37|Domov > Dojenček in otrok > Otroška hrana in napitki  > Otroški napitki"
+
+-----------------------------------------------------------------------
+DataHut_SI_Spar_PriceExtractions_20261014.CSV
+_______________________________________________
+
+
+data count: 15998
+
+percentage_discount' also empty
+"Invalid price rows: 1  [
+errors': ['selling_price > regular_price'],
+  'pdp_url': https://online.spar.si/p/jedilni-servis-senaeai-riztenhofbrekker-161-670297
+  'regular_price': 10.0,
+  'row': 15379,
+  'selling_price': 32.31
+here,
+There is a mismatch in the selling price between the file and the website.
+The selling price on the website is ""9"", which differs from the value in the file.
+"
+-----------------------------------------------------
+DataHut_AT_Dm_PriceExtractions_20261014.CSV
+______________________________________________
+
+data count: 17011
+
+
+"Columns having rows with extra spaces:
+['product_name']
+eg:
+Column: product_name
+288|Lippenstift  Gloss Stick Caramelted 01 Sweet Lips, Caramel Kiss, 3 g
+469|Mascara Lash Princess False Lash Effect  Care Bears Waterproof 01 No Rain, No Rainbow, 12 ml"
+------------------------------------------------
+
+DataHut_CH_Lidl_PriceExtractions_20261014.CSV
+_______________________________________________
+
+data count: 3967
+
+country_of_origin also empty
+
+
+"Invalid promotion date rows: 2
+Row: 1219 | promotion_valid_from: '24.10.2026' | promotion_valid_upto: '12.10.2026' | pdp_url: https://sortiment.lidl.ch/de/catalog/product/view/id/17700/s/super-alkaline-mignonzellen-aa-0167082/category/54/
+Row: 1286 | promotion_valid_from: '20.10.2026' | promotion_valid_upto: '12.10.2026' | pdp_url: https://sortiment.lidl.ch/de/catalog/product/view/id/17678/s/raclette-scheiben-0006233/category/54/"
+
+
+"Promotion description is present but promotion date is empty
+eg:
+
+Row: 39 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://sortiment.lidl.ch/de/catalog/product/view/id/22329/s/bluetenhonig-xxl-5723367/category/54/
+Row: 40 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://sortiment.lidl.ch/de/catalog/product/view/id/22327/s/erdnusskerne-xxl-0146517/category/54/"
+"Columns having rows with extra spaces:
+['product_name', 'producthierarchy_level3', 'breadcrumb', 'product_description']
+eg:
+Column: product_name
+3829|Pancetta, Provola und  Zwiebel
+
+Column: producthierarchy_level3
+3829|Pancetta, Provola und  Zwiebel
+
+Column: breadcrumb
+3829|Sortiment > Sortiment > Pancetta, Provola und  Zwiebel
+
+Column: product_description
+3159|La Crème, Caractère Pro 200 g 100 g = 0.90  Mit Lidl Plus noch mehr sparen
+3170|Aus Polyester Pro Stück  Finde jetzt deine Grösse"
+
+-------------------------------------------------------------------
+
+bayut_dubai_properties_buy_commercial_2026_10_14.json:
+____________________________________________________________
+
+no issues found
+-----------------------------------
+
+bayut_dubai_properties_buy_residential_2026_10_14.json:
+___________________________________________________________
+
+Data mismatch between API and file
+
+indyScore: API=493 | File=523  
+indyScore_l1: API=493 | File=523  
+indyScore_l2: API=410 | File=435  
+indyScore_l3: API=410 | File=435  
+updatedAt: API=1791831179.0 | File=1791725995.0  
+touchedAt: API=1791887489.611555 | File=1791728415.127593
+
+listing_url: https://www.bayut.com/property/details-16663218.html
+
+------------------------------------------------------
+
+
+
+
+
+
+
+
+
+

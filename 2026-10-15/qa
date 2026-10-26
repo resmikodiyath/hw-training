@@ -1,0 +1,266 @@
+qa--report
+--------------
+
+DataHut_SI_Mercator_FullDump_20261015.CSV
+___________________________________________
+data count: 16789
+
+
+"Columns having rows with extra spaces:
+['brand']
+
+Column: brand
+251|KREPKO  EKO
+252|KREPKO  EKO
+821|BEL  BABYBEL
+923|KREPKO  EKO
+1107|KREPKO  EKO
+10361|FELIX  PURINA
+10380|FELIX  PURINA
+10382|FELIX  PURINA
+10456|FELIX  PURINA
+
+**promotion valid upto date available on website, but empty in the file
+937|https://mercatoronline.si/izdelek/19979014/sir-leerdammer-pakirano-250-g
+2925|https://mercatoronline.si/izdelek/17553013/kis-aceto-balsamico-di-modena-il-torrione-zgo-500-ml"
+
+-----------------------------------------------
+DataHut_SI_Spar_FullDump_20261015.CSV
+_____________________________________
+data count: 16157
+
+
+"non empty
+------
+alchol_by_volume
+barcode
+netweight
+price_was
+promotion_description
+promotion_price
+promotion_valid_upto
+
+more empty fields
+----------------
+age_recommendations
+color
+competitor_product_key
+country_of_origin
+dimensions
+features
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+flavour
+label_information
+labelling
+material
+packaging
+preparationinstructions
+rating
+retail_limit
+review
+special_information
+tasting_note
+variants
+
+"Invalid grammage( g to kg conversion error): 3
+Row: 715 | URL: https://online.spar.si/p/nadomestek-kave-z-okusom-po-kakavu-calmrooty-62g-681408 | File: 0.062 g
+Row: 6641 | URL: https://online.spar.si/p/instant-ocvrti-riz-vegetarijanski-mama-80g-683913 | File: 0.08 g
+Row: 8688 | URL: https://online.spar.si/p/testenine-fusilli-feelingok-220g-679091 | File: 0.22 g"
+
+"Columns having rows with extra spaces:
+['producthierarchy_level3', 'producthierarchy_level4', 'breadcrumb', 'warning']
+
+eg:
+Column: producthierarchy_level3
+7189|KONZERVIRANE  JEDI
+Column: breadcrumb
+7189|Domov > SHRAMBA > KONZERVIRANE  JEDI > KONZERVIRANE MORSKE JEDI
+7190|Domov > SHRAMBA > KONZERVIRANE  JEDI > KONZERVIRANE MORSKE JEDI
+
+**Promotion description is present but promotion date is empty(available on website)
+Count: 1
+4232|https://online.spar.si/p/svetlo-pivo-ale-nefiltrirano-s-budget-05l-596843"
+-------------------------------------------
+DataHut_SI_Dm_FullDump_20261015.CSV
+_________________________________________
+data count: 10554
+
+"""price_was', 'promotion_price'
+also empty"""
+
+competitor_product_key is taken from dm product number
+
+"Columns having rows with extra spaces:
+['breadcrumb', 'storage_instructions', 'preparationinstructions', 'country_of_origin', 'labelling']
+
+
+Column: breadcrumb
+48|Domov > Dojenček in otrok > Otroška hrana in napitki  > Otroški napitki
+74|Domov > Dojenček in otrok > Pripomočki za previjanje  > Koši za plenice in ostalo
+
+
+Column: labelling
+1986|Vsebuje Bitrex®;  Modri angel; EU Ecolabel
+
+Columns with unescaped pipe character:
+ingredients
+instructionforuse
+
+eg:
+
+Column: instructionforuse
+6092|Pred uporabo dobro pretresite. Za poudarjanje nanesite izdelek na najvišje točke obraza, vključno z ličnicami, obrvmi, nosom inKupidovim lokom. |Za rdečilo za lica nanesite na ličnice. Za bronzer nanesite po licih, sencih, nosu, bradi, vratu in čelu. Za brezhiben zaključek izdelek nežno vtapkajte v kožo s konicami prstov ali čopičem. Nanašajte v plasteh, da dosežete želeno stopnjo intenzivnosti barve in prekrivnosti.
+
+-----------------------------------------------------------------------------------------------
+DataHut_CH_Coop_FullDump_20261015.CSV
+___________________________________________
+
+"data count: 35505
+------------------------------
+DataHut_CH_Denner_FullDump_20261015.CSV
+____________________________________________
+data cunt: 1627
+-------------------------------------------
+DataHut_CH_Lidl_FullDump_20261015.CSV
+_________________________________________
+data count: 3967
+
+country_of_origin also empty
+
+
+"Invalid promotion date rows: 2
+Row: 1219 | promotion_valid_from: '24.10.2026' | promotion_valid_upto: '12.10.2026' | pdp_url: https://sortiment.lidl.ch/de/catalog/product/view/id/17700/s/super-alkaline-mignonzellen-aa-0167082/category/54/
+Row: 1286 | promotion_valid_from: '20.10.2026' | promotion_valid_upto: '12.10.2026' | pdp_url: https://sortiment.lidl.ch/de/catalog/product/view/id/17678/s/raclette-scheiben-0006233/category/54/"
+
+
+"Promotion description is present but promotion date is empty
+eg:
+
+Row: 39 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://sortiment.lidl.ch/de/catalog/product/view/id/22329/s/bluetenhonig-xxl-5723367/category/54/
+Row: 40 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://sortiment.lidl.ch/de/catalog/product/view/id/22327/s/erdnusskerne-xxl-0146517/category/54/"
+
+Columns having rows with extra spaces:
+['product_name', 'producthierarchy_level3', 'breadcrumb', 'product_description']
+eg:
+Column: product_name
+3829|Pancetta, Provola und  Zwiebel
+
+Column: producthierarchy_level3
+3829|Pancetta, Provola und  Zwiebel
+
+Column: breadcrumb
+3829|Sortiment > Sortiment > Pancetta, Provola und  Zwiebel
+
+Column: product_description
+3159|La Crème, Caractère Pro 200 g 100 g = 0.90  Mit Lidl Plus noch mehr sparen
+3170|Aus Polyester Pro Stück  Finde jetzt deine Grösse
+
+----------------------------------------------------------
+DataHut_CH_Migros_FullDump_20261015.CSV
+______________________________________________
+data count: 48772
+
+"Columns having rows with extra spaces:
+['size', 'site_shown_uom']
+
+
+Column: size
+21607|37.5 x 15.5  x 28 cm
+22844|0.6 x 36mm,  0.65 x 39mm,  0.8 x 42mm
+22863|0.9 x 45mm,  1.2 x 52.5mm,  2 x 58mm,  1.8 x 76mm,  1.6 x 58mm,  R24 x D1.35mm
+22869|Durchmesser 10,  13,  14mm
+22880|15mm,  16mm
+23176|0.53 x 33.6mm,  0.6 x 36mm,  0.6 x 35.7mm,  0.73 x 38.7mm,  0.85 x 41.5mm,  0.85 x 41.6mm,  0.85 x 42mm,  0.95 x 45mm
+23180|N°70,  N°80,  N°90
+
+Column: site_shown_uom
+9783|4  x 250ml
+
+*invalid pipe:
+*product_description
+preparationinstructions
+instructionforuse
+distributor_address
+ingredients
+eg:
+
+Column: distributor_address
+748|Planted Foods AG Kemptpark 32/34 | 8310 Kemptthal
+etc"
+--------------------------------------------------------
+DataHut_AT_Dm_FullDump_20261015.CSV
+_________________________________________
+dat count: 16965
+
+"more empty fields
+---
+producthierarchy_level5
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+
+non empty
+-----
+barcode
+retail_limit
+
+"
+-------------------------------------
+
+DataHut_AT_Billa_FullDump_20261015.CSV
+_________________________________________
+
+
+data count: 12169
+
+"non empty
+------------------
+age_of_the_product
+packaging
+
+more empty colmns
+-------------------
+retail_limit
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+
+*promotion description AKTION, single price available on website, but regular price not empty as per requirement
+Row: 3141 | Value: 4.99 | URL: https://shop.billa.at/produkte/aeterna-oellicht-00435589
+Row: 10713 | Value: 1.99 | URL: https://shop.billa.at/produkte/vegavita-staebchen-fischart-00878830
+Row: 11251 | Value: 1.99 | URL: https://shop.billa.at/produkte/ja-natuerlich-maroni-gegart-0089479"
+*-------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

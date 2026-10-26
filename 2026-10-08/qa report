@@ -1,0 +1,146 @@
+QA--ISSUES---REPORT
+------------------------------
+
+DataHut_AU_Woolworths_FullDump_20261007.CSV
+_______________________________________________
+
+Data count: 85256
+"for some records variety is ""NULL"" .Also in description, text contains NULL, in the file , but is not available on website
+eg:
+
+Row 1694: Column=Variety, Value='NULL'
+Row 1796: Column=Variety, Value='NULL'
+Row 1900: Column=Variety, Value='NULL'
+Row 1984: Column=Variety, Value='NULL'
+Row 2134: Column=Variety, Value='NULL'
+Row 2145: Column=Variety, Value='NULL'
+Row 2160: Column=Variety, Value='NULL'
+Row 2170: Column=Variety, Value='NULL'
+Row 2251: Column=Variety, Value='NULL'
+Row 2255: Column=Variety, Value='NULL'
+Row 2267: Column=Variety, Value='NULL'
+etc..."
+-------------------------------------------------------------------
+
+DataHut_AT_Dm_FullDump_20261008.CSV
+____________________________________
+
+data count: 16728
+
+"more empty fields
+---
+producthierarchy_level5
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+
+non empty
+-----
+barcode
+retail_limit"
+
+
+"Columns having rows with extra spaces:
+['product_name', 'variants', 'product_description', 'storage_instructions', 'preparationinstructions', 'country_of_origin', 'labelling', 'label_information', 'material', 'warning']
+eg:
+Column: product_name
+30|Lippenstift  Gloss Stick Caramelted 01 Sweet Lips, Caramel Kiss, 3 g
+Column: variants
+1517|{'colour': ['Tnungsshampoo Hellbraun 5.73', 'Tnungsshampoo 8.03 Bourbon', 'Tnungsshampoo 10.11 Silbergrau', 'Tnungsshampoo Karamellblond 8.7', 'Tnungsshampoo Platinblond 8.1', 'Tnungsshampoo  7.4 Kupfergold']}
+etc"
+-----------------------------------------------------------------
+DataHut_CH_Migros_FullDump_20261008.CSV
+____________________________________________
+data count: 39672
+
+"`feeding_recommendation` contains `None` for 2 rows, while the website has no corresponding value or is undefined; the dataset should contain an empty value instead of `None`.
+
+ Row 11199: feeding_recommendation='None', unique_id=109123700000
+ Row 11309: feeding_recommendation='None', unique_id=109135600000
+
+**product name missing for 3 records( same as website)
+
+**Columns having rows with extra spaces:
+['size', 'site_shown_uom']
+
+Column: size
+23045|37.5 x 15.5  x 28 cm
+24291|0.6 x 36mm,  0.65 x 39mm,  0.8 x 42mm
+24311|0.9 x 45mm,  1.2 x 52.5mm,  2 x 58mm,  1.8 x 76mm,  1.6 x 58mm,  R24 x D1.35mm
+24323|Durchmesser 10,  13,  14mm
+24326|15mm,  16mm
+24524|0.53 x 33.6mm,  0.6 x 36mm,  0.6 x 35.7mm,  0.73 x 38.7mm,  0.85 x 41.5mm,  0.85 x 41.6mm,  0.85 x 42mm,  0.95 x 45mm
+24536|N°70,  N°80,  N°90
+
+Column: site_shown_uom
+9766|4  x 250ml
+
+**Columns with unescaped pipe character:
+distributor_address
+ingredients
+instructionforuse
+preparationinstructions
+product_description
+
+eg:
+Column: instructionforuse
+-------------------------------------------------------------------------
+DataHut_AT_Billa_FullDump_20261008.CSV
+_____________________________________________
+data count: 12153
+
+"non empty
+------------------
+age_of_the_product
+packaging
+
+more empty colmns
+-------------------
+retail_limit
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+"
+
+
+"Total invalid hierarchy values: 1
+
+row=10940 | column=producthierarchy_level2 | value=Neu im Online Shop | producthierarchy_leve3,4 - empty l breadcrumb=Alle Kategorien > Fleisch, Wurst & Fisch > Wurst, Schinken & Speck > Wurstspezialitäten
+https://shop.billa.at/produkte/clever-jamon-serrano-00883858
+
+"
+"***promotion description AKTION, single price available on website, but regular price not empty as per requirement
+
+Row: 3261 | Value: 4.99 | URL: https://shop.billa.at/produkte/aeterna-oellicht-00435589
+
+Row: 4855 | Value: 1.79 | URL: https://shop.billa.at/produkte/ja-natuerlich-bio-rote-ruebe-vorgegart-00575149
+
+Row: 11397 | Value: 1.99 | URL: https://shop.billa.at/produkte/ja-natuerlich-maroni-gegart-0089479"
+
+---------------------------------------------------------------------
+DataHut_CH_Coop_FullDump_20261008.CSV
+________________________________________
+
+data count: 35958
+---------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

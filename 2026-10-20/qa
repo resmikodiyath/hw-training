@@ -1,0 +1,46 @@
+bahrainfinder_bah_2026_10_03.json
+_______________________________________
+
+data count: 4641
+
+"no value Fully Furnished
+values include
+['', 'Unfurnished', 'Semi Furnished', 'Furnished', 'غير مفروش',
+       'مفروشة بالكامل', 'مفروشة جزئيًا']"
+
+
+
+------------------------
+dubizzle_egp_2026_10_03.json
+________________________________
+data count: 252760
+-----------------------
+dubizzle_qat_2026_10_03.json
+______________________________
+Columns with extra-long spaces:
+['title', 'description']
+
+Row 2186 | Column: description | Value: 'Location: The Pearl                                                  Available Apartments for Rent – Qatar                                              • 1 BHK with Balcony(Side View) 7,500 QR 1 Month Free Semi-Furnished Bills not included                                      • 1 BHK + Office (No Balcony – Side View) 7,500 QR 1 Month Free Semi-Furnished Bills not included                                                   • 1 BHK + Office with Balcony (Side View) 8,000 QR 1 Month Free Semi-Furnished Bills not included                                                  • 2 BHK – Marina View 12,000 QR 1 Month Free Semi-Furnished Bills not included                                                    • 3 BHK – Sea View 14,500 QR 1 Month Free Semi-Furnished Bills not included                                                      Prime location | Modern living | Limited availability                                                    Payment method:-               12 cheques -security cheque and half month commission (View phone number)(View phone number)#قطر #الدوحة #عقارات_قطر #إيجار #للإيجار #شقق_للإيجار #فلل_للإيجار #RealEstateQatar #QatarRent #QatarProperty #الغرافة #الدحيل #المرخية #بن_عمران #الوعب #أبو_هامور #الريان #تيك_توك #ترند #اكسبلور #fyp #foryou #foryoupage #باحث_عن_سكن #سكن_قطر #عائلات #عزاب #انتقال_فوري'
+
+
+**photos available on website,but empty in the file:
+eg:
+914||https://www.dubizzle.qa/en/ad/fully-furnished-1bhk-apartment-for-monthly-stay-ID120378888.html
+915||https://www.dubizzle.qa/en/ad/bright-3-bhk-un-furnished-umm-ghuwalina-area-ID120375200.html
+916||https://www.dubizzle.qa/en/ad/spacious-studio-fully-furnished-near-metro-ID120367307.html
+
+-------------------------------------------
+bayut_uae_project_2026_10_03.json
+____________________________________
+data count: 2982
+
+"Columns having rows with extra spaces:
+['developer_name', 'unit_type']
+eg:
+Column: developer_name
+2013|Maskan MS Contracting and  RealL Estate Development
+
+column': 'unit_type',
+  'row': 59,
+  'url': https://www.bayut.com/for-sale/off-plan/property/dubai/the-oasis-by-emaar/mareva-the-oasis"
+
