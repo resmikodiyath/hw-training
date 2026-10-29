@@ -1,0 +1,52 @@
+QA report
+_____________
+DataHut_AT_Dm_PriceExtractions_20261028.CSV
+_________________________________________________
+data count: 17242
+
+extraction date 2026-10-29
+
+"Columns having rows with extra spaces:
+['product_name']
+
+Column: product_name
+410|Kräutertee, Deine innere Ruhe mit Kamille, Minze, Lavendel & Ashwagandha  (20 x 1,8g), 36 g"
+--------------------------------------------
+DataHut_AT_Dm_FullDump_20261029.CSV
+________________________________________
+
+17265
+
+"more empty fields
+---
+producthierarchy_level5
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+
+non empty
+-----
+barcode
+
+
+"Columns having rows with extra spaces:
+['product_name', 'variants', 'product_description', 'storage_instructions', 'preparationinstructions', 'country_of_origin', 'labelling', 'label_information', 'material', 'warning']
+eg:
+Column: product_name
+410|Kräutertee, Deine innere Ruhe mit Kamille, Minze, Lavendel & Ashwagandha  (20 x 1,8g), 36 g
+1453|Tönungsshampoo  7.4 Kupfergold, 14 ml"
+-----------------------------------------
+DataHut_SI_Mercator_PriceExtractions_20261028.CSV
+________________________________________________________
+data count: 16765
+
+
+""*promotion valid upto dates available on website, but missing in the file
+eg:
+
+333|https://mercatoronline.si/izdelek/19423175/proteinski-puding-vanilija-dr-oetker-400-g
+510|https://mercatoronline.si/izdelek/1161859/sadna-skuta-s-podlozenim-sadjem-mu-vec-okusov-ljubljanske-mlekarne-110-g
+etc"

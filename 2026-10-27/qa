@@ -1,0 +1,148 @@
+QA-report
+==================
+aqarmap_egp_2026_10_04.json
+________________________________
+
+data count: 278734
+
+
+scraped_ts - 2026-10-23
+
+depth', 'seller_role', 'listing_type' fields are also empty
+"white space:
+['broker_display_name', 'broker', 'title', 'description', 'location']
+
+272325|broker|HAMADA  M ALDEEB
+162364|location|cairo , ljyz , shareaa-morad  charel degolwh"
++------------------------------------------------------------------------------
+
+dubizzle_bah_2026_10_04.json
+_________________________________
+
+data count:3848
+
+"Columns with extra-long spaces:
+['title', 'description']
+eg:
+
+column': 'description',
+  'row': 188,
+  'url': 'https://www.dubizzle.com.bh/en/ad/%D9%81%D8%B1%D8%B5%D8%A9-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D9%8A%D8%A9-%D8%B0%D9%87%D8%A8%D9%8A%D8%A9-%D9%81%D9%8A-%D9%82%D9%84%D8%A8-%D8%A7%D9%84%D8%B1%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A-ID105762083.html'},
+
+column': 'title',
+  'row': 297,
+  'url': 'https://www.dubizzle.com.bh/en/ad/inclusive-balcony-2-bed-new-hidd-ID104107396.html'}"
+
+
+---------------------------------------------------------
+
+--------------------------------
+nawy_egp_2026_10_04.json:
+___________________________
+
+data count: 19774
+
+
+"** price available on site but empty in file:
+Row 2684: https://www.nawy.com/compound/1261-hacienda-waters/property/137713-chalet-for-sale-in-hacienda-waters-with-1-bedrooms-in-ras-el-hekma-by-palm-hills-developments
+Row 7479: https://www.nawy.com/compound/745-eastshire/property/29641-townhouse-for-sale-in-eastshire-with-7-bedrooms-in-new-cairo-by-al-qamzi-developments
+Row 12831: https://www.nawy.com/compound/1904-spire-club-hills/property/132560-apartment-for-sale-in-spire-club-hills-with-21-bedrooms-in-northern-expansion-by-housing-and-development-properties-hdp"
+
+------------------------------------------------------------
+dubizzle_uae_2026_10_04.json
+__________________________________
+
+data count: 591421
+e
+"no value:سنويا
+
+----- price_per unique values -----
+''
+'Bi-Yearly'
+'Daily'
+'Monthly'
+'Quarterly'
+'Yearly'
+Total unique price_per: 6"
+
+--------------------------------------------------
+
+aqar_ksa_2026_11.json:
+________________________
+
+data count: 176360     currency ['ريال', ''[
+eg:
+row:4611:
+  ""currency"": """"
+""url"": https://sa.aqar.fm/شقق-للإيجار/الرياض/شرق-الرياض/حي-الرمال/"
+
+2026_11
+column with extra spaces
+"['title', 'description']* 
+
+-----------------------------------------------------
+DataHut_AT_Billa_PriceExtractions_20261027.CSV:
+______________________________________________
+
+"data count: 12165
+
+---------------------------------------
+
+bayut_egp_2026_10_04.json:
+____________________________
+"more fields
+------------------
+completion_status
+ownership"
+
+data count: 240121
+
+"['broker_display_name', 'broker']
+
+eg:
+
+177351|broker_display_name|Ahmed  Elhany
+11047|broker|AHMED  ELHANY"
+
+"---- price_per unique values -----
+''
+'Daily'
+'Monthly'
+'Weekly'
+'Yearly'
+Total unique price_per: 5
+"
+
+------------------------------------------------
+
+data.json
+___________
+
+field order diffferent
+
+data count: 3009
+
+"jpg format also there
+project_number: 2727 | row: 2 | value: s3://pf-datahut-data-prod-ap/datahut/dld/projects/2026_10_14/dld_number/images/2727_1.jpg"
+
+
+" ""issue_count"": 41,
+      ""examples"": [
+        ""2968"",
+        ""3338"",
+        ""1612""
+      ]"
+
+--------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+

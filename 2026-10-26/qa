@@ -1,0 +1,165 @@
+QA--report
+===========
+DataHut_AT_Billa_PriceExtractions_20261026.CSV
+___________________________________________________
+
+data count" 12173
+
+"Three prices equal: 5
+*AKtion Tag present, no mehrweg, single price, but regular price not empty
+Row: 198 | Value: 1.89 | URL: https://shop.billa.at/produkte/knorr-klare-suppe-pflanzlich-0017013
+Row: 2598 | Value: 1.89 | URL: https://shop.billa.at/produkte/knorr-gemuesesuppe-wuerfel-00414401
+Row: 4702 | Value: 1.89 | URL: https://shop.billa.at/produkte/knorr-goldaugen-rindfleischsuppe-0056234
+Row: 5439 | Value: 2.99 | URL: https://shop.billa.at/produkte/ja-natuerlich-bio-beerenmuesli-00645731
+Row: 11376 | Value: 1.99 | URL: https://shop.billa.at/produkte/ja-natuerlich-maroni-gegart-0089479"
+----------------------------------------------
+DataHut_AT_Dm_PriceExtractions_20261026.CSV
+__________________________________________________
+
+data count: 17268
+
+"Invalid promotion date rows: 3
+Row: 11217 | promotion_valid_from: '29.12.9999' | promotion_valid_upto: '' | pdp_url: https://www.dm.at/p/d/3117220/bali-bronze-trockenoel-golden-glow
+Row: 11361 | promotion_valid_from: '29.12.9999' | promotion_valid_upto: '' | pdp_url: https://www.dm.at/p/d/3128037/bali-bronze-selbstbraeuner-spray-gesicht
+Row: 11559 | promotion_valid_from: '29.12.9999' | promotion_valid_upto: '' | pdp_url: https://www.dm.at/p/d/3128016/bali-bronze-bronzing-drops
+[** value same as website**]
+
+
+Columns having rows with extra spaces:
+['product_name']
+eg:
+
+Column: product_name
+396|Kräutertee, Deine innere Ruhe mit Kamille, Minze, Lavendel & Ashwagandha  (20 x 1,8g), 36 g
+1460|Tönungsshampoo  7.4 Kupfergold, 14 ml
+1983|Augenbrauenfarbe Dunkelbraun  4-1, 1 St]"
+
+--------------------------------------------------------
+DataHut_AT_Spar_PriceExtractions_20261026.CSV:
+______________________________________________
+
+data count: 43410
+
+"Extra spaces count: 1
+column': 'breadcrumb',
+ 'pdp_url': https://www.spar.at/produktwelt/vorarlberg-milch-laendle-halbfettmilch-laenger-frisch-1-5-fett-p2020006312547
+  'row': 24547
+SPAR Website > Produktwelt > Lebensmittel > Milchprodukte & Alternativen > Milch & Milchgetränke > Frisch  & Haltbarmilch
+
+
+**Columns with unescaped pipe character:
+product_name
+site_shown_uom
+eg:
+Column: product_name
+7691|Isana AHA | PHA Cleanser 125 ml
+17669|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+18533|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück"
+
+**"Extra spaces count: 1
+column': 'breadcrumb',
+ 'pdp_url': https://www.spar.at/produktwelt/vorarlberg-milch-laendle-halbfettmilch-laenger-frisch-1-5-fett-p2020006312547
+  'row': 24547
+SPAR Website > Produktwelt > Lebensmittel > Milchprodukte & Alternativen > Milch & Milchgetränke > Frisch  & Haltbarmilch
+
+----------------------------------------------------
+DataHut_SI_Mercator_PriceExtractions_20261026.CSV
+________________________________________________________
+
+data count: 16755
+
+
+""*promotion valid upto dates available on website, but missing in the file
+eg:
+
+862|https://mercatoronline.si/izdelek/19979014/sir-leerdammer-pakirano-250-g
+889|https://mercatoronline.si/izdelek/19832343/lahki-poltrdi-sir-s-proteini-president-jost-pakirano-140-g"
+------------------------------------------------------------------------
+DataHut_SI_Spar_PriceExtractions_20261026.CSV
+__________________________________________________
+
+data count: 16037
+
+percentage_discount also empty
+
+**promotion dates availalble on site but missing in the file:
+Count: 2
+5230|https://online.spar.si/p/polnozrnata-strucka-z-otrobi-70g-672809
+5240|https://online.spar.si/p/bela-zemlja-spar-60g-678329
+
+** Invalid grammage(g to kg conversion error): 3
+Row: 710 | URL: https://online.spar.si/p/nadomestek-kave-z-okusom-po-kakavu-calmrooty-62g-681408 | File: 0.062 g
+Row: 6532 | URL: https://online.spar.si/p/instant-ocvrti-riz-vegetarijanski-mama-80g-683913 | File: 0.08 g
+Row: 8529 | URL: https://online.spar.si/p/testenine-fusilli-feelingok-220g-679091 | File: 0.22 g
+
+-----------------------------------------------------------------
+
+dari_ae_2026_10_04.json.
+___________________________
+data count: 1077
+
+"Columns with extra-long spaces:
+['company_employees']
+row|value
+279|[{'id': 35404, 'name': 'Mazen Rushdi   Abualhaija', 'profession': 'Broker Employee'}]
+1031|[{'id': 37727, 'name': 'AGER ASAN', 'profession': 'Broker Employee'}, {'id': 30586, 'name': 'rudina  mohd ', 'profession': 'Broker Employee'}]
+"
+-------------------------------------------------
+bayut_bah_2026_10_04.json
+______________________________
+data count: 2816
+---------------------------
+
+bahrainfinder_bah_2026_10_04.json
+__________________________________
+no value Fully Furnished
+values include
+['', 'Unfurnished', 'Semi Furnished', 'Furnished', 'غير مفروش',
+       'مفروشة بالكامل', 'مفروشة جزئيًا']
+--------------------------------
+
+
+aqarmap_egp_2026_10_04.json
+_____________________________
+
+data count: 286413
+
+
+scraped_ts- 2026-10-16
+
+listing_type,seller_role,depth fields are also empty
+
+
+"['broker_display_name', 'broker', 'title', 'description', 'location']
+eg:
+198767|broker|HAMADA  M ALDEEB
+158614|title|Apartment  For sale in Bait El Watan - Phase 7 El Takmelya
+etc
+
+
+*Invalid bathrooms: 6
+Row: 15563 | Value: 02 | URL: https://aqarmap.com.eg/en/listing/7082129-for-rent-alexandria-al-mamoura/
+Row: 15682 | Value: 03 | URL: https://aqarmap.com.eg/en/listing/7001498-for-rent-alexandria-borg-el-arab-compounds-in-borg-el-arab/
+Row: 19060 | Value: 0.2 | URL: https://aqarmap.com.eg/en/listing/7252376-for-sale-suez-el-arebaaen-el-sadat/
+Row: 22884 | Value: ١ | URL: https://aqarmap.com.eg/en/listing/6989431-for-sale-cairo-faisal-el-talbeya/
+Row: 64544 | Value: 2.5 | URL: https://aqarmap.com.eg/en/listing/7155474-for-sale-cairo-dokki-mydn-lmsh-almosekar-ali-ismail-st/
+Row: 102504 | Value: 01 | URL: https://aqarmap.com.eg/en/listing/6939476-for-rent-cairo-new-cairo-90th-street-northern-90th-street/"
+
+--------------------------------------------------------------------------------
+
+qatarliving_qat_2026_10_04.json
+___________________________________
+data count: 26229
+
+
+
+"Columns having rows with extra spaces:
+['description']
+eg:
+Row 1443 
+https://qlp.qatarliving.com/en/properties/rent/residential/villa/super_spacious_3bh_maid_room_compound_villa_in_ainkhalid_near_ansar_gallery/313763"
+
+-------------------------------------
+
+
+

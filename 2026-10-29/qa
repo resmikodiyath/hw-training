@@ -1,0 +1,126 @@
+QA-REPORT
+===========
+
+DataHut_CH_Denner_FullDump_20261029.CSV
+_______________________________________-
+Data count: 1610
+----------------------
+century21_us_2026_11_05.json
+__________________________________
+
+field order different
+
+data count: 37883
+
+"extra spaces:
+Column: first_name
+Row 16408: 'Lisa Tyler  TN, VA & SC'
+Row 19799: 'Bill Sweeden  Premier Referrals'
+
+
+"---------------------------------------------
+bhgre_2026_11_05.json:
+_______________________
+
+field order different
+
+data count: 18778
+
+country:
+"['United States', 'Jamaica']
+7400|Jamaica| https://www.bhgre.com/jam/city-unavailable/agents/better-homes-and-gardens-real-estate-jamaica/aid-P00200000FDdscdXBZtMRb3oSgOQD9P9S6pLBP1I
+7401|Jamaica| https://www.bhgre.com/jam/city-unavailable/agents/edwin-wint/aid-P00200000FDdqSekqCfO4OyzqGu2mbNGsFTEcVYL
+
+"-------------------------------------------
+baity_bah_2026_11.json
+___________________________
+data count: 9313
+--------------------
+DataHut_CH_Coop_FullDump_20261029.CSV
+________________________________________
+
+data count: 36054
+
+-----------------------------------
+DataHut_AT_Dm_FullDump_20261029.CSV:
+___________________________________
+data count : 17184
+
+"more empty fields
+---
+producthierarchy_level5
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+
+non empty
+-----
+barcode
+
+Columns having rows with extra spaces:
+['product_name', 'variants', 'product_description', 'storage_instructions', 'preparationinstructions', 'country_of_origin', 'labelling', 'label_information', 'material', 'warning']'
+eg:
+
+column': 'storage_instructions',
+  'pdp_url': 'https://www.dm.at/p/d/3156120/pediakid-immunheld-sirup',
+  'row': 4},
+ {'column': 'warning',
+  'pdp_url': 'https://www.dm.at/p/d/3156120/pediakid-immunheld-sirup',
+  'row': 4},
+
+-------------------------------------
+
+servicesbahrain_bah_2026_11.json:
+_____________________________________
+data count: 707
+
+
+"
+Rows with extra-long spaces: 1
+Row 414 | Column: name | Value: 'MOHAMED ALI A.QAHER MOHAMED TAHER   ALASFOOR'
+
+--invalid telephone number
+Row 15: 
+eg:
+telephone_number=(+973) | URL=https://services.bahrain.bh/wps/portal/RERA_en#toggle-id-1
+Row 112: telephone_number=0 | URL=https://services.bahrain.bh/wps/portal/RERA_en#toggle-id-1
+Row 114: telephone_number=0 | URL=https://services.bahrain.bh/wps/portal/RERA_en#toggle-id-1"
+"---------------------------------------------------
+emlakjet_tur_2026_11.json:
+__________________________
+
+data count: 300422
+
+
+"Unique Currency Counts and Sample Rows:
+'$' | Count: 4 | Sample Row: 219
+'' | Count: 370 | Sample Row: 68
+'TL' | Count: 299955 | Sample Row: 1
+'£' | Count: 90 | Sample Row: 50
+'€' | Count: 3 | Sample Row: 267895"
+---------------------------------------
+compass_2026_11_05.json:
+__________________________
+
+data count: 35071
+------------------------
+
+hepsiemlak_tur_2026_11.json
+_______________________________
+data count: 320992
+
+
+"Row No | Category
+135273 | For Rent
+168 | For Sale
+24 | Kiralık
+1 | Satılık
+186 | Sezonluk Kiralık
+160901 | Продается
+
+Total Unique Categories: 6
+
+
