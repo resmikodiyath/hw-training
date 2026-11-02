@@ -1,0 +1,126 @@
+QA-report
+============
+haraj_ksa_2026_11.json
+_______________________
+
+data count: 34967
+
+"white space:
+['url', 'broker_display_name', 'broker', 'title', 'description', 'user_id']
+
+14837|user_id|dr   osama
+
+7962|user_id|-  abdulaziz  -"
+--------------------------------
+DataHut_SI_Spar_PriceExtractions_20261030.CSV:
+____________________________________________
+data count: 16195
+
+percentage_discount also empty
+
+Invalid grammage(g to kg conversion error): 3
+Row: 707 | URL: https://online.spar.si/p/nadomestek-kave-z-okusom-po-kakavu-calmrooty-62g-681408 | File: 0.062 g
+Row: 6685 | URL: https://online.spar.si/p/instant-ocvrti-riz-vegetarijanski-mama-80g-683913 | File: 0.08 g
+Row: 8771 | URL: https://online.spar.si/p/testenine-fusilli-feelingok-220g-679091 | File: 0.22 g
+
+------------------------------------------
+DataHut_SI_Dm_PriceExtractions_20261030.CSV:
+_______________________________________________
+data count: 10822
+
+"Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+
+Column: product_name
+147|BEAUTY EXPERT vlažilni gel  za prhanje s 25 % glicerola in 1 % betaina, 200 ml
+325|Maskara  I love extreme volume, 12 ml
+2334|YOUNG & PURE Gel za sušenje  mozoljev, 15 ml"
+
+---------------------------------------
+DataHut_AT_Spar_PriceExtractions_20261030.CSV
+_______________________________________________
+data count: 43359
+
+
+"Extra spaces count: 1
+[column': 'breadcrumb',
+  'pdp_url':https://www.spar.at/produktwelt/vorarlberg-milch-laendle-halbfettmilch-laenger-frisch-1-5-fett-p2020006312547
+  'row': 24950
+SPAR Website > Produktwelt > Lebensmittel > Milchprodukte & Alternativen > Milch & Milchgetränke > Frisch  & Haltbarmilch
+
+**Columns with unescaped pipe character:
+product_name
+site_shown_uom
+
+
+Column: product_name
+7958|Isana AHA | PHA Cleanser 125 ml
+16723|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+Column: site_shown_uom
+16723|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück"
+----------------------------------------------------------------
+DataHut_AT_Dm_PriceExtractions_20261030.CSV:
+_____________________________________________
+
+data count: 17311
+
+Columns having rows with extra spaces:
+['product_name']
+
+
+Column: product_name
+476|Kräutertee, Deine innere Ruhe mit Kamille, Minze, Lavendel & Ashwagandha  (20 x 1,8g), 36 g
+1650|Tönungsshampoo  7.4 Kupfergold, 14 ml
+
+------------------------------------------------------------------
+wasalt_ksa_2026_11.json
+___________________________
+
+daat count: 72883
+
+"Columns having rows with extra spaces:
+['broker_display_name', 'broker', 'description']
+
+eg:
+
+column': 'description',
+  'row': 11,
+  'url': 'https://wasalt.com/en/property/sale/apartment-13381-sqm-with-3-bedrooms-5937678'},"
+
+------------------------------------
+
+DataHut_AT_Billa_PriceExtractions_20261030.CSV
+___________________________________________________
+
+data count: 12163
+-----------------------------
+
+DataHut_CH_Lidl_PriceExtractions_20261030.CSV
+_________________________________________________
+
+data count: 3863
+
+
+" Promotion description is present but promotion date is empty
+eg:
+Row: 53 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://sortiment.lidl.ch/de/catalog/product/view/id/22433/s/kleinkerze-mit-holzdocht-1024397/category/54/
+Row: 56 | Column: promotion_valid_from / promotion_valid_upto | Value: '', '' | URL: https://sorti"
+"Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+
+Column: product_name
+3812|Pancetta, Provola und  Zwiebel
+
+Column: breadcrumb
+3812|Sortiment > Sortiment > Pancetta, Provola und  Zwiebel"
+
+----------------------------------------
+
+
+
+
+
+
+
+
+
