@@ -1,0 +1,157 @@
+QA-ISSUE--REPORT
+==================
+nawy_egp_2026_11_01.json:
+__________________________________
+
+data count: 647
+
+--------------
+
+opensooq_bah_2026_11_01.json
+________________________________
+
+data count: 861
+
+
+Empty currency count: 4
+171|https://bh.opensooq.com/en/search/288940782
+181|https://bh.opensooq.com/en/search/288554016
+279|https://bh.opensooq.com/en/search/289467828
+551|https://bh.opensooq.com/en/search/288542154"
+
+
+"* phone_number ends with xxxx ,same as website
+Row 10: Phone=336622XX | URL=https://bh.opensooq.com/en/search/289281048
+
+**Columns having rows with extra spaces:
+['broker_display_name', 'broker']
+
+
+Column: broker_display_name
+
+740|Anthony  Chukwu
+810|Abdullah  ERA Tower
+
+Column: broker
+
+740|ANTHONY  CHUKWU
+810|ABDULLAH  ERA TOWER"
+
+-----------------------------------------
+machinerytrader_2026_11_02.csv:
+______________________________________
+
+ - 626  fields
+
+
+- data count: 8020
+
+
+"*Columns having rows with extra spaces:
+['company_name', 'contact_person', 'ProductConfiguration', 'EngineMake', 'StockNumber']
+eg:
+Column: ProductConfiguration
+3142|Personnel Carrier 
+
+Column: EngineMake
+2857|JOHN DEERE 
+
+Column: StockNumber
+1936|VHWT00050  C
+
+
+**Columns with unescaped pipe character:
+description
+eg:
+Column: description
+199|Boom Sections 3 Outriggers Independently Controlled | Hydraulic Steering Rear Wheel Fuel Diesel | Dual Fuel Engine Kubota | Kubota Rated Capacity Limiter Yes Telematics Yes
+"
+
+------------------------------------------------
+
+ajmanded_uae_2026_11.json:
+__________________________________
+
+
+data count: 1138
+
+
+"Columns having rows with extra spaces:
+['name', 'building_number']
+
+Column: name
+75|AL KHAIMAH REAL ESTATE  -SOLE PROPRIETORSHIP L.L.C
+92|AL  OSOOL REALESTATE/L.L.C
+
+"Non-English name count: 1
+790|العرب للعقارات ذ.م.م - Branch 01|https://eservices.ajmanded.ae/en/TradeLicense/License/98bf3b22-e4dc-4048-8827-78312394cf8b
+[same as website]"
+
+
+"scraped_ts date: 31/10/2026
+Cutoff date: 31/08/2026
+Licenses that should be excluded: 0"
+
+-------------------------------------
+data.json:
+________________
+data count: 3010
+
+"  ""issue_count"": 41,
+      ""examples"": [
+        ""2968"",
+        ""3338"",
+        ""1612""
+      ]"
+
+-----------------------
+bayut_uae_2026_11_02.json
+_____________________________
+
+"Additional 21 columns:
+orn_number,
+adm_number,
+3d_live,
+3d_image,
+2d_image,
+ded_number_2,
+ded_number_3,
+ded_number_4,
+trucheck_on,
+trubroker,
+property_of_the_week,
+trakheesi_url,
+floorplan_id,
+floorplan_type_identifier,
+floorplan_raw,
+floorplans_total,
+bln_number,
+quality_lister,
+email,
+rating,
+no_of_reviews.
+
+data count: 604179
+
+
+"Completely Empty Fields:
+ad_type
+bln_number
+ded_license_number
+ded_number_2
+ded_number_3
+ded_number_4
+depth
+dtcm_licence
+email
+no_of_reviews
+quality_lister
+rating
+sub_category_2"
+
+currency:
+"no empty value
+
+Unique Currency Counts:
+'AED': 604179"
+------------------

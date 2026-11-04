@@ -1,0 +1,128 @@
+QA-ISSUE-REPORT
+=====================
+DataHut_SI_Mercator_PriceExtractions_20261103.CSV
+___________________________
+
+data count: 16716
+
+"*promotion valid upto dates available on website, but missing in the file
+eg:
+
+227|https://mercatoronline.si/izdelek/20151407/sadni-jogurt-bobbastic-mango-in-pomarancna-2-1-m-m-mu-300-g
+297|https://mercatoronline.si/izdelek/20077996/skyr-mu-450-g"
+------------------------------------
+DataHut_SI_Dm_PriceExtractions_20261103.CSV
+________________________________________________
+
+data count: 10813
+
+"Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+
+Column: product_name
+326|Maskara  I love extreme volume, 12 ml
+446|BEAUTY EXPERT vlažilni gel  za prhanje s 25 % glicerola in 1 % betaina, 200 ml"
+------------------------------------
+DataHut_AT_Spar_PriceExtractions_20261103.CSV
+_______________________________________________
+data count: 43331
+
+
+"Extra spaces count: 1
+[{'column': 'breadcrumb',
+  'pdp_url': https://www.spar.at/produktwelt/vorarlberg-milch-laendle-halbfettmilch-laenger-frisch-1-5-fett-p2020006312547
+  'row': 26686}]
+
+**Columns with unescaped pipe character:
+product_name
+site_shown_uom
+
+eg:
+
+Column: product_name
+7673|Isana AHA | PHA Cleanser 125 ml
+16943|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+"---------------------------------------
+DataHut_AT_Dm_PriceExtractions_20261103.CSV
+___________________________________________
+data count: 17217
+
+
+"Columns having rows with extra spaces:
+['product_name']
+eg:
+
+Column: product_name
+462|Kräutertee, Deine innere Ruhe mit Kamille, Minze, Lavendel & Ashwagandha  (20 x 1,8g), 36 g
+1036|Tabletten Vitamin  B12 350, 30 St"
+
+-----------------------------------
+
+DataHut_AT_Billa_PriceExtractions_20261103.CSV
+_________________________________________________
+
+data count: 12128
+
+Three prices equal: 9
+*AKtion Tag present, no mehrweg, single price, but regular price not empty
+eg:
+Three prices equal: 9
+Row: 135 | Value: 1.89 | URL: https://shop.billa.at/produkte/knorr-klare-suppe-pflanzlich-0017013
+Row: 2607 | Value: 1.89 | URL: https://shop.billa.at/produkte/knorr-gemuesesuppe-wuerfel-00414401
+Row: 4231 | Value: 1.89 | URL: https://shop.billa.at/produkte/billa-bio-mungobohnensprossen-00511704
+Row: 11271 | Value: 1.99 | URL: https://shop.billa.at/produkte/ja-natuerlich-maroni-gegart-0089479
+-------------------------------------------
+royallepage_2026_11_05.json
+_________________________________
+
+order different
+
+
+"royallepage_2026_11_05.json
+future date "
+
+data count: 18726
+---------------------------
+dubizzle_uae_2026_11_01.json
+_____________________________
+data count: 591683
+
+
+price_per:
+"'
+'Bi-Yearly'
+'Daily'
+'Monthly'
+'Quarterly'
+'Yearly'
+Total unique price_per: 6
+no value سنويا"
+
+
+"18 | Whitespace in title | 'Readyto move Furnished  Master Bedroom with attached   Washroom – Family/ladies - near alnahda sharj'
+41 | Whitespace in description | 'Free wifiFree electricity Free  water Free gas Near dubai'"
+-------------------------
+
+dubizzle_bah_2026_11_01.json
+_______________________________
+
+data count: 2964
+
+"Columns having rows with extra spaces:
+['broker_display_name', 'broker', 'title', 'description']
+column': 'description',
+  'row': 1,
+  'url': 'https://www.dubizzle.com.bh/en/ad/building-for-rent-in-tubli-bay-ID105761858.html'},
+ {'column': 'description',
+  'row': 4,
+  'url': 'https://www.dubizzle.com.bh/en/ad/limited-time-offer-business-address-packages-in-bahrain-ID105396597.html"
+-----------------------------------
+
+aqarmap_egp_2026_11_01.json
+________________________________
+
+data count: 279036
+
+depth', 'seller_role', 'listing_type' fields are also empty
+----------------------------
+
