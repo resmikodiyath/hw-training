@@ -1,0 +1,238 @@
+QA-ISSUES---REPORT
+=====================
+DataHut_SI_Spar_FullDump_20261105.CSV
+_____________________________________
+* Data count: 16094
+
+* more empty fields
+-----------------------------
+['variants', 'preparationinstructions', 'country_of_origin', 'age_recommendations', 'flavour', 'labelling', 'packaging', 'special_information', 'label_information', 'dimensions', 'color', 'material', 'tasting_note', 'rating', 'review', 'file_name_1', 'file_name_2', 'file_name_3', 'file_name_4', 'file_name_5', 'file_name_6', 'competitor_product_key', 'features', 'retail_limit']
+
+not empty
+-----------
+['alchol_by_volume', 'barcode', 'netweight', 'price_was', 'promotion_description', 'promotion_price', 'promotion_valid_upto']"
+
+
+* instock: True values only
+
+* Invalid grammage: 3
+Row: 724 | URL: https://online.spar.si/p/nadomestek-kave-z-okusom-po-kakavu-calmrooty-62g-681408 | File: 0.062 g
+Row: 6691 | URL: https://online.spar.si/p/instant-ocvrti-riz-vegetarijanski-mama-80g-683913 | File: 0.08 g
+Row: 8790 | URL: https://online.spar.si/p/testenine-fusilli-feelingok-220g-679091 | File: 0.22 g"
+
+* Columns having rows with extra spaces:
+['producthierarchy_level3', 'producthierarchy_level4', 'breadcrumb', 'warning']
+eg:
+'column': 'breadcrumb',
+  'pdp_url': 'https://online.spar.si/p/sardele-v-oljcnem-olju-s-budget-125g-616317',
+  'row': 7228}
+column': 'warning',
+  'pdp_url': 'https://online.spar.si/p/sprej-za-cevlje-deo-active-kemplast-200ml-498572',
+  'row': 15105
+
+------------------------------------------------------
+
+DataHut_SI_Dm_FullDump_20261105.CSV
+__________________________________________
+
+* data count: 10805
+
+* more empty
+--------------
+['price_was', 'promotion_price']"
+
+
+ * Columns having rows with extra spaces:
+['breadcrumb', 'storage_instructions', 'preparationinstructions', 'country_of_origin', 'labelling']
+
+Column: breadcrumb
+4|Domov > Dojenček in otrok > Otroška hrana in napitki  > Otroški napitki
+5|Domov > Dojenček in otrok > Pripomočki za previjanje  > Previjalne podloge
+
+* Columns with unescaped pipe character:
+ingredients
+instructionforuse
+
+eg:
+Column: instructionforuse
+6206|Pred uporabo dobro pretresite. Za poudarjanje nanesite izdelek na najvišje točke obraza, vključno z ličnicami, obrvmi, nosom inKupidovim lokom. |Za rdečilo za lica nanesite na ličnice. Za bronzer nanesite po licih, sencih, nosu, bradi, vratu in čelu. Za brezhiben zaključek izdelek nežno vtapkajte v kožo s konicami prstov ali čopičem. Nanašajte v plasteh, da dosežete želeno stopnjo intenzivnosti barve in prekrivnosti."
+------------------------------------------------------
+DataHut_AT_Dm_FullDump_20261105.CSV
+________________________________________
+* data count: 17194
+
+"non empty
+-----------------
+['barcode',  'retail_limit']
+more empty fields
+------------------
+['producthierarchy_level5', 'file_name_1', 'file_name_2', 'file_name_3', 'file_name_4', 'file_name_5', 'file_name_6']-
+
+"Columns having rows with extra spaces:
+['product_name', 'variants', 'product_description', 'storage_instructions', 'preparationinstructions', 'country_of_origin', 'labelling', 'label_information', 'material', 'warning']
+
+Column: product_name
+498|Kräutertee, Deine innere Ruhe mit Kamille, Minze, Lavendel & Ashwagandha  (20 x 1,8g), 36 g"
+
+-----------------------------------
+DataHut_AT_Spar_FullDump_20261105.CSV
+_________________________________________
+
+* data count: 43361
+
+
+* ['age_of_the_product'] not empty
+
+
+* Columns having rows with extra spaces:
+['producthierarchy_level6', 'breadcrumb']
+
+Column: producthierarchy_level6
+24611|Frisch  & Haltbarmilch
+
+Column: breadcrumb
+36|SPAR Website > Produktwelt > Drogerie & Beauty > Hygiene & Hygienepapier > Toilettenpapier  > Toilettenpapier Trocken
+
+* Columns with unescaped pipe character:
+nutritional_information
+product_name
+site_shown_uom
+
+Column: product_name
+8599|Isana AHA | PHA Cleanser 125 ml
+17541|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück"
+
+---------------------------------------------
+DataHut_CH_Lidl_FullDump_20261105.CSV
+________________________________________
+
+* data count: 3765
+
+"non empty
+------------------------
+['producthierarchy_level5'
+
+empty
+----------
+['country_of_origin']]"
+
+
+"Columns having rows with extra spaces:
+['product_name', 'producthierarchy_level3', 'breadcrumb', 'product_description']
+eg:
+Column: product_name
+3668|Pancetta, Provola und  Zwiebel
+
+Column: producthierarchy_level3
+3668|Pancetta, Provola und  Zwiebel
+
+Column: breadcrumb
+3668|Sortiment > Sortiment > Pancetta, Provola und  Zwiebel
+
+**Columns with unescaped pipe character:
+product_description
+
+3329|Diese Aktion ist nur in der Deutschschweiz gültig. Prozessor (CPU): ARM, 8-Kerne- Grafikprozessor (GPU) Arbeitsspeicher (RAM): 4 GB | Speicherkapazität: 64 GB Schnittstellen: 1x USB-C, 1x SIM, 1x Mikro-SD-Karte, 1x Audio Out / Mic In (3,5 mm) Pro Stück
+3366|2,4 GHz | Massstab 1:18 Mit verschiedenen Funktionen Geschwindigkeit: 10 km/h Pro Stück
+------------------------------------------------------
+
+bayut_transactions_sold_2026_11_weekly01.json
+_______________________________________________
+
+data count: 169384
+
+Iteration dates in file: 2025-11-04 to 2026-11-03
+
+-----------------------------------------
+bayut_transactions_rented_2026_11_weekly01.json
+_________________________________________________
+
+data count: 1057036
+---------------------------------
+machinerytrader_2026_11_05.csv:
+_______________________________________
+
+ * total 626 fields
+
+
+* data count: 8008
+
+
+* Total leading/trailing whitespace issues: 2
+row|column|value
+3619|EngineMake|JOHN DEERE 
+3750|ProductConfiguration|Personnel Carrier 
+
+-----------------------------------
+
+bayut_uae_2026_11_05.json
+_____________________________
+
+"additional fields
+------------------
+
+orn_number
+adm_number
+3d_live
+3d_image
+2d_image
+ded_number_2
+ded_number_3
+ded_number_4
+trucheck_on
+trubroker
+property_of_the_week
+trakheesi_url
+floorplan_id
+floorplan_type_identifier
+floorplan_raw
+floorplans_total
+bln_number
+quality_lister
+email
+rating
+no_of_reviews"
+
+
+
+data count: 600045
+
+iteration_number - 2026_11_05
+day no instead of week no
+
+file)name -day  instead of week
+bayut_uae_2026_11_05.json"
+
+
+"more empty fields
+*******************
+bln_number
+ded_license_number
+ded_number_2
+ded_number_3
+ded_number_4
+email
+no_of_reviews
+quality_lister
+rating
+
+"no value free for package_type
+Unique package_type values:
+'hot'
+'premium'
+'superhot'"
+
+
+* "no empty string in currency
+Unique currency values:
+'AED'"
+
+change in casing"- price_per values
+"'
+'daily'
+'monthly'
+'weekly'
+'yearly'
+
+------------------------
+

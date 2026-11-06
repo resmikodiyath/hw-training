@@ -1,0 +1,69 @@
+qa-report
+_____________
+bayut_dubai_properties_rent_residential_2026_11_04.json:
+____________________________________________________________
+
+data count: 130537
+no issues found
+
+--------------------------------------------
+bayut_dubai_properties_buy_residential_2026_11_04.json
+___________________________________________________________
+
+data count: 118459
+no other issues found
+---------------------------------
+
+bayut_abudhabi_properties_rent_residential_2026_11_04.json:
+-----------------------------------------------------------
+data count: 7250
+data mismatch:
+Field | File Value | API Value | Status
+indyScore | 790 | 753 | Mismatch
+indyScore_l1 | 790 | 753 | Mismatch
+indyScore_l2 | 646 | 616 | Mismatch
+indyScore_l3 | 646 | 616 | Mismatch
+"listing_url": https://www.bayut.com/property/details-17065494.html
+-----------------------------------
+bayut_abudhabi_properties_buy_residential_2026_11_04.json: __________________________________________________________
+
+data count: 11829
+
+---------------------------------------
+bayut_abudhabi_properties_rent_residential_metadata_2026_11_04.csv
+_______________________________________________________________________
+
+data count: 8833
+--------------------------
+bayut_dubai_properties_rent_residential_metadata_2026_11_04.csv
+_________________________________________________________________
+
+data count:147603 
+---------------------
+bayut_dubai_properties_buy_residential_metadata_2026_11_04.csv: 
+_____________________________________________________________________
+
+ data count: 134839
+----------------------------------
+bayut_abudhabi_properties_buy_residential_metadata_2026_11_04.csv:
+___________________________________________________________________
+
+data count: 13491
+----------------------------------------\
+bayut_transactions_sold_residential_2026_11_04.json: 
+-----------------------------------------------------
+data count: 2545
+
+"Completely empty fields:
+['rent_contract_duration_months', 'contract_monthly_amount']
+Total completely empty fields: 2"
+
+"Iteration dates in file: 2025-12-11 to 2026-11-03
+From date: 2025-12-11
+Example: {'row': 1157, 'transaction_hash_id': '3b62fd39b38a2ae0', 'date': '2025-12-11 00:00:00'}
+
+Date between them: 2026-10-26
+Example: {'row': 15, 'transaction_hash_id': '64a64b4e85549d9e', 'date': '2026-10-26 00:00:00'}
+
+To date: 2026-11-03
+Example: {'row': 1, 'transaction_hash_id': '6d7b8b262290d013', 'date': '2026-11-03 00:00:00'}"
