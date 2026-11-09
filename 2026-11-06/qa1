@@ -1,0 +1,99 @@
+qa-issue-report
+====================
+DataHut_SI_Mercator_PriceExtractions_20261106.CSV
+________________________________________________________
+
+data count: 16775
+
+*promotion valid upto dates available on website, but missing in the file
+eg:
+
+227|https://mercatoronline.si/izdelek/20151407/sadni-jogurt-bobbastic-mango-in-pomarancna-2-1-m-m-mu-300-g
+297|https://mercatoronline.si/izdelek/20077996/skyr-mu-450-g""
+
+664|https://mercatoronline.si/izdelek/5068481/sir-mozzarella-bella-napoli-mu-cuisine-pakirano-250-g
+708|https://mercatoronline.si/izdelek/1336203/sir-jost-ljubljanske-mlekarne-pakirano-140-g"
+---------------------------------------------------
+DataHut_SI_Dm_PriceExtractions_20261106.CSV:
+_______________________________________________
+
+data count: 10910
+
+"Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+eg:
+Column: product_name
+265|Maskara  I love extreme volume, 12 ml
+466|BEAUTY EXPERT vlažilni gel  za prhanje s 25 % glicerola in 1 % betaina, 200 ml
+2475|YOUNG & PURE Gel za sušenje  mozoljev, 15 ml"
+-------------------------------------------
+
+DataHut_AT_Spar_PriceExtractions_20261106.CSV
+_______________________________________________
+
+data count: 43412
+
+
+"Extra spaces count: 1
+[{'column': 'breadcrumb',
+  'pdp_url': 'https://www.spar.at/produktwelt/vorarlberg-milch-laendle-halbfettmilch-laenger-frisch-1-5-fett-p2020006312547',
+  'row': 25709}]
+
+**Columns with unescaped pipe character:
+product_name
+site_shown_uom
+eg:
+Column: product_name
+9311|Isana AHA | PHA Cleanser 125 ml
+18685|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+19706|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück"
+-----------------------------------------
+
+DataHut_AT_Dm_PriceExtractions_20261106.CSV
+______________________________________________
+
+data count: 17388
+
+
+"Columns having rows with extra spaces:
+['product_name']
+
+Column: product_name
+511|Kräutertee, Deine innere Ruhe mit Kamille, Minze, Lavendel & Ashwagandha  (20 x 1,8g), 36 g
+1147|Tabletten Vitamin  B12 350, 30 St"
+--------------------------------------------
+DataHut_CH_Lidl_PriceExtractions_20261106.CSV
+___________________________________________________
+
+data count: 3765
+
+
+"Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+
+
+Column: product_name
+3675|Pancetta, Provola und  Zwiebel
+
+Column: breadcrumb
+3675|Sortiment > Sortiment > Pancetta, Provola und  Zwiebel"
+--------------------------------------------------
+DataHut_AT_Billa_PriceExtractions_20261106.CSV
+_________________________________________________
+
+data count: 12151
+
+
+"Three prices equal: 
+*AKtion Tag present, no mehrweg, single price, but regular price not empty
+eg:
+Row: 3533 | Value: 1.69 | URL: https://shop.billa.at/produkte/argeta-jagdaufstrich-00462735
+Row: 3748 | Value: 1.69 | URL: https://shop.billa.at/produkte/argeta-thunfisch-mit-getrockneten-tomaten-aufstrich-00472274"
+
+-----------------------------------
+
+
+
+
+
+

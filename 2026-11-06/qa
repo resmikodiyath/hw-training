@@ -1,0 +1,156 @@
+DataHut_IE_Dunnes_FullDump_20261106.CSV
+___________________________________________
+
+- data count: 30863
+
+- 132 fields
+- Duplicate rows: 0
+- Dataset is completely unique
+- organic_type- empty
+- competitor_name - Dunnes
+- currency-  EUR
+- Columns having rows with extra spaces:
+['image_url_2']
+6790|https://dunnesstores.vtexassets.com/arquivos/ids/3348677/310826_PC  W XMAS_1901.jpg?v=639287861469100000
+6791|https://dunnesstores.vtexassets.com/arquivos/ids/3348684/310826_PC  W XMAS_1901.jpg?v=639287861469700000
+6793|https://dunnesstores.vtexassets.com/arquivos/ids/3348691/310826_PC  W XMAS_1901.jpg?v=639287861470030000
+6795|https://dunnesstores.vtexassets.com/arquivos/ids/3348698/310826_PC  W XMAS_1901.jpg?v=639287861470500000
+6799|https://dunnesstores.vtexassets.com/arquivos/ids/3348705/310826_PC  W XMAS_1901.jpg?v=639287861470870000
+6803|https://dunnesstores.vtexassets.com/arquivos/ids/3348712/310826_PC  W XMAS_1901.jpg?v=639287861471230000
+
+-Columns with unescaped pipe character:
+fit_guide
+eg:
+Column: fit_guide
+15851|4" | 6" | 8"
+16298|XS: L15.5 x W10.5 x H10cm | 690ml S: L15.5 x W10.5 x H15cm | 1L M: L15.5 x W10.5 x H19.5cm | 1.8L L: L15.5 x W10.5 x H25cm | 2.5L XL: L15.5 x W10.5 x H29.5cm | 2.8L
+
+-image_url_1: Invalid
+Error Type: Invalid image URL format
+Invalid Count: 51
+Row: 8819 | Column: image_url_1 | Value: 'https://dunnesstores.vtexassets.com/arquivos/ids/3283896/SHOT5 2.jpg?v=639268059809770000'
+Row: 8821 | Column: image_url_1 | Value: 'https://dunnesstores.vtexassets.com/arquivos/ids/3283902/SHOT5 2.jpg?v=639268059810530000'
+Row: 8825 | Column: image_url_1 | Value: 'https://dunnesstores.vtexassets.com/arquivos/ids/3283908/SHOT5 2.jpg?v=639268059810870000'
+Row: 8827 | Column: image_url_1 | Value: 'https://dunnesstores.vtexassets.com/arquivos/ids/3283914/SHOT5 2.jpg?v=639268059811330000'
+-------------------------------------------------------------------------
+
+DataHut_IE_Supervalu_FullDump_20261106.CSV
+___________________________________________
+
+data count: 11285
+132 fields
+Dataset is completely unique
+competitor_name- supervalu
+
+Columns having rows with extra spaces:
+['nutritional_information']
+eg:
+column': 'nutritional_information',
+  'pdp_url': 'https://shop.supervalu.ie/sm/delivery/rsid/5550/product/blue-dragon-wholewheat-4-nests-noodles-250-g-id-1916259001'
+------------------------------------------------
+DataHut_IE_Tesco_FullDump_20261106.CSV
+__________________________________________
+
+data count: 23846
+132 fields
+
+ price_valid_from and promotion_valid_from are not the same for 224 rows
+ eg:
+ 
+Row: 128 | price_valid_from: '' | promotion_valid_from: '25/06/2026'
+PDP URL: https://www.tesco.ie/shop/en-IE/products/322543493
+----------------------------------------------------------------------------------------------------
+Row: 306 | price_valid_from: '' | promotion_valid_from: '19/08/2026'
+PDP URL: https://www.tesco.ie/shop/en-IE/products/314902622
+----------------------------------------------------------------------------------------------------
+Row: 380 | price_valid_from: '' | promotion_valid_from: '24/08/2026'
+PDP URL: https://www.tesco.ie/shop/en-IE/products/321782896
+
+
+
+breadcrumb empty for 89 recordxs
+eg:
+Row 21155: unique_id=254721627, breadcrumb='', pdp_url=https://www.tesco.ie/shop/en-IE/products/254721627
+Row 21265: unique_id=314117517, breadcrumb='', pdp_url=https://www.tesco.ie/shop/en-IE/products/314117517
+Row 21294: unique_id=330772997, breadcrumb='', pdp_url=https://www.tesco.ie/shop/en-IE/products/330772997
+
+Columns having rows with extra spaces:
+['nutritional_information']
+eg:
+'column': 'nutritional_information',
+  'pdp_url': 'https://www.tesco.ie/shop/en-IE/products/316078453',
+  'row': 3297},
+ {'column': 'nutritional_information',
+  'pdp_url': 'https://www.tesco.ie/shop/en-IE/products/284182493',
+  'row': 3429},
+----------------------------------------------------------------------
+dubailand_uae_2026_11_05_05.xlsx
+________________________________
+
+fields: ['Office Number', 'Name English', 'Name Arabic', 'Website',
+       'Phone Number', 'Email']
+       
+data count: 10001
+Dataset is completely unique
+
+Completely empty fields:
+[]
+
+Fields with missing values:
+Website         9231
+Phone Number    7646
+Email             26
+
+invalid phone numbers
+------------------
+Row: 485 | Value: 000000
+Row: 553 | Value: 04
+Row: 764 | Value: '971-4-
+Row: 774 | Value: 04
+Row: 1131 | Value: 04
+Row: 1204 | Value: 0000
+Row: 1224 | Value: 0
+Row: 1661 | Value: 045
+Row: 1814 | Value: 0
+Row: 3037 | Value: 0
+Row: 3310 | Value: 04000000000000000
+Row: 6797 | Value: -
+Row: 6971 | Value: 971-4-   
+Row: 9611 | Value: 971-50-
+etc
+
+white space
+-------------
+
+Name English: 1 whitespace issues
+Row: 2843 | Value: EDRIS ALAWADHI REAL ESTATE 
+
+Name Arabic: 4 whitespace issues
+Row: 274 | Value: جي بي جي جلوبال للوساطة العقارية ش.ذ.م.م 
+Row: 700 | Value: سيجنتشر رياليتي هومز للعقارات ش.ذ.م.م 
+Row: 1985 | Value: فينيس للعقارات ش.ذ.م.م 
+Row: 2843 | Value: ادريس العوضي للعقارات 
+
+
+Invalid Website: 583
+name inplace of website
+Row: 7 | Value: Mohammad Rafie
+Row: 9 | Value: Mahoud Khalil
+Row: 21 | Value: KIRAN KUMAR ASHOK KUMAR UTTAMCHANDANI
+Row: 42 | Value: Manzoor Ahmed
+Row: 52 | Value: MICHELLE SONG BAILE
+Row: 63 | Value: ATIQ ISMAIL KAPADIA
+Row: 80 | Value: Simon
+Row: 213 | Value: SHEIROSE NURMMAD OSSEMANE
+Row: 215 | Value: MAHESH SADHURAM DUDEJA
+Row: 723 | Value: Mohammed Abdul Aziz Mohammed Janahi
+Row: 730 | Value: alremal real estate broker
+Row: 732 | Value: MODERN REAL ESTATE (L.L.C.)
+Row: 5015 | Value: 0
+etc
+
+--------------------------------------
+
+
+       
+
