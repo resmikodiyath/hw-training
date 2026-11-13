@@ -1,0 +1,186 @@
+QA-ISSUE--REPORT
+==================
+bayut_egp_2026_11_02.json
+____________________________
+"Additional columns
+completion_status
+ownership
+"
+DATA COUNT: 247610
+
+"white space:
+12709 | Whitespace in broker_display_name | 'Ahmed  Elhany'
+12709 | Whitespace in broker | 'AHMED  ELHANY'
+etc"
+
+
+"----- price_per unique values -----
+''
+'Daily'
+'Monthly'
+'Weekly'
+'Yearly'
+Total unique price_per: 5"
+--------------------------------------------
+bayut_uae_2026_11_09.json:
+______________________________
+
+data count: 599412
+
+no value free for package _type
+only AED, no empty values
+
+"change in case
+---- price_per unique values -----
+''
+'daily'
+'monthly'
+'weekly'
+'yearly'
+"
+-------------------------------
+bayut_uae_project_2026_11_02.json
+_________________________________
+
+data count: 3016
+
+
+"white space in developer name and unite_type
+eg:
+
+Column: developer_name
+2050|Maskan MS Contracting and  RealL Estate Development
+
+Column: unit_type
+62|Type C -  Classic (with basement), Type D -  Contemporary (with basement), Type B -  Contemporary, Type A -  Chamfer (with basement), Type E -  Classic (with basement), Type B -  Contemporary (with basement), Type C -  Chamfer (with basement), Type A -  Chamfer"
+
+---------------------------------------
+dubizzle_qat_2026_11_02.json
+______________________________
+
+Columns with extra-long spaces:
+['title', 'description']
+eg:
+Row 68 | Column: title | Value: 'Warehouse for rent in Birkat Al-Awamer.   Land area: 1000 sqm'
+column': 'description',
+  'row': 387,
+  'url': 'https://www.dubizzle.qa/en/ad/fully-furnished-1bhk-for-rent-alnasr-area-%D8%B4%D9%82%D8%A9-%D9%85%D9%81%D8%B1%D9%88%D8%B4%D8%A9-ID120382721.html'
+
+-----------------------------------------
+data.json
+___________
+
+data count: 3009
+
+"invalid phone
+-----------
+2595|management_companies[0].phone|800 Nakheel
+2594|management_companies[0].phone|800 Nakheel
+2592|management_companies[0].phone|800 Nakheel
+2593|management_companies[0].phone|800 Nakheel"
+
+
+non arabic language fields:
+"""issue_count"": 41,
+      ""examples"": [
+        ""2968"",
+        ""3338"",
+        ""1612""
+      ]"
+
+-----------------------------------
+aqarmap_egp_2026_11_02.json
+_____________________________--
+data count: 269685
+
+
+
+depth', 'seller_role', 'listing_type' fields are also empty
+
+"white space egs:
+178 | Whitespace in title | 'Chalets For rent in Porto Said Compound - Amer Group   1300'
+269645 | Whitespace in description | 'Offices For rent in Cairo Festival City Mall - CFC  with size 300 M² View Main Street'"
+
+----------------------------
+DataHut_AT_Spar_PriceExtractions_20261110.CSV
+_______________________________________________
+data count: 43556
+
+
+"Extra spaces count: 1
+[{'column': 'breadcrumb',
+  'pdp_url': 'https://www.spar.at/produktwelt/vorarlberg-milch-laendle-halbfettmilch-laenger-frisch-1-5-fett-p2020006312547',
+  'row': 25621}]
+
+Columns with unescaped pipe character:
+product_name
+site_shown_uom
+eg:
+Column: product_name
+8922|Isana AHA | PHA Cleanser 125 ml
+16757|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+18326|BGS Mehrzweckschrauben | 4,0 x 50 mm | 120 Stück"
+
+----------------------------------------
+DataHut_AU_Coles_FullDump_20261111.CSV
+__________________________________________
+"DataHut_AU_Coles_FullDump_20261111.CSV
+future date"
+data count: 28848
+
+extraction_date: 2026-11-11
+
+
+"non empty
+-----------
+[regular_price','barcode']
+
+empty
+----------
+'store_name',
+    'store_state',
+    'store_postcode',
+    'producthierarchy_level1',
+    'producthierarchy_level2',
+    'producthierarchy_level3',
+    'promotion_price',
+    'promotion_type',
+    'promotion_description',
+    'multi_buy_item_count',
+    'multi_buy_items_price_total',
+    'breadcrumb',
+    'labelling',
+    'file_name_1',
+    'features',
+    'promo_limit',
+    'multibuy_items_pricesingle',
+    'suitable_for',
+    'environmental',
+    'retail_limit'
+"
+
+----------------------------
+DataHut_AT_Billa_FullDump_20261112.CSV
+________________________________________
+data count: 12135
+
+"non empty
+------------------
+age_of_the_product
+packaging
+
+more empty colmns
+-------------------
+retail_limit
+file_name_1
+file_name_2
+file_name_3
+file_name_4
+file_name_5
+file_name_6
+
+"
+extraction date: 2026-11-12
+--------
+
+

@@ -1,0 +1,88 @@
+# Application of Data Analysis Techniques in Data Quality Assurance (QA)
+
+## 1. Introduction
+
+Data analysis techniques help improve QA by identifying data quality issues, unexpected patterns, and discrepancies that are difficult or time-consuming to detect manually. This report highlights the analytical methods that can improve the efficiency, accuracy, and coverage of data validation.
+
+## 2. Types of Analysis and Their Applications in QA
+
+**1. Record Distribution Analysis:** Examines how records are distributed across categories, brands, locations, and types to identify missing or underrepresented groups.  
+*Example: A particular brand has only 20 products in the latest delivery compared to 500 in the previous delivery.*
+
+**2. Frequency Analysis:** Identifies the most and least frequently occurring values and unexpected variations within fields.  
+*Example: Identifying unexpected values such as 'Unknown' or 'Others' in a property type field.*
+
+**3. Statistical Analysis:** Calculates average, minimum, maximum, median, and standard deviation to identify unusual numerical values.  
+*Example: Identifying a zero or unusually high property price in the dataset.*
+
+**4. Comparative Analysis:** Compares datasets, website information, API responses, and delivered files to identify discrepancies.  
+*Example: The product selling price in the file is 9, whereas the website displays 12.*
+
+**5. Historical Analysis:** Compares current deliveries with previous deliveries to identify missing, newly added, or modified records.  
+*Example: The current delivery contains 15,808 records compared to 15,852 in the previous delivery.*
+
+**6. Trend Analysis:** Tracks changes and patterns in data quality across multiple deliveries.  
+*Example: Identifying an increase in missing product descriptions from 2% to 12% over successive deliveries.*
+
+**7. Missing Data Analysis:** Identifies empty fields, incomplete records, and missing-value percentages across the dataset.  
+*Example: Identifying products with missing descriptions or regular prices.*
+
+**8. Duplicate Analysis:** Identifies exact and potential duplicate records using IDs, URLs, and combinations of fields.  
+*Example: Detecting two product records with different IDs but the same product URL and barcode.*
+
+**9. Distribution Analysis:** Examines how numerical values are distributed across different ranges to identify unusual concentrations or gaps.  
+*Example: Identifying an unexpected concentration of products within a particular price range.*
+
+**10. Outlier Analysis:** Detects unusually high or low values compared to the general dataset.  
+*Example: Identifying a property area of 500,000 sq. ft. when most properties are below 5,000 sq. ft.*
+
+**11. Correlation Analysis:** Identifies statistical relationships between numerical fields to investigate unexpected patterns.  
+*Example: Analysing the relationship between property price and property area to identify unusual variations.*
+
+**12. Coverage Analysis:** Measures how much of the expected data has been successfully collected across categories, locations, and fields.  
+*Example: Identifying that only 85 out of 100 expected product categories are represented in the dataset.*
+
+**13. Consistency Analysis:** Identifies inconsistencies in data formats, units, naming conventions, and values.  
+*Example: Detecting different price formats such as 100.00, 100,00, and AED 100.*
+
+**14. Anomaly Detection:** Identifies unusual patterns or unexpected changes that may not be covered by predefined validation rules.  
+*Example: Detecting that all products in a delivery suddenly have identical regular and promotional prices.*
+
+**15. Segmentation Analysis:** Divides datasets into meaningful groups to compare data quality across categories, brands, or locations.  
+*Example: Identifying that missing product descriptions are concentrated in one particular brand.*
+
+**16. Root Cause Analysis:** Investigates the underlying reasons behind recurring discrepancies and data quality issues.  
+*Example: Identifying that missing product descriptions are caused by a change in website structure that the scraper does not capture.*
+
+## 3. Manual QA vs Analytical QA
+
+Traditional manual checking is useful for validating specific business requirements and inspecting individual records. However, analytical approaches provide better efficiency when examining large datasets and identifying patterns across multiple records.
+
+- **Record and Duplicate Checking:** Automated counting and duplicate detection are more efficient than individual inspection.
+- **Missing Data and Coverage:** Complete dataset scanning provides better coverage than sample-based manual checking.
+- **Dataset Comparison:** Automated comparison identifies record-level and field-level discrepancies faster.
+- **Historical and Trend Monitoring:** Analytical methods reveal changes across multiple deliveries that are difficult to identify manually.
+- **Outlier and Anomaly Detection:** Statistical methods help identify unusual values and patterns that may go unnoticed during routine inspection.
+
+## 4. Recommended Implementation
+
+These techniques can be integrated into the existing QA workflow using Python and libraries such as Pandas, NumPy, and Matplotlib.
+
+1. **Dataset Profiling:** Examine record counts, field names, data types, and dataset structure.
+2. **Basic Validation:** Identify missing values, duplicates, invalid formats, and unexpected values.
+3. **Analytical Processing:** Perform statistical, distribution, comparative, historical, and other relevant analyses.
+4. **Issue Identification:** Detect discrepancies, unusual patterns, and potential anomalies.
+5. **Reporting:** Generate reports containing issue counts, percentages, affected row numbers, and sample URLs.
+
+## 5. Expected Benefits
+
+- Reduces repetitive manual checking and processing time.
+- Improves validation accuracy and consistency.
+- Enables analysis of complete datasets rather than relying only on samples.
+- Identifies unexpected changes and potential quality issues early.
+- Supports historical monitoring and identification of recurring problems.
+- Provides deeper insights for investigating and resolving data quality issues.
+
+## 6. Conclusion
+
+Combining traditional validation rules with analytical techniques can make QA more efficient, comprehensive, and data-driven. It enables QA teams to move beyond identifying individual errors to understanding overall dataset quality, detecting hidden issues, and improving the reliability of future deliveries.

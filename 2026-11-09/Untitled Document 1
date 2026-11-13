@@ -1,0 +1,146 @@
+QA--ISSUES--REPORT
+______________________
+DataHut_SI_Spar_PriceExtractions_20261109.CSV
+_________________________________________________
+Data count: 15687
+
+percentage_discount also empty
+
+
+"Invalid grammage: 3
+Row: 707 | URL: https://online.spar.si/p/nadomestek-kave-z-okusom-po-kakavu-calmrooty-62g-681408 | File: 0.062 g
+Row: 6554 | URL: https://online.spar.si/p/instant-ocvrti-riz-vegetarijanski-mama-80g-683913 | File: 0.08 g
+Row: 8554 | URL: https://online.spar.si/p/testenine-fusilli-feelingok-220g-679091 | File: 0.22 g"
+--------------------------------------------
+
+DataHut_SI_Dm_PriceExtractions_20261109.CSV
+______________________________________________
+data count: 10569
+
+
+"Columns having rows with extra spaces:
+['product_name', 'breadcrumb']
+eg:
+Column: product_name
+234|Maskara  I love extreme volume, 12 ml
+Column: breadcrumb
+30|Domov > Dojenček in otrok > Otroška hrana in napitki  > Otroški napitki
+33|Domov > Dojenček in otrok > Pripomočki za previjanje  > Previjalne podloge"
+---------------------------------------
+DataHut_AT_Spar_PriceExtractions_20261109.CSV
+__________________________________________________
+data count: 43457
+
+"Extra spaces count: 1
+[{'column': 'breadcrumb',
+  'pdp_url': 'https://www.spar.at/produktwelt/vorarlberg-milch-laendle-halbfettmilch-laenger-frisch-1-5-fett-p2020006312547',
+  'row': 23788}]
+
+Columns with unescaped pipe character:
+product_name
+site_shown_uom
+Column: product_name
+8315|Isana AHA | PHA Cleanser 125 ml
+17871|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück
+Column: site_shown_uom
+17871|BGS Mehrzweckschrauben | 4,0 x 40 mm | 150 Stück"
+-----------------------------------------
+DataHut_AT_Dm_PriceExtractions_20261109.CSV
+_______________________________________________
+
+data count: 17246
+
+"Columns having rows with extra spaces:
+['product_name']
+
+Column: product_name
+396|Kräutertee, Deine innere Ruhe mit Kamille, Minze, Lavendel & Ashwagandha  (20 x 1,8g), 36 g
+1126|Tabletten Vitamin  B12 350, 30 St
+1698|Tönungsshampoo  7.4 Kupfergold, 14 ml
+2103|Augenbrauenfarbe Dunkelbraun  4-1, 1 St"
+--------------------------------------------
+bayut_bah_2026_11_02.json
+_____________________________
+data count: 2933
+----------------------
+qatarliving_qat_2026_11_02.json
+____________________________________
+data count: 24139
+
+"Columns having rows with extra spaces:
+['description']
+eg:
+Row 18470 | Column: description | Value: 'Store for rent   Street 28  industrial area   Prime location  650 sqmt area Contact No:33400823'"
+---------------------------
+nawy_egp_2026_11_02.json
+__________________________
+data count: 19697
+
+
+"The `finishing` field is empty in the file, whereas the website displays the value ""Fully Finished.""
+
+9438||https://www.nawy.com/compound/1159-lyv-caesar-ras-el-hekma/property/70580-chalet-for-sale-in-lyv-caesar-ras-el-hekma-with-3-bedrooms-in-ras-el-hekma-by-gates-development
+
+finishing|empty in file|semi-finished on website
+
+19226||https://www.nawy.com/compound/195-mountain-view-icity-new-cairo/property/86029-apartment-for-sale-in-mountain-view-icity-new-cairo-with-3-bedrooms-in-new-cairo-by-mountain-view"
+
+-----------------------------------------------------------
+dari_ae_2026_11_02.json:
+__________________________
+data count: 1083
+
+"white space:
+row|value
+278|[{'id': 35404, 'name': 'Mazen Rushdi   Abualhaija', 'profession': 'Broker Employee'}]
+"
+-----------------------
+bahrainfinder_bah_2026_11_02.json:
+_______________________________________
+data count: 4723
+
+
+"['Furnished', '', 'Semi Furnished', 'Unfurnished', 'مفروشة بالكامل',
+       'غير مفروش', 'مفروشة جزئيًا']
+
+no value Fully Furnished, 
+"
+
+
+--------------------
+machinerytrader_2026_11_09.csv
+________________________________
+629  filelds
+
+
+data count: 8058
+
+
+"Total leading/trailing whitespace issues: 2
+excel_row|column|value
+3158|EngineMake|JOHN DEERE 
+3398|ProductConfiguration|Personnel Carrier "
+
+
+-----------------------
+data.json:
+________________
+
+data count: 3009
+
+non arabic names:
+" ""issue_count"": 41,
+      ""examples"": [
+        ""2968"",
+        ""3338"",
+        ""1612""
+      ]
+      
+  inspection dates older than 4 weeks:
+ ""issue_count"": 1,
+      ""examples"": [
+        ""4559""
+      ]"
+
+
+
